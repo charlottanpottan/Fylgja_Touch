@@ -1,0 +1,176 @@
+fileFormatVersion: 1
+guid: aa5fe76c66cb14d1eb79f922143904ef
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 2
+    splitAnimations: 1
+  nodeInfo:
+    movement:
+    - 100000
+    - 400000
+    spine_02:
+    - 100002
+    - 400002
+    head_joint:
+    - 100004
+    - 400004
+    pelvis_joint:
+    - 100006
+    - 400006
+    spine_03:
+    - 100008
+    - 400008
+    //RootNode:
+    - 100010
+    - 400010
+    - 11100000
+    spine_01:
+    - 100012
+    - 400012
+    R_eye_lid_joint:
+    - 100014
+    - 400014
+    spine_04:
+    - 100016
+    - 400016
+    L_lip_joint:
+    - 100018
+    - 400018
+    lip_top_joint:
+    - 100020
+    - 400020
+    R_sword_joint:
+    - 100022
+    - 400022
+    R_hand_joint:
+    - 100024
+    - 400024
+    R_threeFinger_03_joint:
+    - 100026
+    - 400026
+    R_shoulder_joint:
+    - 100028
+    - 400028
+    R_threeFinger_01_joint:
+    - 100030
+    - 400030
+    L_thumb_03_joint:
+    - 100032
+    - 400032
+    R_elbow_joint:
+    - 100034
+    - 400034
+    L_thumb_01_joint:
+    - 100036
+    - 400036
+    R_clavicle_joint:
+    - 100038
+    - 400038
+    L_indexFinger_02_joint:
+    - 100040
+    - 400040
+    L_thumb_02_joint:
+    - 100042
+    - 400042
+    L_threeFinger_03_joint:
+    - 100044
+    - 400044
+    L_indexFinger_03_joint:
+    - 100046
+    - 400046
+    L_threeFinger_01_joint:
+    - 100048
+    - 400048
+    L_indexFinger_01_joint:
+    - 100050
+    - 400050
+    L_elbow_joint:
+    - 100052
+    - 400052
+    L_threeFinger_02_joint:
+    - 100054
+    - 400054
+    L_clavicle_joint:
+    - 100056
+    - 400056
+    L_hand_joint:
+    - 100058
+    - 400058
+    jaw_joint:
+    - 100060
+    - 400060
+    L_shoulder_joint:
+    - 100062
+    - 400062
+    L_eye_lid_joint:
+    - 100064
+    - 400064
+    R_lip_joint:
+    - 100066
+    - 400066
+    R_thumb_03_joint:
+    - 100068
+    - 400068
+    L_ankle_joint:
+    - 100070
+    - 400070
+    R_thumb_01_joint:
+    - 100072
+    - 400072
+    L_hip_joint:
+    - 100074
+    - 400074
+    R_threeFinger_02_joint:
+    - 100076
+    - 400076
+    R_thumb_02_joint:
+    - 100078
+    - 400078
+    R_indexFinger_01_joint:
+    - 100080
+    - 400080
+    R_indexFinger_03_joint:
+    - 100082
+    - 400082
+    R_indexFinger_02_joint:
+    - 100084
+    - 400084
+    R_ankle_joint:
+    - 100086
+    - 400086
+    L_foot_joint:
+    - 100088
+    - 400088
+    R_foot_joint:
+    - 100090
+    - 400090
+    L_knee_joint:
+    - 100092
+    - 400092
+    R_knee_joint:
+    - 100094
+    - 400094
+    R_hip_joint:
+    - 100096
+    - 400096
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    7400000: Take 001 //// Chieftain@NervousIdle

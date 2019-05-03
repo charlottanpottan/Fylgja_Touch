@@ -1,0 +1,325 @@
+fileFormatVersion: 1
+guid: 0e762817c9d314d64b27a0ed331493e3
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 2
+    splitAnimations: 1
+  nodeInfo:
+    R_indexFinger_04_joint:
+    - 100000
+    - 400000
+    R_thumb_02_joint:
+    - 100002
+    - 400002
+    R_indexFinger_02_joint:
+    - 100004
+    - 400004
+    L_shoulder_joint:
+    - 100006
+    - 400006
+    L_indexFinger_01_joint:
+    - 100008
+    - 400008
+    L_hand_joint:
+    - 100010
+    - 400010
+    L_thumb_02_joint:
+    - 100012
+    - 400012
+    L_thumb_01_joint:
+    - 100014
+    - 400014
+    spine_04:
+    - 100016
+    - 400016
+    hair_joint:
+    - 100018
+    - 400018
+    movement:
+    - 100020
+    - 400020
+    spine_01:
+    - 100022
+    - 400022
+    spine_03:
+    - 100024
+    - 400024
+    spine_02:
+    - 100026
+    - 400026
+    pelvis_joint:
+    - 100028
+    - 400028
+    //RootNode:
+    - 100030
+    - 400030
+    - 11100000
+    beltBalls_joint:
+    - 100032
+    - 400032
+    backpack_joint:
+    - 100034
+    - 400034
+    scroll_joint:
+    - 100038
+    - 400038
+    L_ankle_joint:
+    - 100040
+    - 400040
+    beltBuckle_joint:
+    - 100042
+    - 400042
+    L_hip_joint:
+    - 100044
+    - 400044
+    L_foot_joint:
+    - 100046
+    - 400046
+    R_ankle_joint:
+    - 100048
+    - 400048
+    L_knee_joint:
+    - 100050
+    - 400050
+    R_hip_joint:
+    - 100052
+    - 400052
+    R_foot_joint:
+    - 100054
+    - 400054
+    R_threeFinger_03_joint:
+    - 100056
+    - 400056
+    R_knee_joint:
+    - 100058
+    - 400058
+    R_threeFinger_01_joint:
+    - 100060
+    - 400060
+    R_threeFinger_04_joint:
+    - 100062
+    - 400062
+    R_indexFinger_03_joint:
+    - 100064
+    - 400064
+    R_threeFinger_02_joint:
+    - 100066
+    - 400066
+    R_indexFinger_01_joint:
+    - 100068
+    - 400068
+    M_lip_top_joint:
+    - 100070
+    - 400070
+    L_eye_joint:
+    - 100072
+    - 400072
+    L_eyeBrow_mid_joint:
+    - 100074
+    - 400074
+    chin_joint:
+    - 100076
+    - 400076
+    nose_joint:
+    - 100078
+    - 400078
+    L_cheek_joint:
+    - 100080
+    - 400080
+    M_lip_bot_joint:
+    - 100082
+    - 400082
+    L_low_eyeLid_joint:
+    - 100084
+    - 400084
+    L_lip_bot_joint:
+    - 100086
+    - 400086
+    head_joint:
+    - 100088
+    - 400088
+    L_lip_top_joint:
+    - 100090
+    - 400090
+    R_lip_bot_joint:
+    - 100092
+    - 400092
+    L_elbow_joint:
+    - 100094
+    - 400094
+    R_cheek_joint:
+    - 100096
+    - 400096
+    L_clavicle_joint:
+    - 100098
+    - 400098
+    R_eyeBrow_out_joint:
+    - 100100
+    - 400100
+    R_lip_top_joint:
+    - 100102
+    - 400102
+    R_eyeBrow_in_joint:
+    - 100104
+    - 400104
+    R_low_eyeLid_joint:
+    - 100106
+    - 400106
+    hairTop_joint:
+    - 100108
+    - 400108
+    R_eyeLid_joint:
+    - 100110
+    - 400110
+    L_eyeBrow_in_joint:
+    - 100112
+    - 400112
+    R_eyeBrow_mid_joint:
+    - 100114
+    - 400114
+    L_eyeBrow_out_joint:
+    - 100116
+    - 400116
+    L_eyeLid_joint:
+    - 100118
+    - 400118
+    R_eye_joint:
+    - 100120
+    - 400120
+    R_hand_joint:
+    - 100122
+    - 400122
+    R_thumb_03_joint:
+    - 100124
+    - 400124
+    R_shoulder_joint:
+    - 100126
+    - 400126
+    R_thumb_01_joint:
+    - 100128
+    - 400128
+    L_threeFinger_04_joint:
+    - 100130
+    - 400130
+    R_elbow_joint:
+    - 100132
+    - 400132
+    L_threeFinger_02_joint:
+    - 100134
+    - 400134
+    R_clavicle_joint:
+    - 100136
+    - 400136
+    L_indexFinger_04_joint:
+    - 100138
+    - 400138
+    L_threeFinger_03_joint:
+    - 100140
+    - 400140
+    L_thumb_03_joint:
+    - 100142
+    - 400142
+    L_threeFinger_01_joint:
+    - 100144
+    - 400144
+    L_indexFinger_02_joint:
+    - 100146
+    - 400146
+    L_indexFinger_03_joint:
+    - 100148
+    - 400148
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: scroll_mesh
+    7400000: Take 001 //// Tyra@MouthMovement
+    7400002: Take 001 //// pelvis_joint
+    7400004: Take 001 //// spine_01
+    7400006: Take 001 //// spine_02
+    7400008: Take 001 //// spine_03
+    7400010: Take 001 //// spine_04
+    7400012: Take 001 //// head_joint
+    7400014: Take 001 //// hair_joint
+    7400016: Take 001 //// L_low_eyeLid_joint
+    7400018: Take 001 //// L_cheek_joint
+    7400020: Take 001 //// L_lip_top_joint
+    7400022: Take 001 //// L_lip_bot_joint
+    7400024: Take 001 //// chin_joint
+    7400026: Take 001 //// M_lip_bot_joint
+    7400028: Take 001 //// M_lip_top_joint
+    7400030: Take 001 //// nose_joint
+    7400032: Take 001 //// L_eye_joint
+    7400034: Take 001 //// L_eyeBrow_mid_joint
+    7400036: Take 001 //// L_eyeBrow_in_joint
+    7400038: Take 001 //// L_eyeLid_joint
+    7400040: Take 001 //// L_eyeBrow_out_joint
+    7400042: Take 001 //// hairTop_joint
+    7400044: Take 001 //// R_eye_joint
+    7400046: Take 001 //// R_eyeBrow_mid_joint
+    7400048: Take 001 //// R_eyeBrow_in_joint
+    7400050: Take 001 //// R_eyeLid_joint
+    7400052: Take 001 //// R_eyeBrow_out_joint
+    7400054: Take 001 //// R_low_eyeLid_joint
+    7400056: Take 001 //// R_cheek_joint
+    7400058: Take 001 //// R_lip_top_joint
+    7400060: Take 001 //// R_lip_bot_joint
+    7400062: Take 001 //// L_clavicle_joint
+    7400064: Take 001 //// L_shoulder_joint
+    7400066: Take 001 //// L_elbow_joint
+    7400068: Take 001 //// L_hand_joint
+    7400070: Take 001 //// L_thumb_01_joint
+    7400072: Take 001 //// L_thumb_02_joint
+    7400074: Take 001 //// L_thumb_03_joint
+    7400076: Take 001 //// L_indexFinger_01_joint
+    7400078: Take 001 //// L_indexFinger_02_joint
+    7400080: Take 001 //// L_indexFinger_03_joint
+    7400082: Take 001 //// L_indexFinger_04_joint
+    7400084: Take 001 //// L_threeFinger_01_joint
+    7400086: Take 001 //// L_threeFinger_02_joint
+    7400088: Take 001 //// L_threeFinger_03_joint
+    7400090: Take 001 //// L_threeFinger_04_joint
+    7400092: Take 001 //// R_clavicle_joint
+    7400094: Take 001 //// R_shoulder_joint
+    7400096: Take 001 //// R_elbow_joint
+    7400098: Take 001 //// R_hand_joint
+    7400100: Take 001 //// R_thumb_01_joint
+    7400102: Take 001 //// R_thumb_02_joint
+    7400104: Take 001 //// R_thumb_03_joint
+    7400106: Take 001 //// R_indexFinger_01_joint
+    7400108: Take 001 //// R_indexFinger_02_joint
+    7400110: Take 001 //// R_indexFinger_03_joint
+    7400112: Take 001 //// R_indexFinger_04_joint
+    7400114: Take 001 //// R_threeFinger_01_joint
+    7400116: Take 001 //// R_threeFinger_02_joint
+    7400118: Take 001 //// R_threeFinger_03_joint
+    7400120: Take 001 //// R_threeFinger_04_joint
+    7400122: Take 001 //// R_hip_joint
+    7400124: Take 001 //// R_knee_joint
+    7400126: Take 001 //// R_ankle_joint
+    7400128: Take 001 //// R_foot_joint
+    7400130: Take 001 //// L_hip_joint
+    7400132: Take 001 //// L_knee_joint
+    7400134: Take 001 //// L_ankle_joint
+    7400136: Take 001 //// L_foot_joint
+    7400138: Take 001 //// backpack_joint
+    7400140: Take 001 //// beltBuckle_joint
+    7400142: Take 001 //// beltBalls_joint
+    7400144: Take 001 //// scroll_joint
+    7400146: Take 001 //// scroll_mesh

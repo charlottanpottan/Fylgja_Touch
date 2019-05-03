@@ -1,0 +1,11 @@
+fileFormatVersion: 1
+guid: 8e0d121e37fbe4e41b23ceb6f9af13d1
+MonoImporter:
+  importerVersion: 1
+  defaultReferences:
+    m_DisplacementHeightMap: {fileID: 2800000, guid: 842521078b25448dbb95a9230b24f7fb,
+      type: 1}
+    m_2ndDisplacementHeightMap: {fileID: 2800000, guid: f7770134012f8464685631f8e1885c87,
+      type: 1}
+    m_SharedWaterMaterial: {fileID: 2100000, guid: 9d1900bd13d814f0daf797e37e36f636,
+      type: 2}

@@ -1,0 +1,43 @@
+fileFormatVersion: 1
+guid: b09afebe33208ae4b8d3ffbc4b4084a5
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 0
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    pPlane1:
+    - 100000
+    - 400000
+    - 3300000
+    - 2300000
+    pPlane2:
+    - 100002
+    - 400002
+    - 3300002
+    - 2300002
+    //RootNode:
+    - 100004
+    - 400004
+    - 11100000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: pPlane1
+    4300002: pPlane2

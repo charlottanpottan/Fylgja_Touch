@@ -1,0 +1,65 @@
+fileFormatVersion: 1
+guid: 590b5c79c5f0d4013ad682cda935b301
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    swordbump04:
+    - 100000
+    - 400000
+    swordbump05:
+    - 100002
+    - 400002
+    Sword_handle:
+    - 100004
+    - 400004
+    - 13700000
+    swordbump07:
+    - 100006
+    - 400006
+    swordbump08:
+    - 100008
+    - 400008
+    swordbump01:
+    - 100010
+    - 400010
+    swordbump06:
+    - 100012
+    - 400012
+    swordbump02:
+    - 100014
+    - 400014
+    swordbump03:
+    - 100016
+    - 400016
+    Sword_rigg1:Sword:
+    - 100018
+    - 400018
+    //RootNode:
+    - 100020
+    - 400020
+    - 11100000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Sword
+    4300002: Sword_rigg1:Sword
+    7400000: Take 001 //// BlacksmithSword

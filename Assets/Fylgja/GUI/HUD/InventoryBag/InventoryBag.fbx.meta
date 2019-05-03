@@ -1,0 +1,100 @@
+fileFormatVersion: 1
+guid: 08fdba04a33fe4c26a6db1f1c1e4ab88
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.03
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    joint14:
+    - 100000
+    - 400000
+    joint13:
+    - 100002
+    - 400002
+    hud_purse:
+    - 100004
+    - 400004
+    joint11:
+    - 100006
+    - 400006
+    joint21:
+    - 100008
+    - 400008
+    - 13700000
+    joint16:
+    - 100010
+    - 400010
+    joint12:
+    - 100012
+    - 400012
+    joint7:
+    - 100014
+    - 400014
+    joint15:
+    - 100016
+    - 400016
+    joint4:
+    - 100018
+    - 400018
+    joint10:
+    - 100020
+    - 400020
+    joint18:
+    - 100022
+    - 400022
+    joint17:
+    - 100024
+    - 400024
+    joint9:
+    - 100026
+    - 400026
+    joint1:
+    - 100028
+    - 400028
+    joint8:
+    - 100030
+    - 400030
+    joint6:
+    - 100032
+    - 400032
+    joint5:
+    - 100034
+    - 400034
+    joint20:
+    - 100036
+    - 400036
+    joint3:
+    - 100038
+    - 400038
+    joint19:
+    - 100040
+    - 400040
+    joint2:
+    - 100042
+    - 400042
+    //RootNode:
+    - 100044
+    - 400044
+    - 11100000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: hud_purse
+    7400000: Take 001 //// InventoryBag

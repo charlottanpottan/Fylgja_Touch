@@ -1,0 +1,41 @@
+fileFormatVersion: 1
+guid: fa9c9658937c6434c9cf832517fe43c9
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.03
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    //RootNode:
+    - 100000
+    - 400000
+    - 11100000
+    cursor_root:
+    - 100002
+    - 400002
+    - 13700000
+    cursor:
+    - 100004
+    - 400004
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Sword
+    4300002: GeneralCursor
+    4300004: cursor

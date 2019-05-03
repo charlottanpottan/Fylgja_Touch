@@ -1,0 +1,128 @@
+fileFormatVersion: 1
+guid: 036dc89908fe84d11bf1f01407e20123
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    FullscreenCheckbox:
+    - 100000
+    - 400000
+    - 3300000
+    - 2300000
+    //RootNode:
+    - 100002
+    - 400002
+    - 11100000
+    checkbox5:
+    - 100004
+    - 400004
+    - 3300002
+    - 2300002
+    checkbox4:
+    - 100006
+    - 400006
+    - 3300004
+    - 2300004
+    checkbox6:
+    - 100008
+    - 400008
+    - 3300006
+    - 2300006
+    checkbox2:
+    - 100010
+    - 400010
+    - 3300008
+    - 2300008
+    checkbox1:
+    - 100012
+    - 400012
+    - 3300010
+    - 2300010
+    checkbox3:
+    - 100014
+    - 400014
+    - 3300012
+    - 2300012
+    QuitGameButton:
+    - 100016
+    - 400016
+    - 3300014
+    - 2300014
+    SelectChapterButton:
+    - 100018
+    - 400018
+    - 3300016
+    - 2300016
+    QualityButton:
+    - 100020
+    - 400020
+    - 3300018
+    - 2300018
+    NewGameButton:
+    - 100022
+    - 400022
+    - 3300020
+    - 2300020
+    FullscreenButton:
+    - 100024
+    - 400024
+    - 3300022
+    - 2300022
+    ContinueButton:
+    - 100026
+    - 400026
+    - 3300024
+    - 2300024
+    MainMenuBG:
+    - 100028
+    - 400028
+    - 3300026
+    - 2300026
+    SubtitlesCheckbox:
+    - 100030
+    - 400030
+    - 3300028
+    - 2300028
+    SubtitlesButton:
+    - 100032
+    - 400032
+    - 3300030
+    - 2300030
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: MainMenuBG
+    4300002: FullscreenButton
+    4300004: NewGameButton
+    4300006: ContinueButton
+    4300008: SelectChapterButton
+    4300010: QuitGameButton
+    4300012: QualityButton
+    4300014: checkbox1
+    4300016: checkbox2
+    4300018: checkbox3
+    4300020: checkbox4
+    4300022: checkbox5
+    4300024: checkbox6
+    4300026: FullscreenCheckbox
+    4300028: SubtitlesCheckbox
+    4300030: Subtitles
+    4300032: SubtitlesButton

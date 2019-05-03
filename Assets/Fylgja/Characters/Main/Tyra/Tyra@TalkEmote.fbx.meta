@@ -1,0 +1,252 @@
+fileFormatVersion: 1
+guid: 64a71cb7ccc594b8181214e4bf290cc8
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 1
+    splitAnimations: 0
+  nodeInfo:
+    scroll_joint:
+    - 100000
+    - 400000
+    beltBuckle_joint:
+    - 100002
+    - 400002
+    L_foot_joint:
+    - 100006
+    - 400006
+    beltBalls_joint:
+    - 100008
+    - 400008
+    L_knee_joint:
+    - 100010
+    - 400010
+    backpack_joint:
+    - 100012
+    - 400012
+    R_foot_joint:
+    - 100014
+    - 400014
+    L_ankle_joint:
+    - 100016
+    - 400016
+    R_knee_joint:
+    - 100018
+    - 400018
+    L_hip_joint:
+    - 100020
+    - 400020
+    R_threeFinger_04_joint:
+    - 100022
+    - 400022
+    R_ankle_joint:
+    - 100024
+    - 400024
+    R_threeFinger_02_joint:
+    - 100026
+    - 400026
+    R_hip_joint:
+    - 100028
+    - 400028
+    R_indexFinger_04_joint:
+    - 100030
+    - 400030
+    R_threeFinger_03_joint:
+    - 100032
+    - 400032
+    R_indexFinger_02_joint:
+    - 100034
+    - 400034
+    R_threeFinger_01_joint:
+    - 100036
+    - 400036
+    R_thumb_03_joint:
+    - 100038
+    - 400038
+    R_indexFinger_03_joint:
+    - 100040
+    - 400040
+    R_thumb_01_joint:
+    - 100042
+    - 400042
+    R_indexFinger_01_joint:
+    - 100044
+    - 400044
+    R_elbow_joint:
+    - 100046
+    - 400046
+    R_thumb_02_joint:
+    - 100048
+    - 400048
+    R_clavicle_joint:
+    - 100050
+    - 400050
+    R_hand_joint:
+    - 100052
+    - 400052
+    L_threeFinger_03_joint:
+    - 100054
+    - 400054
+    R_shoulder_joint:
+    - 100056
+    - 400056
+    L_threeFinger_01_joint:
+    - 100058
+    - 400058
+    L_threeFinger_04_joint:
+    - 100060
+    - 400060
+    L_indexFinger_03_joint:
+    - 100062
+    - 400062
+    L_threeFinger_02_joint:
+    - 100064
+    - 400064
+    L_indexFinger_01_joint:
+    - 100066
+    - 400066
+    L_indexFinger_04_joint:
+    - 100068
+    - 400068
+    L_thumb_02_joint:
+    - 100070
+    - 400070
+    L_indexFinger_02_joint:
+    - 100072
+    - 400072
+    L_hand_joint:
+    - 100074
+    - 400074
+    L_thumb_03_joint:
+    - 100076
+    - 400076
+    L_shoulder_joint:
+    - 100078
+    - 400078
+    L_thumb_01_joint:
+    - 100080
+    - 400080
+    R_lip_bot_joint:
+    - 100082
+    - 400082
+    L_elbow_joint:
+    - 100084
+    - 400084
+    R_cheek_joint:
+    - 100086
+    - 400086
+    L_clavicle_joint:
+    - 100088
+    - 400088
+    R_eyeBrow_out_joint:
+    - 100090
+    - 400090
+    R_lip_top_joint:
+    - 100092
+    - 400092
+    R_eyeBrow_in_joint:
+    - 100094
+    - 400094
+    R_low_eyeLid_joint:
+    - 100096
+    - 400096
+    R_eye_joint:
+    - 100098
+    - 400098
+    R_eyeLid_joint:
+    - 100100
+    - 400100
+    L_eyeBrow_out_joint:
+    - 100102
+    - 400102
+    R_eyeBrow_mid_joint:
+    - 100104
+    - 400104
+    L_eyeBrow_in_joint:
+    - 100106
+    - 400106
+    hairTop_joint:
+    - 100108
+    - 400108
+    L_eye_joint:
+    - 100110
+    - 400110
+    L_eyeLid_joint:
+    - 100112
+    - 400112
+    M_lip_top_joint:
+    - 100114
+    - 400114
+    L_eyeBrow_mid_joint:
+    - 100116
+    - 400116
+    chin_joint:
+    - 100118
+    - 400118
+    nose_joint:
+    - 100120
+    - 400120
+    L_lip_top_joint:
+    - 100122
+    - 400122
+    M_lip_bot_joint:
+    - 100124
+    - 400124
+    L_low_eyeLid_joint:
+    - 100126
+    - 400126
+    L_lip_bot_joint:
+    - 100128
+    - 400128
+    head_joint:
+    - 100130
+    - 400130
+    L_cheek_joint:
+    - 100132
+    - 400132
+    spine_04:
+    - 100134
+    - 400134
+    hair_joint:
+    - 100136
+    - 400136
+    pelvis_joint:
+    - 100138
+    - 400138
+    spine_02:
+    - 100140
+    - 400140
+    spine_03:
+    - 100142
+    - 400142
+    //RootNode:
+    - 100144
+    - 400144
+    - 11100000
+    spine_01:
+    - 100146
+    - 400146
+    movement:
+    - 100148
+    - 400148
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: scroll_mesh
+    7400000: Take 001 //// Tyra@TalkEmote

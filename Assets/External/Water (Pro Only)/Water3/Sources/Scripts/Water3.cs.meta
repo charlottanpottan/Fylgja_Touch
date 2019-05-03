@@ -1,0 +1,8 @@
+fileFormatVersion: 1
+guid: 29474e52d1a8d4518a4aa93dfade13ac
+MonoImporter:
+  importerVersion: 1
+  defaultReferences:
+    m_WaterManager: {}
+    lightTransform: {}
+    m_Water3Material: {fileID: 2100000, guid: 9d1900bd13d814f0daf797e37e36f636, type: 2}

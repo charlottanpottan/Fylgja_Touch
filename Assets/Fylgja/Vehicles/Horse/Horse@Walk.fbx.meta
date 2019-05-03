@@ -1,0 +1,158 @@
+fileFormatVersion: 1
+guid: d378cd63453c54a9b89ca20cb7856f66
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 2
+    splitAnimations: 1
+  nodeInfo:
+    L_R_ankle_joint:
+    - 100000
+    - 400000
+    L_R_hip_joint:
+    - 100002
+    - 400002
+    L_R_foot_joint:
+    - 100004
+    - 400004
+    R_R_ankle_joint:
+    - 100006
+    - 400006
+    L_R_knee_joint:
+    - 100008
+    - 400008
+    R_R_hip_joint:
+    - 100010
+    - 400010
+    R_R_foot_joint:
+    - 100012
+    - 400012
+    lower_spine_01:
+    - 100014
+    - 400014
+    R_R_knee_joint:
+    - 100016
+    - 400016
+    L_F_ankle_joint:
+    - 100018
+    - 400018
+    lower_spine_02:
+    - 100020
+    - 400020
+    L_F_hip_joint:
+    - 100022
+    - 400022
+    L_F_foot_joint:
+    - 100024
+    - 400024
+    R_F_ankle_joint:
+    - 100026
+    - 400026
+    L_F_knee_joint:
+    - 100028
+    - 400028
+    R_F_hip_joint:
+    - 100030
+    - 400030
+    R_F_foot_joint:
+    - 100032
+    - 400032
+    neck_01:
+    - 100034
+    - 400034
+    R_F_knee_joint:
+    - 100036
+    - 400036
+    upper_spine_02:
+    - 100038
+    - 400038
+    head_joint:
+    - 100040
+    - 400040
+    pelvis_joint:
+    - 100042
+    - 400042
+    upper_spine_03:
+    - 100044
+    - 400044
+    //RootNode:
+    - 100046
+    - 400046
+    - 11100000
+    upper_spine_01:
+    - 100048
+    - 400048
+    movement:
+    - 100050
+    - 400050
+    head_R_ear:
+    - 100052
+    - 400052
+    tail_02:
+    - 100054
+    - 400054
+    Reins_grip:
+    - 100056
+    - 400056
+    tail_05:
+    - 100058
+    - 400058
+    tail_01:
+    - 100060
+    - 400060
+    head_mane:
+    - 100062
+    - 400062
+    Reins_mid:
+    - 100064
+    - 400064
+    mane_base:
+    - 100066
+    - 400066
+    mane1_end:
+    - 100068
+    - 400068
+    mane1_base:
+    - 100070
+    - 400070
+    Reins_base:
+    - 100072
+    - 400072
+    tail_03:
+    - 100074
+    - 400074
+    head_L_ear:
+    - 100076
+    - 400076
+    mane_end:
+    - 100078
+    - 400078
+    tail_08:
+    - 100080
+    - 400080
+    tail_07:
+    - 100082
+    - 400082
+    Horse_RiderSocket:
+    - 100084
+    - 400084
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    7400000: Take 001 //// Horse@Walk

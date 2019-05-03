@@ -1,0 +1,56 @@
+fileFormatVersion: 1
+guid: 3afd72e9a71104e2cb94206654d9143d
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.003
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    Cog1:
+    - 100000
+    - 400000
+    - 13700000
+    //RootNode:
+    - 100002
+    - 400002
+    - 11100000
+    Cog1Joint:
+    - 100004
+    - 400004
+    Cog2Joint:
+    - 100006
+    - 400006
+    LeverJoint:
+    - 100008
+    - 400008
+    Lever:
+    - 100010
+    - 400010
+    - 13700002
+    Cog2:
+    - 100012
+    - 400012
+    - 13700004
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Cog1
+    4300002: Cog2
+    4300004: Lever
+    7400000: Take 001 //// MouseUseCursor

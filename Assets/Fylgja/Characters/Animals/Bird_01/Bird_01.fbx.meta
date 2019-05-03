@@ -1,0 +1,51 @@
+fileFormatVersion: 1
+guid: 39b566a1fdfa842279d0a2667c7d3288
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.015
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    RightWingBase:
+    - 100000
+    - 400000
+    lowpolybird:
+    - 100002
+    - 400002
+    LeftWingTip1:
+    - 100004
+    - 400004
+    RightWingTip:
+    - 100006
+    - 400006
+    //RootNode:
+    - 100008
+    - 400008
+    - 11100000
+    LeftWingBase:
+    - 100010
+    - 400010
+    Root_Lowpolybird:
+    - 100012
+    - 400012
+    - 13700000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: lowpolybird
