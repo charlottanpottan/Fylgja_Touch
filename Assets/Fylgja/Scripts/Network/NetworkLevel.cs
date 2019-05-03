@@ -16,7 +16,7 @@ public class NetworkLevel : MonoBehaviour
 
 	public void StartLoadLevel(LevelId id)
 	{
-		networkView.RPC("LoadLevel", RPCMode.AllBuffered, id.levelIdValue(), levelInstanceNumber + 1);
+		GetComponent<NetworkView>().RPC("LoadLevel", RPCMode.AllBuffered, id.levelIdValue(), levelInstanceNumber + 1);
 	}
 
 	[RPC]

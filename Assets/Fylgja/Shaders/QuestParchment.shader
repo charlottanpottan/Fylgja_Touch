@@ -81,6 +81,7 @@ float2 uv_QuestTex;
 
 
 			void vert (inout appdata_full v, out Input o) {
+            UNITY_INITIALIZE_OUTPUT(Input,o);
 float4 Vertex_VertexOutputMaster0_0_NoInput = float4(0,0,0,0);
 float4 Vertex_VertexOutputMaster0_1_NoInput = float4(0,0,0,0);
 float4 Vertex_VertexOutputMaster0_2_NoInput = float4(0,0,0,0);
@@ -99,12 +100,12 @@ float4 Vertex_VertexOutputMaster0_3_NoInput = float4(0,0,0,0);
 				o.Alpha = 1.0;
 float4 Pixel_Tex2D1=tex2D(_MainTex,(IN.uv_MainTex.xyxy).xy);
 float4 Pixel_Tex2D0=tex2D(_QuestTex,(IN.uv_QuestTex.xyxy).xy);
-float4 Pixel_Multiply0=float4( Pixel_Tex2D0.a) * float4( 10);
+float4 Pixel_Multiply0=float4( Pixel_Tex2D0.a,Pixel_Tex2D0.a,Pixel_Tex2D0.a,Pixel_Tex2D0.a) * float4( 10,10,10,10);
 float4 Pixel_Add0=Pixel_Multiply0 + _QuestProgression.xxxx;
 float4 Pixel_Saturate0=saturate(Pixel_Add0);
 float4 Pixel_Lerp0=lerp(Pixel_Tex2D1,Pixel_Tex2D0,Pixel_Saturate0);
 float4 Pixel_Multiply1=Pixel_Lerp0 * _Color;
-float4 Pixel_Add1=float4( Pixel_Tex2D1.a) + _AlphaCutoff.xxxx;
+float4 Pixel_Add1=float4( Pixel_Tex2D1.a,Pixel_Tex2D1.a,Pixel_Tex2D1.a,Pixel_Tex2D1.a) + _AlphaCutoff.xxxx;
 float4 Pixel_Master0_1_NoInput = float4(0,0,1,1);
 float4 Pixel_Master0_2_NoInput = float4(0,0,0,0);
 float4 Pixel_Master0_3_NoInput = float4(0,0,0,0);

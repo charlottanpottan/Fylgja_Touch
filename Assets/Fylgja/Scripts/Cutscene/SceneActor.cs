@@ -20,15 +20,15 @@ public class SceneActor : MonoBehaviour
 	{
 		if (mouthMovement)
 		{
-			animation[mouthMovement.name].layer = 3;
+			GetComponent<Animation>()[mouthMovement.name].layer = 3;
 		}
 		if (randomGesture)
 		{
-			animation[randomGesture.name].layer = 2;
+			GetComponent<Animation>()[randomGesture.name].layer = 2;
 		}
 		if (idleAnimation)
 		{
-			animation[idleAnimation.name].layer = 1;
+			GetComponent<Animation>()[idleAnimation.name].layer = 1;
 		}
 	}
 
@@ -45,15 +45,15 @@ public class SceneActor : MonoBehaviour
 	public void PlayCustomAnimation(AnimationClip clip, float customAnimationCrossfadeTime)
 	{
 		StopIdleAnimation();
-		animation[clip.name].layer = 2;
+		GetComponent<Animation>()[clip.name].layer = 2;
 		customAnimationName = clip.name;
 		if (customAnimationCrossfadeTime > 0)
 		{
-			animation.CrossFade(clip.name, customAnimationCrossfadeTime);
+			GetComponent<Animation>().CrossFade(clip.name, customAnimationCrossfadeTime);
 		}
 		else
 		{
-			animation.Play(clip.name);
+			GetComponent<Animation>().Play(clip.name);
 		}
 	}
 
@@ -74,7 +74,7 @@ public class SceneActor : MonoBehaviour
 		isInScene = false;
 		if (customAnimationName != null)
 		{
-			animation.Stop(customAnimationName);
+			GetComponent<Animation>().Stop(customAnimationName);
 			customAnimationName = null;
 		}
 		StopIdleAnimation();
@@ -98,25 +98,25 @@ public class SceneActor : MonoBehaviour
 			return;
 		}
 		Debug.Log("IDLE ANIMATION:" + idleAnimation.name + " for:" + name);
-		animation.CrossFade(idleAnimation.name);
+		GetComponent<Animation>().CrossFade(idleAnimation.name);
 	}
 
 	public void StopIdleAnimation()
 	{
 		Debug.Log("STOP IDLE ANIMATION:" + name);
-		animation.Stop(idleAnimation.name);
+		GetComponent<Animation>().Stop(idleAnimation.name);
 	}
 
 	public void StartFacialAnimation()
 	{
 		if(mouthMovement != null)
-			animation.CrossFade(mouthMovement.name);
+			GetComponent<Animation>().CrossFade(mouthMovement.name);
 	}
 
 	public void StopFacialAnimation()
 	{
 		if(mouthMovement != null)
-			animation.Stop(mouthMovement.name);
+			GetComponent<Animation>().Stop(mouthMovement.name);
 	}
 
 	public void RandomGesture()
@@ -125,6 +125,6 @@ public class SceneActor : MonoBehaviour
 		{
 			return;
 		}
-		animation.CrossFade(randomGesture.name);
+		GetComponent<Animation>().CrossFade(randomGesture.name);
 	}
 }

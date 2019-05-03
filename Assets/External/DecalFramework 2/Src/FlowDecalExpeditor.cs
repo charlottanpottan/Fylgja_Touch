@@ -63,7 +63,7 @@ public class FlowDecalExpeditor : MonoBehaviour
     private void Start()
     {
         // Disable renderer first start(artefacts)
-        renderer.enabled = false;
+        GetComponent<Renderer>().enabled = false;
 
         _gravityShader = Shader.Find("Frameshift/Decal/1.5/Gravity");
         if(!_gravityShader)
@@ -117,7 +117,7 @@ public class FlowDecalExpeditor : MonoBehaviour
         if (Time.frameCount >= frameOnStart + _decalType.i_growFramesCount)
             _takeHeightFromTexture = false;
 
-        renderer.enabled = true;
+        GetComponent<Renderer>().enabled = true;
     }
     private void OnDisable()
     {
@@ -133,7 +133,7 @@ public class FlowDecalExpeditor : MonoBehaviour
         gGravityCam.transform.parent = this.transform;
         gGravityCam.transform.localPosition = Vector3.zero;
         gGravityCam.transform.localRotation = Quaternion.identity;
-        gravityCamera = gGravityCam.camera;
+        gravityCamera = gGravityCam.GetComponent<Camera>();
         gravityCamera.enabled = false;
         gravityCamera.hideFlags = HideFlags.HideAndDontSave;
         gravityCamera.orthographic = true;
@@ -169,9 +169,9 @@ public class FlowDecalExpeditor : MonoBehaviour
     /// Setup Material
     private void SetupMaterials()
     {
-        renderer.material.SetTexture("_HeightMap", i_gravityMap2);
+        GetComponent<Renderer>().material.SetTexture("_HeightMap", i_gravityMap2);
         // Random offset params
-        renderer.material.SetVector("_fMainTexUVParams", _mainTexUVParams);
+        GetComponent<Renderer>().material.SetVector("_fMainTexUVParams", _mainTexUVParams);
     }
 }
 /// Type for flow

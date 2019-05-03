@@ -399,9 +399,9 @@ public class AttachedPathScript : MonoBehaviour
 		
 		// we don't want to see the mesh
 		if(!road)
-			pathMesh.renderer.enabled = false;
+			pathMesh.GetComponent<Renderer>().enabled = false;
 		else
-			pathMesh.renderer.enabled = true;
+			pathMesh.GetComponent<Renderer>().enabled = true;
 		
 		transform.localScale = new Vector3(1,1,1);
 	}

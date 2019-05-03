@@ -19,7 +19,7 @@ public class VolumeBuoyancy : MonoBehaviour
 
 	void UpdateBuoyancy()
 	{
-		var waterLevel = waterSurface.collider.bounds.max.y;
+		var waterLevel = waterSurface.GetComponent<Collider>().bounds.max.y;
 		var distanceFromWaterLevel = transform.position.y - waterLevel;
 
 		var percentUnderWater = Mathf.Clamp01((-distanceFromWaterLevel + 0.5f * size.y) / size.y);
@@ -29,25 +29,25 @@ public class VolumeBuoyancy : MonoBehaviour
 
 		buoyancyPos = UpdateWaveMotion(buoyancyPos, waterSurface);
 
-		rigidbody.AddForceAtPosition(-volume * percentUnderWater * Physics.gravity, buoyancyPos);
+		GetComponent<Rigidbody>().AddForceAtPosition(-volume * percentUnderWater * Physics.gravity, buoyancyPos);
 	}
 
 	void UpdateDrag()
 	{
-		var waterLevel = waterSurface.collider.bounds.max.y;
+		var waterLevel = waterSurface.GetComponent<Collider>().bounds.max.y;
 		var distanceFromWaterLevel = transform.position.y - waterLevel;
 
 		var percentUnderWater = Mathf.Clamp01((-distanceFromWaterLevel + 0.5f * size.y) / size.y);
 
-		var dragDirection = transform.InverseTransformDirection(rigidbody.velocity);
+		var dragDirection = transform.InverseTransformDirection(GetComponent<Rigidbody>().velocity);
 		var dragForces = Vector3.Scale(-dragDirection, drag);
 
 		var depthUnderWater = Mathf.Abs(transform.forward.y) * size.z * 0.5f + Mathf.Abs(transform.up.y) * size.y * 0.5f;
 
 		var dragAttackPosition = new Vector3(transform.position.x, waterLevel - depthUnderWater, transform.position.z);
 
-		rigidbody.AddForceAtPosition(transform.TransformDirection(dragForces) * rigidbody.velocity.magnitude * (1.0f + percentUnderWater * (waterSurface.waterDragFactor - 1.0f)), dragAttackPosition);
-		rigidbody.AddForce(transform.TransformDirection(dragForces) * 500.0f);
+		GetComponent<Rigidbody>().AddForceAtPosition(transform.TransformDirection(dragForces) * GetComponent<Rigidbody>().velocity.magnitude * (1.0f + percentUnderWater * (waterSurface.waterDragFactor - 1.0f)), dragAttackPosition);
+		GetComponent<Rigidbody>().AddForce(transform.TransformDirection(dragForces) * 500.0f);
 	}
 
 	Vector3 UpdateWaveMotion(Vector3 buoyancyPos, FloatableWater waterSurface)

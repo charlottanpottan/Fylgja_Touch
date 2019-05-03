@@ -7,16 +7,16 @@ public class SetRenderQueue : MonoBehaviour {
 	public bool applyToChildren = false;
 	
 	void Awake () {
-		if (!renderer || !renderer.sharedMaterial || applyToChildren){
+		if (!GetComponent<Renderer>() || !GetComponent<Renderer>().sharedMaterial || applyToChildren){
 			if(applyToChildren){
 				foreach (Transform child in transform){
-					child.renderer.sharedMaterial.renderQueue = queue;
+					child.GetComponent<Renderer>().sharedMaterial.renderQueue = queue;
 				}
 			} else { 
 				print("No renderer found on this GameObject. Check the applyToChildren box to apply settings to children " + gameObject.name); 
 			} 	 
 		} else {
-			renderer.sharedMaterial.renderQueue = queue;
+			GetComponent<Renderer>().sharedMaterial.renderQueue = queue;
 		}
 	}
 }

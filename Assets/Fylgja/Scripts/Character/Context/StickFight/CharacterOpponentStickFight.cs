@@ -43,17 +43,17 @@ public class CharacterOpponentStickFight : StickFighter
 		
 		stickToActivate.active = true;
 		
-		animation[blockPose.name].layer = 4;
-		animation[blockLeft.name].layer = 5;
-		animation[blockRight.name].layer = 5;
-		animation[struckLeft.name].layer = 5;
-		animation[struckRight.name].layer = 5;
-		animation[hitLeft.name].layer = 5;
-		animation[hitRight.name].layer = 5;
-		animation[combinationPunch.name].layer = 5;
-		animation[dizzyAfterCombination.name].layer = 5;
+		GetComponent<Animation>()[blockPose.name].layer = 4;
+		GetComponent<Animation>()[blockLeft.name].layer = 5;
+		GetComponent<Animation>()[blockRight.name].layer = 5;
+		GetComponent<Animation>()[struckLeft.name].layer = 5;
+		GetComponent<Animation>()[struckRight.name].layer = 5;
+		GetComponent<Animation>()[hitLeft.name].layer = 5;
+		GetComponent<Animation>()[hitRight.name].layer = 5;
+		GetComponent<Animation>()[combinationPunch.name].layer = 5;
+		GetComponent<Animation>()[dizzyAfterCombination.name].layer = 5;
 		
-		animation.Play(blockPose.name);
+		GetComponent<Animation>().Play(blockPose.name);
 		
 		base.StickFightMinigameStart(minigame);
 	}
@@ -61,14 +61,14 @@ public class CharacterOpponentStickFight : StickFighter
 	void OnStickFightMinigameClose()
 	{
 		stickToActivate.active = false;
-		animation[blockPose.name].layer = 1;
+		GetComponent<Animation>()[blockPose.name].layer = 1;
 		Destroy(barAnim.gameObject);
 		barAnim = null;
 	}
 
 	void CheckCombinationPunchDone()
 	{
-		if (combinationPunchInProgress && !animation.IsPlaying(combinationPunch.name))
+		if (combinationPunchInProgress && !GetComponent<Animation>().IsPlaying(combinationPunch.name))
 		{
 			combinationPunchInProgress = false;
 			SendMessage("OnStickCombinationPunchDone");
@@ -81,15 +81,15 @@ public class CharacterOpponentStickFight : StickFighter
 
 		if (state == StickFighterState.Unknown)
 		{
-			if (animation.IsPlaying(combinationPunch.name))
+			if (GetComponent<Animation>().IsPlaying(combinationPunch.name))
 			{
 				return StickFighterState.CombinationPunch;
 			}
-			else if (animation.IsPlaying(dizzyAfterCombination.name))
+			else if (GetComponent<Animation>().IsPlaying(dizzyAfterCombination.name))
 			{
 				return StickFighterState.Dizzy;
 			}
-			else if (animation.IsPlaying(blockLeft.name) || animation.IsPlaying(blockRight.name))
+			else if (GetComponent<Animation>().IsPlaying(blockLeft.name) || GetComponent<Animation>().IsPlaying(blockRight.name))
 			{
 				return StickFighterState.Blocking;
 			}
@@ -105,8 +105,8 @@ public class CharacterOpponentStickFight : StickFighter
 	public void CombinationPunch()
 	{
 		SendMessage("OnStickCombinationPunchStart");
-		animation.CrossFade(combinationPunch.name);
-		animation.PlayQueued(dizzyAfterCombination.name);
+		GetComponent<Animation>().CrossFade(combinationPunch.name);
+		GetComponent<Animation>().PlayQueued(dizzyAfterCombination.name);
 		combinationPunchInProgress = true;
 	}
 
@@ -138,7 +138,7 @@ public class CharacterOpponentStickFight : StickFighter
 		{
 			if(state != StickFighterState.StartingLeftPunch && state != StickFighterState.CombinationPunch && state != StickFighterState.LeftPunch && state != StickFighterState.RightPunch)
 			{
-				animation.CrossFade(blockLeft.name, blockCrossFadeTime);
+				GetComponent<Animation>().CrossFade(blockLeft.name, blockCrossFadeTime);
 			}
 			SendMessage("OnStickBlockLeft");
 		}
@@ -159,7 +159,7 @@ public class CharacterOpponentStickFight : StickFighter
 		{
 			if(state != StickFighterState.StartingRightPunch && state != StickFighterState.CombinationPunch && state != StickFighterState.LeftPunch && state != StickFighterState.RightPunch)
 			{
-				animation.CrossFade(blockRight.name, blockCrossFadeTime);
+				GetComponent<Animation>().CrossFade(blockRight.name, blockCrossFadeTime);
 			}
 			SendMessage("OnStickBlockRight");
 		}

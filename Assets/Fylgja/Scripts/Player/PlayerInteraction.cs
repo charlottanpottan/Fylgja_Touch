@@ -237,12 +237,12 @@ public class PlayerInteraction : MonoBehaviour
 		DebugUtilities.Assert(cameraAttachment.cameraRoot != null, "Must have a valid camera-root");
 		DebugUtilities.Assert(cameraApplicator != null, "Must set a camera applicator");
 		cameraApplicator.SetObjectToFollow(cameraAttachment.cameraRoot);
-		AttachListenerToTransform(objectToFollow.transform.FindChild("ListenerTransform"));
+		AttachListenerToTransform(objectToFollow.transform.Find("ListenerTransform"));
 
 		var logicCamera = gameplayCameraToSpawnObject.GetComponentInChildren<PlayerCamera>();
 		AddCameraToStack(logicCamera, "GameplayCamera");
 
-		return cameraApplicator.camera;
+		return cameraApplicator.GetComponent<Camera>();
 	}
 
 
@@ -258,7 +258,7 @@ public class PlayerInteraction : MonoBehaviour
 			minimap = hud.GetComponentInChildren<Minimap>();
 			subtitles = hud.GetComponentInChildren<Subtitles>();
 			var playerCamera = SetupGameplayCamera(vehicle.gameObject, vehicle.transform);
-			minimap.cameraToFollow = playerCamera.camera;
+			minimap.cameraToFollow = playerCamera.GetComponent<Camera>();
 
 			var avatarQuest = vehicle.GetComponentInChildren<AvatarQuest>();
 
@@ -329,7 +329,7 @@ public class PlayerInteraction : MonoBehaviour
 			CalculateTargetPositionAndRotation(out walkPosition, out walkRotation, hitPoint);
 
 			var directionToAvatar = (avatar.transform.position - interactable.transform.position).normalized;
-			var radius = interactable.collider.bounds.size.magnitude;
+			var radius = interactable.GetComponent<Collider>().bounds.size.magnitude;
 			walkPosition = interactable.transform.position + directionToAvatar * radius;
 			walkRotation = Quaternion.LookRotation(-directionToAvatar);
 
@@ -608,7 +608,7 @@ public class PlayerInteraction : MonoBehaviour
 	void UpdateInteraction()
 	{
 		var showCursor = allowedToUseUI || avatarInteractionEnabled;
-		Screen.showCursor = showCursor;
+		Cursor.visible = showCursor;
 	}
 
 	public void OnAllowedToInteract(bool move)

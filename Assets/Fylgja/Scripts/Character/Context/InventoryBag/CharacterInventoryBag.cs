@@ -16,7 +16,7 @@ public class CharacterInventoryBag : MonoBehaviour
 	
 	void Start()
 	{
-		inventoryCamera = GameObject.FindGameObjectWithTag("InventoryCamera").camera;
+		inventoryCamera = GameObject.FindGameObjectWithTag("InventoryCamera").GetComponent<Camera>();
 		transformToSpawnBag = GameObject.FindGameObjectWithTag("InventoryBagLocator").transform;
 	}
 

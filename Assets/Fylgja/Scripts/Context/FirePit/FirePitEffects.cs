@@ -21,13 +21,13 @@ public class FirePitEffects : MonoBehaviour
 
 	void Start()
 	{
-		AnimationState state = animation[fire.name];
+		AnimationState state = GetComponent<Animation>()[fire.name];
 
 		state.wrapMode = WrapMode.ClampForever;
 		state.weight = 1.0f;
 		state.enabled = true;
 		state.speed = 0;
-		audio.loop = true;
+		GetComponent<AudioSource>().loop = true;
 	}
 
 	void Update()
@@ -37,7 +37,7 @@ public class FirePitEffects : MonoBehaviour
 	void OnFirePitStrength(float strength)
 	{
 		// Debug.Log("Animation Strength:" + strength);
-		AnimationState state = animation[fire.name];
+		AnimationState state = GetComponent<Animation>()[fire.name];
 
 		state.normalizedTime = strength;
 	}
@@ -65,7 +65,7 @@ public class FirePitEffects : MonoBehaviour
 
 	void OnFirePitDied()
 	{
-		audio.Stop();
+		GetComponent<AudioSource>().Stop();
 		TriggerEffect(fireDied);
 	}
 
@@ -75,15 +75,15 @@ public class FirePitEffects : MonoBehaviour
 
 		TriggerEffect(ignite);
 
-		audio.clip = normalFlame;
-		audio.Play();
+		GetComponent<AudioSource>().clip = normalFlame;
+		GetComponent<AudioSource>().Play();
 	}
 
 	void OnFirePitFullFlame()
 	{
 		Debug.Log("Effect: full flame");
-		audio.clip = fullFlame;
-		audio.Play();
+		GetComponent<AudioSource>().clip = fullFlame;
+		GetComponent<AudioSource>().Play();
 	}
 
 	void OnFirePitLostFullFlame()
@@ -94,8 +94,8 @@ public class FirePitEffects : MonoBehaviour
 	
 	void ResetEffects()
 	{
-		AnimationState state = animation[fire.name];
+		AnimationState state = GetComponent<Animation>()[fire.name];
 		state.normalizedTime = 0;
-		audio.Stop();
+		GetComponent<AudioSource>().Stop();
 	}
 }

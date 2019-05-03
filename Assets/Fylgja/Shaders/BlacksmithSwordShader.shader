@@ -87,6 +87,7 @@ float3 viewDir;
 
 
 			void vert (inout appdata_full v, out Input o) {
+                         UNITY_INITIALIZE_OUTPUT(Input,o);
 float4 VertexOutputMaster0_0_NoInput = float4(0,0,0,0);
 float4 VertexOutputMaster0_1_NoInput = float4(0,0,0,0);
 float4 VertexOutputMaster0_2_NoInput = float4(0,0,0,0);
@@ -105,11 +106,12 @@ float4 VertexOutputMaster0_3_NoInput = float4(0,0,0,0);
 				o.Alpha = 1.0;
 float4 Tex2D0=tex2D(_MainTex,(IN.uv_MainTex.xyxy).xy);
 float4 Multiply2=Tex2D0 * _Color;
-float4 Multiply3=Tex2D0 * float4(_AlbedoIntoEmissive);
+float4 Multiply3=Tex2D0 * float4(_AlbedoIntoEmissive,_AlbedoIntoEmissive,_AlbedoIntoEmissive,_AlbedoIntoEmissive);
 float4 Fresnel0_1_NoInput = float4(0,0,1,1);
-float4 Fresnel0=float4( 1.0 - dot( normalize( float4(IN.viewDir, 1.0).xyz), normalize( Fresnel0_1_NoInput.xyz ) ) );
-float4 Pow0=pow(Fresnel0,float4(_RimPower));
-float4 Multiply1=Pow0 * float4(_RimStrength);
+float val = 1.0 - dot( normalize( float4(IN.viewDir, 1.0).xyz), normalize( Fresnel0_1_NoInput.xyz ) );
+float4 Fresnel0=float4( val,val,val,val );
+float4 Pow0=pow(Fresnel0,float4(_RimPower,_RimPower,_RimPower,_RimPower));
+float4 Multiply1=Pow0 * float4(_RimStrength,_RimStrength,_RimStrength,_RimStrength);
 float4 Lerp0=lerp(_RimColor_01,_RimColor_02,Multiply1);
 float4 Add0=Multiply3 + Lerp0;
 float4 Multiply0=Add0 * _Emissive.xxxx;

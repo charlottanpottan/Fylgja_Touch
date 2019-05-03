@@ -125,7 +125,7 @@ public class AnimationsWatcher : ScriptableObject
     public static List<GameObject> GetGameObjectsWithAnimation(GameObject root, bool includeChildren)
     {
         List<GameObject> animatedObjects = new List<GameObject>();
-        if (root.animation != null)
+        if (root.GetComponent<Animation>() != null)
         {
             animatedObjects.Add(root);
         }

@@ -19,7 +19,7 @@ public class BlacksmithTimer : MonoBehaviour
 
 	void SetAnimationAt(float t)
 	{
-		var anim = animation;
+		var anim = GetComponent<Animation>();
 
 		AnimationState state = anim[timerAnimation.name];
 

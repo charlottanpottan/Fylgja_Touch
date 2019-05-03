@@ -14,7 +14,7 @@ public class CharacterQuestParchment : MonoBehaviour
 	void Start()
 	{
 		transformToSpawnParchement = GameObject.FindGameObjectWithTag("QuestParchmentLocator").transform;
-		parchmentCamera = GameObject.FindGameObjectWithTag("QuestParchmentCamera").camera;
+		parchmentCamera = GameObject.FindGameObjectWithTag("QuestParchmentCamera").GetComponent<Camera>();
 	}
 
 	void OnQuestParchmentOpen()

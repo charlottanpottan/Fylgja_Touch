@@ -88,9 +88,9 @@ public class DecalDestroyer : MonoBehaviour
             float delta = Time.time - _startFadingTime;
             i = (_fadingTime - delta) / _fadingTime;
 
-            Color color = renderer.material.color;
+            Color color = GetComponent<Renderer>().material.color;
             color.a = i;
-            renderer.material.color = color;
+            GetComponent<Renderer>().material.color = color;
 
             yield return null;
         }
@@ -100,7 +100,7 @@ public class DecalDestroyer : MonoBehaviour
     private void ClearAndDestroy()
     {
         Destroy(GetComponent<MeshFilter>().sharedMesh);
-        Destroy(renderer.material);
+        Destroy(GetComponent<Renderer>().material);
         Destroy(this.gameObject);
     }
 }

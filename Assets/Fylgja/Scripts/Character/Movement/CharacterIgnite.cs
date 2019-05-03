@@ -50,8 +50,8 @@ public class CharacterIgnite : MonoBehaviour
 			dontMoveModifier = new AllowedToMoveModifier("igniting");
 			avatar.AddAllowedToMoveModifier(dontMoveModifier);
 		}
-		animation.CrossFade(ignite.name);
-		animation.PlayQueued(poking.name);
+		GetComponent<Animation>().CrossFade(ignite.name);
+		GetComponent<Animation>().PlayQueued(poking.name);
 		ignitionEndTime = Time.time + ignitionTime;
 		isIgniting = true;
 		firePit = pit;
@@ -60,12 +60,12 @@ public class CharacterIgnite : MonoBehaviour
 
 	void OnIgniteDone()
 	{
-		animation.CrossFade(pokingToIdle.name);
+		GetComponent<Animation>().CrossFade(pokingToIdle.name);
 		firePit.Ignited();
 		isIgniting = false;
 		firePit = null;
 		goingBackToIdle = true;
-		goingBackToIdleDoneTime = Time.time + animation[pokingToIdle.name].length;
+		goingBackToIdleDoneTime = Time.time + GetComponent<Animation>()[pokingToIdle.name].length;
 	}
 
 	void Reset()

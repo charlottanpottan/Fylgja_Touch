@@ -88,6 +88,7 @@ float3 viewDir;
 
 
 			void vert (inout appdata_full v, out Input o) {
+             UNITY_INITIALIZE_OUTPUT(Input,o);
 float4 VertexOutputMaster0_0_NoInput = float4(0,0,0,0);
 float4 VertexOutputMaster0_1_NoInput = float4(0,0,0,0);
 float4 VertexOutputMaster0_2_NoInput = float4(0,0,0,0);
@@ -109,11 +110,12 @@ float4 Tex2D0=tex2D(_MainTex,(IN.uv_MainTex.xyxy).xy);
 float4 Multiply1=_Color * Tex2D0;
 float4 Tex2DNormal0=float4(UnpackNormal( tex2D(_Bump,(IN.uv_Bump.xyxy).xy)).xyz, 1.0 );
 float4 Fresnel0_1_NoInput = float4(0,0,1,1);
-float4 Fresnel0=float4( 1.0 - dot( normalize( float4(IN.viewDir, 1.0).xyz), normalize( Fresnel0_1_NoInput.xyz ) ) );
+float val = 1.0 - dot( normalize( float4(IN.viewDir, 1.0).xyz), normalize( Fresnel0_1_NoInput.xyz ) );
+float4 Fresnel0=float4( val, val, val, val );
 float4 Pow0=pow(Fresnel0,_RimPower.xxxx);
 float4 Multiply3=Tex2D0 * Pow0;
 float4 Multiply0=Multiply3 * _RimColor;
-float4 Multiply2=float4( Tex2D0.a) * _MySpecColor;
+float4 Multiply2=float4( Tex2D0.a,Tex2D0.a,Tex2D0.a,Tex2D0.a) * _MySpecColor;
 float4 Master0_5_NoInput = float4(1,1,1,1);
 float4 Master0_6_NoInput = float4(1,1,1,1);
 o.Albedo = Multiply1;

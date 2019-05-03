@@ -39,9 +39,9 @@ public class RobotBehave : MonoBehaviour {
             }
         }
         //FootSteps Control
-        if (animation["walk"].normalizedTime % 1 > 0.25F && animation["walk"].normalizedTime % 1 < 0.75F && _right)
+        if (GetComponent<Animation>()["walk"].normalizedTime % 1 > 0.25F && GetComponent<Animation>()["walk"].normalizedTime % 1 < 0.75F && _right)
             RightFootStep();
-        if (animation["walk"].normalizedTime % 1 > 0.75F && !_right)
+        if (GetComponent<Animation>()["walk"].normalizedTime % 1 > 0.75F && !_right)
             LeftFootStep();
 	}
     private void SetInitialState()

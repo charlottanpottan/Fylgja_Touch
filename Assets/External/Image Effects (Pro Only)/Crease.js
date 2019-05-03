@@ -31,7 +31,7 @@ class Crease extends PostEffectsBase {
 	}
 	
 	function OnEnable() {
-		camera.depthTextureMode |= DepthTextureMode.Depth;	
+		GetComponent.<Camera>().depthTextureMode |= DepthTextureMode.Depth;	
 	}
 
 	function OnRenderImage (source : RenderTexture, destination : RenderTexture) {	

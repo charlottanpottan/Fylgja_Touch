@@ -81,7 +81,7 @@ public class DynamicDecalExpeditor : DecalExpeditor
         MeshFilter mFilter = newFreeDecal.AddComponent<MeshFilter>();
         MeshRenderer mRenderer = newFreeDecal.AddComponent<MeshRenderer>();
         mFilter.sharedMesh = decalMesh;
-        mRenderer.sharedMaterial = renderer.sharedMaterial;
+        mRenderer.sharedMaterial = GetComponent<Renderer>().sharedMaterial;
         mRenderer.castShadows = false;
 
         return newFreeDecal;
@@ -123,7 +123,7 @@ public class DynamicDecalExpeditor : DecalExpeditor
             GameObject soonWillBeDestroyedDecal = MakeDecalObject(_allDecalMeshes[i]);
             soonWillBeDestroyedDecal.name = "SoonWillBeDestroyed";
             soonWillBeDestroyedDecal.layer = DecalType.i_layer;
-            DecalDestroyer destroyer = soonWillBeDestroyedDecal.AddComponent("DecalDestroyer") as DecalDestroyer;
+            DecalDestroyer destroyer = soonWillBeDestroyedDecal.AddComponent<DecalDestroyer>() as DecalDestroyer;
             destroyer.TimeToDestroy = 1 + i;
             destroyer.Fade = _decalType.i_fade;
             destroyer.FadingTime = _decalType.i_fadingTime;

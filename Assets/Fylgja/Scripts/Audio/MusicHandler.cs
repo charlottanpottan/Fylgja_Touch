@@ -45,10 +45,10 @@ public class MusicHandler : MonoBehaviour
 
 	IEnumerator DoChanges()
 	{
-		if (destroyColliderAfterUse && collider)
+		if (destroyColliderAfterUse && GetComponent<Collider>())
 		{
-			Destroy(collider);
-			Destroy(rigidbody);
+			Destroy(GetComponent<Collider>());
+			Destroy(GetComponent<Rigidbody>());
 		}
 		if (firstAction >= MusicHandler.EarlyType.FadeTo && targetAudioSource.volume != fadeToVolume)
 		{

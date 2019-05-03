@@ -37,7 +37,7 @@ class TiltShift extends PostEffectsBase {
 	}
 	
 	function OnEnable() {
-		camera.depthTextureMode |= DepthTextureMode.Depth;	
+		GetComponent.<Camera>().depthTextureMode |= DepthTextureMode.Depth;	
 	}
 
 	function OnRenderImage (source : RenderTexture, destination : RenderTexture) {	
@@ -55,7 +55,7 @@ class TiltShift extends PostEffectsBase {
 		
 		// automagically calculate parameters based on focalPoint
 
-		var focalPoint01 : float = camera.WorldToViewportPoint (focalPoint * camera.transform.forward + camera.transform.position).z / (camera.farClipPlane);	
+		var focalPoint01 : float = GetComponent.<Camera>().WorldToViewportPoint (focalPoint * GetComponent.<Camera>().transform.forward + GetComponent.<Camera>().transform.position).z / (GetComponent.<Camera>().farClipPlane);	
 	
 		distance01 = focalPoint01;
 		start01 = 0.0;

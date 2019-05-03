@@ -49,8 +49,8 @@ public class FirePitMinigame : Minigame, IFirePitNotifications
 
 	public override void StartMinigame(IAvatar a)
 	{
-		audio.clip = music;
-		audio.Play();
+		GetComponent<AudioSource>().clip = music;
+		GetComponent<AudioSource>().Play();
 		Debug.Log("FirePitMinigame request start!");
 		if (IsMinigameStarted())
 		{
@@ -89,7 +89,7 @@ public class FirePitMinigame : Minigame, IFirePitNotifications
 
 	void CloseFirePitMinigame()
 	{
-		audio.Stop();
+		GetComponent<AudioSource>().Stop();
 		playerListener.enabled = true;
 		firePitCamera.gameObject.SetActiveRecursively(false);
 		mainCamera.gameObject.SetActiveRecursively(true);

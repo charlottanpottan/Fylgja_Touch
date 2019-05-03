@@ -7,7 +7,7 @@ public class StartActorScene : MonoBehaviour
 
 	void Start()
 	{
-		if(collider == null)
+		if(GetComponent<Collider>() == null)
 		{
 			Initiate();
 		}
@@ -16,7 +16,7 @@ public class StartActorScene : MonoBehaviour
 	void OnTriggerEnter()
 	{
 		Initiate();
-		Destroy(collider);
+		Destroy(GetComponent<Collider>());
 	}
 	
 	void Initiate()

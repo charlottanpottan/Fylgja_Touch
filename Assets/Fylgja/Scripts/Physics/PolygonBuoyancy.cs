@@ -21,8 +21,8 @@ public class PolygonBuoyancy : MonoBehaviour
 
 	void Start()
 	{
-		rigidbody.SetDensity(density);
-		rigidbody.centerOfMass = cg;
+		GetComponent<Rigidbody>().SetDensity(density);
+		GetComponent<Rigidbody>().centerOfMass = cg;
 
 		Mesh mesh = ((MeshFilter) GetComponent(typeof(MeshFilter))).mesh;
 		vertices = mesh.vertices;
@@ -31,9 +31,9 @@ public class PolygonBuoyancy : MonoBehaviour
 		vertCount = vertices.Length;
 		meshVolume = ComputeVolume();
 
-		drag = rigidbody.drag;
-		angularDrag = rigidbody.angularDrag;
-		rigidbody.centerOfMass = cg;
+		drag = GetComponent<Rigidbody>().drag;
+		angularDrag = GetComponent<Rigidbody>().angularDrag;
+		GetComponent<Rigidbody>().centerOfMass = cg;
 	}
 
 	void Update()
@@ -193,15 +193,15 @@ public class PolygonBuoyancy : MonoBehaviour
 		{
 			Vector3 buoyancyForce = (FloatableWaterPlane.instance.waterDensity * absoluteVolume * gravity) * Vector3.up;
 			float amountInWater = Mathf.Clamp01(absoluteVolume / meshVolume); //use this to change drag & angularDrag
-			float submergedMass = rigidbody.mass * amountInWater;
+			float submergedMass = GetComponent<Rigidbody>().mass * amountInWater;
 //			Vector3 rc = c - rigidbody.centerOfMass;
-			Vector3 velocityAtCenterOfBuoyancy = rigidbody.GetPointVelocity(transform.TransformPoint(c));
+			Vector3 velocityAtCenterOfBuoyancy = GetComponent<Rigidbody>().GetPointVelocity(transform.TransformPoint(c));
 			Vector3 dragForce = (submergedMass * FloatableWaterPlane.instance.waterDrag) * (GetWaterCurrent() - velocityAtCenterOfBuoyancy);
 
 			Vector3 totalForce = buoyancyForce + dragForce;
-			rigidbody.AddForceAtPosition(totalForce, transform.TransformPoint(c));
-			rigidbody.drag = Mathf.Lerp(drag, FloatableWaterPlane.instance.waterDrag, amountInWater);
-			rigidbody.angularDrag = Mathf.Lerp(angularDrag, FloatableWaterPlane.instance.waterAngularDrag, amountInWater);
+			GetComponent<Rigidbody>().AddForceAtPosition(totalForce, transform.TransformPoint(c));
+			GetComponent<Rigidbody>().drag = Mathf.Lerp(drag, FloatableWaterPlane.instance.waterDrag, amountInWater);
+			GetComponent<Rigidbody>().angularDrag = Mathf.Lerp(angularDrag, FloatableWaterPlane.instance.waterAngularDrag, amountInWater);
 		}
 	}
 

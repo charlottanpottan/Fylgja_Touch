@@ -54,30 +54,30 @@ public class FlightPath : MonoBehaviour
 			Array.Reverse(route.reversePathNodes);
 		}
 
-		animation[moveAnim.name].wrapMode = WrapMode.Loop;
+		GetComponent<Animation>()[moveAnim.name].wrapMode = WrapMode.Loop;
 
-		animation[waitAnim.name].wrapMode = WrapMode.PingPong;
+		GetComponent<Animation>()[waitAnim.name].wrapMode = WrapMode.PingPong;
 	}
 
 	public void FollowRoute()
 	{
 		if (targetIndex < currentIndex)
 		{
-			animation.CrossFade(moveAnim.name);
+			GetComponent<Animation>().CrossFade(moveAnim.name);
 			routes[currentIndex - 1].DoMovement(true);
 			currentIndex--;
 			return;
 		}
 		if (targetIndex > currentIndex)
 		{
-			animation.CrossFade(moveAnim.name);
+			GetComponent<Animation>().CrossFade(moveAnim.name);
 			routes[currentIndex].DoMovement(false);
 			currentIndex++;
 			return;
 		}
 		if (targetIndex == currentIndex)
 		{
-			animation.CrossFade(waitAnim.name);
+			GetComponent<Animation>().CrossFade(waitAnim.name);
 			transform.rotation = Quaternion.Euler(new Vector3(0,transform.rotation.eulerAngles.y,0));
 			return;
 		}

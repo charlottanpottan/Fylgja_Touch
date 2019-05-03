@@ -97,11 +97,11 @@ public class DecalCreator : MonoBehaviour
         List<Mesh> newMeshes = new List<Mesh>();
         foreach (Collider g in colliders)
         {
-            if (!g.renderer || g.GetComponent("DecalType") as DecalType)
+            if (!g.GetComponent<Renderer>() || g.GetComponent("DecalType") as DecalType)
                 continue;
 
             //Тестируем
-            if (GeometryUtility.TestPlanesAABB(planes, g.renderer.bounds))
+            if (GeometryUtility.TestPlanesAABB(planes, g.GetComponent<Renderer>().bounds))
             {
                 Mesh mesh = DecalCreator.CreateDecalMesh(decalType, point, forward, g.gameObject, decalWoldUpVector);
                 if (mesh)
@@ -266,7 +266,7 @@ public class DecalCreator : MonoBehaviour
         DecalHolder decalHolder = obj.GetComponent("DecalHolder") as DecalHolder;
         if (!decalHolder)
         {
-            decalHolder = obj.AddComponent("DecalHolder") as DecalHolder;
+            decalHolder = obj.AddComponent<DecalHolder>() as DecalHolder;
         }
 
         //Пытаемся получить объект экспедитор
@@ -278,12 +278,12 @@ public class DecalCreator : MonoBehaviour
             decalTypeExpeditorObject = new GameObject("Expeditor For " + decalType.name + " DecalType");
             decalTypeExpeditorObject.AddComponent<MeshFilter>();
             decalTypeExpeditorObject.AddComponent<MeshRenderer>();
-            decalTypeExpeditorObject.renderer.castShadows = false;
+            decalTypeExpeditorObject.GetComponent<Renderer>().castShadows = false;
 
             if (materialOverride)
-                decalTypeExpeditorObject.renderer.sharedMaterial = materialOverride;
+                decalTypeExpeditorObject.GetComponent<Renderer>().sharedMaterial = materialOverride;
             else
-                decalTypeExpeditorObject.renderer.sharedMaterial = decalType.i_material;
+                decalTypeExpeditorObject.GetComponent<Renderer>().sharedMaterial = decalType.i_material;
 
             decalTypeExpeditorObject.transform.position = obj.transform.position;
             decalTypeExpeditorObject.transform.rotation = obj.transform.rotation;
@@ -303,7 +303,7 @@ public class DecalCreator : MonoBehaviour
         DynamicDecalExpeditor decalExpeditor = decalTypeExpeditorObject.GetComponent("DynamicDecalExpeditor") as DynamicDecalExpeditor;
         if (!decalExpeditor)
         {
-            decalExpeditor = decalTypeExpeditorObject.AddComponent("DynamicDecalExpeditor") as DynamicDecalExpeditor;
+            decalExpeditor = decalTypeExpeditorObject.AddComponent<DynamicDecalExpeditor>() as DynamicDecalExpeditor;
             decalExpeditor.DecalType = decalType;
             decalExpeditor.Holder = decalHolder;
         }
@@ -393,7 +393,7 @@ public class DecalCreator : MonoBehaviour
         DecalHolder decalHolder = obj.GetComponent("DecalHolder") as DecalHolder;
         if (!decalHolder)
         {
-            decalHolder = obj.AddComponent("DecalHolder") as DecalHolder;
+            decalHolder = obj.AddComponent<DecalHolder>() as DecalHolder;
         }
 
         //Пытаемся получить объект экспедитор
@@ -421,7 +421,7 @@ public class DecalCreator : MonoBehaviour
             decalTypeExpeditorObject.layer = decalType.i_layer;
 
             //Экспидитор
-            SkinnedDecalExpeditor sdEx=decalTypeExpeditorObject.AddComponent("SkinnedDecalExpeditor") as SkinnedDecalExpeditor;
+            SkinnedDecalExpeditor sdEx=decalTypeExpeditorObject.AddComponent<SkinnedDecalExpeditor>() as SkinnedDecalExpeditor;
 
             sdEx.SourceSMR = smr;
             sdEx.DecalType = decalType;
@@ -577,7 +577,7 @@ public class DecalCreator : MonoBehaviour
         decalObject.AddComponent<MeshFilter>();
         MeshRenderer mRenderer=decalObject.AddComponent<MeshRenderer>();
         mRenderer.material = materialOverride;
-        decalObject.renderer.castShadows = false;
+        decalObject.GetComponent<Renderer>().castShadows = false;
         decalObject.transform.position = point;
         decalObject.transform.rotation=Quaternion.LookRotation(-decalBasis.Normal, decalBasis.Binormal);
         decalObject.transform.localScale = decalType.transform.localScale+decalBasis.Rand;
@@ -592,7 +592,7 @@ public class DecalCreator : MonoBehaviour
 
         //В пространство объекта
         decalMesh = MeshWorldToObjectSpace(decalMesh, decalObject.transform);
-        FlowDecalExpeditor flow = decalObject.AddComponent("FlowDecalExpeditor") as FlowDecalExpeditor;
+        FlowDecalExpeditor flow = decalObject.AddComponent<FlowDecalExpeditor>() as FlowDecalExpeditor;
         flow.DecalType = decalType;
         flow.MainTexUVParams = decalBasis.UVParams;
 
@@ -600,7 +600,7 @@ public class DecalCreator : MonoBehaviour
         decalMesh.RecalculateBounds();
 
         // Add destroyer
-        DecalDestroyer destroyer = decalObject.AddComponent("DecalDestroyer") as DecalDestroyer;
+        DecalDestroyer destroyer = decalObject.AddComponent<DecalDestroyer>() as DecalDestroyer;
         destroyer.Fade = decalType.i_fade;
         destroyer.FadingTime = decalType.i_fadingTime;
         destroyer.TimeToDestroy = decalType.i_lifeTime;
@@ -632,14 +632,14 @@ public class DecalCreator : MonoBehaviour
         foreach (DecalType decalType in decalTypes)
         {
             //Наполняем справочник
-            if (mat2decalType.ContainsKey(decalType.renderer.sharedMaterial))
+            if (mat2decalType.ContainsKey(decalType.GetComponent<Renderer>().sharedMaterial))
             {
-                mat2decalType[decalType.renderer.sharedMaterial].Add(decalType);
+                mat2decalType[decalType.GetComponent<Renderer>().sharedMaterial].Add(decalType);
             }
             else
             {
-                mat2decalType.Add(decalType.renderer.sharedMaterial, new List<DecalType>());
-                mat2decalType[decalType.renderer.sharedMaterial].Add(decalType);
+                mat2decalType.Add(decalType.GetComponent<Renderer>().sharedMaterial, new List<DecalType>());
+                mat2decalType[decalType.GetComponent<Renderer>().sharedMaterial].Add(decalType);
             }
 
             Destroy(decalType.gameObject);
@@ -661,7 +661,7 @@ public class DecalCreator : MonoBehaviour
 
                 //Наполняем лист мешей в мировом
                 meshInWorldList.Add(decalMesh);
-                mat = decalType.renderer.sharedMaterial;
+                mat = decalType.GetComponent<Renderer>().sharedMaterial;
             }
 
             Mesh combinedMesh = DecalCreator.CreateCombinedMesh(meshInWorldList, null);
@@ -729,14 +729,14 @@ public class DecalCreator : MonoBehaviour
         foreach (DecalType decalType in decalTypes)
         {
             //Наполняем справочник
-            if (mat2decalType.ContainsKey(decalType.renderer.sharedMaterial))
+            if (mat2decalType.ContainsKey(decalType.GetComponent<Renderer>().sharedMaterial))
             {
-                mat2decalType[decalType.renderer.sharedMaterial].Add(decalType);
+                mat2decalType[decalType.GetComponent<Renderer>().sharedMaterial].Add(decalType);
             }
             else
             {
-                mat2decalType.Add(decalType.renderer.sharedMaterial, new List<DecalType>());
-                mat2decalType[decalType.renderer.sharedMaterial].Add(decalType);
+                mat2decalType.Add(decalType.GetComponent<Renderer>().sharedMaterial, new List<DecalType>());
+                mat2decalType[decalType.GetComponent<Renderer>().sharedMaterial].Add(decalType);
             }
         }
 
@@ -757,7 +757,7 @@ public class DecalCreator : MonoBehaviour
 
                 //Наполняем лист мешей в мировом
                 meshInObjectList.Add(decalMeshCopy);
-                mat = decalType.renderer.sharedMaterial;
+                mat = decalType.GetComponent<Renderer>().sharedMaterial;
 
                 //Отключаем объект или удаляем
                 if (destroyDecals)
@@ -841,9 +841,9 @@ public class DecalCreator : MonoBehaviour
             meshSubmeshTri.Mesh = decalMesh;
 
             //Индексы и материаллы
-            if (materials.Contains(decalTypes[i].renderer.sharedMaterial))
+            if (materials.Contains(decalTypes[i].GetComponent<Renderer>().sharedMaterial))
             {
-                int submeshIndex = materials.IndexOf(decalTypes[i].renderer.sharedMaterial);
+                int submeshIndex = materials.IndexOf(decalTypes[i].GetComponent<Renderer>().sharedMaterial);
                 meshSubmeshTri.SubmeshIndexes.Add(submeshIndex);
                 meshSubmeshTri.Triangles.Add(decalMesh.GetTriangles(0));
             }
@@ -851,7 +851,7 @@ public class DecalCreator : MonoBehaviour
             {
                 meshSubmeshTri.SubmeshIndexes.Add(materials.Count);
                 meshSubmeshTri.Triangles.Add(decalMesh.GetTriangles(0));
-                materials.Add(decalTypes[i].renderer.sharedMaterial);
+                materials.Add(decalTypes[i].GetComponent<Renderer>().sharedMaterial);
             }
 
             //Добавляем декаль
@@ -1360,7 +1360,7 @@ public class DecalCreator : MonoBehaviour
         {
             Ray ray = new Ray(vertex[i] + Vector3.up * 1000, Vector3.down);
             RaycastHit hit;
-            terrain.collider.Raycast(ray, out hit, 2000);
+            terrain.GetComponent<Collider>().Raycast(ray, out hit, 2000);
             vertex[i].y = hit.point.y;
         }
 
@@ -1389,11 +1389,11 @@ public class DecalCreator : MonoBehaviour
         }
         else if (terrain)
         {
-            Profiler.BeginSample("CREATETERRAINPATCH");
+            UnityEngine.Profiling.Profiler.BeginSample("CREATETERRAINPATCH");
             colliderMesh = GenerateTerrainPatch(decalType, point, terrain);
             ProjectTerrainPatchOntoTerrain(colliderMesh, terrain);
             transform = null;
-            Profiler.EndSample();
+            UnityEngine.Profiling.Profiler.EndSample();
         }
         else
         {

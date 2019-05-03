@@ -42,7 +42,7 @@ using System.Collections.Generic;
 public class DecalTypeEditor : Editor
 {
     /// Draw cube
-    [DrawGizmo(GizmoType.Pickable | GizmoType.Selected | GizmoType.NotSelected)]
+    [DrawGizmo(GizmoType.Pickable | GizmoType.Selected | GizmoType.NotInSelectionHierarchy)]
     public static void DrawDecalToolGizmo(DecalType decalType, GizmoType gizmoType)
     {
 
@@ -183,7 +183,7 @@ public class DecalTypeEditor : Editor
 
         // properties
         GUIStyle foldout = new GUIStyle(EditorStyles.foldout);
-        //Материал
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         _decalType._materialFoldout = EditorGUILayout.Foldout(_decalType._materialFoldout, "Material", foldout);
         _serializeddecalType.FindProperty("_materialFoldout").boolValue = _decalType._materialFoldout;
         if (_decalType._materialFoldout)
@@ -757,7 +757,7 @@ public class DecalTypeEditor : Editor
         if (!g)
             return;
 
-        if ( (g.renderer&&GeometryUtility.TestPlanesAABB(planes, g.renderer.bounds)) || g.GetComponent<Terrain>()!=null )
+        if ( (g.GetComponent<Renderer>()&&GeometryUtility.TestPlanesAABB(planes, g.GetComponent<Renderer>().bounds)) || g.GetComponent<Terrain>()!=null )
         {
             Mesh mesh = DecalCreator.CreateDecalMesh(_decalType, _decalType.transform.position, _decalType.transform.forward, g, Vector3.zero);
             if (mesh)

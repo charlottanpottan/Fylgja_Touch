@@ -29,7 +29,7 @@ public class CharacterPetroglypher : MonoBehaviour
 
 	bool GetMouseTargetTransform(out Vector3 targetPosition, out Quaternion targetRotation)
 	{
-		var activeCamera = Camera.mainCamera;
+		var activeCamera = Camera.main;
 		var ray = activeCamera.ScreenPointToRay(Input.mousePosition);
 
 		Debug.DrawRay(ray.origin, ray.direction * 1.0f, Color.magenta);

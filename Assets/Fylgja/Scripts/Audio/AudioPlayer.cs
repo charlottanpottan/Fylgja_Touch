@@ -36,7 +36,7 @@ public class AudioPlayer : AudioHandler
 	void OnTriggerEnter(Collider c)
 	{
 		// Debug.Log(gameObject.name + " triggered by " + c.name);
-		if (!audio.isPlaying && !hasInterval)
+		if (!GetComponent<AudioSource>().isPlaying && !hasInterval)
 		{
 			TriggerSound();
 			if (destroyAfterPlaying)
@@ -55,9 +55,9 @@ public class AudioPlayer : AudioHandler
 		playTimer = Random.Range(minTimeInterval, maxTimeInterval);
 		intervalClip = PickSound();
 		intervalTimer = intervalClip.length + playTimer;
-		audio.clip = intervalClip;
+		GetComponent<AudioSource>().clip = intervalClip;
 		yield return new WaitForSeconds(playTimer);
-		audio.Play();
+		GetComponent<AudioSource>().Play();
 		yield return new WaitForSeconds(intervalTimer);
 
 		StartCoroutine("PlayInterval");
@@ -65,7 +65,7 @@ public class AudioPlayer : AudioHandler
 
 	IEnumerator PlayThenDestroy()
 	{
-		yield return new WaitForSeconds(audio.clip.length);
+		yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
 
 		Destroy(gameObject);
 	}
@@ -73,9 +73,9 @@ public class AudioPlayer : AudioHandler
 	void OnTriggerExit(Collider c)
 	{
 		// 	Debug.Log(gameObject.name + " stopped playing by " + c.name);
-		if (!destroyAfterPlaying && audio.isPlaying)
+		if (!destroyAfterPlaying && GetComponent<AudioSource>().isPlaying)
 		{
-			audio.Stop();
+			GetComponent<AudioSource>().Stop();
 		}
 		StopCoroutine("PlayInterval");
 	}

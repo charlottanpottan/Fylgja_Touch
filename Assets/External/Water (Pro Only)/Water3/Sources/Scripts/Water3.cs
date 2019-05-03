@@ -67,7 +67,7 @@ public class Water3 : MonoBehaviour
 	public void Start() 
 	{
 		if(m_Water3Material)
-			renderer.sharedMaterial = m_Water3Material;
+			GetComponent<Renderer>().sharedMaterial = m_Water3Material;
 		m_IsDirty = false;
 		m_WaterManager = Water3Manager.Instance();
 	}
@@ -94,7 +94,7 @@ public class Water3 : MonoBehaviour
 		if(!enabled)
 			return;
 		
-		if(!renderer.sharedMaterial)
+		if(!GetComponent<Renderer>().sharedMaterial)
 			return;
 		
 		Camera cam = Camera.current;
@@ -203,7 +203,7 @@ public class Water3 : MonoBehaviour
 					reflectionCamera.Render();
 					reflectionCamera.transform.position = oldpos;
 					GL.SetRevertBackfacing (false);
-					renderer.sharedMaterial.SetTexture("_ReflectionTex", m_ReflectionTexture );
+					GetComponent<Renderer>().sharedMaterial.SetTexture("_ReflectionTex", m_ReflectionTexture );
 				} 
 				else
 				{
@@ -222,7 +222,7 @@ public class Water3 : MonoBehaviour
 			QualitySettings.pixelLightCount = oldPixelLightCount;
 		
 		if(lightTransform)
-			renderer.sharedMaterial.SetVector("_WorldLightDir", lightTransform.forward);
+			GetComponent<Renderer>().sharedMaterial.SetVector("_WorldLightDir", lightTransform.forward);
 								
 		if(!m_DepthTexturesSupported)
 			autoEdgeBlend = false;
@@ -260,18 +260,18 @@ public class Water3 : MonoBehaviour
 			// we need depth texture support here
 			if(cam) 
 				cam.depthTextureMode |= DepthTextureMode.Depth;			
-			renderer.sharedMaterial.shader.maximumLOD = 50;	
+			GetComponent<Renderer>().sharedMaterial.shader.maximumLOD = 50;	
 		}
 		else if(mode == WaterMode.Indie) 
 		{ 			
-			renderer.sharedMaterial.shader.maximumLOD = 100;
+			GetComponent<Renderer>().sharedMaterial.shader.maximumLOD = 100;
 		} 
 		else 
 		{ 			
 			if(mode ==  WaterMode.Optimized)
-				renderer.sharedMaterial.shader.maximumLOD = 400;
+				GetComponent<Renderer>().sharedMaterial.shader.maximumLOD = 400;
 			else
-				renderer.sharedMaterial.shader.maximumLOD = mode >  WaterMode.FastAndNoRefraction ? 500 : 300;			
+				GetComponent<Renderer>().sharedMaterial.shader.maximumLOD = mode >  WaterMode.FastAndNoRefraction ? 500 : 300;			
 		
 			if(autoEdgeBlend) 
 			{
@@ -324,7 +324,7 @@ public class Water3 : MonoBehaviour
 	// NOTE:
 	// the following 2 functions are for supporting floating objects
 	// on the water surface. they just replicate the wave/sine animation
-	// that is also being calculated in the water mesh´ vertex shader
+	// that is also being calculated in the water meshï¿½ vertex shader
 	
 	public Vector3 GetNormalAt(Vector3 pos, float scale = 1.0F) 
 	{
@@ -383,10 +383,10 @@ public class Water3 : MonoBehaviour
 	
 	void Update()
 	{
-		if( !renderer )
+		if( !GetComponent<Renderer>() )
 			return;
 			
-		Material mat = renderer.sharedMaterial;
+		Material mat = GetComponent<Renderer>().sharedMaterial;
 		if( !mat )
 			return;
 
@@ -423,7 +423,7 @@ public class Water3 : MonoBehaviour
 		mat.SetVector( "_WaveOffset", offsetClamped );
 		mat.SetVector( "_WaveScale4", waveScale4 );
 			
-		Vector3 waterSize = renderer.bounds.size;		
+		Vector3 waterSize = GetComponent<Renderer>().bounds.size;		
 		Vector3 scale = new Vector3( waterSize.x*waveScale4.x, waterSize.z*waveScale4.y, 1 );
 		Matrix4x4 scrollMatrix = Matrix4x4.TRS( new Vector3(offsetClamped.x,offsetClamped.y,0), Quaternion.identity, scale );
 		mat.SetMatrix( "_WaveMatrix", scrollMatrix );
@@ -496,11 +496,11 @@ public class Water3 : MonoBehaviour
 			if( !reflectionCamera ) // catch both not-in-dictionary and in-dictionary-but-deleted-GO
 			{
 				GameObject go = new GameObject( "Water Refl Camera id" + GetInstanceID() + " for " + currentCamera.GetInstanceID(), typeof(Camera), typeof(Skybox) );
-				reflectionCamera = go.camera;
+				reflectionCamera = go.GetComponent<Camera>();
 				reflectionCamera.enabled = false;
 				reflectionCamera.transform.position = transform.position;
 				reflectionCamera.transform.rotation = transform.rotation;
-				reflectionCamera.gameObject.AddComponent("FlareLayer");
+				reflectionCamera.gameObject.AddComponent<FlareLayer>();
 				go.hideFlags = HideFlags.HideAndDontSave;
 				m_ReflectionCameras[currentCamera] = reflectionCamera;
 			}
@@ -521,10 +521,10 @@ public class Water3 : MonoBehaviour
 		if( !SystemInfo.SupportsRenderTextureFormat(RenderTextureFormat.Depth) )
 			m_DepthTexturesSupported = false;		
 		
-		if( !SystemInfo.supportsRenderTextures || !renderer )
+		if( !SystemInfo.supportsRenderTextures || !GetComponent<Renderer>() )
 			return WaterMode.Indie;
 		
-		Material mat = renderer.sharedMaterial;
+		Material mat = GetComponent<Renderer>().sharedMaterial;
 		if( !mat )
 			return WaterMode.Indie;
 

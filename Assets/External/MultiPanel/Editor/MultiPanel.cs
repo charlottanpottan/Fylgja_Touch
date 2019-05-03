@@ -205,8 +205,8 @@ public class MultiPanel : EditorWindow
 		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable);
 		
 		foreach (Transform transform in transforms) {
-			if (transform.renderer)
-				transform.renderer.enabled = !transform.renderer.enabled;
+			if (transform.GetComponent<Renderer>())
+				transform.GetComponent<Renderer>().enabled = !transform.GetComponent<Renderer>().enabled;
 		}
 	}
 
@@ -217,7 +217,7 @@ public class MultiPanel : EditorWindow
 			//add component
 			Component existingComponent = currentTransform.GetComponent (addComponentString);
 			if (!existingComponent) {
-				currentTransform.gameObject.AddComponent (addComponentString);
+				UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent (currentTransform.gameObject, "Assets/External/MultiPanel/Editor/MultiPanel.cs (220,5)", addComponentString);
 				total++;
 			}
 		}

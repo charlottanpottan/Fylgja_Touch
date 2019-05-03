@@ -10,7 +10,7 @@ public class InventoryBag : ActionArbitration
 	public override void ExecuteAction(IAvatar _avatar)
 	{
 		avatar = _avatar;
-		inventoryBagCloseHandler.CreateAndPlay(audio.volume);
+		inventoryBagCloseHandler.CreateAndPlay(GetComponent<AudioSource>().volume);
 		Debug.Log("Closing inventory bag...");
 		avatar.CloseInventoryBag();
 	}

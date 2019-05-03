@@ -14,7 +14,7 @@ public class CharacterClimbing : MonoBehaviour
 
 	public void Update()
 	{
-		bool isClimbing = (animation["climb"].weight > 0.9f) || animation.IsPlaying("grab");
+		bool isClimbing = (GetComponent<Animation>()["climb"].weight > 0.9f) || GetComponent<Animation>().IsPlaying("grab");
 
 		if (!climbStarted && isClimbing && !wasClimbing)
 		{
@@ -28,7 +28,7 @@ public class CharacterClimbing : MonoBehaviour
 		}
 		if (characterController.isGrounded)
 		{
-			animation.CrossFade("walk");
+			GetComponent<Animation>().CrossFade("walk");
 		}
 		float verticalMovement = Input.GetAxis("vertical") * Time.deltaTime;
 		characterController.Move(new Vector3(0, verticalMovement, 0));
@@ -38,7 +38,7 @@ public class CharacterClimbing : MonoBehaviour
 	{
 		startClimbingTransform = transform;
 		climbStarted = false;
-		animation.CrossFade("climb");
+		GetComponent<Animation>().CrossFade("climb");
 	}
 
 	public bool IsClimbing()
@@ -63,7 +63,7 @@ public class CharacterClimbing : MonoBehaviour
 	{
 		if (wasClimbing)
 		{
-			animation.CrossFade("grab");
+			GetComponent<Animation>().CrossFade("grab");
 		}
 	}
 }

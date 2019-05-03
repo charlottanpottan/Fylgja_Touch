@@ -16,7 +16,7 @@ public class MoviePlayer : MonoBehaviour
 	
 	void Start()
 	{
-		audio.ignoreListenerVolume = true;
+		GetComponent<AudioSource>().ignoreListenerVolume = true;
 	}
 
 	void OnGUI()
@@ -43,8 +43,8 @@ public class MoviePlayer : MonoBehaviour
 		Debug.Log("Play Movie:" + movie.name);
 		endFunction = function;
 		movie.Play();
-		audio.clip = movie.audioClip;
-		audio.Play();
+		GetComponent<AudioSource>().clip = movie.audioClip;
+		GetComponent<AudioSource>().Play();
 
 		movieIsStarted = true;
 		Time.timeScale = 0;
@@ -75,7 +75,7 @@ public class MoviePlayer : MonoBehaviour
 		fadeListener.OnFadeListener(0);
 		Debug.Log("STOP MOVIE!!!!");
 		movie.Stop();
-		audio.Stop();
+		GetComponent<AudioSource>().Stop();
 		movieIsStarted = false;
 		Time.timeScale = 1;
 		endFunction();

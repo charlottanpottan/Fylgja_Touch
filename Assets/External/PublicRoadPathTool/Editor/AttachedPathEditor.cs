@@ -182,7 +182,7 @@ public class AttachedPathEditor : Editor
 					
 					if(pathScript.isRoad)
 					{
-						pathScript.pathMesh.renderer.enabled = true;
+						pathScript.pathMesh.GetComponent<Renderer>().enabled = true;
 					}
 					
 					else

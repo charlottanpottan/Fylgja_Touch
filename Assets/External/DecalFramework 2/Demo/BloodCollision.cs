@@ -24,27 +24,27 @@ public class BloodCollision : MonoBehaviour {
         //Get material instanse 
         Material m = Instantiate(i_decalType.i_material) as Material;
         
-        if(!other.renderer)
+        if(!other.GetComponent<Renderer>())
             return;
 
-        //Получаем данные о бампе поверхности по которой выстрелили
-        Texture2D bumpMap = other.renderer.sharedMaterial.GetTexture("_BumpMap") as Texture2D;
-        Vector2 bumpScale = other.renderer.sharedMaterial.GetTextureScale("_BumpMap");
-        Vector2 bumpOffset = other.renderer.sharedMaterial.GetTextureOffset("_BumpMap");
-        //Настраиваем новый бамп
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        Texture2D bumpMap = other.GetComponent<Renderer>().sharedMaterial.GetTexture("_BumpMap") as Texture2D;
+        Vector2 bumpScale = other.GetComponent<Renderer>().sharedMaterial.GetTextureScale("_BumpMap");
+        Vector2 bumpOffset = other.GetComponent<Renderer>().sharedMaterial.GetTextureOffset("_BumpMap");
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         m.SetTexture("_SourceBumpMap", bumpMap);
         m.SetTextureScale("_SourceBumpMap", bumpScale);
         m.SetTextureOffset("_SourceBumpMap", bumpOffset);
 
         Vector3 summVelocity = Vector3.zero;
-        foreach(Particle p in this.particleEmitter.particles)
+        foreach(Particle p in this.GetComponent<ParticleEmitter>().particles)
         {
             summVelocity += p.velocity;
         }
 
-        Collider[] colliders=Physics.OverlapSphere(this.particleEmitter.particles[0].position, 0.3F);
+        Collider[] colliders=Physics.OverlapSphere(this.GetComponent<ParticleEmitter>().particles[0].position, 0.3F);
 
-        Mesh decalMesh = DecalCreator.CreateDecalMesh(i_decalType, this.particleEmitter.particles[0].position,summVelocity.normalized, colliders);
+        Mesh decalMesh = DecalCreator.CreateDecalMesh(i_decalType, this.GetComponent<ParticleEmitter>().particles[0].position,summVelocity.normalized, colliders);
         DecalCreator.CreateDynamicDecal(decalMesh, other, i_decalType, m);
 
         Destroy(this.gameObject); 

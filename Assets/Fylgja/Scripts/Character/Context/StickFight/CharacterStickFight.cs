@@ -15,12 +15,12 @@ public class CharacterStickFight : StickFighter
 
 	void Start()
 	{
-		animation[idle.name].layer = 0;
-		animation[duck.name].layer = 3;
-		animation[struckLeft.name].layer = 3;
-		animation[struckRight.name].layer = 3;
-		animation[hitLeft.name].layer = 3;
-		animation[hitRight.name].layer = 3;
+		GetComponent<Animation>()[idle.name].layer = 0;
+		GetComponent<Animation>()[duck.name].layer = 3;
+		GetComponent<Animation>()[struckLeft.name].layer = 3;
+		GetComponent<Animation>()[struckRight.name].layer = 3;
+		GetComponent<Animation>()[hitLeft.name].layer = 3;
+		GetComponent<Animation>()[hitRight.name].layer = 3;
 	}
 
 	void Update()
@@ -63,18 +63,18 @@ public class CharacterStickFight : StickFighter
 		duckTimer = Time.time + duck.length + duckCooldown;
 		stickFightDuckAudioHandler.TriggerSound();
 		//if (!IsHittingOrDucking()) {
-		animation.Play(duck.name);
+		GetComponent<Animation>().Play(duck.name);
 		//}
 	}
 
 	bool IsHitting()
 	{
-		return animation.IsPlaying(hitLeft.name) || animation.IsPlaying(hitRight.name);
+		return GetComponent<Animation>().IsPlaying(hitLeft.name) || GetComponent<Animation>().IsPlaying(hitRight.name);
 	}
 
 	bool IsDucking()
 	{
-		return animation.IsPlaying(duck.name);
+		return GetComponent<Animation>().IsPlaying(duck.name);
 	}
 
 	bool IsHittingOrDucking()
@@ -119,12 +119,12 @@ public class CharacterStickFight : StickFighter
 	void OnStickFightMinigameStart(StickFightMinigame minigame)
 	{
 		SetToolsEnabled(true);
-		animation.CrossFade(idle.name);
+		GetComponent<Animation>().CrossFade(idle.name);
 		
 		GameObject go = GameObject.Instantiate(barObject) as GameObject;
 		health = maxHealth;
 		damageStar = 0;
-		barAnim = go.animation;
+		barAnim = go.GetComponent<Animation>();
 		barAnim[barAnim.clip.name].normalizedSpeed = 0;
 		barAnim[barAnim.clip.name].normalizedTime = 0;
 		

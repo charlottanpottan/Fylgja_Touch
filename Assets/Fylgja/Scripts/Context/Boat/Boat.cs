@@ -76,7 +76,7 @@ public class Boat : Vehicle
 
 		Debug.DrawRay(rootPosition, forceDirection, new Color(0.1f, 1.0f, 1.0f, 1.0f));
 
-		rigidbody.AddForceAtPosition(force * Time.deltaTime, rootPosition);
+		GetComponent<Rigidbody>().AddForceAtPosition(force * Time.deltaTime, rootPosition);
 	}
 
 	public override void StopMoving()

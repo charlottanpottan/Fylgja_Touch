@@ -50,7 +50,7 @@ public class CharacterBlacksmith : MonoBehaviour
 
 	void CheckIfPunchDone()
 	{
-		if (isHittingWithHammer && !animation.IsPlaying(hitSledgehammer.name))
+		if (isHittingWithHammer && !GetComponent<Animation>().IsPlaying(hitSledgehammer.name))
 		{
 			OnPunchIsDone();
 		}
@@ -79,7 +79,7 @@ public class CharacterBlacksmith : MonoBehaviour
 		{
 			StopSwordMovement();
 			sledge.canHit = true;
-			animation.Play(hitSledgehammer.name);
+			GetComponent<Animation>().Play(hitSledgehammer.name);
 			punchIsPossible = false;
 			isHittingWithHammer = true;
 		}
@@ -219,7 +219,7 @@ public class CharacterBlacksmith : MonoBehaviour
 
 	void StartIdleAnimation()
 	{
-		Animation anim = animation;
+		Animation anim = GetComponent<Animation>();
 		anim.CrossFade(idleAnimation.name);
 		AnimationState state = anim[idleAnimation.name];
 		state.layer = -2;
@@ -227,7 +227,7 @@ public class CharacterBlacksmith : MonoBehaviour
 
 	void StopIdleAnimation()
 	{
-		animation.Stop(idleAnimation.name);
+		GetComponent<Animation>().Stop(idleAnimation.name);
 	}
 
 	void StopSwordMovement()
@@ -240,7 +240,7 @@ public class CharacterBlacksmith : MonoBehaviour
 
 	void SetSwordHandPosition(float percentage)
 	{
-		Animation anim = animation;
+		Animation anim = GetComponent<Animation>();
 
 		AnimationState state = anim[swordArmAnimation.name];
 
@@ -248,7 +248,7 @@ public class CharacterBlacksmith : MonoBehaviour
 		state.normalizedTime = percentage;
 		state.speed = 0;
 		state.wrapMode = WrapMode.ClampForever;
-		animation.CrossFade(swordArmAnimation.name);
+		GetComponent<Animation>().CrossFade(swordArmAnimation.name);
 	}
 
 
@@ -299,8 +299,8 @@ public class CharacterBlacksmith : MonoBehaviour
 	void CloseMinigame()
 	{
 		isSmithing = false;
-		animation.Stop(swordArmAnimation.name);
-		animation.Stop(hitSledgehammer.name);
+		GetComponent<Animation>().Stop(swordArmAnimation.name);
+		GetComponent<Animation>().Stop(hitSledgehammer.name);
 		StopIdleAnimation();
 		SetActivateBlacksmithTools(false);
 	}

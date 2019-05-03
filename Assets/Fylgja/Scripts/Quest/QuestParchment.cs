@@ -17,7 +17,7 @@ public class QuestParchment : ActionArbitration
 
 	void OnQuestParchmentClose()
 	{
-		parchmentCloseHandler.CreateAndPlay(audio.volume);
+		parchmentCloseHandler.CreateAndPlay(GetComponent<AudioSource>().volume);
 		Destroy(gameObject);
 	}
 

@@ -167,9 +167,9 @@ public class CharacterWalking : Vehicle
 	public void TurnOffLocomotion()
 	{
 		Debug.Log("Turning off locomotion!");
-		animation.Stop("fireminigame");
-		animation.Stop("normal");
-		animation.Stop("LocomotionSystem");
+		GetComponent<Animation>().Stop("fireminigame");
+		GetComponent<Animation>().Stop("normal");
+		GetComponent<Animation>().Stop("LocomotionSystem");
 	}
 
 	public void BlendToLocomotion()
@@ -181,7 +181,7 @@ public class CharacterWalking : Vehicle
 		}
 
 		Debug.Log("Turning blending to locomotion:" + currentAnimationGroup);
-		animation.Play("LocomotionSystem");
-		animation.CrossFade(currentAnimationGroup);
+		GetComponent<Animation>().Play("LocomotionSystem");
+		GetComponent<Animation>().CrossFade(currentAnimationGroup);
 	}
 }

@@ -45,7 +45,7 @@ public class MinimapCamera : MonoBehaviour
 	float CalculateY()
 	{
 		float radius = MaxDistanceGoalObjects() + magicOffset;
-		float y = CameraUtility.CalculateOptimalDistance(camera, radius * magicMultiplier);
+		float y = CameraUtility.CalculateOptimalDistance(GetComponent<Camera>(), radius * magicMultiplier);
 
 		return y;
 	}

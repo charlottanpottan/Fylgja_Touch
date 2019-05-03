@@ -100,7 +100,7 @@ public class ActorLine : ActorSceneComponent
 	{
 		if (customAnimation != null)
 		{
-			speakingActor.animation[customAnimation.name].normalizedTime = 1.0f;
+			speakingActor.GetComponent<Animation>()[customAnimation.name].normalizedTime = 1.0f;
 		}
 		Close();
 	}
@@ -111,7 +111,7 @@ public class ActorLine : ActorSceneComponent
 		{
 			return;
 		}
-		if (actorClip != null && actingInScene.GetGameObject().audio.isPlaying)
+		if (actorClip != null && actingInScene.GetGameObject().GetComponent<AudioSource>().isPlaying)
 		{
 			return;
 		}
@@ -123,8 +123,8 @@ public class ActorLine : ActorSceneComponent
 		}
 		if (customAnimation != null)
 		{
-			var currentAnimation = speakingActor.animation[customAnimation.name];
-			if (currentAnimation.normalizedTime < 1.0 && speakingActor.animation.IsPlaying(customAnimation.name))
+			var currentAnimation = speakingActor.GetComponent<Animation>()[customAnimation.name];
+			if (currentAnimation.normalizedTime < 1.0 && speakingActor.GetComponent<Animation>().IsPlaying(customAnimation.name))
 			{
 				return;
 			}
@@ -274,8 +274,8 @@ public class ActorLine : ActorSceneComponent
 			Debug.Log("Speaking line:" + name + " clip:" + actorClip.name + " speaker:" + actorName + " talkingTo:" + talkingToActorName);
 			lastSpeakerName = actorName;
 			lastTalkingToActorName = TalkingToActorName;
-			actingInScene.GetGameObject().audio.clip = actorClip;
-			actingInScene.GetGameObject().audio.Play();
+			actingInScene.GetGameObject().GetComponent<AudioSource>().clip = actorClip;
+			actingInScene.GetGameObject().GetComponent<AudioSource>().Play();
 			StartFacialAnimation(speakingActor);
 			IAvatar avatar = actingInScene.GetMainAvatar();
 			avatar.OnSubtitleStart(subtitle);

@@ -78,6 +78,7 @@ return c;
 
 
 			void vert (inout appdata_full v, out Input o) {
+                         UNITY_INITIALIZE_OUTPUT(Input,o);
 float4 Vertex_VertexOutputMaster0_0_NoInput = float4(0,0,0,0);
 float4 Vertex_VertexOutputMaster0_1_NoInput = float4(0,0,0,0);
 float4 Vertex_VertexOutputMaster0_2_NoInput = float4(0,0,0,0);
@@ -94,8 +95,8 @@ float4 Vertex_VertexOutputMaster0_3_NoInput = float4(0,0,0,0);
 				o.Gloss = 0.0;
 				o.Specular = 0.0;
 				o.Alpha = 1.0;
-float4 Pixel_Floor0=floor(float4(_AnimationPosition));
-float4 Pixel_Multiply0=Pixel_Floor0 * float4(_FrameDivision);
+float4 Pixel_Floor0=floor(float4(_AnimationPosition,_AnimationPosition,_AnimationPosition,_AnimationPosition));
+float4 Pixel_Multiply0=Pixel_Floor0 * float4(_FrameDivision,_FrameDivision,_FrameDivision,_FrameDivision);
 float4 Pixel_UV_Pan0=float4((IN.uv_MainTex.xyxy).x + Pixel_Multiply0.x,(IN.uv_MainTex.xyxy).y,(IN.uv_MainTex.xyxy).z,(IN.uv_MainTex.xyxy).w);
 float4 Pixel_Tex2D0=tex2D(_MainTex,Pixel_UV_Pan0.xy);
 float4 Pixel_Multiply1=Pixel_Tex2D0 * _Color;

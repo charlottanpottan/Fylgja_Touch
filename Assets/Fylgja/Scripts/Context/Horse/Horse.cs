@@ -121,6 +121,6 @@ public class Horse : Vehicle
 
 	public void BlendToLocomotion()
 	{
-		animation.CrossFade(currentAnimationGroup);
+		GetComponent<Animation>().CrossFade(currentAnimationGroup);
 	}
 }

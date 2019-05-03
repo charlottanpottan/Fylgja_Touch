@@ -80,7 +80,7 @@ public class BlacksmithSwordEffects : GenericEffect
 
 	void SetAnnealedAnimationTime(float t)
 	{
-		var anim = animation;
+		var anim = GetComponent<Animation>();
 
 		AnimationState state = anim[swordAnnealedAnimation.name];
 

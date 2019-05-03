@@ -36,7 +36,7 @@ public class WaterToolScript : MonoBehaviour
 		riverObject.name = "River";
 		riverObject.AddComponent(typeof(MeshFilter));
 		riverObject.AddComponent(typeof(MeshRenderer));
-		riverObject.AddComponent("AttachedRiverScript");
+		riverObject.AddComponent<AttachedRiverScript>();
 		
 		AttachedRiverScript ARS = (AttachedRiverScript)riverObject.GetComponent("AttachedRiverScript");
 		ARS.riverObject = riverObject;

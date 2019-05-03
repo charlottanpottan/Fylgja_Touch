@@ -58,7 +58,7 @@ public class CharacterFan : MonoBehaviour
 		if (waitForFirePitDone)
 		{
 			Debug.Log("Waiting for animation....");
-			if (!animation.IsPlaying(firePitDone.name))
+			if (!GetComponent<Animation>().IsPlaying(firePitDone.name))
 			{
 				OnFirePitMinigameDoneAnimationReady();
 			}
@@ -117,10 +117,10 @@ public class CharacterFan : MonoBehaviour
 			walking.AddAllowedToMoveModifier(dontMoveModifier);
 		}
 		GameObject go = GameObject.Instantiate(barObject) as GameObject;
-		barAnim = go.animation;
+		barAnim = go.GetComponent<Animation>();
 		barAnim[barAnim.clip.name].normalizedSpeed = 0;
 		barAnim[barAnim.clip.name].normalizedTime = 1;
-		animation.CrossFade(fanStart.name);
+		GetComponent<Animation>().CrossFade(fanStart.name);
 		waitingForFanReady = true;
 		fanReadyTime = Time.time + fanStart.length;
 		isFanning = false;
@@ -152,7 +152,7 @@ public class CharacterFan : MonoBehaviour
 
 	void StartAnimationAt(AnimationClip arm, AnimationClip birch, float time)
 	{
-		fanAnimationState = StartAnimationAt(animation, arm, time);
+		fanAnimationState = StartAnimationAt(GetComponent<Animation>(), arm, time);
 		StartAnimationAt(birchAnimation, birch, time);
 	}
 
@@ -242,7 +242,7 @@ public class CharacterFan : MonoBehaviour
 		if (isInFanMode)
 		{
 			Debug.Log("Fanning aborted. CrossFade: FanStop!");
-			animation.CrossFade(fanStop.name, 0.1f);
+			GetComponent<Animation>().CrossFade(fanStop.name, 0.1f);
 			Reset();
 		}
 	}
@@ -251,7 +251,7 @@ public class CharacterFan : MonoBehaviour
 	{
 		Debug.Log("Effect: full flame! YESS!!!");
 		firePitDoneDialog.TriggerSound();
-		animation.CrossFade(firePitDone.name);
+		GetComponent<Animation>().CrossFade(firePitDone.name);
 		waitingForFanReachedEnd = false;
 		lastUsedPit = null;
  		waitingForPitDone = true;

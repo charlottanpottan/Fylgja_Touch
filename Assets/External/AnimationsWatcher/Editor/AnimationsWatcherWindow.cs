@@ -272,10 +272,10 @@ public class AnimationsWatcherWindow : EditorWindow
                     comparer = new AnimationsWatcher.WeightSort();
                     break;
             }
-            List<AnimationState> objectAnimStates = AnimationsWatcher.GetAnimationsSorted(currentObject.animation, comparer, AnimationsWatcher.configParams.showAnimationsNotPlaying);
+            List<AnimationState> objectAnimStates = AnimationsWatcher.GetAnimationsSorted(currentObject.GetComponent<Animation>(), comparer, AnimationsWatcher.configParams.showAnimationsNotPlaying);
             foreach (AnimationState animState in objectAnimStates)
             {
-				AnimationStateGUI(animState, currentObject.animation);
+				AnimationStateGUI(animState, currentObject.GetComponent<Animation>());
             }
         }
 		EditorGUILayout.EndScrollView();

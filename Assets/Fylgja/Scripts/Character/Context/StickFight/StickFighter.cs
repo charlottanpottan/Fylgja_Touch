@@ -32,7 +32,7 @@ public class StickFighter : MonoBehaviour
 		damageStar = 0;
 		
 		GameObject go = GameObject.Instantiate(barObject) as GameObject;
-		barAnim = go.animation;
+		barAnim = go.GetComponent<Animation>();
 		barAnim[barAnim.clip.name].normalizedSpeed = 0;
 		barAnim[barAnim.clip.name].normalizedTime = 0;
 	}
@@ -44,11 +44,11 @@ public class StickFighter : MonoBehaviour
 
 	void CheckPunchDone()
 	{
-		if (punchingLeftIsInProgress && !animation.IsPlaying(hitLeft.name))
+		if (punchingLeftIsInProgress && !GetComponent<Animation>().IsPlaying(hitLeft.name))
 		{
 			PunchLeftIsDone();
 		}
-		else if (punchingRightIsInProgress && !animation.IsPlaying(hitRight.name))
+		else if (punchingRightIsInProgress && !GetComponent<Animation>().IsPlaying(hitRight.name))
 		{
 			PunchRightIsDone();
 		}
@@ -69,13 +69,13 @@ public class StickFighter : MonoBehaviour
 
 	public virtual StickFighterState GetState()
 	{
-		if (animation.IsPlaying(struckLeft.name) || animation.IsPlaying(struckRight.name))
+		if (GetComponent<Animation>().IsPlaying(struckLeft.name) || GetComponent<Animation>().IsPlaying(struckRight.name))
 		{
 			return StickFighterState.Flinching;
 		}
-		else if (animation.IsPlaying(hitLeft.name))
+		else if (GetComponent<Animation>().IsPlaying(hitLeft.name))
 		{
-			if (animation[hitLeft.name].time < anticipationDuringPunchTime)
+			if (GetComponent<Animation>()[hitLeft.name].time < anticipationDuringPunchTime)
 			{
 				return StickFighterState.StartingLeftPunch;
 			}
@@ -84,9 +84,9 @@ public class StickFighter : MonoBehaviour
 				return StickFighterState.LeftPunch;
 			}
 		}
-		else if (animation.IsPlaying(hitRight.name))
+		else if (GetComponent<Animation>().IsPlaying(hitRight.name))
 		{
-			if (animation[hitRight.name].time < anticipationDuringPunchTime)
+			if (GetComponent<Animation>()[hitRight.name].time < anticipationDuringPunchTime)
 			{
 				return StickFighterState.StartingRightPunch;
 			}
@@ -103,14 +103,14 @@ public class StickFighter : MonoBehaviour
 
 	protected void ReceivedHitLeft()
 	{
-		animation.CrossFade(struckLeft.name);
+		GetComponent<Animation>().CrossFade(struckLeft.name);
 		ReceivedHit();
 		SendMessage("OnStickHitLandedRight", health);
 	}
 
 	protected void ReceivedHitRight()
 	{
-		animation.CrossFade(struckRight.name);
+		GetComponent<Animation>().CrossFade(struckRight.name);
 		ReceivedHit();
 		SendMessage("OnStickHitLandedLeft", health);
 	}
@@ -142,7 +142,7 @@ public class StickFighter : MonoBehaviour
 	public void PunchLeft()
 	{
 		Debug.Log("Wants to hit left!");
-		animation.Play(hitLeft.name);
+		GetComponent<Animation>().Play(hitLeft.name);
 		punchingLeftIsInProgress = true;
 		SendMessage("OnStickPunchLeftStart");
 	}
@@ -150,7 +150,7 @@ public class StickFighter : MonoBehaviour
 	public void PunchRight()
 	{
 		Debug.Log("Wants to hit right!");
-		animation.Play(hitRight.name);
+		GetComponent<Animation>().Play(hitRight.name);
 		punchingRightIsInProgress = true;
 		SendMessage("OnStickPunchRightStart");
 	}

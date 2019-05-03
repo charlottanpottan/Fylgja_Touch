@@ -32,8 +32,8 @@ public class AudioHandler : MonoBehaviour
 			return;
 		}
 		int indexToPlay = Random.Range(0, clips.Length);
-		audio.clip = clips[indexToPlay];
-		audio.Play();
+		GetComponent<AudioSource>().clip = clips[indexToPlay];
+		GetComponent<AudioSource>().Play();
 	}
 
 
@@ -45,7 +45,7 @@ public class AudioHandler : MonoBehaviour
 
 	public void StopSound()
 	{
-		audio.Stop();
+		GetComponent<AudioSource>().Stop();
 	}
 	
 	public AudioSource CreateAndPlay(float volume) {

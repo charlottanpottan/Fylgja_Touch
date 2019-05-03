@@ -75,43 +75,43 @@ public class CharacterBoat : MonoBehaviour
 
 	void PaddleIdle()
 	{
-		if (animation.IsPlaying(paddleIdle.name))
+		if (GetComponent<Animation>().IsPlaying(paddleIdle.name))
 		{
 			return;
 		}
-		animation.CrossFade(paddleIdle.name, 1.0f);
+		GetComponent<Animation>().CrossFade(paddleIdle.name, 1.0f);
 	}
 
 	void PaddleLeft()
 	{
-		if (animation.IsPlaying(paddleSwitchToLeft.name) || animation.IsPlaying(paddleLeft.name))
+		if (GetComponent<Animation>().IsPlaying(paddleSwitchToLeft.name) || GetComponent<Animation>().IsPlaying(paddleLeft.name))
 		{
 			return;
 		}
-		animation.CrossFade(paddleSwitchToLeft.name);
-		animation.PlayQueued(paddleLeft.name);
+		GetComponent<Animation>().CrossFade(paddleSwitchToLeft.name);
+		GetComponent<Animation>().PlayQueued(paddleLeft.name);
 	}
 
 	void PaddleRight()
 	{
-		if (animation.IsPlaying(paddleSwitchToRight.name) || animation.IsPlaying(paddleRight.name))
+		if (GetComponent<Animation>().IsPlaying(paddleSwitchToRight.name) || GetComponent<Animation>().IsPlaying(paddleRight.name))
 		{
 			return;
 		}
-		animation.CrossFade(paddleSwitchToRight.name);
-		animation.PlayQueued(paddleRight.name);
+		GetComponent<Animation>().CrossFade(paddleSwitchToRight.name);
+		GetComponent<Animation>().PlayQueued(paddleRight.name);
 	}
 
 	void PaddleForward()
 	{
-		animation.CrossFade(paddleForward.name);
-		animation[paddleForward.name].speed = 1.0f;
+		GetComponent<Animation>().CrossFade(paddleForward.name);
+		GetComponent<Animation>()[paddleForward.name].speed = 1.0f;
 	}
 
 	void PaddleBackward()
 	{
-		animation.CrossFade(paddleBackward.name);
-		animation[paddleBackward.name].speed = -1.0f;
+		GetComponent<Animation>().CrossFade(paddleBackward.name);
+		GetComponent<Animation>()[paddleBackward.name].speed = -1.0f;
 	}
 
 	void OnEnterBoat(Boat boat)
@@ -124,7 +124,7 @@ public class CharacterBoat : MonoBehaviour
 
 	void OnLeaveBoat()
 	{
-		animation.Stop();
+		GetComponent<Animation>().Stop();
 		SendMessage("SetInsideWater", false);
 		//boatToControl.gameObject.layer = 0;
 		boatToControl = null;

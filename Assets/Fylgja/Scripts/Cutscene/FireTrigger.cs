@@ -23,7 +23,7 @@ public class FireTrigger : MonoBehaviour
 	{
 		foreach (GameObject go in objectsToActivate)
 		{
-			animation.Play(animationToPlay.name);
+			GetComponent<Animation>().Play(animationToPlay.name);
 			go.active = true;
 		}
 	}

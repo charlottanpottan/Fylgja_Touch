@@ -12,7 +12,7 @@ public class ActionPreCondition : MonoBehaviour
 	public virtual Transform AvatarInteractTransform(IAvatar avatar)
 	{
 		var directionToAvatar = (avatar.transform.position - transform.position).normalized;
-		var radius = collider.bounds.size.magnitude;
+		var radius = GetComponent<Collider>().bounds.size.magnitude;
 		var newInteractTransform = new GameObject().transform;
 
 		newInteractTransform.position = transform.position + directionToAvatar * radius;

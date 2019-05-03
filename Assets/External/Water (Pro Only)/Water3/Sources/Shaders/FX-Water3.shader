@@ -1,3 +1,7 @@
+#warning Upgrade NOTE: unity_Scale shader variable was removed; replaced 'unity_Scale.w' with '1.0'
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "FX/Water3" { 
 Properties {
 	_BumpMap ("Normalmap ", 2D) = "bump" {}
@@ -95,7 +99,7 @@ half4 vertexOffsetObjectSpace(appdata_full v, float2 worldPos)
 
 	half3 vtx = v.vertex.xyz;// * half3(1.0,0.0,1.0);
 	
-	_DisplacementXz.xz *= unity_Scale.w;
+	_DisplacementXz.xz *= 1.0;
 	
 	retVal.xz = sin(DISPLACEMENT_TILING * (vtx.xz + worldPos.xy) + _NoiseTime * DISPLACEMENT_SPEED);
 	retVal.y = dot(_DisplacementXz.xz, retVal.xz);
@@ -118,7 +122,7 @@ v2f vert(appdata_full v)
 	v2f o;
 	
 	#if defined(WATER_DISPLACEMENT_ON)
-		float2 worldPos = half2(_Object2World[0][3],_Object2World[2][3]) * unity_Scale.w;
+		float2 worldPos = half2(unity_ObjectToWorld[0][3],unity_ObjectToWorld[2][3]) * 1.0;
 	#else
 		float2 worldPos = half2(0.0,0.0);
 	#endif
@@ -139,14 +143,14 @@ v2f vert(appdata_full v)
 	v.vertex.y += vtxOfs.y;
 	
 	#if defined(WATER_DISPLACEMENT_ON)
-		o.vtxNormalWorld.w = pow(saturate((v.vertex.y / unity_Scale.w) * WAVE_CAPS_AMOUNT), WAVE_CAPS_EXP) * 4.0;
+		o.vtxNormalWorld.w = pow(saturate((v.vertex.y / 1.0) * WAVE_CAPS_AMOUNT), WAVE_CAPS_EXP) * 4.0;
 	#endif		
 	
 	// project diplaced vertex
-	o.pos = mul(UNITY_MATRIX_MVP, v.vertex);	
+	o.pos = UnityObjectToClipPos(v.vertex);	
 	
 	// scrolling uv`s
-	float4 temp = (v.vertex.xzxz+worldPos.xyxy) * _WaveScale4 / unity_Scale.w; // / unity_Scale.w + _WaveOffset;
+	float4 temp = (v.vertex.xzxz+worldPos.xyxy) * _WaveScale4 / 1.0; // / unity_Scale.w + _WaveOffset;
 	o.bumpuv01.xyzw = temp.xywz + _WaveOffset;
 	o.shoreUv.xyzw = temp.xywz * _ShoreTiling + _WaveOffset; 
 	
@@ -157,7 +161,7 @@ v2f vert(appdata_full v)
 	o.ref = ComputeScreenPos(o.pos); 	
 	
 	// normal in world space	
-	o.vtxNormalWorld.rgb =  mul((float3x3)_Object2World, v.normal.xyz * unity_Scale.w);
+	o.vtxNormalWorld.rgb =  mul((float3x3)unity_ObjectToWorld, v.normal.xyz * 1.0);
 	
 	o.special.xyz = o.viewDirS.xyz;
 	o.special.w = length(o.viewDirS.xyz);//mul(UNITY_MATRIX_MV, v.vertex).z;

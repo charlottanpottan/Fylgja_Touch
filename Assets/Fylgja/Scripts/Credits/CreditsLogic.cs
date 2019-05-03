@@ -11,11 +11,11 @@ public class CreditsLogic : MonoBehaviour {
 	
 	void Start()
 	{
-		ownAnimation = animation;
+		ownAnimation = GetComponent<Animation>();
 		ownAnimation.Play();
-		if(audio != null)
+		if(GetComponent<AudioSource>() != null)
 		{
-			audio.Play();
+			GetComponent<AudioSource>().Play();
 		}
 		isInitiated = true;
 	}

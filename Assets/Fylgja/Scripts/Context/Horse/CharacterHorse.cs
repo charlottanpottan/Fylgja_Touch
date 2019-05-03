@@ -22,11 +22,11 @@ public class CharacterHorse : MonoBehaviour {
 	
 	void RidingIdle()
 	{
-		if(animation.IsPlaying(ridingPose.name))
+		if(GetComponent<Animation>().IsPlaying(ridingPose.name))
 		{
 			return;
 		}
-		animation.CrossFade(ridingPose.name, 0.1f);
+		GetComponent<Animation>().CrossFade(ridingPose.name, 0.1f);
 	}
 	
 	void OnLeaveHorse()
