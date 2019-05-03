@@ -15,16 +15,6 @@ public class LevelLogicNormal : MonoBehaviour
 	{
 		Global.levelId = null;
 
-		if (IsOnlinePlay())
-		{
-			var networkObject = GameObject.Find("NetworkHost(Clone)");
-			if (networkObject == null)
-			{
-				networkObject = GameObject.Find("NetworkClient(Clone)");
-			}
-			var networkLevel = networkObject.GetComponent<NetworkLevel>();
-			networkLevel.OnLevelLoaded();
-		}
 	}
 
 
@@ -90,20 +80,9 @@ public class LevelLogicNormal : MonoBehaviour
 	{
 		GameObject characterObject;
 
-		if (IsOnlinePlay())
-		{
-			int group = 0;
-			characterObject = Network.Instantiate(characterAvatarToSpawn, spawnTransform.position, spawnTransform.rotation, group) as GameObject;
-		}
-		else
-		{
 			characterObject = Instantiate(characterAvatarToSpawn, spawnTransform.position, spawnTransform.rotation) as GameObject;
-		} return characterObject;
+		 return characterObject;
 	}
 
-	bool IsOnlinePlay()
-	{
-		return Network.peerType != NetworkPeerType.Disconnected;
-	}
 }
 

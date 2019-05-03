@@ -17,13 +17,6 @@ public class QuitGameAction : ActionArbitration
 		{
 			audioHandler.CreateAndPlay(audioVolume);
 		}
-		if(Application.isWebPlayer)
-		{
-			Application.ExternalCall("fylgja_quit_game");
-		}
-		else
-		{
-			Application.Quit();
-		}
+        Application.Quit();
 	}
 }

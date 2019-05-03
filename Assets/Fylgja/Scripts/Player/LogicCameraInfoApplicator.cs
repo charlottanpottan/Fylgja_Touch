@@ -31,7 +31,7 @@ public class LogicCameraInfoApplicator : MonoBehaviour
 
 	void Awake()
 	{
-		currentFov = GetComponent<Camera>().fov;
+		currentFov = GetComponent<Camera>().fieldOfView;
 		fadeInOut.SetToBlack();
 	}
 
@@ -120,7 +120,7 @@ public class LogicCameraInfoApplicator : MonoBehaviour
 		
 		logicCamera.UpdateCamera(ref cameraInfo);
 		
-		GetComponent<Camera>().fov = cameraInfo.fov;
+		GetComponent<Camera>().fieldOfView = cameraInfo.fov;
 		if (cameraInfo.useSourcePosition)
 		{
 			var deltaPosition = cameraInfo.targetPosition - cameraInfo.sourcePosition;

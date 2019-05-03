@@ -1,65 +1,121 @@
-fileFormatVersion: 1
+fileFormatVersion: 2
 guid: 329e746955f164c4cb143dd581bfaaf5
 ModelImporter:
-  importerVersion: 7
-  meshes:
-    scaleFactor: 0.3
-    useFileUnits: 1
-    meshCompression: 0
-    generateColliders: 0
-    swapUVs: 0
-  tangentSpace:
-    normalImportMode: 0
-    tangentImportMode: 1
-    smoothingAngle: 60
-    splitTangents: 1
-  materials:
-    generation: 0
-  animations:
-    generation: 3
-    bakeAnimations: 0
-    animationCompression: 1
-    animationWrapMode: 2
-    splitAnimations: 1
-  nodeInfo:
-    bubbleRoot:
-    - 100000
-    - 400000
-    //RootNode:
-    - 100002
-    - 400002
-    - 11100000
-    dot1_joint:
-    - 100004
-    - 400004
-    dot2_joint:
-    - 100006
-    - 400006
-    dot2:
-    - 100008
-    - 400008
-    - 13700000
-    dot1:
-    - 100010
-    - 400010
-    - 13700002
-    dot3:
-    - 100012
-    - 400012
-    - 13700004
-    bubbla:
-    - 100014
-    - 400014
-    - 13700006
-    dot3_joint:
-    - 100016
-    - 400016
-AssetImporter:
-  importerVersion: 1
+  serializedVersion: 23
   fileIDToRecycleName:
+    100000: bubbleRoot
+    100002: //RootNode
+    100004: dot1_joint
+    100006: dot2_joint
+    100008: dot2
+    100010: dot1
+    100012: dot3
+    100014: bubbla
+    100016: dot3_joint
+    400000: bubbleRoot
+    400002: //RootNode
+    400004: dot1_joint
+    400006: dot2_joint
+    400008: dot2
+    400010: dot1
+    400012: dot3
+    400014: bubbla
+    400016: dot3_joint
     4300000: TalkMouseCursor
     4300002: bubbla
     4300004: dot2
     4300006: dot1
     4300008: dot3
-    7400000: Take 001 //// MouseTalkCursor
+    7400000: Take 001
+    11100000: //RootNode
+    13700000: dot2
+    13700002: dot1
+    13700004: dot3
+    13700006: bubbla
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 3
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

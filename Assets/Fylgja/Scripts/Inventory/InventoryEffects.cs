@@ -27,7 +27,7 @@ public class InventoryEffects : MonoBehaviour
 
 	void HideAllItems()
 	{
-		for (var i = 0; i < inventoryItemsRoot.transform.GetChildCount(); ++i)
+		for (var i = 0; i < inventoryItemsRoot.transform.childCount; ++i)
 		{
 			var questItemObject = inventoryItemsRoot.transform.GetChild(i).gameObject;
 			questItemObject.SetActiveRecursively(false);
@@ -50,7 +50,7 @@ public class InventoryEffects : MonoBehaviour
 		Debug.Log("Setting quest item: " + itemName + " to:" + enabled);
 		if (enabled)
 		{
-			for (var i = 0; i < inventoryItemsRoot.transform.GetChildCount(); ++i)
+			for (var i = 0; i < inventoryItemsRoot.transform.childCount; ++i)
 			{
 				if (SetQuestItemEnabled(i, itemName, true))
 				{
@@ -60,7 +60,7 @@ public class InventoryEffects : MonoBehaviour
 		}
 		else
 		{
-			for (var i = inventoryItemsRoot.transform.GetChildCount() - 1; i >= 0; --i)
+			for (var i = inventoryItemsRoot.transform.childCount - 1; i >= 0; --i)
 			{
 				if (SetQuestItemEnabled(i, itemName, false))
 				{
