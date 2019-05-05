@@ -181,7 +181,8 @@ public class CharacterWalking : Vehicle
 		}
 
 		Debug.Log("Turning blending to locomotion:" + currentAnimationGroup);
-		GetComponent<Animation>().Play("LocomotionSystem");
+        //TODO: piot: Animation State "LocomotionSystem" couldn't be found
+        //GetComponent<Animation>().Play("LocomotionSystem");
 		GetComponent<Animation>().CrossFade(currentAnimationGroup);
 	}
 }

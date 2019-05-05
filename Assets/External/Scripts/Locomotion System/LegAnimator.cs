@@ -347,7 +347,7 @@ public class LegAnimator : MonoBehaviour {
 	
 	void Update() {
 		
-		if (Time.deltaTime == 0 || Time.timeScale == 0) return;
+		if (true || Time.deltaTime == 0 || Time.timeScale == 0) return;
 		
 		scale = transform.lossyScale.z;
 		
@@ -740,7 +740,7 @@ public class LegAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		if (Time.deltaTime == 0 || Time.timeScale == 0) return;
+		if (true || Time.deltaTime == 0 || Time.timeScale == 0) return;
 		
 		MonitorFootsteps();
 		
