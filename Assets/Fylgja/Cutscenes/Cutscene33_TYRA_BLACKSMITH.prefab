@@ -2,10 +2,11 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &100000
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 11400000}
@@ -16,15 +17,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100001
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: b78213e650ffd497e99ccf1490d8a35b, type: 3}
+  actorMood: 0
+  talkingToActorName: Blacksmith
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "\xD6h...allts\xE5...jag \xE4r typ elva \xE5r."
 --- !u!1 &100002
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 11400002}
@@ -35,15 +71,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100003
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: f44a23fd7d0434dfab6f0c529dc85f9c, type: 3}
+  actorMood: 0
+  talkingToActorName: Blacksmith
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Och det \xE4r inte ni d\xE5 eller?"
 --- !u!1 &100004
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400004}
   - component: {fileID: 11400004}
@@ -54,15 +125,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100005
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: ceca4371931cc493c93141b34ecf7006, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 00e95e7526bf56e4699b4ccf9e7531d3, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Tja...ja...f\xF6r att de \xE4r dumma i huvudet?"
 --- !u!1 &100006
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400006}
   - component: {fileID: 11400006}
@@ -73,15 +179,53 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100007
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: 583dcda86b49c4371a9049aa55e4be06, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 4f349d417ad822f4590c4c3c488a0f27, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Du \xE4r f\xF6r liten f\xF6r att f\xF6rst\xE5. Men om du vill att jag
+    ska fixa den h\xE4r klinga \xE5t dig s\xE5 m\xE5ste du hj\xE4lpa mig.%w9.6 Jag
+    ligger efter i schemat och frugan blir vansinnig om jag blir sen. Du f\xE5r smida
+    n\xE5gra sv\xE4rd \xE5t mig medan jag fixar din klinga."
 --- !u!1 &100008
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400008}
   - component: {fileID: 11400008}
@@ -92,15 +236,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100009
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: 660c21929b7fb4230a0634b3bbb678f1, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 261950ba084c9464a9f7cb745e6192fd, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Asch, det \xE4r enkelt. Jag bara l\xE5tsas att det \xE4r sv\xE5rt s\xE5
+    ingen ska sno mina kunder."
 --- !u!1 &100010
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400010}
   - component: {fileID: 11400010}
@@ -111,15 +291,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100011
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: ad8342ac02f584b2b984c626d24c4dd8, type: 3}
+  actorMood: 0
+  talkingToActorName: Blacksmith
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Sl\xE5 tillbaka mot vad? Vad br\xE5kar ni\r om? Varf\xF6r vill de kriga?"
 --- !u!1 &100012
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400012}
   - component: {fileID: 11400012}
@@ -130,15 +345,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100013
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: 5c8637b93cf6743acbd76258cb95e9cf, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 748071ff551779347bcd9cd92acd4b7b, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Kriget n\xE4rmar sig v\xE5r tr\xF6skel. Och \rjag m\xE5ste smida vapen
+    till v\xE5ra soldater s\xE5 att vi kan sl\xE5 tillbaka!"
 --- !u!1 &100014
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400014}
   - component: {fileID: 11400014}
@@ -149,15 +400,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100015
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: b4b3e931dacdd49f2b63518b544db88d, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 3dedea8afda50c14ea04555e5c182bfb, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "De vill oss inte v\xE4l. Luften fylls\r av oro."
 --- !u!1 &100016
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400016}
   - component: {fileID: 11400016}
@@ -168,15 +454,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100017
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 1171fd9ad297b477f8fe349baf99764a, type: 3}
+  actorMood: 0
+  talkingToActorName: Blacksmith
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Oj d\xE5."
 --- !u!1 &100018
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400018}
   - component: {fileID: 11400018}
@@ -187,15 +508,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100019
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: c83a5e013688e4cf09c059c971bdcded, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 70e2bff65e9c737459bbd85cceb06f06, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "En h\xE4r stryker omkring h\xE4r i skogarna. Redo att anfalla."
 --- !u!1 &100020
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400020}
   - component: {fileID: 11400020}
@@ -206,15 +562,52 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100021
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: 9e08d01acae0f4b0cb547b643aa3f502, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: d6c08d39db0f8944d9f07044870b47e3, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "A\u030Ah, jahaja, det vill hon ja. Jag har visst all tid i v\xE4rlden,
+    tror hon. Fixa hit och fixa dit. Vet du vad som p\xE5g\xE5r h\xE4r omkring? Vet
+    du det?"
 --- !u!1 &100022
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400022}
   - component: {fileID: 11400022}
@@ -225,15 +618,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100023
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: d3bad4c44c871476c908ee70260aa2ab, type: 3}
+  actorMood: 0
+  talkingToActorName: Blacksmith
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Du beh\xF6ver inte bli uppr\xF6rd. Jag \rhar inte gjort dig n\xE5got."
 --- !u!1 &100024
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400024}
   - component: {fileID: 11400024}
@@ -244,15 +672,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100025
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 51e396045488445618377d351aa964f0, type: 3}
+  actorMood: 0
+  talkingToActorName: Blacksmith
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Tanten vill att du ska fixa det h\xE4r. Det saknar klinga. "
 --- !u!1 &100026
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400026}
   - component: {fileID: 11400026}
@@ -263,15 +726,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100027
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: 22ed37d91f476429a95fc94e5919e63a, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 309e426a8816dd84081127fa503b2459, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Var har du f\xE5tt tag p\xE5 det d\xE4r?"
 --- !u!1 &100028
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400028}
   - component: {fileID: 11400028}
@@ -282,15 +780,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100029
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: beafdb1866b3d4e1fa0f1453ead9882b, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 8248ba091a7904b4abb02ba20564ce5d, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Va? Vem? Vad tusan? N\xE4e!"
 --- !u!1 &100030
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400030}
   - component: {fileID: 11400030}
@@ -301,15 +834,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100031
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: 53b0ce6332cab42f3b71837e66bc99e9, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 8e5b4503c561d4144b54ddeb9abc9db0, type: 2}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Och vi som skulle \xE4ta stek till \rmiddag och allt. Herregud."
 --- !u!1 &100032
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400032}
   - component: {fileID: 11400032}
@@ -320,15 +888,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100033
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Blacksmith
+  actorClip: {fileID: 8300000, guid: 49a96842361fd4d3da4c3d264957897b, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 3
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 93b8212897874bc40ae40e67161810b5, type: 2}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Jag har s\xE5 mycket att g\xF6ra. Det\r blir \xF6vertid ikv\xE4ll. Frugan
+    kommer bli vansinnig."
 --- !u!1 &100034
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400034}
   m_Layer: 0
@@ -338,436 +942,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100035
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100036
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400036}
-  - component: {fileID: 8200000}
-  - component: {fileID: 11400034}
-  m_Layer: 0
-  m_Name: ActorScene_BlacksmithIntro
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100037
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400038}
-  m_Layer: 0
-  m_Name: _ActorPositions
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100039
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400040}
-  m_Layer: 0
-  m_Name: _Lines
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100041
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100042
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400042}
-  m_Layer: 0
-  m_Name: _PostActorPositions
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100043
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100044
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400044}
-  - component: {fileID: 11400036}
-  m_Layer: 0
-  m_Name: Line4Tyra
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100045
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100046
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400046}
-  - component: {fileID: 11400038}
-  m_Layer: 0
-  m_Name: Line5Blacksmith
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100047
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100048
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400048}
-  - component: {fileID: 11400040}
-  m_Layer: 0
-  m_Name: Tyra
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100049
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100050
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400050}
-  - component: {fileID: 11400042}
-  m_Layer: 0
-  m_Name: Blacksmith
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100051
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400000
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400002
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400003
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400004
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400005
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400006
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400007
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400008
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400009
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400010
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400011
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400012
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400013
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400014
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400015
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400016
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100016}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400017
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400018
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100018}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400019
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400020
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400021
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400022
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400023
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400024
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400025
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400026
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100026}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400027
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400028
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400029
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400030
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100030}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400031
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400032
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400033
-EditorExtensionImpl:
-  serializedVersion: 6
 --- !u!4 &400034
 Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -780,14 +960,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400035
-EditorExtensionImpl:
+--- !u!1 &100036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400036}
+  - component: {fileID: 8200000}
+  - component: {fileID: 11400034}
+  m_Layer: 0
+  m_Name: ActorScene_BlacksmithIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400036
 Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -796,147 +992,12 @@ Transform:
   m_Father: {fileID: 400034}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400037
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400038
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 400050}
-  - {fileID: 400048}
-  m_Father: {fileID: 400034}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400039
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400040
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 400032}
-  - {fileID: 400030}
-  - {fileID: 400028}
-  - {fileID: 400044}
-  - {fileID: 400020}
-  - {fileID: 400024}
-  - {fileID: 400046}
-  - {fileID: 400026}
-  - {fileID: 400002}
-  - {fileID: 400000}
-  - {fileID: 400008}
-  - {fileID: 400006}
-  - {fileID: 400004}
-  - {fileID: 400010}
-  - {fileID: 400014}
-  - {fileID: 400016}
-  - {fileID: 400018}
-  - {fileID: 400022}
-  - {fileID: 400012}
-  m_Father: {fileID: 400034}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400041
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400042
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400034}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400043
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400044
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100044}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400045
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400046
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100046}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400047
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400048
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100048}
-  m_LocalRotation: {x: 0, y: 0.9960386, z: 0, w: -0.08892225}
-  m_LocalPosition: {x: 617.6862, y: 44.856445, z: 549.21185}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400038}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400049
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400050
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100050}
-  m_LocalRotation: {x: -1.16415315e-10, y: 0.08892208, z: 1.16415315e-10, w: 0.9960386}
-  m_LocalPosition: {x: 617.4231, y: 44.82983, z: 547.76776}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400038}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400051
-EditorExtensionImpl:
-  serializedVersion: 6
 --- !u!82 &8200000
 AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100036}
   m_Enabled: 1
   serializedVersion: 4
@@ -961,498 +1022,78 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - serializedVersion: 2
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1002 &8200001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: b78213e650ffd497e99ccf1490d8a35b, type: 3}
-  actorMood: 0
-  talkingToActorName: Blacksmith
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "\xD6h...allts\xE5...jag \xE4r typ elva \xE5r."
---- !u!1002 &11400001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: f44a23fd7d0434dfab6f0c529dc85f9c, type: 3}
-  actorMood: 0
-  talkingToActorName: Blacksmith
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Och det \xE4r inte ni d\xE5 eller?"
---- !u!1002 &11400003
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: ceca4371931cc493c93141b34ecf7006, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 00e95e7526bf56e4699b4ccf9e7531d3, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Tja...ja...f\xF6r att de \xE4r dumma i huvudet?"
---- !u!1002 &11400005
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: 583dcda86b49c4371a9049aa55e4be06, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 4f349d417ad822f4590c4c3c488a0f27, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Du \xE4r f\xF6r liten f\xF6r att f\xF6rst\xE5. Men om du vill att jag
-    ska fixa den h\xE4r klinga \xE5t dig s\xE5 m\xE5ste du hj\xE4lpa mig.%w9.6 Jag
-    ligger efter i schemat och frugan blir vansinnig om jag blir sen. Du f\xE5r smida
-    n\xE5gra sv\xE4rd \xE5t mig medan jag fixar din klinga."
---- !u!1002 &11400007
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: 660c21929b7fb4230a0634b3bbb678f1, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 261950ba084c9464a9f7cb745e6192fd, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Asch, det \xE4r enkelt. Jag bara l\xE5tsas att det \xE4r sv\xE5rt s\xE5
-    ingen ska sno mina kunder."
---- !u!1002 &11400009
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: ad8342ac02f584b2b984c626d24c4dd8, type: 3}
-  actorMood: 0
-  talkingToActorName: Blacksmith
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Sl\xE5 tillbaka mot vad? Vad br\xE5kar ni\r om? Varf\xF6r vill de kriga?"
---- !u!1002 &11400011
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: 5c8637b93cf6743acbd76258cb95e9cf, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 748071ff551779347bcd9cd92acd4b7b, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Kriget n\xE4rmar sig v\xE5r tr\xF6skel. Och \rjag m\xE5ste smida vapen
-    till v\xE5ra soldater s\xE5 att vi kan sl\xE5 tillbaka!"
---- !u!1002 &11400013
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: b4b3e931dacdd49f2b63518b544db88d, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 3dedea8afda50c14ea04555e5c182bfb, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "De vill oss inte v\xE4l. Luften fylls\r av oro."
---- !u!1002 &11400015
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 1171fd9ad297b477f8fe349baf99764a, type: 3}
-  actorMood: 0
-  talkingToActorName: Blacksmith
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Oj d\xE5."
---- !u!1002 &11400017
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: c83a5e013688e4cf09c059c971bdcded, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 70e2bff65e9c737459bbd85cceb06f06, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "En h\xE4r stryker omkring h\xE4r i skogarna. Redo att anfalla."
---- !u!1002 &11400019
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: 9e08d01acae0f4b0cb547b643aa3f502, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: d6c08d39db0f8944d9f07044870b47e3, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "A\u030Ah, jahaja, det vill hon ja. Jag har visst all tid i v\xE4rlden,
-    tror hon. Fixa hit och fixa dit. Vet du vad som p\xE5g\xE5r h\xE4r omkring? Vet
-    du det?"
---- !u!1002 &11400021
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400022
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: d3bad4c44c871476c908ee70260aa2ab, type: 3}
-  actorMood: 0
-  talkingToActorName: Blacksmith
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Du beh\xF6ver inte bli uppr\xF6rd. Jag \rhar inte gjort dig n\xE5got."
---- !u!1002 &11400023
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 51e396045488445618377d351aa964f0, type: 3}
-  actorMood: 0
-  talkingToActorName: Blacksmith
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Tanten vill att du ska fixa det h\xE4r. Det saknar klinga. "
---- !u!1002 &11400025
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: 22ed37d91f476429a95fc94e5919e63a, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 309e426a8816dd84081127fa503b2459, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Var har du f\xE5tt tag p\xE5 det d\xE4r?"
---- !u!1002 &11400027
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400028
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: beafdb1866b3d4e1fa0f1453ead9882b, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 8248ba091a7904b4abb02ba20564ce5d, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Va? Vem? Vad tusan? N\xE4e!"
---- !u!1002 &11400029
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: 53b0ce6332cab42f3b71837e66bc99e9, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 8e5b4503c561d4144b54ddeb9abc9db0, type: 2}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Och vi som skulle \xE4ta stek till \rmiddag och allt. Herregud."
---- !u!1002 &11400031
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blacksmith
-  actorClip: {fileID: 8300000, guid: 49a96842361fd4d3da4c3d264957897b, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 93b8212897874bc40ae40e67161810b5, type: 2}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Jag har s\xE5 mycket att g\xF6ra. Det\r blir \xF6vertid ikv\xE4ll. Frugan
-    kommer bli vansinnig."
---- !u!1002 &11400033
-EditorExtensionImpl:
-  serializedVersion: 6
 --- !u!114 &11400034
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100036}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1484,14 +1125,154 @@ MonoBehaviour:
   keepAvatarLocked: 0
   useFader: 1
   skippable: 1
---- !u!1002 &11400035
-EditorExtensionImpl:
+--- !u!1 &100038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400038}
+  m_Layer: 0
+  m_Name: _ActorPositions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400050}
+  - {fileID: 400048}
+  m_Father: {fileID: 400034}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &100040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400040}
+  m_Layer: 0
+  m_Name: _Lines
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400032}
+  - {fileID: 400030}
+  - {fileID: 400028}
+  - {fileID: 400044}
+  - {fileID: 400020}
+  - {fileID: 400024}
+  - {fileID: 400046}
+  - {fileID: 400026}
+  - {fileID: 400002}
+  - {fileID: 400000}
+  - {fileID: 400008}
+  - {fileID: 400006}
+  - {fileID: 400004}
+  - {fileID: 400010}
+  - {fileID: 400014}
+  - {fileID: 400016}
+  - {fileID: 400018}
+  - {fileID: 400022}
+  - {fileID: 400012}
+  m_Father: {fileID: 400034}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &100042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400042}
+  m_Layer: 0
+  m_Name: _PostActorPositions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400034}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &100044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400044}
+  - component: {fileID: 11400036}
+  m_Layer: 0
+  m_Name: Line4Tyra
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400036
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100044}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1509,14 +1290,43 @@ MonoBehaviour:
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
   subtitle: "Hall\xE5! H\xE4r nere!"
---- !u!1002 &11400037
-EditorExtensionImpl:
+--- !u!1 &100046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400046}
+  - component: {fileID: 11400038}
+  m_Layer: 0
+  m_Name: Line5Blacksmith
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400040}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400038
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100046}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1534,48 +1344,89 @@ MonoBehaviour:
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
   subtitle: "Aha. Jamenhej lilla v\xE4n. Vad kan \rjag g\xF6ra f\xF6r dig?"
---- !u!1002 &11400039
-EditorExtensionImpl:
+--- !u!1 &100048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400048}
+  - component: {fileID: 11400040}
+  m_Layer: 0
+  m_Name: Tyra
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100048}
+  m_LocalRotation: {x: 0, y: 0.9960386, z: 0, w: -0.08892225}
+  m_LocalPosition: {x: 617.6862, y: 44.856445, z: 549.21185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400038}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400040
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100048}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62a1837d16c2d417fb5ff040c41e2851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1002 &11400041
-EditorExtensionImpl:
+--- !u!1 &100050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400050}
+  - component: {fileID: 11400042}
+  m_Layer: 0
+  m_Name: Blacksmith
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100050}
+  m_LocalRotation: {x: -1.16415315e-10, y: 0.08892208, z: 1.16415315e-10, w: 0.9960386}
+  m_LocalPosition: {x: 617.4231, y: 44.82983, z: 547.76776}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400038}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400042
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100050}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62a1837d16c2d417fb5ff040c41e2851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1002 &11400043
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 100034}
-  m_IsPrefabParent: 1
---- !u!1002 &100100001
-EditorExtensionImpl:
-  serializedVersion: 6

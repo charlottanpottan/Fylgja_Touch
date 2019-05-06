@@ -2,10 +2,11 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &100000
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 11400000}
@@ -16,15 +17,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100001
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 45fc5c151b35a47be9400cb6ceb38fc4, type: 3}
+  actorMood: 0
+  talkingToActorName: Warlord
+  shotComposition: 1
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "S\xE4g vad jag ska g\xF6ra. Jag hj\xE4lper dig."
 --- !u!1 &100002
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 11400002}
@@ -35,15 +71,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100003
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 5b0cf15700aab4a199ffbccb29aaac27, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: d195b29fa58991943809d08870820d14, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "F\xF6rmodligen \xE4r spionerna redan i r\xF6relse. Du m\xE5ste hinna
+    f\xF6re dem och deras l\xF6gner, tillbaka till byn!"
 --- !u!1 &100004
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400004}
   - component: {fileID: 11400004}
@@ -54,15 +126,52 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100005
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 88ed2a726a27148c19319cb25bc9ffa0, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 400a4f399fc83fd4dbd837049510e099, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Ta en h\xE4st, Tyra, och rid med vindens fart tillbaka till byn. S\xE4g
+    att jag accepterar h\xF6vdingens g\xE5va och vill f\xF6rhandla om villkorsl\xF6s
+    fred. Men du m\xE5ste skynda dig."
 --- !u!1 &100006
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400006}
   - component: {fileID: 11400006}
@@ -73,15 +182,53 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100007
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 8ef8797c8e22e4dfbb79a03278079440, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 35918faa0d85e5f499f60563fb852299, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Nej. S\xE5 fort nyheten om att kriget \xE4r avbl\xE5st sprider sig, finns
+    det spioner och annat l\xF6st folk omkring mig som kommer f\xF6rs\xF6ka skicka
+    en l\xF6gn till byn att vi nu ska anfalla.%w10.5 Det finns m\xE5nga som vill att
+    det ska bli krig, och n\xE5gra av dem finns ibland oss."
 --- !u!1 &100008
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400008}
   - component: {fileID: 11400008}
@@ -92,15 +239,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100009
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: ad56c9846a6d349f49b04907bfae4741, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 42dcd19fc6afae94cba669f3d0f71f63, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Vilket fint namn. Kanske d\xF6per jag min f\xF6rstf\xF6dda dotter efter
+    dig. Idag har du gjort n\xE5got stort. Men du \xE4r inte f\xE4rdig \xE4n."
 --- !u!1 &100010
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400010}
   - component: {fileID: 11400010}
@@ -111,15 +294,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100011
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: e20f894ecb4e2479a9851ecfb5b68a38, type: 3}
+  actorMood: 0
+  talkingToActorName: Warlord
+  shotComposition: 1
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: Det fixar jag!
 --- !u!1 &100012
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400012}
   - component: {fileID: 11400012}
@@ -130,15 +348,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100013
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 53a877cb0d71a4015be859f1a72ea7e8, type: 3}
+  actorMood: 0
+  talkingToActorName: Warlord
+  shotComposition: 1
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: Inte?
 --- !u!1 &100014
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400014}
   - component: {fileID: 11400014}
@@ -149,15 +402,54 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100015
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: f2c69d1c1ccc2429a853f641fdde3b33, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 705cd94c983fef949a35352ec4d35264, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Soldater! V\xE4nner! Tappra f\xF6ljeslagare! Sprid ordet genom l\xE4gret!
+    Det blir inget krig. Inte idag iallafall. Och f\xF6rmodligen inte imorgon heller.%w12.1
+    H\xF6vdingen har skickat en fredsg\xE5va. Han vill f\xF6rsonas, och jag t\xE4nker
+    fasen i mig inte vara den som s\xE4tter k\xE4ppar i hjulet f\xF6r en s\xE5dan
+    stor gest."
 --- !u!1 &100016
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400016}
   - component: {fileID: 11400016}
@@ -168,15 +460,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100017
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 88737ffce520940d4a6aacf52755c42a, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 5577bd6ce80505e4da9ee86847134050, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Herregud...en g\xE5va...fr\xE5n h\xF6vdingen i byn...och vilken g\xE5va..."
 --- !u!1 &100018
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400018}
   - component: {fileID: 11400018}
@@ -187,15 +514,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100019
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 4b6dc078336a14008b73f1d038b1c2cf, type: 3}
+  actorMood: 0
+  talkingToActorName: Warlord
+  shotComposition: 1
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: Tyra.
 --- !u!1 &100020
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400020}
   - component: {fileID: 11400020}
@@ -206,15 +568,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100021
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 60378ae6223a840538eabe97adea8a32, type: 3}
+  actorMood: 0
+  talkingToActorName: Warlord
+  shotComposition: 1
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Vet du vad? Du ska f\xE5 en grej av mig nu."
 --- !u!1 &100022
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400022}
   - component: {fileID: 11400022}
@@ -225,15 +622,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100023
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 22163dfdd1a8a4524a405e19b50c6bad, type: 3}
+  actorMood: 0
+  talkingToActorName: Warlord
+  shotComposition: 1
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Du k\xE4nns bekant."
 --- !u!1 &100024
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400024}
   - component: {fileID: 11400046}
@@ -244,15 +676,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100025
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10cb8b4d810d40399ef1f1b3a76d63b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
 --- !u!1 &100026
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400026}
   - component: {fileID: 11400026}
@@ -263,15 +720,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100027
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 9211ecc18a410430db18349156e5300d, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: b074486e442b89448893317f6f46402c, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Du med...har vi tr\xE4ffats f\xF6rut?"
 --- !u!1 &100028
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400028}
   - component: {fileID: 11400028}
@@ -282,15 +774,52 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100029
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 909eee478ff394722b71eca559051ce7, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 006a310b345f7424ab809dec8859502c, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "\xC5h, vad s\xE4ger du? \xC4r det kanske en av de gamla gudabilderna?
+    Jag har n\xE4stan alla \xE4ven om Leif-Sven har fler. Men han reser ju mer \xE4n
+    jag ocks\xE5."
 --- !u!1 &100030
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400030}
   - component: {fileID: 11400030}
@@ -301,15 +830,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100031
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: f3c36d1bc085e4a18bb2b849b22311c0, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 74d24d31aa767fc4783b311835ccddd6, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Men lugna er nu, pojkar, det \xE4r ju bara en liten flicka. Herregud
+    vad ni h\xE5ller p\xE5. Vem \xE4r du och vad g\xF6r du h\xE4r?"
 --- !u!1 &100032
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400032}
   - component: {fileID: 11400032}
@@ -320,15 +885,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100033
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100032}
+  m_LocalRotation: {x: 0, y: 0.27984685, z: 0, w: 0.9600447}
+  m_LocalPosition: {x: 260.6583, y: 61.142647, z: 741.3355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400044}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a1837d16c2d417fb5ff040c41e2851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &100034
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400034}
   - component: {fileID: 11400034}
@@ -339,15 +928,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100035
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100034}
+  m_LocalRotation: {x: 0, y: 0.9600446, z: 0, w: -0.279847}
+  m_LocalPosition: {x: 261.96136, y: 61.142647, z: 743.3808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400044}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a1837d16c2d417fb5ff040c41e2851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &100036
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400036}
   - component: {fileID: 11400036}
@@ -358,15 +971,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100037
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 364898d87e61a46c9bd2da71b98a2c41, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: b9123ced49f45fd43a1cb0bb4b0b01d3, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Nu, min v\xE4n. Vad heter du?"
 --- !u!1 &100038
 GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400038}
   - component: {fileID: 11400038}
@@ -377,15 +1025,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100039
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Tyra
+  actorClip: {fileID: 8300000, guid: 179c9942244a34ccc8e78dc4d28b329c, type: 3}
+  actorMood: 0
+  talkingToActorName: Warlord
+  shotComposition: 1
+  shotMovement: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: Jag har en grej till dig.
 --- !u!1 &100040
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400040}
   m_Layer: 0
@@ -395,15 +1078,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100041
-EditorExtensionImpl:
-  serializedVersion: 6
+--- !u!4 &400040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400048}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100042
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 400042}
   m_Layer: 0
@@ -413,501 +1108,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100043
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400044}
-  m_Layer: 0
-  m_Name: _ActorPositions
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100045
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100046
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400046}
-  - component: {fileID: 8200000}
-  - component: {fileID: 11400040}
-  m_Layer: 0
-  m_Name: ActorScene_TheWarlord
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100047
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100048
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400048}
-  m_Layer: 0
-  m_Name: Cutscene42_TYRA_WARLORD
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100049
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100050
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400050}
-  - component: {fileID: 11400042}
-  m_Layer: 0
-  m_Name: DeactivateHelmet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100051
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100052
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400052}
-  - component: {fileID: 11400044}
-  m_Layer: 0
-  m_Name: ActivateSword
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100053
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100054
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400054}
-  - component: {fileID: 11400024}
-  m_Layer: 0
-  m_Name: Line7Warlord
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100055
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100056
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400056}
-  - component: {fileID: 11400048}
-  m_Layer: 0
-  m_Name: DeactivateSword
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100057
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1 &100058
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 400058}
-  - component: {fileID: 11400050}
-  m_Layer: 0
-  m_Name: Fade
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1002 &100059
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400000
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400002
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400003
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400004
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400005
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400006
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400007
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400008
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400009
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400010
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400011
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400012
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400013
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400014
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400015
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400016
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100016}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400017
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400018
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100018}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400019
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400020
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400021
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400022
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400023
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400024
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400025
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400026
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100026}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400027
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400028
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400029
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400030
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100030}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400031
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400032
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100032}
-  m_LocalRotation: {x: 0, y: 0.27984685, z: 0, w: 0.9600447}
-  m_LocalPosition: {x: 260.6583, y: 61.142647, z: 741.3355}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400044}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400033
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400034
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100034}
-  m_LocalRotation: {x: 0, y: 0.9600446, z: 0, w: -0.279847}
-  m_LocalPosition: {x: 261.96136, y: 61.142647, z: 743.3808}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400044}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400035
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400036
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100036}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400037
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400038
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400039
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400040
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400048}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400041
-EditorExtensionImpl:
-  serializedVersion: 6
 --- !u!4 &400042
 Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -939,14 +1145,28 @@ Transform:
   m_Father: {fileID: 400048}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400043
-EditorExtensionImpl:
+--- !u!1 &100044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400044}
+  m_Layer: 0
+  m_Name: _ActorPositions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400044
 Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -957,14 +1177,30 @@ Transform:
   m_Father: {fileID: 400048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400045
-EditorExtensionImpl:
+--- !u!1 &100046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400046}
+  - component: {fileID: 8200000}
+  - component: {fileID: 11400040}
+  m_Layer: 0
+  m_Name: ActorScene_TheWarlord
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400046
 Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -973,114 +1209,12 @@ Transform:
   m_Father: {fileID: 400048}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400047
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400048
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 400044}
-  - {fileID: 400042}
-  - {fileID: 400040}
-  - {fileID: 400046}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400049
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400050
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100050}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400051
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400052
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400053
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400054
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100054}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400055
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400056
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100056}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400057
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400058
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100058}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400042}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400059
-EditorExtensionImpl:
-  serializedVersion: 6
 --- !u!82 &8200000
 AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100046}
   m_Enabled: 1
   serializedVersion: 4
@@ -1105,557 +1239,78 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - serializedVersion: 2
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
+    - serializedVersion: 3
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1002 &8200001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 45fc5c151b35a47be9400cb6ceb38fc4, type: 3}
-  actorMood: 0
-  talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "S\xE4g vad jag ska g\xF6ra. Jag hj\xE4lper dig."
---- !u!1002 &11400001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 5b0cf15700aab4a199ffbccb29aaac27, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: d195b29fa58991943809d08870820d14, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "F\xF6rmodligen \xE4r spionerna redan i r\xF6relse. Du m\xE5ste hinna
-    f\xF6re dem och deras l\xF6gner, tillbaka till byn!"
---- !u!1002 &11400003
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 88ed2a726a27148c19319cb25bc9ffa0, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 400a4f399fc83fd4dbd837049510e099, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Ta en h\xE4st, Tyra, och rid med vindens fart tillbaka till byn. S\xE4g
-    att jag accepterar h\xF6vdingens g\xE5va och vill f\xF6rhandla om villkorsl\xF6s
-    fred. Men du m\xE5ste skynda dig."
---- !u!1002 &11400005
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 8ef8797c8e22e4dfbb79a03278079440, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 35918faa0d85e5f499f60563fb852299, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Nej. S\xE5 fort nyheten om att kriget \xE4r avbl\xE5st sprider sig, finns
-    det spioner och annat l\xF6st folk omkring mig som kommer f\xF6rs\xF6ka skicka
-    en l\xF6gn till byn att vi nu ska anfalla.%w10.5 Det finns m\xE5nga som vill att
-    det ska bli krig, och n\xE5gra av dem finns ibland oss."
---- !u!1002 &11400007
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: ad56c9846a6d349f49b04907bfae4741, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 42dcd19fc6afae94cba669f3d0f71f63, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Vilket fint namn. Kanske d\xF6per jag min f\xF6rstf\xF6dda dotter efter
-    dig. Idag har du gjort n\xE5got stort. Men du \xE4r inte f\xE4rdig \xE4n."
---- !u!1002 &11400009
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: e20f894ecb4e2479a9851ecfb5b68a38, type: 3}
-  actorMood: 0
-  talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: Det fixar jag!
---- !u!1002 &11400011
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 53a877cb0d71a4015be859f1a72ea7e8, type: 3}
-  actorMood: 0
-  talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: Inte?
---- !u!1002 &11400013
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: f2c69d1c1ccc2429a853f641fdde3b33, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 705cd94c983fef949a35352ec4d35264, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Soldater! V\xE4nner! Tappra f\xF6ljeslagare! Sprid ordet genom l\xE4gret!
-    Det blir inget krig. Inte idag iallafall. Och f\xF6rmodligen inte imorgon heller.%w12.1
-    H\xF6vdingen har skickat en fredsg\xE5va. Han vill f\xF6rsonas, och jag t\xE4nker
-    fasen i mig inte vara den som s\xE4tter k\xE4ppar i hjulet f\xF6r en s\xE5dan
-    stor gest."
---- !u!1002 &11400015
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 88737ffce520940d4a6aacf52755c42a, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 5577bd6ce80505e4da9ee86847134050, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Herregud...en g\xE5va...fr\xE5n h\xF6vdingen i byn...och vilken g\xE5va..."
---- !u!1002 &11400017
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 4b6dc078336a14008b73f1d038b1c2cf, type: 3}
-  actorMood: 0
-  talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: Tyra.
---- !u!1002 &11400019
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 60378ae6223a840538eabe97adea8a32, type: 3}
-  actorMood: 0
-  talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Vet du vad? Du ska f\xE5 en grej av mig nu."
---- !u!1002 &11400021
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400022
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 22163dfdd1a8a4524a405e19b50c6bad, type: 3}
-  actorMood: 0
-  talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Du k\xE4nns bekant."
---- !u!1002 &11400023
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 3bee350e6f36945c885bd2b0c3bc958e, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 58432f628a1d9714390a522954057c3b, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Vad \xE4r nu detta..."
---- !u!1002 &11400025
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 9211ecc18a410430db18349156e5300d, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: b074486e442b89448893317f6f46402c, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Du med...har vi tr\xE4ffats f\xF6rut?"
---- !u!1002 &11400027
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400028
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 909eee478ff394722b71eca559051ce7, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 006a310b345f7424ab809dec8859502c, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "\xC5h, vad s\xE4ger du? \xC4r det kanske en av de gamla gudabilderna?
-    Jag har n\xE4stan alla \xE4ven om Leif-Sven har fler. Men han reser ju mer \xE4n
-    jag ocks\xE5."
---- !u!1002 &11400029
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: f3c36d1bc085e4a18bb2b849b22311c0, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: 74d24d31aa767fc4783b311835ccddd6, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Men lugna er nu, pojkar, det \xE4r ju bara en liten flicka. Herregud
-    vad ni h\xE5ller p\xE5. Vem \xE4r du och vad g\xF6r du h\xE4r?"
---- !u!1002 &11400031
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62a1837d16c2d417fb5ff040c41e2851, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1002 &11400033
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400034
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62a1837d16c2d417fb5ff040c41e2851, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1002 &11400035
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Warlord
-  actorClip: {fileID: 8300000, guid: 364898d87e61a46c9bd2da71b98a2c41, type: 3}
-  actorMood: 0
-  talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
-  customAnimation: {fileID: 7400000, guid: b9123ced49f45fd43a1cb0bb4b0b01d3, type: 3}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: "Nu, min v\xE4n. Vad heter du?"
---- !u!1002 &11400037
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!114 &11400038
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Tyra
-  actorClip: {fileID: 8300000, guid: 179c9942244a34ccc8e78dc4d28b329c, type: 3}
-  actorMood: 0
-  talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
-  customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
-  customAnimationCrossfadeTime: 0.1
-  delayAfter: 0
-  subtitle: Jag har en grej till dig.
---- !u!1002 &11400039
-EditorExtensionImpl:
-  serializedVersion: 6
 --- !u!114 &11400040
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100046}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1692,14 +1347,77 @@ MonoBehaviour:
   keepAvatarLocked: 0
   useFader: 1
   skippable: 1
---- !u!1002 &11400041
-EditorExtensionImpl:
+--- !u!1 &100048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400048}
+  m_Layer: 0
+  m_Name: Cutscene42_TYRA_WARLORD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400044}
+  - {fileID: 400042}
+  - {fileID: 400040}
+  - {fileID: 400046}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &100050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400050}
+  - component: {fileID: 11400042}
+  m_Layer: 0
+  m_Name: DeactivateHelmet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400042
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100050}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1709,14 +1427,43 @@ MonoBehaviour:
   actorName: Warlord
   gameObjectToActivate: movement/pelvis_joint/spine_01/spine_02/spine_03/spine_04/head_joint/Warlord_Helm
   activationState: 0
---- !u!1002 &11400043
-EditorExtensionImpl:
+--- !u!1 &100052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400052}
+  - component: {fileID: 11400044}
+  m_Layer: 0
+  m_Name: ActivateSword
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400044
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100052}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1726,29 +1473,97 @@ MonoBehaviour:
   actorName: Warlord
   gameObjectToActivate: movement/pelvis_joint/spine_01/spine_02/spine_03/R_clavicle_joint/R_shoulder_joint/R_elbow_joint/R_hand_joint/Ringsword
   activationState: 1
---- !u!1002 &11400045
-EditorExtensionImpl:
+--- !u!1 &100054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
---- !u!114 &11400046
+  m_Component:
+  - component: {fileID: 400054}
+  - component: {fileID: 11400024}
+  m_Layer: 0
+  m_Name: Line7Warlord
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400024
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100024}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c10cb8b4d810d40399ef1f1b3a76d63b, type: 3}
+  m_Script: {fileID: 11500000, guid: bd74f022778654594803f08c04366480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorName: Tyra
---- !u!1002 &11400047
-EditorExtensionImpl:
+  actorName: Warlord
+  actorClip: {fileID: 8300000, guid: 3bee350e6f36945c885bd2b0c3bc958e, type: 3}
+  actorMood: 0
+  talkingToActorName: Tyra
+  shotComposition: 0
+  shotMovement: 0
+  customAnimation: {fileID: 7400000, guid: 58432f628a1d9714390a522954057c3b, type: 3}
+  blendCustomAnimation: 0
+  customAnimationCrossfadeTime: 0.1
+  delayAfter: 0
+  subtitle: "Vad \xE4r nu detta..."
+--- !u!1 &100056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400056}
+  - component: {fileID: 11400048}
+  m_Layer: 0
+  m_Name: DeactivateSword
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400048
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100056}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1758,14 +1573,43 @@ MonoBehaviour:
   actorName: Warlord
   gameObjectToActivate: movement/pelvis_joint/spine_01/spine_02/spine_03/R_clavicle_joint/R_shoulder_joint/R_elbow_joint/R_hand_joint/Ringsword
   activationState: 0
---- !u!1002 &11400049
-EditorExtensionImpl:
+--- !u!1 &100058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400058}
+  - component: {fileID: 11400050}
+  m_Layer: 0
+  m_Name: Fade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400050
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100058}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1774,20 +1618,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeInTime: 1
   fadeOutTime: 1
---- !u!1002 &11400051
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 100048}
-  m_IsPrefabParent: 1
---- !u!1002 &100100001
-EditorExtensionImpl:
-  serializedVersion: 6
