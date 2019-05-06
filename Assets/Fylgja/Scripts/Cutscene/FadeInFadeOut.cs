@@ -36,7 +36,7 @@ public class FadeInFadeOut : MonoBehaviour
 
 	public void FadeIn(float fadeTime)
 	{
-		Debug.Log(Time.time + ": FadeIn(" + fadeTime + ")");
+		//Debug.Log(Time.time + ": FadeIn(" + fadeTime + ")");
 		ht.Clear();
 		ht.Add("name", "CameraFade");
 		ht.Add("amount", 0);
@@ -88,7 +88,7 @@ public class FadeInFadeOut : MonoBehaviour
 
 	void OnFadeInComplete()
 	{
-		Debug.Log(Time.time + ": FadeInComplete");
+		//Debug.Log(Time.time + ": FadeInComplete");
 		if (OnFadeIn != null)
 		{
 			OnFadeIn();
@@ -106,7 +106,7 @@ public class FadeInFadeOut : MonoBehaviour
 
 	void OnFadeComplete()
 	{
-		Debug.Log(Time.time + ": FadeCompleted!");
+		// Debug.Log(Time.time + ": FadeCompleted!");
 
 		//DebugUtilities.Assert(fadeDirection != FadeInFadeOut.FadeDirection.Nothing, "Faded for unknown reason!!");
 		var doneWithDirection = fadeDirection;
