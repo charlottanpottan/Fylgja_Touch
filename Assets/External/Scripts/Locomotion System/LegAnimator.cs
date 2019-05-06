@@ -238,6 +238,7 @@ public class LegAnimator : MonoBehaviour {
 	}
 	
 	private void ResetMotionStates() {
+        return;
 		motionStates = new AnimationState[legC.motions.Length];
 		cycleMotionStates = new AnimationState[legC.cycleMotions.Length];
 		motionWeights = new float[legC.motions.Length];
@@ -314,6 +315,7 @@ public class LegAnimator : MonoBehaviour {
 	}
 	
 	private void ResetSteps() {
+        return;
 		up = transform.up;
 		forward = transform.forward;
 		baseUpGround = up;
@@ -1619,6 +1621,7 @@ public class LegAnimator : MonoBehaviour {
 	}
 	
 	void OnRenderObject() {
+        return;
 		CreateLineMaterial();
 		lineMaterial.SetPass( 0 );
 		
