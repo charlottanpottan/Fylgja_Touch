@@ -6,6 +6,7 @@ See the document "TERMS OF USE" included in the project folder for licencing det
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 
 class InspectorAnimationGroup {
 	public string name;
@@ -36,8 +37,10 @@ class LocomotionEditorClass : Editor {
 	public override void OnInspectorGUI () {
 		if (!lc)
 			return;
-		
-		EditorGUIUtility.LookLikeControls(100);
+
+        serializedObject.Update();
+
+        EditorGUIUtility.LookLikeControls(100);
 		
 		GUI.changed = false;
 		lc.groundPlaneHeight = EditorGUILayout.FloatField("Ground Height", lc.groundPlaneHeight);
@@ -65,7 +68,10 @@ class LocomotionEditorClass : Editor {
 				lc.Init2();
 		}
 		EditorGUILayout.EndHorizontal();
-	}
+        if(GUI.changed)
+            EditorUtility.SetDirty(target);
+        serializedObject.ApplyModifiedProperties();
+    }
 	
 	void LegSectionGUI () {
 		// Handle legs array

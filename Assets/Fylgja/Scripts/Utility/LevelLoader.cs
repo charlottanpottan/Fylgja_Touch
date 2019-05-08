@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class LevelLoader : MonoBehaviour
 	{
 		levelToLoadId = null;
 		Debug.Log("Start async level load:" + levelName);
-		loadLevelAsyncOp = Application.LoadLevelAsync(levelName);
+		loadLevelAsyncOp = SceneManager.LoadSceneAsync(levelName);
 		yield return loadLevelAsyncOp;
 
 		Debug.Log("Async Level Load Done:" + levelName);

@@ -238,7 +238,6 @@ public class LegAnimator : MonoBehaviour {
 	}
 	
 	private void ResetMotionStates() {
-        return;
 		motionStates = new AnimationState[legC.motions.Length];
 		cycleMotionStates = new AnimationState[legC.cycleMotions.Length];
 		motionWeights = new float[legC.motions.Length];
@@ -249,7 +248,7 @@ public class LegAnimator : MonoBehaviour {
 		controlMotionState = GetComponent<Animation>()["LocomotionSystem"];
 		if (controlMotionState==null) {
 			// Create dummy animation state with control motion name
-			GetComponent<Animation>().AddClip(new AnimationClip(), "LocomotionSystem");
+			GetComponent<Animation>().AddClip(CreateLegacyClip(), "LocomotionSystem");
 			controlMotionState = GetComponent<Animation>()["LocomotionSystem"];
 		}
 		controlMotionState.enabled = true;
@@ -279,7 +278,7 @@ public class LegAnimator : MonoBehaviour {
 			AnimationState controller = GetComponent<Animation>()[legC.motionGroups[g].name];
 			if (controller==null) {
 				// Create dummy animation state with motion group name
-				GetComponent<Animation>().AddClip(new AnimationClip(), legC.motionGroups[g].name);
+				GetComponent<Animation>().AddClip(CreateLegacyClip(), legC.motionGroups[g].name);
 				controller = GetComponent<Animation>()[legC.motionGroups[g].name];
 			}
 			controller.enabled = true;
@@ -313,9 +312,15 @@ public class LegAnimator : MonoBehaviour {
 			legStates[leg] = new LegState();
 		}
 	}
-	
-	private void ResetSteps() {
-        return;
+
+    AnimationClip CreateLegacyClip()
+    {
+        AnimationClip clip = new AnimationClip();
+        clip.legacy = true;
+        return clip;
+    }
+
+    private void ResetSteps() {
 		up = transform.up;
 		forward = transform.forward;
 		baseUpGround = up;
@@ -349,7 +354,7 @@ public class LegAnimator : MonoBehaviour {
 	
 	void Update() {
 		
-		if (true || Time.deltaTime == 0 || Time.timeScale == 0) return;
+		if (Time.deltaTime == 0 || Time.timeScale == 0) return;
 		
 		scale = transform.lossyScale.z;
 		
@@ -742,7 +747,7 @@ public class LegAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		if (true || Time.deltaTime == 0 || Time.timeScale == 0) return;
+		if (Time.deltaTime == 0 || Time.timeScale == 0) return;
 		
 		MonitorFootsteps();
 		
@@ -1621,7 +1626,6 @@ public class LegAnimator : MonoBehaviour {
 	}
 	
 	void OnRenderObject() {
-        return;
 		CreateLineMaterial();
 		lineMaterial.SetPass( 0 );
 		
@@ -1640,12 +1644,7 @@ public class LegAnimator : MonoBehaviour {
 	
 	private void CreateLineMaterial() {
 		if( !lineMaterial ) {
-			lineMaterial = new Material( "Shader \"Lines/Colored Blended\" {" +
-				"SubShader { Pass { " +
-				"	BindChannels { Bind \"Color\",color } " + 
-				"	Blend SrcAlpha OneMinusSrcAlpha " +
-				"	ZWrite Off Cull Off Fog { Mode Off } " +
-				"} } }" );
+			lineMaterial = new Material(Shader.Find("Transparent/Diffuse"));
 			lineMaterial.hideFlags = HideFlags.HideAndDontSave;
 			lineMaterial.shader.hideFlags = HideFlags.HideAndDontSave;
 		}
