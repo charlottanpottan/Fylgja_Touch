@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movie: {fileID: 15200000, guid: 57014d81e3d05bb4a92dcc6675c44111, type: 3}
   videoPlayer: {fileID: 4774846669369895325}
   moviePlayerToSpawn: {fileID: 100000, guid: 1654480f2d5c14c89bc07236afce0fc1, type: 3}
 --- !u!328 &4774846669369895325
@@ -55,7 +54,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 57014d81e3d05bb4a92dcc6675c44111, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 7d0613d8cd31145adb290f8ee74b63c0, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -2565,7 +2564,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100068}
-  m_LocalRotation: {x: 0.8651007, y: -0.32766867, z: 0.13010103, w: 0.3568021}
+  m_LocalRotation: {x: 0.86510074, y: -0.3276687, z: 0.13010104, w: 0.35680214}
   m_LocalPosition: {x: -0.22373122, y: -0.17093061, z: -0.006594009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3181,8 +3180,8 @@ MonoBehaviour:
     - {fileID: 400060}
     - {fileID: 400058}
     legLength: 1.0431801
-    ankleHeelVector: {x: -0.010009885, y: -0.13206993, z: 0.11542438}
-    toeToetipVector: {x: -0.00993958, y: -0.10174947, z: 0.14352447}
+    ankleHeelVector: {x: -0.009990476, y: -0.13206406, z: 0.11542942}
+    toeToetipVector: {x: -0.010058125, y: -0.10174942, z: 0.14350025}
     debugColor: {r: 1, g: 0, b: 0, a: 1}
   - hip: {fileID: 400064}
     ankle: {fileID: 400052}
@@ -3198,8 +3197,8 @@ MonoBehaviour:
     - {fileID: 400052}
     - {fileID: 400050}
     legLength: 1.0431895
-    ankleHeelVector: {x: -0.009983629, y: -0.12185076, z: 0.13979664}
-    toeToetipVector: {x: -0.01008241, y: -0.0020393387, z: 0.18103181}
+    ankleHeelVector: {x: -0.0100143105, y: -0.121855535, z: 0.13979368}
+    toeToetipVector: {x: -0.009928118, y: -0.0020248094, z: 0.18105371}
     debugColor: {r: 0.3333333, g: 0.91068363, b: -0.24401692, a: 1}
   - hip: {fileID: 400088}
     ankle: {fileID: 400082}
@@ -3215,8 +3214,8 @@ MonoBehaviour:
     - {fileID: 400082}
     - {fileID: 400080}
     legLength: 1.1312377
-    ankleHeelVector: {x: -0.010000641, y: -0.119408906, z: 0.17540704}
-    toeToetipVector: {x: -0.021801064, y: -0.10921471, z: 0.14915974}
+    ankleHeelVector: {x: -0.0100006405, y: -0.11941058, z: 0.17541048}
+    toeToetipVector: {x: -0.021801064, y: -0.109218515, z: 0.14915971}
     debugColor: {r: -0.33333325, g: 0.66666657, b: 0.6666667, a: 1}
   - hip: {fileID: 400086}
     ankle: {fileID: 400076}
@@ -3232,8 +3231,8 @@ MonoBehaviour:
     - {fileID: 400076}
     - {fileID: 400074}
     legLength: 1.1311548
-    ankleHeelVector: {x: -0.009992946, y: -0.11941564, z: 0.1754041}
-    toeToetipVector: {x: 0.0018319266, y: -0.10921086, z: 0.15074031}
+    ankleHeelVector: {x: -0.010001558, y: -0.119402505, z: 0.17541474}
+    toeToetipVector: {x: 0.0018733238, y: -0.10921848, z: 0.15072624}
     debugColor: {r: 0.3333333, g: -0.24401692, b: 0.91068363, a: 1}
   sourceAnimations:
   - name: Idle
