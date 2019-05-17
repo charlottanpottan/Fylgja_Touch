@@ -5149,7 +5149,6 @@ GameObject:
   - component: {fileID: 3954}
   - component: {fileID: 6747}
   - component: {fileID: 7128}
-  - component: {fileID: 7305}
   - component: {fileID: 6482}
   m_Layer: 0
   m_Name: FirePitCamera
@@ -10746,7 +10745,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3664}
-  m_RootOrder: 60
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2222
 Transform:
@@ -10760,7 +10759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3664}
-  m_RootOrder: 54
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2223
 Transform:
@@ -11345,7 +11344,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 32
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2422
 Transform:
@@ -11360,7 +11359,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 49
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2423 stripped
 Transform:
@@ -11780,7 +11779,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 26
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2481
 Transform:
@@ -11795,7 +11794,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 20
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2482
 Transform:
@@ -11810,7 +11809,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 14
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2483
 Transform:
@@ -11825,7 +11824,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 43
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2484 stripped
 Transform:
@@ -12159,31 +12158,31 @@ Transform:
   - {fileID: 2410}
   - {fileID: 2411}
   - {fileID: 2412}
+  - {fileID: 2482}
   - {fileID: 2413}
   - {fileID: 2414}
   - {fileID: 2415}
   - {fileID: 2416}
   - {fileID: 2423}
   - {fileID: 2424}
-  - {fileID: 2482}
+  - {fileID: 2481}
   - {fileID: 2425}
   - {fileID: 2484}
   - {fileID: 2485}
   - {fileID: 2486}
   - {fileID: 2487}
-  - {fileID: 2481}
   - {fileID: 2488}
+  - {fileID: 2480}
   - {fileID: 2489}
   - {fileID: 2490}
   - {fileID: 2491}
   - {fileID: 2492}
-  - {fileID: 2480}
   - {fileID: 2493}
   - {fileID: 2494}
+  - {fileID: 2421}
   - {fileID: 2496}
   - {fileID: 2497}
   - {fileID: 2498}
-  - {fileID: 2421}
   - {fileID: 2499}
   - {fileID: 2500}
   - {fileID: 2501}
@@ -12192,15 +12191,15 @@ Transform:
   - {fileID: 2504}
   - {fileID: 2505}
   - {fileID: 2506}
+  - {fileID: 2483}
   - {fileID: 2507}
   - {fileID: 2511}
-  - {fileID: 2483}
   - {fileID: 2508}
   - {fileID: 2512}
   - {fileID: 2510}
   - {fileID: 2514}
-  - {fileID: 2515}
   - {fileID: 2422}
+  - {fileID: 2515}
   - {fileID: 2517}
   - {fileID: 2518}
   - {fileID: 2519}
@@ -14627,7 +14626,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3105}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2859 stripped
 Transform:
@@ -15639,7 +15638,7 @@ Transform:
   - {fileID: 2990}
   - {fileID: 2991}
   m_Father: {fileID: 3105}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2994
 Transform:
@@ -16116,7 +16115,7 @@ Transform:
   - {fileID: 3060}
   - {fileID: 3061}
   m_Father: {fileID: 3664}
-  m_RootOrder: 66
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3045 stripped
 Transform:
@@ -16585,7 +16584,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3455}
-  m_RootOrder: 26
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3088
 Transform:
@@ -16599,7 +16598,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3455}
-  m_RootOrder: 38
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3089
 Transform:
@@ -16613,7 +16612,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3455}
-  m_RootOrder: 44
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3090
 Transform:
@@ -16627,7 +16626,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3455}
-  m_RootOrder: 50
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3091
 Transform:
@@ -16655,7 +16654,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3455}
-  m_RootOrder: 32
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3093
 Transform:
@@ -16919,7 +16918,7 @@ Transform:
   - {fileID: 2987}
   - {fileID: 2988}
   m_Father: {fileID: 3105}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3105
 Transform:
@@ -16951,22 +16950,22 @@ Transform:
   - {fileID: 2889}
   - {fileID: 2884}
   - {fileID: 2112}
+  - {fileID: 2858}
   - {fileID: 2113}
   - {fileID: 2114}
   - {fileID: 2115}
-  - {fileID: 2858}
   - {fileID: 2116}
   - {fileID: 2117}
   - {fileID: 2865}
+  - {fileID: 2993}
   - {fileID: 2866}
   - {fileID: 2895}
-  - {fileID: 2993}
   - {fileID: 2867}
   - {fileID: 2868}
   - {fileID: 2894}
   - {fileID: 2896}
-  - {fileID: 2899}
   - {fileID: 3104}
+  - {fileID: 2899}
   - {fileID: 2900}
   - {fileID: 2901}
   - {fileID: 2902}
@@ -17351,15 +17350,15 @@ Transform:
   - {fileID: 3535}
   - {fileID: 3510}
   - {fileID: 3500}
-  - {fileID: 3380}
   - {fileID: 3515}
+  - {fileID: 3380}
   - {fileID: 3469}
   - {fileID: 3300}
   - {fileID: 3290}
   - {fileID: 3295}
   - {fileID: 3305}
-  - {fileID: 3375}
   - {fileID: 3489}
+  - {fileID: 3375}
   - {fileID: 3385}
   - {fileID: 3390}
   - {fileID: 3395}
@@ -18086,34 +18085,34 @@ Transform:
   - {fileID: 3248}
   - {fileID: 2645}
   - {fileID: 2644}
+  - {fileID: 3087}
   - {fileID: 1865}
   - {fileID: 1867}
   - {fileID: 1868}
-  - {fileID: 3087}
   - {fileID: 3547}
+  - {fileID: 3092}
   - {fileID: 1869}
   - {fileID: 1938}
   - {fileID: 2105}
   - {fileID: 2106}
-  - {fileID: 3092}
   - {fileID: 2107}
   - {fileID: 2108}
+  - {fileID: 3088}
   - {fileID: 2109}
   - {fileID: 2110}
   - {fileID: 2166}
-  - {fileID: 3088}
   - {fileID: 2169}
   - {fileID: 2170}
   - {fileID: 3247}
+  - {fileID: 3089}
   - {fileID: 2558}
   - {fileID: 2567}
-  - {fileID: 3089}
   - {fileID: 2568}
   - {fileID: 2569}
   - {fileID: 2570}
   - {fileID: 3107}
-  - {fileID: 3106}
   - {fileID: 3090}
+  - {fileID: 3106}
   - {fileID: 3108}
   - {fileID: 3109}
   - {fileID: 3142}
@@ -18246,7 +18245,7 @@ Transform:
   - {fileID: 3488}
   - {fileID: 3491}
   m_Father: {fileID: 3225}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3490
 Transform:
@@ -18641,7 +18640,7 @@ Transform:
   - {fileID: 3516}
   - {fileID: 3513}
   m_Father: {fileID: 3225}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3516
 Transform:
@@ -19228,7 +19227,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 3664}
-  m_RootOrder: 73
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3559
 Transform:
@@ -20125,29 +20124,29 @@ Transform:
   - {fileID: 2225}
   - {fileID: 2224}
   - {fileID: 2223}
+  - {fileID: 2222}
   - {fileID: 1864}
   - {fileID: 1866}
   - {fileID: 1870}
-  - {fileID: 2222}
   - {fileID: 1871}
   - {fileID: 2102}
+  - {fileID: 2221}
   - {fileID: 2103}
   - {fileID: 2104}
   - {fileID: 2118}
-  - {fileID: 2221}
   - {fileID: 2119}
   - {fileID: 2133}
   - {fileID: 2132}
+  - {fileID: 3044}
   - {fileID: 2134}
   - {fileID: 2135}
-  - {fileID: 3044}
   - {fileID: 2136}
   - {fileID: 2137}
   - {fileID: 2230}
   - {fileID: 2231}
   - {fileID: 2232}
-  - {fileID: 2233}
   - {fileID: 3558}
+  - {fileID: 2233}
   - {fileID: 2234}
   - {fileID: 2235}
   - {fileID: 2307}
@@ -36728,8 +36727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graphicsLevels:
   - onLevel: 1
-    componentsToActivate:
-    - {fileID: 7305}
+    componentsToActivate: []
   - onLevel: 3
     componentsToActivate: []
   - onLevel: 4
@@ -37118,18 +37116,6 @@ MonoBehaviour:
   destroyAfterPlaying: 0
   minTimeInterval: 10
   maxTimeInterval: 25
---- !u!114 &7305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bef3d242a13c447ac90c2d2dc213b1ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7306
 MonoBehaviour:
   m_ObjectHideFlags: 0
