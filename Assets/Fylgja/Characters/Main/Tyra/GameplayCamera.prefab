@@ -103,7 +103,7 @@ MonoBehaviour:
   sphereSize: 0.24
   layerMask:
     serializedVersion: 2
-    m_Bits: 2146941495
+    m_Bits: 2146744887
   cameraNearPlane: 0.3
   moveOutLerpSpeed: 0.6
   freeDistanceBehindHead: -0.8
