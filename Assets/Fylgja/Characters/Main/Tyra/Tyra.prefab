@@ -53298,15 +53298,16 @@ MonoBehaviour:
   - {fileID: 100350}
   enableObjectsOnFirstStar:
   - {fileID: 100318}
-  receivedHitLeft: {fileID: 100000, guid: e7b7446c58328ae4889946b7e327b549, type: 3}
+  receivedHitLeft: {fileID: 100000, guid: 042e578844b544e8ba2304848c60d5eb, type: 3}
   receivedHitRight: {fileID: 100000, guid: c13cd2d8b9b653340b0c5dff32b050e2, type: 3}
-  receivedHitCombination: {fileID: 0}
+  receivedHitCombination: {fileID: 100000, guid: c13cd2d8b9b653340b0c5dff32b050e2,
+    type: 3}
   enableObjectsOnRightPunch:
   - {fileID: 100356}
   enableObjectsOnLeftPunch:
   - {fileID: 100354}
-  leftStickEnd: {fileID: 0}
-  rightStickEnd: {fileID: 0}
+  leftStickEnd: {fileID: 100354}
+  rightStickEnd: {fileID: 100356}
   leftEnableStickAtTime: 0
   leftDisableStickAtTime: 0
   rightEnableStickAtTime: 0

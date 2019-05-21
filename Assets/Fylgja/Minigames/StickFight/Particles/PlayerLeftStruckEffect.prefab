@@ -3,7 +3,7 @@
 --- !u!1 &100000
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: c13cd2d8b9b653340b0c5dff32b050e2, type: 2}
+  m_PrefabParentObject: {fileID: 100000, guid: e7b7446c58328ae4889946b7e327b549, type: 2}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 8200000}
   m_Layer: 0
-  m_Name: PlayerLeftStruckEffect
+  m_Name: PlayerRightStruckEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ EditorExtensionImpl:
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 400000, guid: c13cd2d8b9b653340b0c5dff32b050e2, type: 2}
+  m_PrefabParentObject: {fileID: 400000, guid: e7b7446c58328ae4889946b7e327b549, type: 2}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -42,7 +42,7 @@ EditorExtensionImpl:
 --- !u!12 &1200000
 ParticleAnimator:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 1200000, guid: c13cd2d8b9b653340b0c5dff32b050e2,
+  m_PrefabParentObject: {fileID: 1200000, guid: e7b7446c58328ae4889946b7e327b549,
     type: 2}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
@@ -76,7 +76,7 @@ EditorExtensionImpl:
 --- !u!15 &1500000
 EllipsoidParticleEmitter:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 1500000, guid: c13cd2d8b9b653340b0c5dff32b050e2,
+  m_PrefabParentObject: {fileID: 1500000, guid: e7b7446c58328ae4889946b7e327b549,
     type: 2}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
@@ -90,8 +90,8 @@ EllipsoidParticleEmitter:
   minEmission: 15
   maxEmission: 20
   worldVelocity: {x: 0, y: 0, z: 0}
-  localVelocity: {x: 1, y: 0, z: 0}
-  rndVelocity: {x: 0.5, y: 0.5, z: 0.5}
+  localVelocity: {x: -1, y: 0, z: 0}
+  rndVelocity: {x: -0.5, y: 0.5, z: 0.5}
   emitterVelocityScale: 0.05
   tangentVelocity: {x: 0, y: 0, z: 1}
   angularVelocity: 0
@@ -128,7 +128,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0.2
+  Pan2D: -0.2
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
