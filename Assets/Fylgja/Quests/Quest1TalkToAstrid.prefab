@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 11400000}
-  - component: {fileID: 404723428993026417}
   m_Layer: 0
   m_Name: PlayChapter1
   m_TagString: Untagged
@@ -44,40 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 404723428993026417}
+  videoPlayer: {fileID: 0}
+  videoClip: {fileID: 32900000, guid: 5ab0bb872608a458cbf64656b1cdf1ae, type: 3}
   moviePlayerToSpawn: {fileID: 100000, guid: 86658dbd2e98b4ba7a4307c2877112d8, type: 3}
---- !u!328 &404723428993026417
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 5ab0bb872608a458cbf64656b1cdf1ae, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
-  m_AspectRatio: 3
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +371,6 @@ GameObject:
   m_Component:
   - component: {fileID: 400014}
   - component: {fileID: 11400026}
-  - component: {fileID: 155195205730892582}
   m_Layer: 0
   m_Name: PlayAnimatic
   m_TagString: Untagged
@@ -437,42 +404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 155195205730892582}
+  videoPlayer: {fileID: 0}
+  videoClip: {fileID: 32900000, guid: 8e7650877646343f5af3de12a3b54493, type: 3}
   moviePlayerToSpawn: {fileID: 100000, guid: 1654480f2d5c14c89bc07236afce0fc1, type: 3}
---- !u!328 &155195205730892582
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bfbb9715799644777a89d9b3b88bd81d, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
-  m_AspectRatio: 3
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
 --- !u!1 &100016
 GameObject:
   m_ObjectHideFlags: 0

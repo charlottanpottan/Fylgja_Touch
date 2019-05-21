@@ -3,7 +3,7 @@ using UnityEngine.Video;
 
 public class StartMovieQuestPart : ActorSceneComponent
 {
-    public VideoPlayer videoPlayer;
+    public VideoClip videoClip;
     public GameObject moviePlayerToSpawn;
 
     MoviePlayer moviePlayer;
@@ -13,7 +13,7 @@ public class StartMovieQuestPart : ActorSceneComponent
         Debug.Log("StartMovieQuestPart found");
         GameObject moviePrefab = Instantiate(moviePlayerToSpawn, transform.position, transform.rotation) as GameObject;
         moviePlayer = moviePrefab.GetComponent<MoviePlayer>();
-        moviePlayer.PlayMovie(actingInScene.GetPlayerNotifications(), videoPlayer, OnCutscenePlayed);
+        moviePlayer.PlayMovie(actingInScene.GetPlayerNotifications(), videoClip, OnCutscenePlayed);
     }
 
     public void OnCutscenePlayed()

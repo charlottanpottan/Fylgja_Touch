@@ -30,7 +30,7 @@ public class MoviePlayer : MonoBehaviour
             Graphics.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), renderTexture);
     }
 
-    public void PlayMovie(AvatarToPlayerNotifications playerNotification, VideoPlayer movieToPlay, MovieEnd function)
+    public void PlayMovie(AvatarToPlayerNotifications playerNotification, VideoClip videoClip, MovieEnd function)
     {
         if (fadeListener == null)
         {
@@ -41,12 +41,15 @@ public class MoviePlayer : MonoBehaviour
         playerNotifications = playerNotification;
         listenerHandle = playerNotifications.AttachListener(transform);
 
-        videoPlayer = movieToPlay;
+#if UNITY_EDITOR || !UNITY_IOS
+        videoPlayer = gameObject.AddComponent<VideoPlayer>();
+        videoPlayer.clip = videoClip;
         videoPlayer.targetTexture = renderTexture;
-
-        Debug.Log("Play Movie:" + videoPlayer.name);
-        endFunction = function;
         videoPlayer.Play();
+        Debug.Log("Play Movie:" + videoPlayer.name);
+#endif
+
+        endFunction = function;
         waitingForPlay = true;
         Time.timeScale = 0;
 
@@ -61,6 +64,7 @@ public class MoviePlayer : MonoBehaviour
 
     void Update()
     {
+#if UNITY_EDITOR || !UNITY_IOS
         if (waitingForPlay && videoPlayer.isPlaying)
         {
             waitingForPlay = false;
@@ -71,6 +75,13 @@ public class MoviePlayer : MonoBehaviour
             movieIsStarted = false;
             MoviePlayingDone();
         }
+#else
+        if(waitingForPlay)
+        {
+            waitingForPlay = false;
+            MoviePlayingDone();
+        }
+#endif
     }
 
     public void StopMovie()
@@ -85,7 +96,9 @@ public class MoviePlayer : MonoBehaviour
         }
         fadeListener.OnFadeListener(0);
         Debug.Log("STOP MOVIE!!!!");
+#if UNITY_EDITOR || !UNITY_IOS
         videoPlayer.Stop();
+#endif
         GetComponent<AudioSource>().Stop();
         movieIsStarted = false;
         Time.timeScale = 1;
@@ -100,7 +113,9 @@ public class MoviePlayer : MonoBehaviour
 
     void MoviePlayingDone()
     {
+#if UNITY_EDITOR || !UNITY_IOS
         Debug.Log("Movie has played:" + videoPlayer.name);
+#endif
         StopMovie();
     }
 }
