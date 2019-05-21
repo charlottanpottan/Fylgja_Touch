@@ -40,8 +40,8 @@ public class CharacterOpponentStickFight : StickFighter
 	void OnStickFightMinigameStart(StickFightMinigame minigame)
 	{
 		InitStickFighter();
-		
-		stickToActivate.active = true;
+
+        stickToActivate.SetActive(true);
 		
 		GetComponent<Animation>()[blockPose.name].layer = 4;
 		GetComponent<Animation>()[blockLeft.name].layer = 5;
@@ -60,7 +60,7 @@ public class CharacterOpponentStickFight : StickFighter
 
 	void OnStickFightMinigameClose()
 	{
-		stickToActivate.active = false;
+        stickToActivate.SetActive(false);
 		GetComponent<Animation>()[blockPose.name].layer = 1;
 		Destroy(barAnim.gameObject);
 		barAnim = null;

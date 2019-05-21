@@ -485,8 +485,8 @@ ModelImporter:
       name: StickFightRightHit
       takeName: Take 001
       internalID: 7400000
-      firstFrame: 54
-      lastFrame: 72
+      firstFrame: 37
+      lastFrame: 55
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
