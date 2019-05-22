@@ -41,13 +41,11 @@ public class MoviePlayer : MonoBehaviour
         playerNotifications = playerNotification;
         listenerHandle = playerNotifications.AttachListener(transform);
 
-#if UNITY_EDITOR || !UNITY_IOS
         videoPlayer = gameObject.AddComponent<VideoPlayer>();
         videoPlayer.clip = videoClip;
         videoPlayer.targetTexture = renderTexture;
         videoPlayer.Play();
         Debug.Log("Play Movie:" + videoPlayer.name);
-#endif
 
         endFunction = function;
         waitingForPlay = true;
@@ -64,7 +62,6 @@ public class MoviePlayer : MonoBehaviour
 
     void Update()
     {
-#if UNITY_EDITOR || !UNITY_IOS
         if (waitingForPlay && videoPlayer.isPlaying)
         {
             waitingForPlay = false;
@@ -75,13 +72,6 @@ public class MoviePlayer : MonoBehaviour
             movieIsStarted = false;
             MoviePlayingDone();
         }
-#else
-        if(waitingForPlay)
-        {
-            waitingForPlay = false;
-            MoviePlayingDone();
-        }
-#endif
     }
 
     public void StopMovie()
@@ -96,9 +86,9 @@ public class MoviePlayer : MonoBehaviour
         }
         fadeListener.OnFadeListener(0);
         Debug.Log("STOP MOVIE!!!!");
-#if UNITY_EDITOR || !UNITY_IOS
+
         videoPlayer.Stop();
-#endif
+
         GetComponent<AudioSource>().Stop();
         movieIsStarted = false;
         Time.timeScale = 1;
@@ -113,9 +103,8 @@ public class MoviePlayer : MonoBehaviour
 
     void MoviePlayingDone()
     {
-#if UNITY_EDITOR || !UNITY_IOS
         Debug.Log("Movie has played:" + videoPlayer.name);
-#endif
+
         StopMovie();
     }
 }

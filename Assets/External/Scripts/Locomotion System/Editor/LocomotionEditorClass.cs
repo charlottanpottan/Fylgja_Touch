@@ -38,14 +38,14 @@ class LocomotionEditorClass : Editor {
 		if (!lc)
 			return;
 
-        serializedObject.Update();
+        //serializedObject.Update();
 
-        EditorGUIUtility.LookLikeControls(100);
+       // EditorGUIUtility.LookLikeControls(100);
 		
 		GUI.changed = false;
 		lc.groundPlaneHeight = EditorGUILayout.FloatField("Ground Height", lc.groundPlaneHeight);
-		lc.groundedPose = EditorGUILayout.ObjectField("Grounded Pose", lc.groundedPose, typeof(AnimationClip)) as AnimationClip;
-		lc.rootBone = EditorGUILayout.ObjectField("Root Bone", lc.rootBone, typeof(Transform)) as Transform;
+		lc.groundedPose = EditorGUILayout.ObjectField("Grounded Pose", lc.groundedPose, typeof(AnimationClip), false) as AnimationClip;
+		lc.rootBone = EditorGUILayout.ObjectField("Root Bone", lc.rootBone, typeof(Transform), false) as Transform;
 		if (GUI.changed)
 			lc.initialized = false;
 		
@@ -69,8 +69,8 @@ class LocomotionEditorClass : Editor {
 		}
 		EditorGUILayout.EndHorizontal();
         if(GUI.changed)
-            EditorUtility.SetDirty(target);
-        serializedObject.ApplyModifiedProperties();
+            EditorUtility.SetDirty(lc);
+      //  serializedObject.ApplyModifiedProperties();
     }
 	
 	void LegSectionGUI () {
@@ -86,7 +86,7 @@ class LocomotionEditorClass : Editor {
 		if (legsFoldout) {
 			int removeIndex = -1;
 			for (int l=0; l<legs.Count; l++) {
-				EditorGUIUtility.LookLikeControls(50);
+				// EditorGUIUtility.LookLikeControls(50);
 				GUILayout.BeginHorizontal();
 				string str = "Leg " + (l+1) + (legs[l].hip != null ? " (" + legs[l].hip.name + ")" : "");
 				legFoldouts[l] = EditorGUILayout.Foldout(legFoldouts[l], str);
@@ -100,14 +100,14 @@ class LocomotionEditorClass : Editor {
 					EditorGUI.indentLevel++;
 					
 					LegInfo li = legs[l];
-					li.hip = EditorGUILayout.ObjectField("Hip", li.hip, typeof(Transform)) as Transform;
-					li.ankle = EditorGUILayout.ObjectField("Ankle", li.ankle, typeof(Transform)) as Transform;
-					li.toe = EditorGUILayout.ObjectField("Toe", li.toe, typeof(Transform)) as Transform;
+					li.hip = EditorGUILayout.ObjectField("Hip", li.hip, typeof(Transform), false) as Transform;
+					li.ankle = EditorGUILayout.ObjectField("Ankle", li.ankle, typeof(Transform), false) as Transform;
+					li.toe = EditorGUILayout.ObjectField("Toe", li.toe, typeof(Transform), false) as Transform;
 					
 					GUILayout.BeginHorizontal();
 					EditorGUILayout.PrefixLabel("Foot");
 					EditorGUI.indentLevel--;
-					EditorGUIUtility.LookLikeControls(45, 0);
+					// EditorGUIUtility.LookLikeControls(45, 0);
 					GUILayout.BeginVertical();
 					li.footWidth = EditorGUILayout.FloatField("Width", li.footWidth);
 					li.footLength = EditorGUILayout.FloatField("Length", li.footLength);
@@ -152,7 +152,7 @@ class LocomotionEditorClass : Editor {
 			
 			lc.legs = legs.ToArray();
 			
-			EditorGUIUtility.LookLikeControls(100);
+			// EditorGUIUtility.LookLikeControls(100);
 		}
 		
 		EditorGUILayout.Space();
@@ -184,7 +184,7 @@ class LocomotionEditorClass : Editor {
 				}
 				
 				InspectorAnimationGroup unusedGroup = groups[groups.Count-1];
-				List<AnimationClip> unusedClips = new List<AnimationClip>(AnimationUtility.GetAnimationClips(lc.GetComponent<Animation>()));
+				List<AnimationClip> unusedClips = new List<AnimationClip>(AnimationUtility.GetAnimationClips(lc.gameObject));
 				
 				if (lc.sourceAnimations == null)
 					lc.sourceAnimations = new MotionAnalyzer[0];
@@ -309,7 +309,7 @@ class LocomotionEditorClass : Editor {
 							}
 							
 							GUI.changed = false;
-							ma.animation = EditorGUILayout.ObjectField(ma.animation, typeof(AnimationClip), GUILayout.ExpandWidth(true)) as AnimationClip;
+							ma.animation = EditorGUILayout.ObjectField(ma.animation, typeof(AnimationClip), false, GUILayout.ExpandWidth(true)) as AnimationClip;
 							ma.motionType = (MotionType)EditorGUILayout.EnumPopup(ma.motionType, GUILayout.Width(70));
 							if (GUI.changed)
 								changed = true;
@@ -317,7 +317,7 @@ class LocomotionEditorClass : Editor {
 						else {
 							GUI.enabled = false;
 							GUILayout.Toggle(false, "", EditorStyles.foldout, GUILayout.ExpandWidth(false));
-							EditorGUILayout.ObjectField(ma.animation, typeof(AnimationClip), GUILayout.ExpandWidth(true));
+							EditorGUILayout.ObjectField(ma.animation, typeof(AnimationClip), false, GUILayout.ExpandWidth(true));
 							GUI.enabled = true;
 							GUILayout.Space(70+4);
 						}
@@ -351,7 +351,7 @@ class LocomotionEditorClass : Editor {
 				}
 			}
 			
-			EditorGUIUtility.LookLikeControls(120);
+			// EditorGUIUtility.LookLikeControls(120);
 			
 			// Apply changes to selections
 			bool clearInspectorGroups = false;
