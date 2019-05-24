@@ -23,7 +23,7 @@ public class DebugActivator : MonoBehaviour {
 	{
 		foreach(GameObject go in objectsToActivate)
 		{
-			go.active = !go.active;	
+            go.SetActive(!go.activeSelf);
 		}
 	}
 	
@@ -31,7 +31,7 @@ public class DebugActivator : MonoBehaviour {
 	{
 	foreach(GameObject go in objectsToActivate)
 		{
-			go.active = state;
+            go.SetActive(state);
 		}
 	}
 }

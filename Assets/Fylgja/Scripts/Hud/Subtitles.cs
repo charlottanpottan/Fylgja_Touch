@@ -16,7 +16,7 @@ public class Subtitles : MonoBehaviour
 	void Start()
 	{
 		text.text = string.Empty;
-		text.transform.parent.gameObject.SetActiveRecursively(false);
+		text.transform.parent.gameObject.SetActive(false);
 	}
 	
 	void Update()
@@ -25,7 +25,7 @@ public class Subtitles : MonoBehaviour
 		{
 			Debug.Log("Subtitle timed out subtitle");
 			titleEnabled = false;
-			text.transform.parent.gameObject.SetActiveRecursively(false);
+			text.transform.parent.gameObject.SetActive(false);
 		}
 		
 		if (nextTitle.Length != 0)
@@ -98,7 +98,7 @@ public class Subtitles : MonoBehaviour
 		if (shouldBeVisible)
 		{
 			titleEnabled = true;
-			text.transform.parent.gameObject.SetActiveRecursively(true);
+			text.transform.parent.gameObject.SetActive(true);
 		}
 	}
 

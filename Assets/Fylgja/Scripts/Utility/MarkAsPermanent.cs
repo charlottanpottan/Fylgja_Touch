@@ -1,24 +1,25 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MarkAsPermanent : MonoBehaviour
 {
-	
-	public int[] destroyOnTheseLevels;
-	
-	void Start()
-	{
-		DontDestroyOnLoad(transform.gameObject);
-	}
-	
-	void OnLevelWasLoaded (int level)
-	{
-		foreach(int l in destroyOnTheseLevels)
-		{
-			if(l == level)
-			{
-				Destroy(gameObject);	
-			}
-		}
-	}
+    [SerializeField] string[] sceneNames = null;
+
+    void Start()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+        SceneManager.sceneLoaded += OnLevelWasLoaded;
+    }
+
+    void OnLevelWasLoaded(Scene scene, LoadSceneMode mode)
+    {
+        foreach (string sceneName in sceneNames)
+        {
+            if (sceneName == scene.name)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 }
