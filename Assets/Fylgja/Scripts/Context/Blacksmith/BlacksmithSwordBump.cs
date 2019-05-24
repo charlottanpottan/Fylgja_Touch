@@ -5,6 +5,7 @@ public class BlacksmithSwordBump : MonoBehaviour
 {
 	public AnimationClip bumpAnimation;
 	public Animation animationOnSword;
+    public GameObject star;
 	public float maxHealth = 10.0f;
 	public float minHealth = 0.0f;
 	public int bumpLayer;
@@ -47,7 +48,8 @@ public class BlacksmithSwordBump : MonoBehaviour
 			state.wrapMode = WrapMode.ClampForever;
 			state.speed = 0;
 			anim.CrossFade(bumpAnimation.name);
-		}
+            star.SetActive(false);
+        }
 		else
 		{
 			state.layer = bumpLayer;

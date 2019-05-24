@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: BlacksmithSwordBlade_MAT
   m_Shader: {fileID: 4800000, guid: c1259b0c00edd48cf8f0148442097cc8, type: 3}
   m_ShaderKeywords: 
@@ -28,7 +29,7 @@ Material:
     - _RimPower: 0.8
     - _RimStrength: 5
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
     - _RimColor_01: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor_02: {r: 1, g: 0.48235294, b: 0, a: 1}
 --- !u!1002 &2100001
