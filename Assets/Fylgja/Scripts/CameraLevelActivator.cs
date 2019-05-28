@@ -1,10 +1,20 @@
 using UnityEngine;
 using System.Collections;
 
+public enum FylgjaQualityLevel
+{
+    VeryLow,
+    Low,
+    Medium,
+    High,
+    VeryHigh,
+    Ultra
+}
+
 [System.Serializable]
 public class GraphicsLevel
 {
-	public QualityLevel onLevel;
+	public FylgjaQualityLevel onLevel;
 	public Behaviour[] componentsToActivate;
 }
 
@@ -28,7 +38,7 @@ public class CameraLevelActivator : MonoBehaviour
 		}
 		foreach (var o in graphicsLevels)
 		{
-			if (QualitySettings.currentLevel >= o.onLevel)
+			if (QualitySettings.GetQualityLevel() >= (int)o.onLevel)
 			{
 				HandleComponents(o.componentsToActivate);
 			}
