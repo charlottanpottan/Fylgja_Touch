@@ -9,10 +9,10 @@ public class MarkAsPermanent : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
-        SceneManager.sceneLoaded += OnLevelWasLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnLevelWasLoaded(Scene scene, LoadSceneMode mode)
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         foreach (string sceneName in sceneNames)
         {

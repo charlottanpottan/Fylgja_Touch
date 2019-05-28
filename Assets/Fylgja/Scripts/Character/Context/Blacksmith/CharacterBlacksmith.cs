@@ -176,7 +176,7 @@ public class CharacterBlacksmith : MonoBehaviour
 
 	void UpdateSwordHand()
 	{
-		float deltaMovement = Input.GetAxis("camera_horizontal") * mouseSensitivity * Time.deltaTime;
+		float deltaMovement = Input.GetAxis("mouse_horizontal") * mouseSensitivity * Time.deltaTime;
 		bool wantsToMoveSword = Mathf.Abs(deltaMovement) > 0.001f;
 
 		if (wantsToMoveSword)

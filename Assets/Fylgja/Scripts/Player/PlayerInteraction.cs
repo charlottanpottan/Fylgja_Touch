@@ -28,7 +28,9 @@ public class PlayerInteraction : MonoBehaviour
 	LogicCameraInfoApplicator cameraApplicator;
 	bool avatarMoveEnabled = true;
 
-	public class ListenerStackItem
+    Vector3 interactButtonDownMousePosition;
+
+    public class ListenerStackItem
 	{
 		Transform transform;
 		public string name;
@@ -468,10 +470,13 @@ public class PlayerInteraction : MonoBehaviour
 		var mouseOverInteractable = CheckInteractableFromMousePosition(out hit);
 
 
-		bool interactUp = Input.GetButtonUp("interact");
-		bool interactDown = Input.GetButtonDown("interact");
+		bool interactButtonUp = Input.GetButtonUp("interact");
+		bool interactButtonDown = Input.GetButtonDown("interact");
+        if (interactButtonDown)
+            interactButtonDownMousePosition = Input.mousePosition;
 
-		if (!interactUp && !interactDown)
+
+        if (!interactButtonUp && !interactButtonDown)
 		{
 			return;
 		}
@@ -500,21 +505,23 @@ public class PlayerInteraction : MonoBehaviour
 		
 		if (foundGround && avatarMoveEnabled)
 		{
-			if (interactDown)
+            float mousePositionDelta = (interactButtonDownMousePosition - Input.mousePosition).magnitude;
+
+            if (interactButtonUp && mousePositionDelta < 10)
 			{
 				InteractedWithGround(hit);
 			}
 		}
 		else if (mouseOverInteractable == null)
 		{
-			if (interactDown)
+			if (interactButtonDown)
 			{
 				ClickedOnObject(hit);
 			}
 		}
-		else if ((interactUp || interactDown) && (highlightedInteractable != null))
+		else if ((interactButtonUp || interactButtonDown) && (highlightedInteractable != null))
 		{
-			if ( (interactDown && highlightedInteractable.TrigActionOnDown()) || (interactUp && !highlightedInteractable.TrigActionOnDown()))
+			if ( (interactButtonDown && highlightedInteractable.TrigActionOnDown()) || (interactButtonUp && !highlightedInteractable.TrigActionOnDown()))
 			{
 				InteractableClick(highlightedInteractable, hit.point);
 			}

@@ -77,10 +77,10 @@ public class CharacterPetroglypher : MonoBehaviour
 			return;
 		}
 
-		if (Input.GetButton("wants_to_rotate_camera"))
+		if (Input.GetButton("mouse0"))
 		{
-			float vertical = -Input.GetAxis("camera_vertical") * Time.deltaTime;
-			float horizontal = Input.GetAxis("camera_horizontal") * Time.deltaTime;
+			float vertical = -Input.GetAxis("mouse_vertical") * Time.deltaTime;
+			float horizontal = Input.GetAxis("mouse_horizontal") * Time.deltaTime;
 
 			Vector3 eulerRotation = holdingPetroglyph.transform.rotation.eulerAngles;
 			eulerRotation.y += ((vertical + horizontal) / 2.0f) * 0.5f;
