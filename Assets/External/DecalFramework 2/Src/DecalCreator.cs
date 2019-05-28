@@ -278,7 +278,7 @@ public class DecalCreator : MonoBehaviour
             decalTypeExpeditorObject = new GameObject("Expeditor For " + decalType.name + " DecalType");
             decalTypeExpeditorObject.AddComponent<MeshFilter>();
             decalTypeExpeditorObject.AddComponent<MeshRenderer>();
-            decalTypeExpeditorObject.GetComponent<Renderer>().castShadows = false;
+            decalTypeExpeditorObject.GetComponent<Renderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
             if (materialOverride)
                 decalTypeExpeditorObject.GetComponent<Renderer>().sharedMaterial = materialOverride;
@@ -577,7 +577,7 @@ public class DecalCreator : MonoBehaviour
         decalObject.AddComponent<MeshFilter>();
         MeshRenderer mRenderer=decalObject.AddComponent<MeshRenderer>();
         mRenderer.material = materialOverride;
-        decalObject.GetComponent<Renderer>().castShadows = false;
+        decalObject.GetComponent<Renderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         decalObject.transform.position = point;
         decalObject.transform.rotation=Quaternion.LookRotation(-decalBasis.Normal, decalBasis.Binormal);
         decalObject.transform.localScale = decalType.transform.localScale+decalBasis.Rand;
@@ -673,7 +673,7 @@ public class DecalCreator : MonoBehaviour
 
             MeshRenderer mRenderer = staticDecalObject.AddComponent<MeshRenderer>();
             mRenderer.material = mat;
-            mRenderer.castShadows = false;
+            mRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
             MeshFilter mFilter = staticDecalObject.AddComponent<MeshFilter>();
             mFilter.sharedMesh = combinedMesh;
             mFilter.sharedMesh.RecalculateBounds();
@@ -706,7 +706,7 @@ public class DecalCreator : MonoBehaviour
 
         mFilter.sharedMesh = decalMesh;
         mRenderer.material = decalType.i_material;
-        mRenderer.castShadows = false;
+        mRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
         decalMesh.name = "Decal " + (++DecalType.i);
 
@@ -792,7 +792,7 @@ public class DecalCreator : MonoBehaviour
 
             MeshRenderer mRenderer = staticDecalObject.AddComponent<MeshRenderer>();
             mRenderer.material = mat;
-            mRenderer.castShadows = false;
+            mRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
             MeshFilter mFilter = staticDecalObject.AddComponent<MeshFilter>();
             mFilter.sharedMesh = combinedMesh;
             mFilter.sharedMesh.RecalculateBounds();

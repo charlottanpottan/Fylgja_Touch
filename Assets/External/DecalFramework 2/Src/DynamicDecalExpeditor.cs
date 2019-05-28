@@ -82,7 +82,7 @@ public class DynamicDecalExpeditor : DecalExpeditor
         MeshRenderer mRenderer = newFreeDecal.AddComponent<MeshRenderer>();
         mFilter.sharedMesh = decalMesh;
         mRenderer.sharedMaterial = GetComponent<Renderer>().sharedMaterial;
-        mRenderer.castShadows = false;
+        mRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
         return newFreeDecal;
     }

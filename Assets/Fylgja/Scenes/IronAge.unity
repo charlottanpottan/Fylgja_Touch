@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.018
   m_LinearFogStart: 10
   m_LinearFogEnd: 100
-  m_AmbientSkyColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
+  m_AmbientSkyColor: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
   m_AmbientEquatorColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
   m_AmbientGroundColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: d4d16ca3d56fb7142a32d49bbd323836, type: 2}
   m_HaloStrength: 0.1
@@ -5067,7 +5067,7 @@ Transform:
   - {fileID: 2266}
   - {fileID: 2267}
   m_Father: {fileID: 2929}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2269 stripped
 Transform:
@@ -5146,7 +5146,7 @@ Transform:
   - {fileID: 2293}
   - {fileID: 2294}
   m_Father: {fileID: 3086}
-  m_RootOrder: 112
+  m_RootOrder: 111
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2274
 Transform:
@@ -5546,7 +5546,7 @@ Transform:
   - {fileID: 2314}
   - {fileID: 2312}
   m_Father: {fileID: 2929}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2318
 Transform:
@@ -5563,7 +5563,7 @@ Transform:
   - {fileID: 2319}
   - {fileID: 2321}
   m_Father: {fileID: 2929}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2319
 Transform:
@@ -7442,21 +7442,21 @@ Transform:
   - {fileID: 2246}
   - {fileID: 1648}
   - {fileID: 2865}
+  - {fileID: 2318}
   - {fileID: 2222}
   - {fileID: 2223}
   - {fileID: 2269}
   - {fileID: 2324}
-  - {fileID: 2318}
+  - {fileID: 2315}
   - {fileID: 2326}
   - {fileID: 2327}
   - {fileID: 2328}
   - {fileID: 2329}
-  - {fileID: 2315}
   - {fileID: 2330}
+  - {fileID: 2268}
   - {fileID: 2331}
   - {fileID: 2332}
   - {fileID: 2333}
-  - {fileID: 2268}
   - {fileID: 2334}
   - {fileID: 2335}
   - {fileID: 2336}
@@ -7498,14 +7498,14 @@ Transform:
   - {fileID: 2918}
   - {fileID: 2919}
   - {fileID: 2920}
+  - {fileID: 2932}
   - {fileID: 2921}
   - {fileID: 2922}
-  - {fileID: 2932}
   - {fileID: 2923}
   - {fileID: 2924}
   - {fileID: 2925}
-  - {fileID: 2926}
   - {fileID: 2933}
+  - {fileID: 2926}
   - {fileID: 2927}
   - {fileID: 2928}
   - {fileID: 2930}
@@ -7540,7 +7540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 61
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2933
 Transform:
@@ -7554,7 +7554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 66
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2934 stripped
 Transform:
@@ -8708,8 +8708,8 @@ Transform:
   - {fileID: 2986}
   - {fileID: 2988}
   - {fileID: 2989}
-  - {fileID: 2990}
   - {fileID: 2273}
+  - {fileID: 2990}
   - {fileID: 2991}
   - {fileID: 2992}
   - {fileID: 2993}
@@ -8972,7 +8972,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3181}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3159 stripped
 Transform:
@@ -9043,7 +9043,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3181}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3164 stripped
 Transform:
@@ -9202,17 +9202,17 @@ Transform:
   - {fileID: 1641}
   - {fileID: 3157}
   - {fileID: 3162}
+  - {fileID: 3163}
   - {fileID: 1642}
   - {fileID: 2363}
-  - {fileID: 3163}
   - {fileID: 2703}
   - {fileID: 2763}
   - {fileID: 2764}
   - {fileID: 2765}
   - {fileID: 2766}
   - {fileID: 2767}
-  - {fileID: 2768}
   - {fileID: 3158}
+  - {fileID: 2768}
   - {fileID: 2769}
   - {fileID: 2770}
   - {fileID: 2771}
