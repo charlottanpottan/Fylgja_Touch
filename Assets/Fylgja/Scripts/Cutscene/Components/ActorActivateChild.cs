@@ -13,7 +13,7 @@ public class ActorActivateChild : ActorSceneComponent
 		
 		Transform t = actorObject.transform.Find(gameObjectToActivate);
 		
-		t.gameObject.active = activationState;
+		t.gameObject.SetActive(activationState);
 		
 		ComponentDone();
 	}

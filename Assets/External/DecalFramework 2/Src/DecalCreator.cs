@@ -777,7 +777,7 @@ public class DecalCreator : MonoBehaviour
                         decalType.transform.parent = inactiveDecalObject.transform;
                     }
 
-                    decalType.gameObject.active = false;
+                    decalType.gameObject.SetActive(false);
                 }
             }
 
@@ -887,7 +887,7 @@ public class DecalCreator : MonoBehaviour
                     decalTypes[i].transform.parent = inactiveDecalObject.transform;
                 }
 
-                decalTypes[i].gameObject.active = false;
+                decalTypes[i].gameObject.SetActive(false);
             }
         }
     } 

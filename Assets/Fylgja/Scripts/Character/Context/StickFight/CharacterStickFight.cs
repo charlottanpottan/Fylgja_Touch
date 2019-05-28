@@ -148,7 +148,7 @@ public class CharacterStickFight : StickFighter
 		}
 		foreach (var r in rootObjectsToActivate)
 		{
-			r.active = enabled;
+			r.SetActive(enabled);
 		}
 	}
 

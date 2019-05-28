@@ -27,7 +27,7 @@ public class FireTrigger : MonoBehaviour
             if (!go)
                 Debug.Log("no go to activate on FireTrigger!!!!!!!!!!!!!!!!!!!!!!!!!!!............... " + name + " parent " + transform.parent.name);
             else
-                go.active = true;
+                go.SetActive(true);
         }
     }
 
@@ -38,7 +38,7 @@ public class FireTrigger : MonoBehaviour
             if (!go)
                 Debug.Log("no go to deactivate on FireTrigger!!!!!!!!!!!!!!!!!!!!!!!!!!!............... " + name + " parent " + transform.parent.name);
             else
-                go.active = false;
+                go.SetActive(false);
         }
     }
 }

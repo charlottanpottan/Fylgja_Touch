@@ -29,7 +29,7 @@ public class ActivateOnTrigger : MonoBehaviour
 			{
 				foreach (var o in objectsToActivate)
 				{
-					o.active = false;
+					o.SetActive(false);
 				}
 			}
 		}
@@ -43,7 +43,7 @@ public class ActivateOnTrigger : MonoBehaviour
 			{
 				foreach (var o in objectsToActivate)
 				{
-					o.active = true;
+					o.SetActive(true);
 				}
 			}
 		}
