@@ -18,11 +18,6 @@ public class MotionBlur : ImageEffectBase
 	
 	protected new void Start()
 	{
-		if(!SystemInfo.supportsRenderTextures)
-		{
-			enabled = false;
-			return;
-		}
 		base.Start();
 	}
 	
