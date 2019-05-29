@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
 	
 	void ShowMenu(bool on)
 	{
-		menuObject.SetActiveRecursively(on);
+		menuObject.SetActiveRecursively1(on);
 	}
 
 	public void ToggleMenu()

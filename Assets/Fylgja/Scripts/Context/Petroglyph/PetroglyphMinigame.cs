@@ -19,9 +19,9 @@ public class PetroglyphMinigame : Minigame
 	{
 		Debug.Log("Started minigame!");
 		mainCamera = Camera.main;
-		mainCamera.gameObject.SetActiveRecursively(false);
+		mainCamera.gameObject.SetActiveRecursively1(false);
 		mainCamera.tag = "";
-		petroglyphCamera.gameObject.SetActiveRecursively(true);
+		petroglyphCamera.gameObject.SetActiveRecursively1(true);
 
 		base.StartMinigame(a);
 		avatar.transform.parent.BroadcastMessage("OnPetroglyphMinigameStart");
@@ -41,8 +41,8 @@ public class PetroglyphMinigame : Minigame
 
 	void CloseMinigame()
 	{
-		mainCamera.gameObject.SetActiveRecursively(true);
-		petroglyphCamera.gameObject.SetActiveRecursively(false);
+		mainCamera.gameObject.SetActiveRecursively1(true);
+		petroglyphCamera.gameObject.SetActiveRecursively1(false);
 		mainCamera.tag = "MainCamera";
 	}
 

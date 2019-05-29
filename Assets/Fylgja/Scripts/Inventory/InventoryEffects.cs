@@ -30,7 +30,7 @@ public class InventoryEffects : MonoBehaviour
 		for (var i = 0; i < inventoryItemsRoot.transform.childCount; ++i)
 		{
 			var questItemObject = inventoryItemsRoot.transform.GetChild(i).gameObject;
-			questItemObject.SetActiveRecursively(false);
+			questItemObject.SetActiveRecursively1(false);
 		}
 	}
 
@@ -77,7 +77,7 @@ public class InventoryEffects : MonoBehaviour
 
 		if (questItemObject.active != enabled && itemName == questItemObject.name)
 		{
-			questItemObject.SetActiveRecursively(enabled);
+			questItemObject.SetActiveRecursively1(enabled);
 			return true;
 		}
 

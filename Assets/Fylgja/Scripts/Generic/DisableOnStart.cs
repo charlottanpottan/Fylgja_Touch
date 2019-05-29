@@ -24,7 +24,7 @@ public class DisableOnStart : MonoBehaviour
 	{
 		foreach (var o in objects)
 		{
-			o.SetActiveRecursively(enabled);
+			o.SetActiveRecursively1(enabled);
 		}
 	}
 }

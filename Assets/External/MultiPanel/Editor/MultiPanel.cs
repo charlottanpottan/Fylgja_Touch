@@ -247,7 +247,7 @@ public class MultiPanel : EditorWindow
 	void ToggleAllSelected ()
 	{
 		foreach (Transform t in Selection.transforms) {
-			t.gameObject.SetActiveRecursively (!t.gameObject.active);
+			t.gameObject.SetActiveRecursively1(!t.gameObject.active);
 		}
 	}
 

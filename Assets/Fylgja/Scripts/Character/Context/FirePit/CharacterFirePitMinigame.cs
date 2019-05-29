@@ -19,8 +19,8 @@ public class CharacterFirePitMinigame : MonoBehaviour
 
 	public void SetEquipmentEnable(bool enable)
 	{
-		torch.SetActiveRecursively(enable);
-		birchFan.SetActiveRecursively(enable);
+		torch.SetActiveRecursively1(enable);
+		birchFan.SetActiveRecursively1(enable);
 		toolsAreActivated = enable;
 	}
 

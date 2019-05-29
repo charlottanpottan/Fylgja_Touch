@@ -189,7 +189,7 @@ public class DecalTypeEditor : Editor
         if (_decalType._materialFoldout)
         {
             GUILayout.Space(5);
-            _decalType.i_material = EditorGUILayout.ObjectField(new GUIContent("   Decal Material", "Base decal material"), _decalType.i_material, typeof(Material)) as Material;
+            _decalType.i_material = EditorGUILayout.ObjectField(new GUIContent("   Decal Material", "Base decal material"), _decalType.i_material, typeof(Material), true) as Material;
             _serializeddecalType.FindProperty("i_material").objectReferenceValue = _decalType.i_material;
             GUILayout.Space(5);
         }

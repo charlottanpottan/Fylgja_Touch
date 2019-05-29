@@ -60,10 +60,10 @@ public class BlacksmithMinigame : Minigame, IBlacksmithSwordNotifications
 
 	void SetMinigameCameras(bool enable)
 	{
-		mainCamera.gameObject.SetActiveRecursively(!enable);
-		blacksmithCamera.gameObject.SetActiveRecursively(enable);
-		charcoalBurner.SetActiveRecursively(enable);
-		hammerAction.gameObject.SetActiveRecursively(enable);
+		mainCamera.gameObject.SetActiveRecursively1(!enable);
+		blacksmithCamera.gameObject.SetActiveRecursively1(enable);
+		charcoalBurner.SetActiveRecursively1(enable);
+		hammerAction.gameObject.SetActiveRecursively1(enable);
 	}
 
 	void EnableMinigameCameras()

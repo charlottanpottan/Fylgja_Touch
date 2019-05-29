@@ -59,12 +59,12 @@ public class FirePitMinigame : Minigame, IFirePitNotifications
 		playerListener = GameObject.FindGameObjectWithTag("Listener").GetComponent<AudioListener>();
 		playerListener.enabled = false;
 		mainCamera = Camera.main;
-		mainCamera.gameObject.SetActiveRecursively(false);
-		firePitCamera.gameObject.SetActiveRecursively(true);
+		mainCamera.gameObject.SetActiveRecursively1(false);
+		firePitCamera.gameObject.SetActiveRecursively1(true);
 
 		foreach (var obj in gameAreaCollision)
 		{
-			obj.SetActiveRecursively(true);
+			obj.SetActiveRecursively1(true);
 		}
 		base.StartMinigame(a);
 		avatar.transform.parent.BroadcastMessage("OnFirePitMinigameStart");
@@ -91,11 +91,11 @@ public class FirePitMinigame : Minigame, IFirePitNotifications
 	{
 		GetComponent<AudioSource>().Stop();
 		playerListener.enabled = true;
-		firePitCamera.gameObject.SetActiveRecursively(false);
-		mainCamera.gameObject.SetActiveRecursively(true);
+		firePitCamera.gameObject.SetActiveRecursively1(false);
+		mainCamera.gameObject.SetActiveRecursively1(true);
 		foreach (var obj in gameAreaCollision)
 		{
-			obj.SetActiveRecursively(false);
+			obj.SetActiveRecursively1(false);
 		}
 	}
 

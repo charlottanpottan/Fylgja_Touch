@@ -119,7 +119,7 @@ public class CharacterBoat : MonoBehaviour
 		Debug.Log("CharacterBoat: Entered boat:" + boat.name);
 		boatToControl = boat;
 		boatToControl.gameObject.layer = 8;
-		paddle.gameObject.SetActiveRecursively(true);
+		paddle.gameObject.SetActiveRecursively1(true);
 	}
 
 	void OnLeaveBoat()
@@ -128,7 +128,7 @@ public class CharacterBoat : MonoBehaviour
 		SendMessage("SetInsideWater", false);
 		//boatToControl.gameObject.layer = 0;
 		boatToControl = null;
-		paddle.gameObject.SetActiveRecursively(false);
+		paddle.gameObject.SetActiveRecursively1(false);
 	}
 
 	void OnPaddleInWater()

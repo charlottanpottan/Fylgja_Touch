@@ -27,14 +27,14 @@ public class StickFightMinigame : Minigame
 		opponentStickFighter.gameObject.BroadcastMessage("OnStickFightMinigameStart", this);
 		avatar.transform.parent.BroadcastMessage("OnStickFightMinigameStart", this);
 		mainCamera = Camera.main;
-		stickFightCamera.gameObject.SetActiveRecursively(true);
-		mainCamera.gameObject.SetActiveRecursively(false);
+		stickFightCamera.gameObject.SetActiveRecursively1(true);
+		mainCamera.gameObject.SetActiveRecursively1(false);
 	}
 
 	void CloseStickFightMinigame()
 	{
-		stickFightCamera.gameObject.SetActiveRecursively(false);
-		mainCamera.gameObject.SetActiveRecursively(true);
+		stickFightCamera.gameObject.SetActiveRecursively1(false);
+		mainCamera.gameObject.SetActiveRecursively1(true);
 		opponentStickFighter.gameObject.BroadcastMessage("OnStickFightMinigameClose");
 		avatar.transform.parent.BroadcastMessage("OnStickFightMinigameClose");
 	}

@@ -144,7 +144,7 @@ public class CharacterStickFight : StickFighter
 		hasFightStick = enabled;
 		foreach (var o in objectsToActivate)
 		{
-			o.SetActiveRecursively(enabled);
+			o.SetActiveRecursively1(enabled);
 		}
 		foreach (var r in rootObjectsToActivate)
 		{

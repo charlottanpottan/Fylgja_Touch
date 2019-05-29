@@ -133,7 +133,7 @@ public class PlayerInteraction : MonoBehaviour
 			listener.transform.parent = listenerHandle.TargetTransform;
 			listener.transform.localPosition = new Vector3();
 			listener.transform.localRotation = new Quaternion();
-			listener.gameObject.SetActiveRecursively(true);
+			listener.gameObject.SetActiveRecursively1(true);
 		}
 		Debug.Log("Listener is on object name:" +  listenerHandle.TargetTransform.name);
 	}
@@ -203,12 +203,12 @@ public class PlayerInteraction : MonoBehaviour
 
 	public void OnCutsceneStart()
 	{
-		minimap.transform.parent.gameObject.SetActiveRecursively(false);
+		minimap.transform.parent.gameObject.SetActiveRecursively1(false);
 	}
 
 	public void OnCutsceneEnd()
 	{
-		minimap.transform.parent.gameObject.SetActiveRecursively(true);
+		minimap.transform.parent.gameObject.SetActiveRecursively1(true);
 	}
 
 	void SetupListener()
@@ -255,7 +255,7 @@ public class PlayerInteraction : MonoBehaviour
 		{
 			var hudObject = Instantiate(hudPrefab) as GameObject;
 			hud = hudObject.GetComponentInChildren<PlayerHud>();
-			hud.quitMinigameButton.gameObject.SetActiveRecursively(false);
+			hud.quitMinigameButton.gameObject.SetActiveRecursively1(false);
 
 			minimap = hud.GetComponentInChildren<Minimap>();
 			subtitles = hud.GetComponentInChildren<Subtitles>();
@@ -574,7 +574,7 @@ public class PlayerInteraction : MonoBehaviour
 	public void OnMinigameStart(Minigame game)
 	{
 		Debug.Log("Playerinteraction noticed that minigame has started");
-		hud.quitMinigameButton.gameObject.SetActiveRecursively(true);
+		hud.quitMinigameButton.gameObject.SetActiveRecursively1(true);
 		activeMinigame = game;
 	}
 
@@ -598,7 +598,7 @@ public class PlayerInteraction : MonoBehaviour
 	{
 		Debug.Log("Playerinteraction noticed that minigame has ended");
 		activeMinigame = null;
-		hud.quitMinigameButton.gameObject.SetActiveRecursively(false);
+		hud.quitMinigameButton.gameObject.SetActiveRecursively1(false);
 	}
 
 	public void OnAllowedToMove(bool move)

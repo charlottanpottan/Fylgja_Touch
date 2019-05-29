@@ -70,7 +70,7 @@ public class StickFighterEffects : MonoBehaviour
 	void EnableStickEnd(GameObject stickEnd, bool enable)
 	{
 		Debug.Log("FX: Setting stick end:" + stickEnd.name + " to " + enable);
-		stickEnd.SetActiveRecursively(enable);
+		stickEnd.SetActiveRecursively1(enable);
 	}
 
 	void TriggerEffect(GameObject o, bool hitLanded, bool lastHit)
@@ -107,10 +107,10 @@ public class StickFighterEffects : MonoBehaviour
 			{
 				foreach (var otherObject in enableObjectsOnFirstStar)
 				{
-					otherObject.SetActiveRecursively(true);
+					otherObject.SetActiveRecursively1(true);
 				}
 			}
-			stars[i].SetActiveRecursively(enableStar);
+			stars[i].SetActiveRecursively1(enableStar);
 		}
 	}
 
@@ -118,7 +118,7 @@ public class StickFighterEffects : MonoBehaviour
 	{
 		foreach (var o in objects)
 		{
-			o.SetActiveRecursively(enabled);
+			o.SetActiveRecursively1(enabled);
 		}
 	}
 

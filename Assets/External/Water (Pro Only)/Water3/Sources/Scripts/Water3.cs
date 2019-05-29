@@ -521,7 +521,7 @@ public class Water3 : MonoBehaviour
 		if( !SystemInfo.SupportsRenderTextureFormat(RenderTextureFormat.Depth) )
 			m_DepthTexturesSupported = false;		
 		
-		if( !SystemInfo.supportsRenderTextures || !GetComponent<Renderer>() )
+		if( !GetComponent<Renderer>() )
 			return WaterMode.Indie;
 		
 		Material mat = GetComponent<Renderer>().sharedMaterial;

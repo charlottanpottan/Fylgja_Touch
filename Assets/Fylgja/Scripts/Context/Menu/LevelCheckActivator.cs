@@ -26,7 +26,7 @@ public class LevelCheckActivator : MonoBehaviour {
 				return;	
 			}
 		}
-		objectToEnable.SetActiveRecursively(true);
+		objectToEnable.SetActiveRecursively1(true);
 		CancelInvoke("CheckLevel");
 		
 	}
