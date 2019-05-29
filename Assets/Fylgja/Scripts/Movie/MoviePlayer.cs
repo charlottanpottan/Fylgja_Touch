@@ -51,7 +51,6 @@ public class MoviePlayer : MonoBehaviour
         waitingForPlay = true;
         Time.timeScale = 0;
 
-        iTween.Stop(GameObject.Find("iTween Camera Fade"));
         fadeInFadeOut.SetToBlack();
     }
 
@@ -94,7 +93,6 @@ public class MoviePlayer : MonoBehaviour
         Time.timeScale = 1;
         endFunction();
 
-        iTween.Stop(GameObject.Find("iTween Camera Fade"));
         fadeInFadeOut.SetToBlack();
         playerNotifications.DetachListener(listenerHandle);
         listenerHandle = null;
