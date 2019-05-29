@@ -65,6 +65,6 @@ public class FollowCurve : MonoBehaviour
 
 	void DestroySelf()
 	{
-		DestroyObject(gameObject);
+        Object.Destroy(gameObject);
 	}
 }

@@ -175,7 +175,6 @@ public class ActorLine : ActorSceneComponent
 
 	float AngleFromPositions(Vector3 source, Vector3 target, Color color)
 	{
-		const float duration = 2.0f;
 		var vectorToTarget = target - source;
 		// vectorToTarget.y = 0;
 		// vectorToTarget.Normalize();
