@@ -30,7 +30,7 @@ public class CharacterClimbing : MonoBehaviour
 		{
 			GetComponent<Animation>().CrossFade("walk");
 		}
-		float verticalMovement = Input.GetAxis("vertical") * Time.deltaTime;
+		float verticalMovement = Input.GetAxis("Vertical") * Time.deltaTime;
 		characterController.Move(new Vector3(0, verticalMovement, 0));
 	}
 

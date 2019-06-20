@@ -82,14 +82,14 @@ public class CharacterStickFight : StickFighter
 		return IsHitting() || IsDucking();
 	}
 
-	void WantsToHitLeft()
+    public void WantsToHitLeft()
 	{
 		// if (!IsHittingOrDucking()) {
 		PunchLeft();
 		// }
 	}
 
-	void WantsToHitRight()
+    public void WantsToHitRight()
 	{
 		//if (!IsHittingOrDucking()) {
 		PunchRight();

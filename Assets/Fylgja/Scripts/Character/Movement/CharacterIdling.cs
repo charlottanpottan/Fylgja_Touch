@@ -17,7 +17,7 @@ public class CharacterIdling : MonoBehaviour
 		 *      return;
 		 * }
 		 */
-		Vector3 requestedDirection = new Vector3(Input.GetAxis("horizontal"), Input.GetAxis("vertical"), 0);
+		Vector3 requestedDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
 		if (requestedDirection.magnitude > 0.1f)
 		{

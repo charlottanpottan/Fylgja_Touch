@@ -23,7 +23,7 @@ public class CharacterVehicle : MonoBehaviour
 		{
 			return;
 		}
-		Vector3 requestedDirection = new Vector3(Input.GetAxis("horizontal"), 0, Input.GetAxis("vertical"));
+		Vector3 requestedDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 		if (Input.GetButtonDown("interact"))
 		{
 			OnLeaveVehicle();

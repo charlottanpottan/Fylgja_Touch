@@ -111,8 +111,8 @@ public class CharacterPetroglypher : MonoBehaviour
 		}
 
 		{
-			var horizontal = Input.GetAxis("horizontal");
-			var vertical = Input.GetAxis("vertical");
+			var horizontal = Input.GetAxis("Horizontal");
+			var vertical = Input.GetAxis("Vertical");
 			targetPosition.x = horizontal * Time.deltaTime;
 			targetPosition.y = vertical * Time.deltaTime;
 			targetPosition.z = 0;
