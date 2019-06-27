@@ -33,6 +33,8 @@ public class StickFightMinigame : Minigame
     {
         stickFightCamera.gameObject.SetActiveRecursively1(false);
         mainCamera.gameObject.SetActiveRecursively1(true);
+        stickFightHitButtonRight.gameObject.SetActive(false);
+        stickFightHitButtonLeft.gameObject.SetActive(false);
         opponentStickFighter.gameObject.BroadcastMessage("OnStickFightMinigameClose");
         avatar.transform.parent.BroadcastMessage("OnStickFightMinigameClose");
     }
