@@ -437,8 +437,7 @@ public class DecalTypeEditor : Editor
         }
 
         // Not show if prefab
-        PrefabType pfefabType = EditorUtility.GetPrefabType(_decalType.gameObject);
-        if (pfefabType == PrefabType.Prefab || !_decalType.gameObject.active)
+        if (PrefabUtility.IsPartOfPrefabAsset(_decalType.gameObject) || !_decalType.gameObject.activeSelf)
             return;
 
         if (Event.current.keyCode == KeyCode.Escape)
