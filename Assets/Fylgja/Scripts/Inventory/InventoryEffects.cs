@@ -75,7 +75,7 @@ public class InventoryEffects : MonoBehaviour
 	{
 		var questItemObject = inventoryItemsRoot.transform.GetChild(i).gameObject;
 
-		if (questItemObject.active != enabled && itemName == questItemObject.name)
+		if (questItemObject.activeSelf != enabled && itemName == questItemObject.name)
 		{
 			questItemObject.SetActiveRecursively1(enabled);
 			return true;

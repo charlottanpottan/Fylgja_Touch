@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ChangeQualityLevelAction : ActionArbitration
 {
-    [SerializeField] FylgjaQualityLevel targetQuality;
+    [SerializeField] FylgjaQualityLevel targetQuality = FylgjaQualityLevel.Medium;
     [SerializeField] AudioClip clickAudio = null;
     [SerializeField] AudioHandler audioHandler = null;
     [SerializeField] float audioVolume = 0.2f;

@@ -67,10 +67,9 @@ public class DecalMenu : EditorWindow
 
         // Create decal
         string path = AssetDatabase.GenerateUniqueAssetPath(pathFolder + "New Decal Type" + ".prefab");
-        UnityEngine.Object decalPrefabObject = EditorUtility.CreateEmptyPrefab(path);
         GameObject gObject = new GameObject();
-        GameObject decal = EditorUtility.ReplacePrefab(gObject, decalPrefabObject);
-        decal.AddComponent<DecalType>();
+        gObject.AddComponent<DecalType>();
+        GameObject decal = PrefabUtility.SaveAsPrefabAsset(gObject, path);
         DestroyImmediate(gObject);
         AssetDatabase.Refresh();
         Selection.activeObject = decal;

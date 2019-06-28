@@ -160,7 +160,7 @@ public class AttachedRiverEditor : Editor
 					{
 						if(riverScript.nodeObjects.Length > 1)
 						{
-							Undo.RegisterUndo (terData, "Undo Finalize");
+							Undo.RegisterCompleteObjectUndo (terData, "Undo Finalize");
 							riverScript.FinalizeRiver();
 						}
 								
@@ -195,7 +195,7 @@ public class AttachedRiverEditor : Editor
 				{	
 					if(riverScript.finalized)
 					{
-						Undo.RegisterUndo (terData, "Undo River Smooth");
+						Undo.RegisterCompleteObjectUndo(terData, "Undo River Smooth");
 						
 						riverScript.AreaSmooth(riverScript.riverCells, 1.0f);
 						
@@ -225,7 +225,7 @@ public class AttachedRiverEditor : Editor
 					if(riverScript.finalized)
 					{
 						MeshFilter meshFilter = (MeshFilter)riverScript.riverObject.GetComponent(typeof(MeshFilter));
-						Undo.RegisterUndo (meshFilter.sharedMesh, "Undo River Close");
+						Undo.RegisterCompleteObjectUndo(meshFilter.sharedMesh, "Undo River Close");
 						
 						riverScript.CloseRiver();
 					}

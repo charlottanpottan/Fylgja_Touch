@@ -165,7 +165,6 @@ class LocomotionEditorClass : Editor {
 		
 		animsFoldout = EditorGUILayout.Foldout(animsFoldout, "Source Animations");
 		if (animsFoldout) {
-			EditorGUIUtility.LookLikeControls(160);
 			
 			if (rebuildGroups || groups == null) {
 				rebuildGroups = false;
@@ -419,7 +418,7 @@ class LocomotionEditorClass : Editor {
 	}
 	
 	void OnSceneGUI () {
-		if (Application.isPlaying || AnimationUtility.InAnimationMode())
+		if (Application.isPlaying || AnimationMode.InAnimationMode())
 			return;
 		
 		Vector3 up = lc.transform.up;

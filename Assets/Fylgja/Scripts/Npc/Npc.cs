@@ -7,7 +7,7 @@ public class Npc : ActionArbitration
 
 	void Update()
 	{
-		Physics.sleepVelocity = 0;
+		Physics.sleepThreshold = 0;
 	}
 
 	public override void ExecuteAction(IAvatar avatar)

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 using System.Collections;
+using UnityEditor.SceneManagement;
 
 public class SceneMergeTool : MonoBehaviour
 {
@@ -18,6 +19,6 @@ public class SceneMergeTool : MonoBehaviour
 		}
 
 		Debug.Log("Opening" + strScenePath + " additively");
-		EditorApplication.OpenSceneAdditive(strScenePath);
+        EditorSceneManager.OpenScene(strScenePath, OpenSceneMode.Additive);
 	}
 }

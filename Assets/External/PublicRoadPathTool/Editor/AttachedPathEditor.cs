@@ -67,8 +67,6 @@ public class AttachedPathEditor : Editor
 	
 	public override void OnInspectorGUI() 
 	{
-		EditorGUIUtility.LookLikeControls();
-		
 		AttachedPathScript pathScript = (AttachedPathScript) target as AttachedPathScript;
 		
 		EditorGUILayout.BeginHorizontal();
@@ -177,7 +175,7 @@ public class AttachedPathEditor : Editor
 					}
 					
 					// finalize path
-					Undo.RegisterUndo(pathScript.terData, "Undo finalize path");
+					Undo.RegisterCompleteObjectUndo(pathScript.terData, "Undo finalize path");
 					pathScript.FinalizePath();
 					
 					if(pathScript.isRoad)
@@ -217,7 +215,7 @@ public class AttachedPathEditor : Editor
 			
 			if (GUI.Button(smoothPathButton, "Smooth Path")) 
 			{
-				Undo.RegisterUndo(pathScript.terData, "Undo smooth path");
+				Undo.RegisterCompleteObjectUndo(pathScript.terData, "Undo smooth path");
 				pathScript.AreaSmooth(pathScript.innerPathVerts,  1.0f, false);
 				
 				foreach(TerrainPathCell tc in pathScript.totalPathVerts)
@@ -236,7 +234,7 @@ public class AttachedPathEditor : Editor
 			
 			if (GUI.Button(smoothPathSlopeButton, "Smooth Path Slope")) 
 			{
-				Undo.RegisterUndo(pathScript.terData, "Undo smooth path slope");
+				Undo.RegisterCompleteObjectUndo(pathScript.terData, "Undo smooth path slope");
 				pathScript.AreaSmooth(pathScript.totalPathVerts,  1.0f, true);
 				
 				foreach(TerrainPathCell tc in pathScript.totalPathVerts)

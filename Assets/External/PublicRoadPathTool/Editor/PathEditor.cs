@@ -19,8 +19,6 @@ public class PathEditor : Editor
 {
 	public override void OnInspectorGUI() 
 	{
-		EditorGUIUtility.LookLikeControls();
-		
 		PathScript pathScript = (PathScript) target as PathScript;
 		
 		EditorGUILayout.Separator();

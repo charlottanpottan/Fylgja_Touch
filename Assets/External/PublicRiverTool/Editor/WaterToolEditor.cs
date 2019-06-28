@@ -37,8 +37,6 @@ public class WaterToolEditor : Editor
 	
 	public override void OnInspectorGUI() 
 	{
-		EditorGUIUtility.LookLikeControls();
-		
 		EditorGUILayout.Separator();
 		EditorGUILayout.Separator();
 		EditorGUILayout.Separator();

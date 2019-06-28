@@ -212,7 +212,7 @@ public class DecalTypeEditor : Editor
             GUILayout.Space(8);
             _decalType.i_uvGenerationMode = (UVGenerationMode)EditorGUILayout.EnumPopup(new GUIContent("   UV Generation", "UV generation method"), _decalType.i_uvGenerationMode);
             _serializeddecalType.FindProperty("i_uvGenerationMode").intValue = (int)_decalType.i_uvGenerationMode;
-            EditorGUIUtility.LookLikeControls();
+
             _decalType.i_uvOffset = EditorGUILayout.Vector2Field("  UV Offset", _decalType.i_uvOffset);
             _serializeddecalType.FindProperty("i_uvOffset").vector2Value = _decalType.i_uvOffset;
             _decalType.i_uvScale = EditorGUILayout.Vector2Field("  UV Scale", _decalType.i_uvScale);
@@ -227,7 +227,6 @@ public class DecalTypeEditor : Editor
             _decalType.i_uv2Scale = EditorGUILayout.Vector2Field("  UV2 Scale", _decalType.i_uv2Scale);
             _serializeddecalType.FindProperty("i_uv2Scale").vector2Value = _decalType.i_uv2Scale;
             GUI.enabled = true;
-            EditorGUIUtility.LookLikeInspector();
 
             if (!_decalType.i_boneWeights)
             {
@@ -260,7 +259,7 @@ public class DecalTypeEditor : Editor
             _serializeddecalType.FindProperty("i_atlasTilingU").intValue = _decalType.i_atlasTilingU;
             _decalType.i_atlasTilingV = EditorGUILayout.IntField(new GUIContent("   Tile V", "Size of texture atlas in V direction"), _decalType.i_atlasTilingV);
             _serializeddecalType.FindProperty("i_atlasTilingV").intValue = _decalType.i_atlasTilingV;
-            EditorGUIUtility.LookLikeInspector();
+
             _decalType.i_randomMode = (RandomMode)EditorGUILayout.EnumPopup(new GUIContent("   Random Mode", "Mode for randomize size of decal"), _decalType.i_randomMode);
             _serializeddecalType.FindProperty("i_randomMode").intValue = (int)_decalType.i_randomMode;
             if (_decalType.i_randomMode != RandomMode.Evenly)
@@ -274,10 +273,10 @@ public class DecalTypeEditor : Editor
             {
                 GUI.enabled = false;
             }
-            EditorGUIUtility.LookLikeControls();
+
             _decalType.i_randomVector = EditorGUILayout.Vector3Field("  Random Vector", _decalType.i_randomVector);
             _serializeddecalType.FindProperty("i_randomVector").vector3Value = _decalType.i_randomVector;
-            EditorGUIUtility.LookLikeInspector();
+
             GUI.enabled = true;
             GUILayout.Space(5);
         }

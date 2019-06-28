@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerLevelLoader : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class PlayerLevelLoader : MonoBehaviour
 	void Load()
 	{
 		Global.levelId = playerStorage.LevelIdFromCheckpoint(playerStorage.playerData().startingCheckpointId);
-		Application.LoadLevel("Loading");
+        SceneManager.LoadScene("Loading");
 	}
 }
