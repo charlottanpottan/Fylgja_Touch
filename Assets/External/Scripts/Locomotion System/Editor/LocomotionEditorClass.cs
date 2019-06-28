@@ -6,6 +6,7 @@ See the document "TERMS OF USE" included in the project folder for licencing det
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.SceneManagement;
 
 class InspectorAnimationGroup {
@@ -453,9 +454,12 @@ class LocomotionEditorClass : Editor {
 	}
 	
 	private static bool SanityCheckAnimationCurves(LegController legC, AnimationClip animation) {
-		AnimationClipCurveData[] curveData = AnimationUtility.GetAllCurves(animation,false);
-		
-		bool hasRootPosition = false;
+
+        EditorCurveBinding[] editorFloatCurveBindings = AnimationUtility.GetCurveBindings(animation);
+        EditorCurveBinding[] editorObjectReferenceCurveBindings = AnimationUtility.GetObjectReferenceCurveBindings(animation);
+        EditorCurveBinding[] editorCurveBindings = editorFloatCurveBindings.Concat(editorObjectReferenceCurveBindings).ToArray();
+
+        bool hasRootPosition = false;
 		bool hasRootRotation = false;
 		
 		// Check each joint from hip to ankle in each leg
@@ -464,7 +468,7 @@ class LocomotionEditorClass : Editor {
 			hasJointRotation[i] = new bool[legC.legs[i].legChain.Length];
 		}
 		
-		foreach (AnimationClipCurveData data in curveData) {
+		foreach (EditorCurveBinding data in editorCurveBindings) {
 			Transform bone = legC.transform.Find(data.path);
 			if (bone==legC.root && data.propertyName=="m_LocalPosition.x") hasRootPosition = true;
 			if (bone==legC.root && data.propertyName=="m_LocalRotation.x") hasRootRotation = true;

@@ -82,7 +82,7 @@ public class AnimationsWatcherWindow : EditorWindow
 
         EditorGUILayout.BeginHorizontal();
         m_serializationParams.useSpecificGameObject.boolValue = EditorGUILayout.Toggle(m_serializationParams.useSpecificGameObject.boolValue, GUILayout.Width(25));
-        GameObject newTargetGameObject = EditorGUILayout.ObjectField("Specific target: ", m_serializationParams.specificGameObject.objectReferenceValue, typeof(GameObject)) as GameObject;
+        GameObject newTargetGameObject = EditorGUILayout.ObjectField("Specific target: ", m_serializationParams.specificGameObject.objectReferenceValue, typeof(GameObject), true) as GameObject;
         if (newTargetGameObject != m_serializationParams.specificGameObject.objectReferenceValue)
         {
             m_serializationParams.useSpecificGameObject.boolValue = true;
