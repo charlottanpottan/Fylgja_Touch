@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Clothes
@@ -16,7 +17,7 @@ public class CharacterChangeClothes : MonoBehaviour {
 	
 	void Start()
 	{
-		ChangeClothes(Application.loadedLevelName);
+        ChangeClothes(SceneManager.GetActiveScene().name);
 	}
 	
 	void ChangeClothes(string targetClothes)
@@ -30,7 +31,4 @@ public class CharacterChangeClothes : MonoBehaviour {
 			}
 		}
 	}
-	
-	
-	
 }

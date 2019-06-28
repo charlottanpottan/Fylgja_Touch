@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ActorScene : LogicCamera, ActorSceneComponentNotification
 {
@@ -200,7 +201,7 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 
 		if (isARealScene && Global.levelId != null)
 		{
-			Application.LoadLevel("Loading");
+            SceneManager.LoadScene("Loading");
 		}
 		else
 		{

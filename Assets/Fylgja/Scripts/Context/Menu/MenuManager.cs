@@ -33,7 +33,7 @@ public class MenuManager : MonoBehaviour
 	public void ToggleMenu()
 	{
 		Debug.Log("Toggle menu");
-		if (menuObject.active != true)
+		if (menuObject.activeSelf != true)
 		{
 			PauseGame();
 		}

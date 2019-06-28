@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CreditsLogic : MonoBehaviour {
 	
@@ -26,7 +27,7 @@ public class CreditsLogic : MonoBehaviour {
 		{
 			if(!ownAnimation.isPlaying && Application.CanStreamedLevelBeLoaded("EntryLevel"))
 			{
-				Application.LoadLevel("EntryLevel");
+                SceneManager.LoadScene("EntryLevel");
 			}
 			if(canSkip == true && !ownAnimation.IsPlaying(fadeAnimation.name) && Input.GetMouseButtonDown(0))
 			{
