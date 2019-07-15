@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Subtitles : MonoBehaviour
 {
-	public GUIText text;
-	public int textSize;
+    public Text text;
+	public int textSize = 30;
 	public float delayBetweenSubtitles = 0.2f;
 	public float delayAfterSubtitle = 0.5f;
 	float closedTextAtTime;
