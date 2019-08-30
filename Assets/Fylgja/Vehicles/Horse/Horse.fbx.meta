@@ -1,170 +1,380 @@
-fileFormatVersion: 1
+fileFormatVersion: 2
 guid: 3be3c3eb2a04fdc4280258cc20961859
 ModelImporter:
-  importerVersion: 7
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      43: 4300000
+    second: Horse_MESH
+  - first:
+      43: 4300002
+    second: Horse_mesh
+  - first:
+      43: 4300004
+    second: Horse
+  - first:
+      43: 4300006
+    second: HorseMesh
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      1: 100054
+    second: HorseMesh
+  - first:
+      4: 400054
+    second: HorseMesh
+  - first:
+      137: 13700000
+    second: HorseMesh
+  - first:
+      1: 100040
+    second: Horse_RiderSocket
+  - first:
+      4: 400040
+    second: Horse_RiderSocket
+  - first:
+      1: 100036
+    second: L_F_ankle_joint
+  - first:
+      4: 400036
+    second: L_F_ankle_joint
+  - first:
+      1: 100010
+    second: L_F_foot_joint
+  - first:
+      4: 400010
+    second: L_F_foot_joint
+  - first:
+      1: 100008
+    second: L_F_hip_joint
+  - first:
+      4: 400008
+    second: L_F_hip_joint
+  - first:
+      1: 100018
+    second: L_F_knee_joint
+  - first:
+      4: 400018
+    second: L_F_knee_joint
+  - first:
+      1: 100012
+    second: L_R_ankle_joint
+  - first:
+      4: 400012
+    second: L_R_ankle_joint
+  - first:
+      1: 100006
+    second: L_R_foot_joint
+  - first:
+      4: 400006
+    second: L_R_foot_joint
+  - first:
+      1: 100038
+    second: L_R_hip_joint
+  - first:
+      4: 400038
+    second: L_R_hip_joint
+  - first:
+      1: 100022
+    second: L_R_knee_joint
+  - first:
+      4: 400022
+    second: L_R_knee_joint
+  - first:
+      1: 100002
+    second: R_F_ankle_joint
+  - first:
+      4: 400002
+    second: R_F_ankle_joint
+  - first:
+      1: 100042
+    second: R_F_foot_joint
+  - first:
+      4: 400042
+    second: R_F_foot_joint
+  - first:
+      1: 100044
+    second: R_F_hip_joint
+  - first:
+      4: 400044
+    second: R_F_hip_joint
+  - first:
+      1: 100028
+    second: R_F_knee_joint
+  - first:
+      4: 400028
+    second: R_F_knee_joint
+  - first:
+      1: 100024
+    second: R_R_ankle_joint
+  - first:
+      4: 400024
+    second: R_R_ankle_joint
+  - first:
+      1: 100030
+    second: R_R_foot_joint
+  - first:
+      4: 400030
+    second: R_R_foot_joint
+  - first:
+      1: 100026
+    second: R_R_hip_joint
+  - first:
+      4: 400026
+    second: R_R_hip_joint
+  - first:
+      1: 100014
+    second: R_R_knee_joint
+  - first:
+      4: 400014
+    second: R_R_knee_joint
+  - first:
+      1: 100080
+    second: Reins_base
+  - first:
+      4: 400080
+    second: Reins_base
+  - first:
+      1: 100076
+    second: Reins_grip
+  - first:
+      4: 400076
+    second: Reins_grip
+  - first:
+      1: 100078
+    second: Reins_mid
+  - first:
+      4: 400078
+    second: Reins_mid
+  - first:
+      1: 100086
+    second: head_L_ear
+  - first:
+      4: 400086
+    second: head_L_ear
+  - first:
+      1: 100084
+    second: head_R_ear
+  - first:
+      4: 400084
+    second: head_R_ear
+  - first:
+      1: 100032
+    second: head_joint
+  - first:
+      4: 400032
+    second: head_joint
+  - first:
+      1: 100082
+    second: head_mane
+  - first:
+      4: 400082
+    second: head_mane
+  - first:
+      1: 100004
+    second: lower_spine_01
+  - first:
+      4: 400004
+    second: lower_spine_01
+  - first:
+      1: 100020
+    second: lower_spine_02
+  - first:
+      4: 400020
+    second: lower_spine_02
+  - first:
+      1: 100070
+    second: mane1_base
+  - first:
+      4: 400070
+    second: mane1_base
+  - first:
+      1: 100068
+    second: mane1_end
+  - first:
+      4: 400068
+    second: mane1_end
+  - first:
+      1: 100074
+    second: mane_base
+  - first:
+      4: 400074
+    second: mane_base
+  - first:
+      1: 100072
+    second: mane_end
+  - first:
+      4: 400072
+    second: mane_end
+  - first:
+      1: 100034
+    second: movement
+  - first:
+      4: 400034
+    second: movement
+  - first:
+      1: 100052
+    second: neck_01
+  - first:
+      4: 400052
+    second: neck_01
+  - first:
+      1: 100016
+    second: pelvis_joint
+  - first:
+      4: 400016
+    second: pelvis_joint
+  - first:
+      1: 100066
+    second: tail_01
+  - first:
+      4: 400066
+    second: tail_01
+  - first:
+      1: 100064
+    second: tail_02
+  - first:
+      4: 400064
+    second: tail_02
+  - first:
+      1: 100062
+    second: tail_03
+  - first:
+      4: 400062
+    second: tail_03
+  - first:
+      1: 100060
+    second: tail_05
+  - first:
+      4: 400060
+    second: tail_05
+  - first:
+      1: 100058
+    second: tail_07
+  - first:
+      4: 400058
+    second: tail_07
+  - first:
+      1: 100056
+    second: tail_08
+  - first:
+      4: 400056
+    second: tail_08
+  - first:
+      1: 100046
+    second: upper_spine_01
+  - first:
+      4: 400046
+    second: upper_spine_01
+  - first:
+      1: 100048
+    second: upper_spine_02
+  - first:
+      4: 400048
+    second: upper_spine_02
+  - first:
+      1: 100050
+    second: upper_spine_03
+  - first:
+      4: 400050
+    second: upper_spine_03
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 3
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
   meshes:
-    scaleFactor: 0.01
-    useFileUnits: 1
+    lODScreenPercentages: []
+    globalScale: 0.01
     meshCompression: 0
-    generateColliders: 0
-    swapUVs: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
     generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
+    normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 1
-    smoothingAngle: 60
-    splitTangents: 1
-  materials:
-    generation: 0
-  animations:
-    generation: 3
-    bakeAnimations: 0
-    animationCompression: 1
-    animationWrapMode: 0
-    splitAnimations: 1
-  nodeInfo:
-    //RootNode:
-    - 100000
-    - 400000
-    - 11100000
-    R_F_ankle_joint:
-    - 100002
-    - 400002
-    lower_spine_01:
-    - 100004
-    - 400004
-    L_R_foot_joint:
-    - 100006
-    - 400006
-    L_F_hip_joint:
-    - 100008
-    - 400008
-    L_F_foot_joint:
-    - 100010
-    - 400010
-    L_R_ankle_joint:
-    - 100012
-    - 400012
-    R_R_knee_joint:
-    - 100014
-    - 400014
-    pelvis_joint:
-    - 100016
-    - 400016
-    L_F_knee_joint:
-    - 100018
-    - 400018
-    lower_spine_02:
-    - 100020
-    - 400020
-    L_R_knee_joint:
-    - 100022
-    - 400022
-    R_R_ankle_joint:
-    - 100024
-    - 400024
-    R_R_hip_joint:
-    - 100026
-    - 400026
-    R_F_knee_joint:
-    - 100028
-    - 400028
-    R_R_foot_joint:
-    - 100030
-    - 400030
-    head_joint:
-    - 100032
-    - 400032
-    movement:
-    - 100034
-    - 400034
-    L_F_ankle_joint:
-    - 100036
-    - 400036
-    L_R_hip_joint:
-    - 100038
-    - 400038
-    Horse_RiderSocket:
-    - 100040
-    - 400040
-    R_F_foot_joint:
-    - 100042
-    - 400042
-    R_F_hip_joint:
-    - 100044
-    - 400044
-    upper_spine_01:
-    - 100046
-    - 400046
-    upper_spine_02:
-    - 100048
-    - 400048
-    upper_spine_03:
-    - 100050
-    - 400050
-    neck_01:
-    - 100052
-    - 400052
-    HorseMesh:
-    - 100054
-    - 400054
-    - 13700000
-    tail_08:
-    - 100056
-    - 400056
-    tail_07:
-    - 100058
-    - 400058
-    tail_05:
-    - 100060
-    - 400060
-    tail_03:
-    - 100062
-    - 400062
-    tail_02:
-    - 100064
-    - 400064
-    tail_01:
-    - 100066
-    - 400066
-    mane1_end:
-    - 100068
-    - 400068
-    mane1_base:
-    - 100070
-    - 400070
-    mane_end:
-    - 100072
-    - 400072
-    mane_base:
-    - 100074
-    - 400074
-    Reins_grip:
-    - 100076
-    - 400076
-    Reins_mid:
-    - 100078
-    - 400078
-    Reins_base:
-    - 100080
-    - 400080
-    head_mane:
-    - 100082
-    - 400082
-    head_R_ear:
-    - 100084
-    - 400084
-    head_L_ear:
-    - 100086
-    - 400086
-AssetImporter:
-  importerVersion: 1
-  fileIDToRecycleName:
-    4300000: Horse_MESH
-    4300002: Horse_mesh
-    4300004: Horse
-    4300006: HorseMesh
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 103e60bbf3742427193cc6e691ad97d7
+  - 3865e9fd58b8f48cabf1400f73e0c665
+  - d378cd63453c54a9b89ca20cb7856f66
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
