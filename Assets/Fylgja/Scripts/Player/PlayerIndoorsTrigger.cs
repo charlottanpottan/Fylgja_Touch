@@ -7,13 +7,14 @@ public class PlayerIndoorsTrigger : MonoBehaviour {
 	[HideInInspector]
 	public LogicCameraInfoApplicator targetCamera;
 	public float targetWalkSpeed = 1;
-	private float originalWalkSpeed;
-	public float indoorsFOV = 60;
-	public float outdoorsFOV = 40;
 	public iTween.EaseType easeTypeFOV = iTween.EaseType.linear;
 	public float tweenTime = 0.5f;
-	
-	void OnTriggerEnter(Collider collider)
+
+    float originalWalkSpeed;
+    float indoorsFOV = 60;
+    float outdoorsFOV = 60;
+
+    void OnTriggerEnter(Collider collider)
 	{	
 		if(characterWalking == null)
 		{

@@ -3,111 +3,72 @@ using System.Collections;
 
 public class PlayerCameraCollision : LogicCamera
 {
-	public float sphereSize;
-	public LayerMask layerMask;
-	public float cameraNearPlane = 0.3f;
-	public float moveOutLerpSpeed = 3.0f;
-	public float freeDistanceBehindHead = -0.5f;
-	float currentPivotDistanceOverride = -1.0f;
-	bool overridingPivotDistance = false;
-	bool lerpingPivotOut = false;
+    public LayerMask layerMask;
+    public float moveInLerpSpeed = 1.5f;
+    public float moveOutLerpSpeed = 1f;
+    public float minDistance = 0.5f;
 
+    float currentPivotDistance = 0;
 
-	void Update()
-	{
-	}
+    void Update()
+    {
+    }
 
-	public override void UpdateCamera(ref LogicCameraInfo info)
-	{
-		var freeSpaceBehindHead = new Vector3(0.0f, 0, freeDistanceBehindHead);
-		Vector3 spaceBehindHeadPosition = info.CameraPosition() + (info.PivotRotation() * freeSpaceBehindHead);
-		Vector3 hitPosition;
+    public override void UpdateCamera(ref LogicCameraInfo info)
+    {
+        Vector3 hitPosition;
+        bool collidedBack = CollisionFromHeadToPosition(info.targetPosition, info.CameraPosition(), out hitPosition);
+        float targetPivotDistance;
 
-		bool collidedBack = CollisionFromHeadToPosition(info.targetPosition, spaceBehindHeadPosition, out hitPosition);
+        if (collidedBack)
+        {
+            targetPivotDistance = (hitPosition - info.targetPosition).magnitude;
+        }
+        else
+        {
+            targetPivotDistance = info.pivotDistance;
+        }
 
-		float targetPivotDistance;
+        targetPivotDistance = Mathf.Clamp(targetPivotDistance, minDistance, float.MaxValue);
 
-		if (info.cameraSwitched)
-		{
-			lerpingPivotOut = false;
-			overridingPivotDistance = false;
-		}
+        if (info.cameraSwitched)
+        {
+            currentPivotDistance = targetPivotDistance;
+            info.pivotDistance = currentPivotDistance;
+        }
+        else
+        {
+            float lerpSpeed = targetPivotDistance > currentPivotDistance ? moveOutLerpSpeed : moveInLerpSpeed;
 
+            currentPivotDistance = Mathf.Lerp(currentPivotDistance, targetPivotDistance, Time.deltaTime * lerpSpeed);
+            info.pivotDistance = currentPivotDistance;
+        }
+    }
 
-		if (collidedBack)
-		{
-			targetPivotDistance = (hitPosition - info.targetPosition).magnitude - cameraNearPlane;
-			targetPivotDistance = Mathf.Max(targetPivotDistance, 0.0f);
-		}
-		else
-		{
-			targetPivotDistance = info.pivotDistance;
-		}
+    public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
+    {
+    }
 
-		if (overridingPivotDistance)
-		{
-			if (targetPivotDistance < currentPivotDistanceOverride)
-			{
-				lerpingPivotOut = false;
-				currentPivotDistanceOverride = targetPivotDistance;
-				info.pivotDistance = currentPivotDistanceOverride;
-			}
-			else
-			{
-				lerpingPivotOut = true;
-			}
-		}
-		else
-		{
-			if (targetPivotDistance < info.pivotDistance)
-			{
-				currentPivotDistanceOverride = targetPivotDistance;
-				overridingPivotDistance = true;
-				info.pivotDistance = currentPivotDistanceOverride;
-			}
-		}
+    bool CollisionFromHeadToPosition(Vector3 fromPosition, Vector3 toPosition, out Vector3 hitPosition)
+    {
+        var hitInfo = new RaycastHit();
+        Vector3 direction = (toPosition - fromPosition);
+        Ray ray = new Ray(fromPosition, direction.normalized);
+        bool didHitSomething = Physics.Raycast(ray, out hitInfo, direction.magnitude, layerMask);
 
+        if (didHitSomething)
+        {
+            Debug.DrawRay(fromPosition, (hitInfo.point - fromPosition), Color.green);
+            hitPosition = hitInfo.point;
+            return true;
+        }
+        else
+        {
+            Debug.DrawRay(fromPosition, direction, Color.white);
+        }
 
-		if (lerpingPivotOut)
-		{
-			currentPivotDistanceOverride = Mathf.Lerp(currentPivotDistanceOverride, targetPivotDistance, Time.deltaTime * moveOutLerpSpeed);
-			info.pivotDistance = currentPivotDistanceOverride;
-			if (Mathf.Abs(currentPivotDistanceOverride - targetPivotDistance) < 0.0005f)
-			{
-				lerpingPivotOut = false;
-				if (!collidedBack)
-				{
-					overridingPivotDistance = false;
-					currentPivotDistanceOverride = -1;
-				}
-			}
-		}
-	}
-	
-	public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
-	{
-	}
+        hitPosition = new Vector3();
 
-	bool CollisionFromHeadToPosition(Vector3 fromPosition, Vector3 toPosition, out Vector3 hitPosition)
-	{
-		var hitInfo = new RaycastHit();
-		Vector3 direction = (toPosition - fromPosition);
-		float checkingDistance = direction.magnitude;
-		bool didHitSomething = Physics.SphereCast(fromPosition, sphereSize, direction.normalized, out hitInfo, checkingDistance, layerMask);
-
-		if (didHitSomething)
-		{
-			Debug.DrawRay(fromPosition, (hitInfo.point - fromPosition), Color.green);
-			hitPosition = hitInfo.point;
-			return true;
-		}
-		else
-		{
-			Debug.DrawRay(fromPosition, direction, Color.white);
-		}
-
-		hitPosition = new Vector3();
-
-		return false;
-	}
+        return false;
+    }
 }

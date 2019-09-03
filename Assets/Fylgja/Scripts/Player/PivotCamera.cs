@@ -14,8 +14,8 @@ public class PivotCamera : LogicCamera
 
     float rotateX;
     float rotateY;
-    float cameraDistance = 2.0f;
-    float targetCameraDistance = 2.0f;
+    float cameraDistance = 3.5f;
+    float targetCameraDistance = 3.5f;
     Vector3 prevMousePosition;
 
     public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
