@@ -254,7 +254,7 @@ public class Water : MonoBehaviour
 				m_ReflectionTexture = new RenderTexture( m_TextureSize, m_TextureSize, 16 );
 				m_ReflectionTexture.name = "__WaterReflection" + GetInstanceID();
 				m_ReflectionTexture.isPowerOfTwo = true;
-				// m_ReflectionTexture.hideFlags = HideFlags.DontSave;
+				m_ReflectionTexture.hideFlags = HideFlags.DontSave;
 				m_OldReflectionTextureSize = m_TextureSize;
 			}
 			
@@ -283,7 +283,7 @@ public class Water : MonoBehaviour
 				m_RefractionTexture = new RenderTexture( m_TextureSize, m_TextureSize, 16 );
 				m_RefractionTexture.name = "__WaterRefraction" + GetInstanceID();
 				m_RefractionTexture.isPowerOfTwo = true;
-				// m_RefractionTexture.hideFlags = HideFlags.DontSave;
+				m_RefractionTexture.hideFlags = HideFlags.DontSave;
 				m_OldRefractionTextureSize = m_TextureSize;
 			}
 			
