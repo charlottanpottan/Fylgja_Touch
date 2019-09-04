@@ -43,7 +43,12 @@ public class LogicCameraInfoApplicator : MonoBehaviour
 	public void SetLogicCamera(LogicCamera logicCameraToFollow)
 	{
 		DebugUtilities.Assert(logicCameraToFollow != null, "Camera can not be null!");
+        if(logicCamera)
+        {
+            cameraInfo.pivotRotation = logicCamera.transform.rotation;
+        }
 		logicCamera = logicCameraToFollow;
+        logicCamera.OnCameraSwitch(cameraInfo);
 		cameraInfo.cameraSwitched = true;
 	}
 	

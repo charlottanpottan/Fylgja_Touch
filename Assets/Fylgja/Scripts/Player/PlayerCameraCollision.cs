@@ -14,6 +14,11 @@ public class PlayerCameraCollision : LogicCamera
     {
     }
 
+    public override void OnCameraSwitch(LogicCameraInfo cameraInfo)
+    {
+        currentPivotDistance = cameraInfo.pivotDistance;
+    }
+
     public override void UpdateCamera(ref LogicCameraInfo info)
     {
         Vector3 hitPosition;

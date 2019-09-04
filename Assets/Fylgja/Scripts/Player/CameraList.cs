@@ -4,7 +4,15 @@ public class CameraList : LogicCamera
 {
 	public LogicCamera[] cameras;
 
-	public override void UpdateCamera(ref LogicCameraInfo info)
+    public override void OnCameraSwitch(LogicCameraInfo cameraInfo)
+    {
+        foreach (var logicCamera in cameras)
+        {
+            logicCamera.OnCameraSwitch(cameraInfo);
+        }
+    }
+
+    public override void UpdateCamera(ref LogicCameraInfo info)
 	{
 		foreach (var logicCamera in cameras)
 		{

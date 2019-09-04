@@ -13,7 +13,12 @@ public class PlayerCamera : LogicCamera
 		DebugUtilities.Assert(logicCamera != null, "LogicCamera can not be null for player camera");
 	}
 
-	public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
+    public override void OnCameraSwitch(LogicCameraInfo cameraInfo)
+    {
+        logicCamera.OnCameraSwitch(cameraInfo);
+    }
+
+    public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
 	{
 		DebugUtilities.Assert(logicCamera != null, "LogicCamera can not be null for player camera");
 		if (Time.deltaTime < 0.000001)

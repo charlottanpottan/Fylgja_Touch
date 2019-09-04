@@ -88,8 +88,10 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 		playerNotifications.DetachListener(listenerHandle);
 		listenerHandle = null;
 	}
-	
-	public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
+
+    public override void OnCameraSwitch(LogicCameraInfo cameraInfo) { }
+
+    public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
 	{
 		var actorLine = activeLine as ActorLine;
 		if (actorLine != null)

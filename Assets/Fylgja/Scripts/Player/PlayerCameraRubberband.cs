@@ -19,7 +19,9 @@ public class PlayerCameraRubberband : LogicCamera
 	{
 	}
 
-	public override void UpdateCamera(ref LogicCameraInfo info)
+    public override void OnCameraSwitch(LogicCameraInfo cameraInfo) { }
+
+    public override void UpdateCamera(ref LogicCameraInfo info)
 	{
 //		info.targetVelocity.y = 0;
 //		var cameraRelativeVelocity = Quaternion.Inverse(info.PivotRotation()) * info.targetVelocity;

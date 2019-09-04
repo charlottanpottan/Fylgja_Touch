@@ -3,7 +3,9 @@ using System.Collections;
 
 public class LogicCameraFromGameObject : LogicCamera
 {
-	public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
+    public override void OnCameraSwitch(LogicCameraInfo cameraInfo) { }
+
+    public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
 	{
 		cameraInfo.useSourcePosition = true;
 		cameraInfo.sourcePosition = transform.position;
