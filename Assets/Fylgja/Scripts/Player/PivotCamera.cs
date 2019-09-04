@@ -20,9 +20,9 @@ public class PivotCamera : LogicCamera
 
     public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
     {
-        cameraInfo.pivotRotationX = targetPivot.x;
-        cameraInfo.pivotRotationY = targetPivot.y;
-        cameraInfo.pivotRotationX = Mathf.Clamp(cameraInfo.pivotRotationX, minimumVerticalAngle, maximumVerticalAngle);
+        Vector3 eulerAngles = new Vector3(targetPivot.x, targetPivot.y, 0);
+        eulerAngles.x = ClampAngle(eulerAngles.x, minimumVerticalAngle, maximumVerticalAngle);
+        cameraInfo.rotation.eulerAngles = eulerAngles;
     }
 
     public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
@@ -49,11 +49,22 @@ public class PivotCamera : LogicCamera
 
             float addX = vertical * Time.deltaTime * verticalSpeed;
             float addY = horizontal * Time.deltaTime * horizontalSpeed;
-            
-            cameraInfo.pivotRotationX += addX;
-            cameraInfo.pivotRotationY += addY;
-            cameraInfo.pivotRotationX = Mathf.Clamp(cameraInfo.pivotRotationX, minimumVerticalAngle, maximumVerticalAngle);
+
+            Vector3 eulerAngles = cameraInfo.rotation.eulerAngles;
+            eulerAngles.x += addX;
+            eulerAngles.y += addY;
+            eulerAngles.x = ClampAngle(eulerAngles.x, minimumVerticalAngle, maximumVerticalAngle);
+   
+            cameraInfo.rotation.eulerAngles = eulerAngles;
             cameraInfo.pivotRotationIsDefined = true;
         }
+    }
+
+    float ClampAngle(float angle, float from, float to)
+    {
+        // accepts e.g. -80, 80
+        if (angle < 0f) angle = 360 + angle;
+        if (angle > 180f) return Mathf.Max(angle, 360 + from);
+        return Mathf.Min(angle, to);
     }
 }

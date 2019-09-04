@@ -11,9 +11,8 @@ public struct LogicCameraInfo
 	public bool useSourcePosition;
 	public Vector3 cameraPosition;
 
+    public Quaternion pivotRotation;
 	public float pivotOffset;
-	public float pivotRotationX;
-	public float pivotRotationY;
 	public bool pivotRotationIsDefined;
 	public float pivotDistance;
 	
@@ -23,7 +22,7 @@ public struct LogicCameraInfo
 	
 	public Quaternion PivotRotation()
 	{
-		return Quaternion.Euler(new Vector3(pivotRotationX, pivotRotationY, 0.0f));
+        return pivotRotation;
 	}
 
 	public Vector3 CameraPosition()
