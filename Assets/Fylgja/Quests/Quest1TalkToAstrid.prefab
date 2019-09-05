@@ -43,7 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
   videoClip: {fileID: 32900000, guid: 5ab0bb872608a458cbf64656b1cdf1ae, type: 3}
   moviePlayerToSpawn: {fileID: 100000, guid: 86658dbd2e98b4ba7a4307c2877112d8, type: 3}
 --- !u!1 &100002
@@ -244,7 +243,6 @@ MonoBehaviour:
   - {fileID: 11400000}
   - {fileID: 11400020}
   - {fileID: 11400006}
-  - {fileID: 11400036}
   - {fileID: 11400012}
   - {fileID: 11400024}
   - {fileID: 11400034}
@@ -404,7 +402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
   videoClip: {fileID: 32900000, guid: 8e7650877646343f5af3de12a3b54493, type: 3}
   moviePlayerToSpawn: {fileID: 100000, guid: 1654480f2d5c14c89bc07236afce0fc1, type: 3}
 --- !u!1 &100016
@@ -807,4 +804,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorName: CameraSetPivot
   message: SetPivot
-  vectorParameter: {x: 10, y: 180}
+  vectorParameter: {x: 12, y: 87}

@@ -688,8 +688,6 @@ MonoBehaviour:
   actorClip: {fileID: 0}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: be6e6522647a34313be205f54039390c, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -742,8 +740,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 892832409481c4f47bddd118a03c08ee, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1

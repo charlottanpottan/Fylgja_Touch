@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class ActorScene : LogicCamera, ActorSceneComponentNotification
+public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 {
 	public ActorPosition[] actors;
 	public ActorSceneComponent[] lines;
@@ -40,8 +40,6 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 	AllowedToMoveModifier dontMoveModifier;
 	AllowedToInteractModifier dontInteractModifier;
 	AvatarToPlayerNotifications playerNotifications;
-	PlayerInteraction.ListenerStackItem listenerHandle;
-	PlayerInteraction.CameraItem selectedCameraHandle;
 
 	LogicCameraInfo logicCameraInfo = new LogicCameraInfo();
 	bool hasValidLogicCameraInfo;
@@ -74,41 +72,6 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 	bool IsReallyAQuest()
 	{
 		return (this as Quest) != null;
-	}
-
-	void ChildListenerToCamera()
-	{
-		Debug.Log("Camera is:" + Camera.main.name);
-		listenerHandle = playerNotifications.AttachListener(Camera.main.transform);
-	}
-
-	void KickoutListenerFromScene()
-	{
-		Debug.Log("KickoutListenerFromScene");
-		playerNotifications.DetachListener(listenerHandle);
-		listenerHandle = null;
-	}
-
-    public override void OnCameraSwitch(LogicCameraInfo cameraInfo) { }
-
-    public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
-	{
-		var actorLine = activeLine as ActorLine;
-		if (actorLine != null)
-		{
-			actorLine.UpdateCamera(ref logicCameraInfo);
-			hasValidLogicCameraInfo = true;
-		}
-		else
-		{
-			DebugUtilities.Assert(hasValidLogicCameraInfo, "Asking for camera but we haven't set any yet!");
-		}
-
-		cameraInfo = logicCameraInfo;
-	}
-	
-	public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
-	{
 	}
 
 	public void AddSceneObject(string name, GameObject o)
@@ -214,21 +177,6 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 		}
 	}
 
-	void AttachCameraAndListener()
-	{
-		Debug.Log("########## ATTACH CAMERA AND LISTENER!" + name);
-		ChildListenerToCamera();
-		selectedCameraHandle = playerNotifications.AddCameraToStack(this, "ActorScene");
-	}
-
-	void KickoutCameraAndListener()
-	{
-		Debug.Log("########## KICKOUT CAMERA AND LISTENER!" + name);
-		KickoutListenerFromScene();
-		playerNotifications.RemoveCameraFromStack(selectedCameraHandle);
-		selectedCameraHandle = null;
-	}
-
 	void PrepareScene()
 	{
 		Debug.Log("=== Preparing scene:" + gameObject.name);
@@ -315,15 +263,6 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 		}
 
 		Debug.Log("### CLOSING SCENE:" + name);
-
-		if (selectedCameraHandle != null)
-		{
-			KickoutCameraAndListener();
-		}
-		else
-		{
-			Debug.Log("No camera or listener was attached to:" + name);
-		}
 
 		isActingScene = false;
 		PlaceActorsAfterScene();
@@ -419,12 +358,6 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 		}
 
 		activeLine = lines[lineIndex];
-
-		var actorLine = activeLine as ActorLine;
-		if (actorLine != null && actorLine.shotComposition != ShotComposition.UsePrevious && selectedCameraHandle == null)
-		{
-			AttachCameraAndListener();
-		}
 
 		DebugUtilities.Assert(activeLine != null, "Active Line is null");
 		lineIndex++;
@@ -552,7 +485,6 @@ public class ActorScene : LogicCamera, ActorSceneComponentNotification
 			instantiatedActor.transform.rotation = actorPosition.transform.rotation;
 		}
 	}
-
 
 	public Transform GetCameraTransform()
 	{
