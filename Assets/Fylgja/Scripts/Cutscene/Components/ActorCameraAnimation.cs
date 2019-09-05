@@ -21,6 +21,7 @@ public class ActorCameraAnimation : ActorSceneComponent
 		transform.rotation = new Quaternion();
 		transform.position = new Vector3();
 		instantiatedObject = Instantiate(new GameObject(), new Vector3(), new Quaternion()) as GameObject;
+        instantiatedObject.name = "ActorCameraAnimation_" + name;
 
 		instantiatedObject.AddComponent<FadeInFadeOut>();
 		//cameraToAnimate.cullingMask = cameraCullingMask;
