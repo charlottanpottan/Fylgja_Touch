@@ -17,6 +17,11 @@ public class CameraPivotMessager : MonoBehaviour
 
     void SetPivotDistance(float distance)
     {
-        logicCameraInfoApplicator.CameraSetPivotDistance(distance);
+        logicCameraInfoApplicator.CameraSetPivotDistance(distance, false);
+    }
+
+    void SetPivotDistanceInstant(float distance)
+    {
+        logicCameraInfoApplicator.CameraSetPivotDistance(distance, true);
     }
 }

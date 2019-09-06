@@ -54,9 +54,9 @@ public class PlayerCameraCollision : LogicCamera
     {
     }
 
-    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance, bool instant)
     {
-		currentPivotDistance = distance;
+		//currentPivotDistance = distance;
 	}
 
     bool CollisionFromHeadToPosition(Vector3 fromPosition, Vector3 toPosition, out Vector3 hitPosition)

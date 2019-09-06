@@ -44,8 +44,8 @@ public class PlayerCamera : LogicCamera
 		logicCamera.SetCameraPivot(ref cameraInfo, targetPivot);
 	}
 
-    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance, bool instant)
     {
-        logicCamera.SetCameraPivotDistance(ref cameraInfo, distance);
+        logicCamera.SetCameraPivotDistance(ref cameraInfo, distance, instant);
     }
 }

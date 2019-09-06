@@ -64,10 +64,11 @@ public class PivotCamera : LogicCamera
         cameraInfo.pivotRotation.eulerAngles = eulerAngles;
     }
 
-    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance, bool instant)
     {
         cameraInfo.pivotDistance = distance;
-        cameraDistance = distance;
+        if(instant)
+          cameraDistance = distance;
         targetCameraDistance = distance;
     }
 

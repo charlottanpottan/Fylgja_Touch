@@ -31,13 +31,13 @@ public class CameraList : LogicCamera
 		}
 	}
 
-    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance, bool instant)
     {
         foreach (var logicCamera in cameras)
         {
             if (logicCamera)
             {
-                logicCamera.SetCameraPivotDistance(ref cameraInfo, distance);
+                logicCamera.SetCameraPivotDistance(ref cameraInfo, distance, instant);
             }
         }
     }

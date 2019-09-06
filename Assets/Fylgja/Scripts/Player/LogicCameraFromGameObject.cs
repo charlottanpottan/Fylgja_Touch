@@ -17,7 +17,7 @@ public class LogicCameraFromGameObject : LogicCamera
 	{
 	}
 
-    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance, bool instant)
     {
     }
 }

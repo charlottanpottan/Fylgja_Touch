@@ -155,9 +155,9 @@ public class LogicCameraInfoApplicator : MonoBehaviour
         logicCamera.SetCameraPivot(ref cameraInfo, targetPivot);
     }
 
-    public void CameraSetPivotDistance(float distance)
+    public void CameraSetPivotDistance(float distance, bool instant)
     {
-        logicCamera.SetCameraPivotDistance(ref cameraInfo, distance);
+        logicCamera.SetCameraPivotDistance(ref cameraInfo, distance, instant);
     }
 
     private void OnGUI()
