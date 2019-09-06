@@ -56,7 +56,8 @@ public class PlayerCameraCollision : LogicCamera
 
     public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance, bool instant)
     {
-		//currentPivotDistance = distance;
+        if(instant)
+		    currentPivotDistance = distance;
 	}
 
     bool CollisionFromHeadToPosition(Vector3 fromPosition, Vector3 toPosition, out Vector3 hitPosition)
@@ -70,7 +71,7 @@ public class PlayerCameraCollision : LogicCamera
         {
             Debug.DrawRay(fromPosition, (hitInfo.point - fromPosition), Color.green);
             hitPosition = hitInfo.point;
-            Debug.Log("Colliding with " + hitInfo.collider.name);
+          //  Debug.Log("Colliding with " + hitInfo.collider.name);
             return true;
         }
         else

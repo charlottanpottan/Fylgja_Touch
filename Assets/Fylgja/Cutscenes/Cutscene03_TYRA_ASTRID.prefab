@@ -918,7 +918,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3960544862098642650}
-  - component: {fileID: 3689786846136839193}
   - component: {fileID: 1964233044153190766}
   m_Layer: 0
   m_Name: SetCameraPivot
@@ -941,21 +940,6 @@ Transform:
   m_Father: {fileID: 400024}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3689786846136839193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3967200178634485028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: CameraSetPivot
-  message: SetPivot
-  value: 1.5
 --- !u!114 &1964233044153190766
 MonoBehaviour:
   m_ObjectHideFlags: 0
