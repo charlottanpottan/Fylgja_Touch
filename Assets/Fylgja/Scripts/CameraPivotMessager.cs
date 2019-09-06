@@ -1,23 +1,22 @@
 using UnityEngine;
 using System.Collections;
 
-public class CameraPivotMessager : MonoBehaviour {
-	
-	LogicCameraInfoApplicator pivotCamera;
-	
-	// Use this for initialization
-	void Start () 
-	{
-		Init();
-	}
-	
-	void Init()
-	{
-		pivotCamera = Camera.main.gameObject.GetComponent<LogicCameraInfoApplicator>();
-	}
-	
-	void SetPivot(Vector2 targetPivot)
-	{
-		pivotCamera.CameraSetPivot(targetPivot);
-	}
+public class CameraPivotMessager : MonoBehaviour
+{
+    LogicCameraInfoApplicator logicCameraInfoApplicator;
+
+    void Awake()
+    {
+        logicCameraInfoApplicator = Camera.main.gameObject.GetComponent<LogicCameraInfoApplicator>();
+    }
+
+    void SetPivot(Vector2 targetPivot)
+    {
+        logicCameraInfoApplicator.CameraSetPivot(targetPivot);
+    }
+
+    void SetPivotDistance(float distance)
+    {
+        logicCameraInfoApplicator.CameraSetPivotDistance(distance);
+    }
 }

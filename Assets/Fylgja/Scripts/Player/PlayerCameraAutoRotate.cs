@@ -47,4 +47,8 @@ public class PlayerCameraAutoRotate : LogicCamera
 	public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
 	{
 	}
+
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    {
+    }
 }

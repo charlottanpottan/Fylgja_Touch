@@ -12,22 +12,33 @@ public class CameraList : LogicCamera
         }
     }
 
-    public override void UpdateCamera(ref LogicCameraInfo info)
+    public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
 	{
 		foreach (var logicCamera in cameras)
 		{
-			logicCamera.UpdateCamera(ref info);
+			logicCamera.UpdateCamera(ref cameraInfo);
 		}
 	}
 	
-	public override void SetCameraPivot(ref LogicCameraInfo info, Vector2 targetPivot)
+	public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
 	{
 		foreach(var logicCamera in cameras)
 		{
 			if(logicCamera is PivotCamera)
 			{
-				logicCamera.SetCameraPivot(ref info, targetPivot);
+				logicCamera.SetCameraPivot(ref cameraInfo, targetPivot);
 			}
 		}
 	}
+
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    {
+        foreach (var logicCamera in cameras)
+        {
+            if (logicCamera)
+            {
+                logicCamera.SetCameraPivotDistance(ref cameraInfo, distance);
+            }
+        }
+    }
 }

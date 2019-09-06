@@ -19,40 +19,45 @@ public class PlayerCameraCollision : LogicCamera
         currentPivotDistance = cameraInfo.pivotDistance;
     }
 
-    public override void UpdateCamera(ref LogicCameraInfo info)
+    public override void UpdateCamera(ref LogicCameraInfo cameraInfo)
     {
         Vector3 hitPosition;
-        bool collidedBack = CollisionFromHeadToPosition(info.targetPosition, info.CameraPosition(), out hitPosition);
+        bool collidedBack = CollisionFromHeadToPosition(cameraInfo.targetPosition, cameraInfo.CameraPosition(), out hitPosition);
         float targetPivotDistance;
 
         if (collidedBack)
         {
-            targetPivotDistance = (hitPosition - info.targetPosition).magnitude;
+            targetPivotDistance = (hitPosition - cameraInfo.targetPosition).magnitude;
         }
         else
         {
-            targetPivotDistance = info.pivotDistance;
+            targetPivotDistance = cameraInfo.pivotDistance;
         }
 
         targetPivotDistance = Mathf.Clamp(targetPivotDistance, minDistance, float.MaxValue);
 
-        if (info.cameraSwitched)
+        if (cameraInfo.cameraSwitched)
         {
             currentPivotDistance = targetPivotDistance;
-            info.pivotDistance = currentPivotDistance;
+            cameraInfo.pivotDistance = currentPivotDistance;
         }
         else
         {
             float lerpSpeed = targetPivotDistance > currentPivotDistance ? moveOutLerpSpeed : moveInLerpSpeed;
 
             currentPivotDistance = Mathf.Lerp(currentPivotDistance, targetPivotDistance, Time.deltaTime * lerpSpeed);
-            info.pivotDistance = currentPivotDistance;
+            cameraInfo.pivotDistance = currentPivotDistance;
         }
     }
 
     public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
     {
     }
+
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    {
+		currentPivotDistance = distance;
+	}
 
     bool CollisionFromHeadToPosition(Vector3 fromPosition, Vector3 toPosition, out Vector3 hitPosition)
     {

@@ -6,11 +6,12 @@ public class ActorSetAnimation : ActorSceneComponent
 {
     [SerializeField] AnimationClip clip;
     [SerializeField] string actorName;
+    [SerializeField] float crossFadeDuration = 0.3f;
 
     protected override void Act()
     {
         SceneActor sceneActor = actingInScene.GetSceneActor(actorName);
-        sceneActor.PlayCustomAnimation(clip, 0.3f);
+        sceneActor.PlayCustomAnimation(clip, crossFadeDuration);
         ComponentDone();
     }
 

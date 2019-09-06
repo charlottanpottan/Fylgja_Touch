@@ -18,13 +18,6 @@ public class PivotCamera : LogicCamera
     float targetCameraDistance = 3.5f;
     Vector3 prevMousePosition;
 
-    public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
-    {
-        Vector3 eulerAngles = new Vector3(targetPivot.x, targetPivot.y, 0);
-        eulerAngles.x = ClampAngle(eulerAngles.x, minimumVerticalAngle, maximumVerticalAngle);
-        cameraInfo.pivotRotation.eulerAngles = eulerAngles;
-    }
-
     public override void OnCameraSwitch(LogicCameraInfo cameraInfo)
     {
     }
@@ -58,10 +51,24 @@ public class PivotCamera : LogicCamera
             eulerAngles.x += addX;
             eulerAngles.y += addY;
             eulerAngles.x = ClampAngle(eulerAngles.x, minimumVerticalAngle, maximumVerticalAngle);
-   
+
             cameraInfo.pivotRotation.eulerAngles = eulerAngles;
             cameraInfo.pivotRotationIsDefined = true;
         }
+    }
+
+    public override void SetCameraPivot(ref LogicCameraInfo cameraInfo, Vector2 targetPivot)
+    {
+        Vector3 eulerAngles = new Vector3(targetPivot.x, targetPivot.y, 0);
+        eulerAngles.x = ClampAngle(eulerAngles.x, minimumVerticalAngle, maximumVerticalAngle);
+        cameraInfo.pivotRotation.eulerAngles = eulerAngles;
+    }
+
+    public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance)
+    {
+        cameraInfo.pivotDistance = distance;
+        cameraDistance = distance;
+        targetCameraDistance = distance;
     }
 
     float ClampAngle(float angle, float from, float to)
