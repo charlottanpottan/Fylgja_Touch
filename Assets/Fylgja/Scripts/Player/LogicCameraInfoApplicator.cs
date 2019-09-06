@@ -152,18 +152,23 @@ public class LogicCameraInfoApplicator : MonoBehaviour
 
     public void CameraSetPivot(Vector2 targetPivot)
     {
+        Debug.Log("CameraSetPivot " + targetPivot + " !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         logicCamera.SetCameraPivot(ref cameraInfo, targetPivot);
     }
 
     public void CameraSetPivotDistance(float distance, bool instant)
     {
+        Debug.Log("CameraSetPivotDistance " + distance + " !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         logicCamera.SetCameraPivotDistance(ref cameraInfo, distance, instant);
     }
 
-    private void OnGUI()
+#if UNITY_EDITOR
+    void OnGUI()
     {
         GUIStyle guiStyle = new GUIStyle();
-        guiStyle.fontSize = 30; 
+        guiStyle.fontSize = 30;
+        GUI.color = Color.white;
         GUILayout.Label("Distance " + cameraInfo.pivotDistance, guiStyle);
     }
+#endif
 }

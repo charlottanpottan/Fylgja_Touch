@@ -214,8 +214,8 @@ Transform:
   - {fileID: 400032}
   - {fileID: 400010}
   - {fileID: 400006}
-  - {fileID: 400030}
   - {fileID: 400022}
+  - {fileID: 7361106827642097095}
   - {fileID: 400020}
   - {fileID: 400002}
   - {fileID: 400014}
@@ -243,9 +243,10 @@ MonoBehaviour:
   - {fileID: 11400020}
   - {fileID: 11400006}
   - {fileID: 11400024}
-  - {fileID: 11400034}
+  - {fileID: 4155786199512177864}
   - {fileID: 11400002}
   - {fileID: 11400004}
+  - {fileID: 4155786199512177864}
   - {fileID: 11400010}
   actorsAfterScene: []
   keepAvatarLocked: 0
@@ -542,7 +543,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400024
 MonoBehaviour:
@@ -667,52 +668,6 @@ MonoBehaviour:
   actorName: GUIController
   message: SetToBlack
   floatParameter: 0
---- !u!1 &100030
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 400030}
-  - component: {fileID: 11400034}
-  m_Layer: 0
-  m_Name: SetCameraPivot2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &400030
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100030}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400008}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11400034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f1cc8fe7db94148b4584a5a058094d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: CameraSetPivot
-  message: SetPivot
-  value: {x: 0, y: 0}
 --- !u!1 &100032
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,3 +714,49 @@ MonoBehaviour:
   actorName: CameraSetPivot
   message: SetPivot
   value: {x: 0, y: 0}
+--- !u!1 &3195115186856925993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7361106827642097095}
+  - component: {fileID: 4155786199512177864}
+  m_Layer: 0
+  m_Name: SetCameraPivotDistance3.5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7361106827642097095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195115186856925993}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4155786199512177864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195115186856925993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivotDistance
+  value: 3.5

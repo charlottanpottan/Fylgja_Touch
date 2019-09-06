@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -47,8 +47,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 4f99a9701754d4c948769e7be451f6fa, type: 3}
   actorMood: 0
   talkingToActorName: Shaman
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -83,7 +81,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -101,8 +99,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 37dc2939f8fdf45a991894f8b3674366, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 8da57bed4930c1047a81020863a8aed8, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -137,7 +133,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400004
 MonoBehaviour:
@@ -155,8 +151,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 8fbebe1e28f904408b1b6e69f21e40e8, type: 3}
   actorMood: 0
   talkingToActorName: Shaman
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -192,7 +186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400006
 MonoBehaviour:
@@ -210,8 +204,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 35f931683fa204c8992aee96847fc862, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: cd1329f60c2ab984b9c915e8122d29ed, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -248,7 +240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -266,8 +258,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 19cd1ed238ce347c08f1b9b73b304d26, type: 3}
   actorMood: 0
   talkingToActorName: Shaman
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -303,7 +293,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400010
 MonoBehaviour:
@@ -321,8 +311,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: a1b33e664c6c44189a4d60952697ef78, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: a64ba0ece6cb6ac479cbe77de6e197ce, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -358,7 +346,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400012
 MonoBehaviour:
@@ -376,8 +364,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 42b73fc7fdae24333b86d717290144aa, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: e91d81c025132cc42b1b4176b7ae572f, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -415,7 +401,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400014
 MonoBehaviour:
@@ -433,8 +419,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 67aae6894da404128b515493c6225c02, type: 3}
   actorMood: 0
   talkingToActorName: Shaman
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -541,6 +525,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 848029725465584390}
+  - {fileID: 8265476624848348146}
   - {fileID: 400030}
   - {fileID: 400012}
   - {fileID: 400000}
@@ -770,6 +756,8 @@ MonoBehaviour:
   actors:
   - {fileID: 11400018}
   lines:
+  - {fileID: 1017809578223337000}
+  - {fileID: 3939365115691871147}
   - {fileID: 11400022}
   - {fileID: 11400012}
   - {fileID: 11400014}
@@ -846,7 +834,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400020}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400022
 MonoBehaviour:
@@ -864,10 +852,100 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: b42a9047f3a994f9db0c890c81a3cc35, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 3610a194d96349344a8f88842d4541b7, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
   subtitle: "Tyra, nu m\xE5ste du lyssna p\xE5 mig."
+--- !u!1 &1972812907288299418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8265476624848348146}
+  - component: {fileID: 3939365115691871147}
+  m_Layer: 0
+  m_Name: SetCameraPivotDistance2.45
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8265476624848348146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972812907288299418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400020}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3939365115691871147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972812907288299418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivotDistance
+  value: 2.45
+--- !u!1 &3998365900147524041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848029725465584390}
+  - component: {fileID: 1017809578223337000}
+  m_Layer: 0
+  m_Name: SetCameraPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &848029725465584390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998365900147524041}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017809578223337000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998365900147524041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f1cc8fe7db94148b4584a5a058094d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivot
+  value: {x: 18, y: 26}

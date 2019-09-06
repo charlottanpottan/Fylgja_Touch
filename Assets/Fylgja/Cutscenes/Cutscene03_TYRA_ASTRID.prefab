@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -47,8 +47,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 7524a612f94f645ce84d1e7ac6127be1, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -83,7 +81,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -101,8 +99,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 465f80c9b4269456bb9a3dbd7440895e, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 1
-  shotMovement: 1
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -138,7 +134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400004
 MonoBehaviour:
@@ -156,8 +152,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 22a06f375126447a4a492cd0ef20cdbb, type: 3}
   actorMood: 0
   talkingToActorName: Astrid
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -192,7 +186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400006
 MonoBehaviour:
@@ -210,8 +204,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: fba24d93a7b184dc69426ac4747f2a4f, type: 3}
   actorMood: 0
   talkingToActorName: Astrid
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -248,7 +240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -266,8 +258,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 0afb8af569e296345aed346b32b4ef1f, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: ee4558bee808947618671471a54792b2, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -302,7 +292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400010
 MonoBehaviour:
@@ -320,8 +310,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 5bfd4008a4a69df4d9ce4e9b5b983af7, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 0
-  shotMovement: 1
   customAnimation: {fileID: 7400000, guid: cb3f3745e681e4d72ad9e2677ba88980, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -358,7 +346,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400012
 MonoBehaviour:
@@ -376,8 +364,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 265507d328d36844a85aeb1f6d1f27cb, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 2
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: ce3a9b1f6d1ba43f08a6a856ecb93e7c, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -412,7 +398,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400014
 MonoBehaviour:
@@ -430,8 +416,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 5141f931833a1104bb39469d952ea4ab, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 1
-  shotMovement: 2
   customAnimation: {fileID: 7400000, guid: 64b37326c01834c8e8fe45197ffeba40, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -615,6 +599,7 @@ MonoBehaviour:
   actors:
   - {fileID: 11400020}
   lines:
+  - {fileID: 797566333505877742}
   - {fileID: 11400022}
   - {fileID: 11400018}
   - {fileID: 11400024}
@@ -732,6 +717,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 3960544862098642650}
+  - {fileID: 7036114737899172588}
   - {fileID: 400030}
   - {fileID: 400006}
   - {fileID: 400004}
@@ -847,7 +834,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400022
 MonoBehaviour:
@@ -865,8 +852,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 3af8f3dd7d388449ca9b772f84417ac9, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -901,7 +886,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400024}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400024
 MonoBehaviour:
@@ -919,10 +904,116 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: cd8dce22b55550f4a8c73937282cb641, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 0f33b1f80240a461daa35cc4205a0973, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
   subtitle: "Hej lilla v\xE4n! K\xE4nner du dig piggare nu?"
+--- !u!1 &3967200178634485028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3960544862098642650}
+  - component: {fileID: 3689786846136839193}
+  - component: {fileID: 1964233044153190766}
+  m_Layer: 0
+  m_Name: SetCameraPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3960544862098642650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967200178634485028}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400024}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3689786846136839193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967200178634485028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivot
+  value: 1.5
+--- !u!114 &1964233044153190766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967200178634485028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f1cc8fe7db94148b4584a5a058094d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivot
+  value: {x: 26, y: 16}
+--- !u!1 &6772605514917369801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7036114737899172588}
+  - component: {fileID: 797566333505877742}
+  m_Layer: 0
+  m_Name: SetCameraPivotDistance1.5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7036114737899172588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6772605514917369801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400024}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797566333505877742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6772605514917369801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivotDistance
+  value: 1.5

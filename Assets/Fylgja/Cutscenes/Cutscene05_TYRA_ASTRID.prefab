@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -47,8 +47,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: a7bd7b04205ea3f4cadbe3103544a800, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 789b984aaf1a8af4e892f65b8931fb31, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -84,7 +82,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -102,8 +100,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 937b7cab953fc6a48ac45c70aa1380f7, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 4ac7943326ada4097b10ba1d0d40de3b, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -140,7 +136,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400004
 MonoBehaviour:
@@ -158,8 +154,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 10e37b6c64e82ad419000a6b2a3c8bc4, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 151dc7b5c510c48d6a97851374c1bef3, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -195,7 +189,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400006
 MonoBehaviour:
@@ -213,8 +207,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: a2916517169ac1f4c9bb02e7ba9e1bd9, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: bb81f9ab2bbfe4babb93c9bf0e7dc693, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -250,7 +242,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -268,8 +260,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: ddec239361db14a81abff1d5665631a2, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -305,7 +295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400010
 MonoBehaviour:
@@ -323,8 +313,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 33f22a386e5334a599c3e7d7a2dd88d9, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -359,7 +347,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400012
 MonoBehaviour:
@@ -377,8 +365,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: fe01955eb84aa44cfab44b412b382f31, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -413,7 +399,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400024
 MonoBehaviour:
@@ -457,7 +443,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400016
 MonoBehaviour:
@@ -475,8 +461,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 1939a13ec432a47cfbad2f92451b32fe, type: 3}
   actorMood: 0
   talkingToActorName: Astrid
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -582,6 +566,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7070968843330144089}
+  - {fileID: 3073321474300764295}
+  - {fileID: 6865386326978211707}
   - {fileID: 400036}
   - {fileID: 400034}
   - {fileID: 400006}
@@ -594,6 +581,7 @@ Transform:
   - {fileID: 400010}
   - {fileID: 400008}
   - {fileID: 400014}
+  - {fileID: 4917364816006873534}
   m_Father: {fileID: 400030}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -816,6 +804,8 @@ MonoBehaviour:
   - {fileID: 11400018}
   - {fileID: 11400020}
   lines:
+  - {fileID: 5271371591244390462}
+  - {fileID: 7987709859063199413}
   - {fileID: 11400026}
   - {fileID: 11400006}
   - {fileID: 11400028}
@@ -828,6 +818,7 @@ MonoBehaviour:
   - {fileID: 11400008}
   - {fileID: 11400014}
   - {fileID: 11400024}
+  - {fileID: 327369155295216052}
   actorsAfterScene: []
   keepAvatarLocked: 0
   useFader: 1
@@ -895,7 +886,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400014
 MonoBehaviour:
@@ -913,8 +904,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 831b2cbe89532944982b426f216a8d1a, type: 3}
   actorMood: 0
   talkingToActorName: 
-  shotComposition: 2
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 367454e0f4c464f04b97b531800ce280, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -949,7 +938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400026
 MonoBehaviour:
@@ -995,7 +984,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400028
 MonoBehaviour:
@@ -1012,3 +1001,204 @@ MonoBehaviour:
   actorName: Astrid
   gameObjectToActivate: movement/pelvis_joint/spine_01/spine_02/spine_03/L_clavicle_joint/L_shoulder_joint/L_elbow_joint/L_hand_joint/Urn
   activationState: 0
+--- !u!1 &1397209903920063511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7070968843330144089}
+  - component: {fileID: 34856864696347302}
+  - component: {fileID: 6195318576172372482}
+  m_Layer: 0
+  m_Name: CameraSetPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7070968843330144089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397209903920063511}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 113.46922, y: 113.63285, z: 114.75527}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400022}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34856864696347302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397209903920063511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3553e651fcfeb4f3ba3f20ee844ae2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceTransform: {fileID: 0}
+  leftShoulderTransform: {fileID: 0}
+  rightShoulderTransform: {fileID: 0}
+  faceRadius: 0
+  mouthMovement: {fileID: 0}
+  randomGesture: {fileID: 0}
+  idleAnimation: {fileID: 0}
+--- !u!114 &6195318576172372482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397209903920063511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6708af4fc18e4c818a38344ddfbdbf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1723569033150857675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3073321474300764295}
+  - component: {fileID: 5271371591244390462}
+  m_Layer: 0
+  m_Name: SetCameraPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3073321474300764295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723569033150857675}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400022}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5271371591244390462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723569033150857675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f1cc8fe7db94148b4584a5a058094d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivot
+  value: {x: 17, y: 56}
+--- !u!1 &1729649610763364983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6865386326978211707}
+  - component: {fileID: 7987709859063199413}
+  m_Layer: 0
+  m_Name: SetCameraPivotDistance2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6865386326978211707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729649610763364983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400022}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7987709859063199413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729649610763364983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivotDistance
+  value: 2
+--- !u!1 &5228596924717241309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4917364816006873534}
+  - component: {fileID: 327369155295216052}
+  m_Layer: 0
+  m_Name: SetCameraPivotDistance3.5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4917364816006873534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5228596924717241309}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400022}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &327369155295216052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5228596924717241309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivotDistance
+  value: 3.5

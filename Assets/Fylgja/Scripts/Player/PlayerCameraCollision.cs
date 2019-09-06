@@ -70,6 +70,7 @@ public class PlayerCameraCollision : LogicCamera
         {
             Debug.DrawRay(fromPosition, (hitInfo.point - fromPosition), Color.green);
             hitPosition = hitInfo.point;
+            Debug.Log("Colliding with " + hitInfo.collider.name);
             return true;
         }
         else
