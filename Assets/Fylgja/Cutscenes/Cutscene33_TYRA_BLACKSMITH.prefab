@@ -1092,6 +1092,8 @@ MonoBehaviour:
   actorsAfterScene: []
   keepAvatarLocked: 0
   useFader: 1
+  fadeAtStart: 1
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100038
 GameObject:

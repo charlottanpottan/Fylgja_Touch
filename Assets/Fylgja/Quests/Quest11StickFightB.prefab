@@ -279,9 +279,9 @@ MonoBehaviour:
   actors:
   - {fileID: 11400000}
   lines:
+  - {fileID: 11400008}
   - {fileID: 8960257776359724133}
   - {fileID: 2413321958019343849}
-  - {fileID: 11400008}
   - {fileID: 11400006}
   - {fileID: 11400002}
   actorsAfterScene: []

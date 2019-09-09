@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -47,8 +47,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 45fc5c151b35a47be9400cb6ceb38fc4, type: 3}
   actorMood: 0
   talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -83,7 +81,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -101,8 +99,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 5b0cf15700aab4a199ffbccb29aaac27, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: d195b29fa58991943809d08870820d14, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -138,7 +134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400004
 MonoBehaviour:
@@ -156,8 +152,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 88ed2a726a27148c19319cb25bc9ffa0, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 400a4f399fc83fd4dbd837049510e099, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -194,7 +188,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400006
 MonoBehaviour:
@@ -212,8 +206,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 8ef8797c8e22e4dfbb79a03278079440, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 35918faa0d85e5f499f60563fb852299, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -251,7 +243,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -269,8 +261,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: ad56c9846a6d349f49b04907bfae4741, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 42dcd19fc6afae94cba669f3d0f71f63, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -306,7 +296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400010
 MonoBehaviour:
@@ -324,8 +314,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: e20f894ecb4e2479a9851ecfb5b68a38, type: 3}
   actorMood: 0
   talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -360,7 +348,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400012
 MonoBehaviour:
@@ -378,8 +366,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 53a877cb0d71a4015be859f1a72ea7e8, type: 3}
   actorMood: 0
   talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -414,7 +400,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400014
 MonoBehaviour:
@@ -432,8 +418,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: f2c69d1c1ccc2429a853f641fdde3b33, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 705cd94c983fef949a35352ec4d35264, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -472,7 +456,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400016
 MonoBehaviour:
@@ -490,8 +474,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 88737ffce520940d4a6aacf52755c42a, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 5577bd6ce80505e4da9ee86847134050, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -526,7 +508,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400018
 MonoBehaviour:
@@ -544,8 +526,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 4b6dc078336a14008b73f1d038b1c2cf, type: 3}
   actorMood: 0
   talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -580,7 +560,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400020
 MonoBehaviour:
@@ -598,8 +578,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 60378ae6223a840538eabe97adea8a32, type: 3}
   actorMood: 0
   talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -634,7 +612,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400022
 MonoBehaviour:
@@ -652,8 +630,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 22163dfdd1a8a4524a405e19b50c6bad, type: 3}
   actorMood: 0
   talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -688,7 +664,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400046
 MonoBehaviour:
@@ -732,7 +708,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400026
 MonoBehaviour:
@@ -750,8 +726,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 9211ecc18a410430db18349156e5300d, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: b074486e442b89448893317f6f46402c, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -786,7 +760,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400028
 MonoBehaviour:
@@ -804,8 +778,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 909eee478ff394722b71eca559051ce7, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 006a310b345f7424ab809dec8859502c, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -842,7 +814,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400030
 MonoBehaviour:
@@ -860,8 +832,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: f3c36d1bc085e4a18bb2b849b22311c0, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 74d24d31aa767fc4783b311835ccddd6, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -983,7 +953,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400036
 MonoBehaviour:
@@ -1001,8 +971,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 364898d87e61a46c9bd2da71b98a2c41, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: b9123ced49f45fd43a1cb0bb4b0b01d3, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -1037,7 +1005,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400038
 MonoBehaviour:
@@ -1055,8 +1023,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 179c9942244a34ccc8e78dc4d28b329c, type: 3}
   actorMood: 0
   talkingToActorName: Warlord
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -1090,7 +1056,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400048}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100042
 GameObject:
@@ -1119,10 +1085,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5670305956948696970}
+  - {fileID: 1165653757330558696}
   - {fileID: 400052}
   - {fileID: 400056}
   - {fileID: 400050}
-  - {fileID: 400058}
   - {fileID: 400030}
   - {fileID: 400022}
   - {fileID: 400028}
@@ -1143,7 +1110,7 @@ Transform:
   - {fileID: 400010}
   - {fileID: 400002}
   m_Father: {fileID: 400048}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100044
 GameObject:
@@ -1175,7 +1142,7 @@ Transform:
   - {fileID: 400034}
   - {fileID: 400032}
   m_Father: {fileID: 400048}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100046
 GameObject:
@@ -1207,7 +1174,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400048}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &8200000
 AudioSource:
@@ -1321,8 +1288,9 @@ MonoBehaviour:
   - {fileID: 11400032}
   - {fileID: 11400034}
   lines:
+  - {fileID: 3980851182451178460}
+  - {fileID: 6597624418114358897}
   - {fileID: 11400030}
-  - {fileID: 11400050}
   - {fileID: 11400042}
   - {fileID: 11400038}
   - {fileID: 11400028}
@@ -1346,6 +1314,8 @@ MonoBehaviour:
   actorsAfterScene: []
   keepAvatarLocked: 0
   useFader: 1
+  fadeAtStart: 1
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100048
 GameObject:
@@ -1374,6 +1344,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 6850236663300563634}
   - {fileID: 400044}
   - {fileID: 400042}
   - {fileID: 400040}
@@ -1410,7 +1381,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400042
 MonoBehaviour:
@@ -1456,7 +1427,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400044
 MonoBehaviour:
@@ -1502,7 +1473,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400024
 MonoBehaviour:
@@ -1520,8 +1491,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 3bee350e6f36945c885bd2b0c3bc958e, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 58432f628a1d9714390a522954057c3b, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -1556,7 +1525,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400048
 MonoBehaviour:
@@ -1573,7 +1542,7 @@ MonoBehaviour:
   actorName: Warlord
   gameObjectToActivate: movement/pelvis_joint/spine_01/spine_02/spine_03/R_clavicle_joint/R_shoulder_joint/R_elbow_joint/R_hand_joint/Ringsword
   activationState: 0
---- !u!1 &100058
+--- !u!1 &4549874211191098488
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1581,40 +1550,150 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 400058}
-  - component: {fileID: 11400050}
+  - component: {fileID: 5670305956948696970}
+  - component: {fileID: 3980851182451178460}
   m_Layer: 0
-  m_Name: Fade
+  m_Name: SetCameraPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400058
+--- !u!4 &5670305956948696970
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100058}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 4549874211191098488}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400042}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11400050
+--- !u!114 &3980851182451178460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100058}
+  m_GameObject: {fileID: 4549874211191098488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd8f88849cc044eb89db4ed61a5d4c47, type: 3}
+  m_Script: {fileID: 11500000, guid: a4f1cc8fe7db94148b4584a5a058094d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInTime: 1
-  fadeOutTime: 1
+  actorName: CameraSetPivot
+  message: SetPivot
+  value: {x: 6, y: -120}
+--- !u!1 &5671559038682487078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6850236663300563634}
+  - component: {fileID: 1933376848229256170}
+  - component: {fileID: 2849756678689951336}
+  m_Layer: 0
+  m_Name: CameraSetPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6850236663300563634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671559038682487078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 113.46922, y: 113.63285, z: 114.75527}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400048}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1933376848229256170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671559038682487078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3553e651fcfeb4f3ba3f20ee844ae2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceTransform: {fileID: 0}
+  leftShoulderTransform: {fileID: 0}
+  rightShoulderTransform: {fileID: 0}
+  faceRadius: 0
+  mouthMovement: {fileID: 0}
+  randomGesture: {fileID: 0}
+  idleAnimation: {fileID: 0}
+--- !u!114 &2849756678689951336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671559038682487078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6708af4fc18e4c818a38344ddfbdbf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5765294592463875175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165653757330558696}
+  - component: {fileID: 6597624418114358897}
+  m_Layer: 0
+  m_Name: SetCameraPivotDistance3.5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1165653757330558696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5765294592463875175}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400042}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6597624418114358897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5765294592463875175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: CameraSetPivot
+  message: SetPivotDistance
+  value: 3.5

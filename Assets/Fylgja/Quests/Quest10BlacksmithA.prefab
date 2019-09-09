@@ -59,6 +59,8 @@ MonoBehaviour:
   actorsAfterScene: []
   keepAvatarLocked: 0
   useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
   questName: Quest10BlacksmithA
   priorQuest: {fileID: 11400002, guid: 95749c18549ef4e6dbb89f7b606708b7, type: 3}
