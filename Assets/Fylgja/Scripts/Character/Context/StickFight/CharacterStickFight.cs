@@ -135,6 +135,7 @@ public class CharacterStickFight : StickFighter
 	{
 		Destroy(barAnim.gameObject);
 		barAnim = null;
+        walking.StopMoving();
 		walking.BlendToLocomotion();
 		SetToolsEnabled(false);
 	}

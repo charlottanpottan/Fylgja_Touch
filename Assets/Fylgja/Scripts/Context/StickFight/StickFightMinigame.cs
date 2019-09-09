@@ -7,8 +7,6 @@ public class StickFightMinigame : Minigame
     public StickFightHitButton stickFightHitButtonRight;
     public StickFightHitButton stickFightHitButtonLeft;
 
-    Camera mainCamera;
-
     public override bool AllowedToMove()
     {
         return false;
@@ -20,19 +18,14 @@ public class StickFightMinigame : Minigame
         base.StartMinigame(a);
         opponentStickFighter.gameObject.BroadcastMessage("OnStickFightMinigameStart", this);
         avatar.transform.parent.BroadcastMessage("OnStickFightMinigameStart", this);
-        mainCamera = Camera.main;
-        stickFightCamera.gameObject.SetActiveRecursively1(true);
         stickFightHitButtonRight.Avatar = avatar;
         stickFightHitButtonLeft.Avatar = avatar;
         stickFightHitButtonRight.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
         stickFightHitButtonLeft.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
-        mainCamera.gameObject.SetActiveRecursively1(false);
     }
 
     void CloseStickFightMinigame()
     {
-        stickFightCamera.gameObject.SetActiveRecursively1(false);
-        mainCamera.gameObject.SetActiveRecursively1(true);
         stickFightHitButtonRight.gameObject.SetActive(false);
         stickFightHitButtonLeft.gameObject.SetActive(false);
         opponentStickFighter.gameObject.BroadcastMessage("OnStickFightMinigameClose");

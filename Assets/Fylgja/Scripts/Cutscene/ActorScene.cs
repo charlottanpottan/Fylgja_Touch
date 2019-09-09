@@ -10,6 +10,8 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     public ActorPosition[] actorsAfterScene;
     public bool keepAvatarLocked = false;
     public bool useFader = true;
+    public bool fadeAtStart = false;
+    public bool fadeAtEnd = false;
     public bool skippable = true;
 
     public delegate void ActiveLineNotification(ActorScene scene, ActorSceneComponent component);
@@ -112,6 +114,8 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 
         var currentLine = lines[lineIndex];
 
+        Debug.Log("Line: " + currentLine.name + " _________________________________________");
+
         while (skipToComponentName != currentLine.name)
         {
             Debug.Log("*** We skip line:" + currentLine.name + ". Looking for: " + skipToComponentName);
@@ -138,7 +142,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         Debug.Log("PlayScene!" + name + " resuming:" + isResuming);
         DebugUtilities.Assert(notifications != null, "Player notifications can not be null");
         playerNotifications = notifications;
-        if (useFader)
+        if (useFader && fadeAtStart)
         {
             fadeInOut.FadeOut(fadeOutTime);
             fadeOutDoneAt = Time.time + fadeOutTime;
@@ -154,7 +158,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         PrepareScene();
         PlayNextLine();
 
-        if (useFader)
+        if (useFader && fadeAtStart)
         {
             fadeInOut.FadeIn(fadeInTime);
         }
@@ -187,7 +191,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         }
         else
         {
-            if (useFader)
+            if (useFader && fadeAtEnd)
             {
                 fadeInOut.FadeIn(fadeInTime);
             }
@@ -263,7 +267,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     {
         Debug.Log("Completed Scene!" + name);
         fadeOutDoneAt = Time.time + fadeOutTime;
-        if (useFader)
+        if (useFader && fadeAtEnd)
         {
             fadeInOut.FadeOut(fadeOutTime);
         }
@@ -375,6 +379,9 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         }
 
         activeLine = lines[lineIndex];
+
+        Debug.Log("Actorscene " + name + " sets line: " + activeLine.name + " _________________________________________");
+
 
 #if UNITY_EDITOR
         debugString = name + ": " + activeLine.name;

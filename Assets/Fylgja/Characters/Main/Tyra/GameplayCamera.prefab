@@ -65,8 +65,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f9cafc276d09486699b719291423ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: 0.015
-  horizontalSpeed: 0.015
   distanceSpeed: 0.015
   minimumVerticalAngle: -8
   maximumVerticalAngle: 35
@@ -100,13 +98,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5144c9505ce4029a8b836e6a43d2d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereSize: 0.24
   layerMask:
     serializedVersion: 2
-    m_Bits: 2146744887
-  cameraNearPlane: 0.3
+    m_Bits: 2143599159
+  moveInLerpSpeed: 1.5
   moveOutLerpSpeed: 0.6
-  freeDistanceBehindHead: -0.8
+  minDistance: 0.5
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 0
