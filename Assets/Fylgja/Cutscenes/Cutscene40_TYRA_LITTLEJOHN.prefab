@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: -0.73542947, z: 0, w: 0.67760134}
+  m_LocalRotation: {x: 0, y: 0.67760146, z: 0, w: 0.7354293}
   m_LocalPosition: {x: 545.9827, y: 46.007355, z: 514.54193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400006}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 85.313, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,9 +219,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actors:
-  - {fileID: 11400000}
   - {fileID: 11400012}
+  - {fileID: 11400000}
   lines:
+  - {fileID: 7138535611771261395}
   - {fileID: 9222097323821450707}
   - {fileID: 1160456867729697723}
   - {fileID: 11400004}
@@ -293,12 +294,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4909303194913003808}
   - {fileID: 5563399011165732424}
   - {fileID: 410397944491905145}
   - {fileID: 400012}
-  - {fileID: 400016}
-  - {fileID: 400018}
   - {fileID: 400014}
+  - {fileID: 400018}
+  - {fileID: 400016}
   m_Father: {fileID: 400002}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -361,7 +363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400004
 MonoBehaviour:
@@ -413,7 +415,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400006
 MonoBehaviour:
@@ -431,7 +433,7 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 938213cdbdbc74d23a67a83e026d9e0f, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  customAnimation: {fileID: 7400000, guid: a2dcd47ea74af461d9392fee25686305, type: 3}
+  customAnimation: {fileID: 7400000, guid: 78b31ee57352b44f7916c96246420906, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
@@ -465,7 +467,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -483,7 +485,7 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 23c0ac2d700074e8f828776502eb1996, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  customAnimation: {fileID: 7400000, guid: af92f3bbbddbd4fe080e3a887f09d23b, type: 3}
+  customAnimation: {fileID: 7400000, guid: 78b31ee57352b44f7916c96246420906, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
@@ -517,7 +519,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400010
 MonoBehaviour:
@@ -612,7 +614,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9222097323821450707
 MonoBehaviour:
@@ -692,6 +694,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6708af4fc18e4c818a38344ddfbdbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4857078193217052683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4909303194913003808}
+  - component: {fileID: 7138535611771261395}
+  m_Layer: 0
+  m_Name: ActorSetAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4909303194913003808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4857078193217052683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7138535611771261395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4857078193217052683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e314ec51a9e0643dcbcecc40c50e3ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 7400000, guid: 0b1e2a6b987e1480090ff9a9047a59ed, type: 3}
+  actorName: LittleJohn
+  crossFadeDuration: 0.3
 --- !u!1 &6551437528554564627
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +769,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1160456867729697723
 MonoBehaviour:

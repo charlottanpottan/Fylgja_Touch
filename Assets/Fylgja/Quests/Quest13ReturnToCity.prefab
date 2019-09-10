@@ -43,7 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
   videoClip: {fileID: 32900000, guid: 7d0613d8cd31145adb290f8ee74b63c0, type: 3}
   moviePlayerToSpawn: {fileID: 100000, guid: 1654480f2d5c14c89bc07236afce0fc1, type: 3}
 --- !u!1 &100002
@@ -144,6 +143,8 @@ MonoBehaviour:
   actorsAfterScene: []
   keepAvatarLocked: 0
   useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
   questName: Quest13ReturnToCity
   priorQuest: {fileID: 11400004, guid: 8b7fb417fe953445c8f658a0364a3937, type: 3}
@@ -45500,7 +45501,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 7.5
+  m_Radius: 8
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5400004
 Rigidbody:

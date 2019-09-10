@@ -119,7 +119,13 @@ public class Horse : Vehicle
 		requestedSpeed = 0;
 	}
 
-	public void BlendToLocomotion()
+    public void StopMovingInstant()
+    {
+        currentSpeed = 0;
+        requestedSpeed = 0;
+    }
+
+    public void BlendToLocomotion()
 	{
 		GetComponent<Animation>().CrossFade(currentAnimationGroup);
 	}

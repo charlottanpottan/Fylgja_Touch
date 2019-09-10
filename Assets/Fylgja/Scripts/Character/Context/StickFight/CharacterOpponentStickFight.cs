@@ -29,7 +29,8 @@ public class CharacterOpponentStickFight : StickFighter
 
 	void Start()
 	{
-	}
+        stickToActivate.SetActive(true);
+    }
 
 	void Update()
 	{
@@ -41,7 +42,7 @@ public class CharacterOpponentStickFight : StickFighter
 	{
 		InitStickFighter();
 
-        stickToActivate.SetActive(true);
+       // stickToActivate.SetActive(true);
 		
 		GetComponent<Animation>()[blockPose.name].layer = 4;
 		GetComponent<Animation>()[blockLeft.name].layer = 5;
@@ -60,7 +61,7 @@ public class CharacterOpponentStickFight : StickFighter
 
 	void OnStickFightMinigameClose()
 	{
-        stickToActivate.SetActive(false);
+       // stickToActivate.SetActive(false);
 		GetComponent<Animation>()[blockPose.name].layer = 1;
 		Destroy(barAnim.gameObject);
 		barAnim = null;
