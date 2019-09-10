@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.018
   m_LinearFogStart: 10
   m_LinearFogEnd: 100
-  m_AmbientSkyColor: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
+  m_AmbientSkyColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
   m_AmbientEquatorColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
   m_AmbientGroundColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
   m_AmbientIntensity: 1
@@ -5146,7 +5146,7 @@ Transform:
   - {fileID: 2293}
   - {fileID: 2294}
   m_Father: {fileID: 3086}
-  m_RootOrder: 101
+  m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2274
 Transform:
@@ -7462,6 +7462,7 @@ Transform:
   - {fileID: 2336}
   - {fileID: 2337}
   - {fileID: 2338}
+  - {fileID: 2932}
   - {fileID: 2339}
   - {fileID: 2340}
   - {fileID: 2341}
@@ -7478,7 +7479,6 @@ Transform:
   - {fileID: 2832}
   - {fileID: 2833}
   - {fileID: 2834}
-  - {fileID: 2932}
   - {fileID: 2867}
   - {fileID: 2881}
   - {fileID: 2882}
@@ -7486,6 +7486,7 @@ Transform:
   - {fileID: 2884}
   - {fileID: 2905}
   - {fileID: 2906}
+  - {fileID: 2933}
   - {fileID: 2907}
   - {fileID: 2908}
   - {fileID: 2909}
@@ -7494,7 +7495,6 @@ Transform:
   - {fileID: 2913}
   - {fileID: 2914}
   - {fileID: 2915}
-  - {fileID: 2933}
   - {fileID: 2916}
   - {fileID: 2917}
   - {fileID: 2918}
@@ -7540,7 +7540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 39
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2933
 Transform:
@@ -7554,7 +7554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 55
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2934 stripped
 Transform:
@@ -8690,6 +8690,7 @@ Transform:
   - {fileID: 2968}
   - {fileID: 2969}
   - {fileID: 2970}
+  - {fileID: 2273}
   - {fileID: 2971}
   - {fileID: 2972}
   - {fileID: 2973}
@@ -8698,7 +8699,6 @@ Transform:
   - {fileID: 2976}
   - {fileID: 2977}
   - {fileID: 2978}
-  - {fileID: 2273}
   - {fileID: 2979}
   - {fileID: 2980}
   - {fileID: 2981}
@@ -15104,8 +15104,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.5597015, g: 0.5597015, b: 0.5597015, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0.5660378, g: 0.5353519, b: 0.38714847, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -39318,6 +39318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Avatar: {fileID: 0}
   message: WantsToHitLeft
+  duckMessage: WantsToDuck
+  timeBeforeDuck: 0.5
 --- !u!114 &44584015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39450,6 +39452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Avatar: {fileID: 0}
   message: WantsToHitRight
+  duckMessage: WantsToDuck
+  timeBeforeDuck: 0.5
 --- !u!114 &599240411
 MonoBehaviour:
   m_ObjectHideFlags: 0

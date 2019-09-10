@@ -40,22 +40,26 @@ public class CharacterStickFight : StickFighter
 		{
 			return;
 		}
-		bool wantsToDuck = Input.GetButtonDown("interact");
-		bool wantsToHitLeft = Input.GetButton("left");
-		bool wantsToHitRight = Input.GetButton("right");
+       
+        if(SystemInfo.deviceType != DeviceType.Handheld) // This is handled from StickFightHitButton on handheld devices
+        {
+            bool wantsToDuck = Input.GetButtonDown("interact");
+            bool wantsToHitLeft = Input.GetButton("left");
+            bool wantsToHitRight = Input.GetButton("right");
 
-		if (wantsToHitLeft)
-		{
-			WantsToHitLeft();
-		}
-		else if (wantsToHitRight)
-		{
-			WantsToHitRight();
-		}
-		else if (wantsToDuck && Time.time >= duckTimer)
-		{
-			WantsToDuck();
-		}
+            if (wantsToHitLeft)
+            {
+                WantsToHitLeft();
+            }
+            else if (wantsToHitRight)
+            {
+                WantsToHitRight();
+            }
+            else if (wantsToDuck && Time.time >= duckTimer)
+            {
+                WantsToDuck();
+            }
+        }
 	}
 
 	void WantsToDuck()
