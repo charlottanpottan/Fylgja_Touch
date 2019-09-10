@@ -5146,7 +5146,7 @@ Transform:
   - {fileID: 2293}
   - {fileID: 2294}
   m_Father: {fileID: 3086}
-  m_RootOrder: 100
+  m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2274
 Transform:
@@ -7462,6 +7462,7 @@ Transform:
   - {fileID: 2336}
   - {fileID: 2337}
   - {fileID: 2338}
+  - {fileID: 2932}
   - {fileID: 2339}
   - {fileID: 2340}
   - {fileID: 2341}
@@ -7476,7 +7477,6 @@ Transform:
   - {fileID: 2830}
   - {fileID: 2831}
   - {fileID: 2832}
-  - {fileID: 2932}
   - {fileID: 2833}
   - {fileID: 2834}
   - {fileID: 2867}
@@ -7486,6 +7486,7 @@ Transform:
   - {fileID: 2884}
   - {fileID: 2905}
   - {fileID: 2906}
+  - {fileID: 2933}
   - {fileID: 2907}
   - {fileID: 2908}
   - {fileID: 2909}
@@ -7493,7 +7494,6 @@ Transform:
   - {fileID: 2912}
   - {fileID: 2913}
   - {fileID: 2914}
-  - {fileID: 2933}
   - {fileID: 2915}
   - {fileID: 2916}
   - {fileID: 2917}
@@ -7540,7 +7540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 37
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2933
 Transform:
@@ -7554,7 +7554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 54
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2934 stripped
 Transform:
@@ -8690,6 +8690,7 @@ Transform:
   - {fileID: 2968}
   - {fileID: 2969}
   - {fileID: 2970}
+  - {fileID: 2273}
   - {fileID: 2971}
   - {fileID: 2972}
   - {fileID: 2973}
@@ -8697,7 +8698,6 @@ Transform:
   - {fileID: 2975}
   - {fileID: 2976}
   - {fileID: 2977}
-  - {fileID: 2273}
   - {fileID: 2978}
   - {fileID: 2979}
   - {fileID: 2980}
@@ -39318,6 +39318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Avatar: {fileID: 0}
   message: WantsToHitLeft
+  duckMessage: WantsToDuck
+  timeBeforeDuck: 0.5
 --- !u!114 &44584015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39450,6 +39452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Avatar: {fileID: 0}
   message: WantsToHitRight
+  duckMessage: WantsToDuck
+  timeBeforeDuck: 0.5
 --- !u!114 &599240411
 MonoBehaviour:
   m_ObjectHideFlags: 0

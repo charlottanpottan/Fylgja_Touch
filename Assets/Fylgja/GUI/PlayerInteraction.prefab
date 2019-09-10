@@ -49,7 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23d47c2391a840d8a603897c03a6d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickOnGroundEffect: {fileID: 100000, guid: e4a4761c576b84e429620bb5ceead904, type: 3}
+  clickOnGroundEffect: {fileID: 6018294389989031643, guid: e4a4761c576b84e429620bb5ceead904,
+    type: 3}
   gameplayCameraToSpawn: {fileID: 100000, guid: 652dc60c6caf2486a99f68b649e9ef26,
     type: 3}
   ingameCameraToSpawn: {fileID: 100000, guid: 356157272af5864418c5dcd1cb6609c3, type: 3}
@@ -1176,7 +1177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorScenePrefab: {fileID: 0}
   targetQuality: 3
-  targetQuality1: 0
   clickAudio: {fileID: 8300000, guid: 22536fc6d40614750acbf06461aad20f, type: 3}
   audioHandler: {fileID: 11400178}
   audioVolume: 0.15
@@ -1694,7 +1694,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorScenePrefab: {fileID: 0}
   targetQuality: 0
-  targetQuality1: 0
   clickAudio: {fileID: 8300000, guid: 22536fc6d40614750acbf06461aad20f, type: 3}
   audioHandler: {fileID: 11400176}
   audioVolume: 0.15
@@ -1866,7 +1865,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorScenePrefab: {fileID: 0}
   targetQuality: 2
-  targetQuality1: 0
   clickAudio: {fileID: 8300000, guid: 22536fc6d40614750acbf06461aad20f, type: 3}
   audioHandler: {fileID: 11400190}
   audioVolume: 0.15
@@ -2038,7 +2036,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorScenePrefab: {fileID: 0}
   targetQuality: 5
-  targetQuality1: 0
   clickAudio: {fileID: 8300000, guid: 22536fc6d40614750acbf06461aad20f, type: 3}
   audioHandler: {fileID: 11400206}
   audioVolume: 0.15
@@ -2210,7 +2207,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorScenePrefab: {fileID: 0}
   targetQuality: 4
-  targetQuality1: 0
   clickAudio: {fileID: 8300000, guid: 22536fc6d40614750acbf06461aad20f, type: 3}
   audioHandler: {fileID: 11400216}
   audioVolume: 0.15
@@ -2538,7 +2534,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorScenePrefab: {fileID: 0}
   targetQuality: 1
-  targetQuality1: 0
   clickAudio: {fileID: 8300000, guid: 22536fc6d40614750acbf06461aad20f, type: 3}
   audioHandler: {fileID: 11400212}
   audioVolume: 0.15

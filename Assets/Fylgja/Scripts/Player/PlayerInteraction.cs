@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class PlayerInteraction : MonoBehaviour
 {
-	public GameObject clickOnGroundEffect;
+	public ParticleSystem clickOnGroundEffect;
 	public GameObject gameplayCameraToSpawn;
 	public GameObject ingameCameraToSpawn;
 	public GameObject listenerToSpawn;
@@ -349,10 +350,18 @@ public class PlayerInteraction : MonoBehaviour
 	void ShowClickEffect(Vector3 position, Quaternion rotation)
 	{
 //		Vector3 effectRotation = transform.forward - (Vector3.Dot(transform.forward, hit.normal) * hit.normal);
-		Instantiate(clickOnGroundEffect, position, Quaternion.Euler(new Vector3(180.0f, 0, 0.0f)) * rotation);
+		ParticleSystem instantiatedParticleEffect = Instantiate(clickOnGroundEffect, position, Quaternion.Euler(new Vector3(180.0f, 0, 0.0f)) * rotation);
+        StartCoroutine(DestroyParticleSystemAfterBeingPlayed(instantiatedParticleEffect));
 	}
 
-	void InteractableMouseEnter(Interactable interactable)
+    IEnumerator DestroyParticleSystemAfterBeingPlayed(ParticleSystem ps)
+    {
+        ParticleSystem.MainModule mainModule = ps.main;
+        yield return new WaitForSeconds(mainModule.duration);
+        Destroy(ps.gameObject);
+    }
+
+    void InteractableMouseEnter(Interactable interactable)
 	{
 		// Debug.Log("MouseEnter: " + interactable.name);
 		interactable.OnInteractionMouseEnter();

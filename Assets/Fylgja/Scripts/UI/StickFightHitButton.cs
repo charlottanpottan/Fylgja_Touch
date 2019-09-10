@@ -1,21 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class StickFightHitButton : MonoBehaviour
+public class StickFightHitButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public IAvatar Avatar;
     [SerializeField] string message = "WantsToHitLeft";
+    [SerializeField] string duckMessage = "WantsToDuck";
+    [SerializeField] float timeBeforeDuck = 0.3f;
 
-    void Awake()
+    bool mouseDown = false;
+    float timeSinceMouseDown = 0;
+    bool sentDuckMessage = false;
+
+    public void OnPointerDown(PointerEventData ped)
     {
-        Button button = GetComponent<Button>();
-        button.onClick.AddListener(OnButtonClicked);
+        mouseDown = true;
+        timeSinceMouseDown = 0;
+    }
+    public void OnPointerUp(PointerEventData ped)
+    {
+        mouseDown = false;
+        if (!sentDuckMessage)
+            Avatar.gameObject.transform.parent.BroadcastMessage(message, SendMessageOptions.DontRequireReceiver);
+        sentDuckMessage = false;
     }
 
-    void OnButtonClicked()
+    void Update()
     {
-        Avatar.gameObject.transform.parent.BroadcastMessage(message, SendMessageOptions.DontRequireReceiver);
+        if (!mouseDown)
+            return;
+
+        timeSinceMouseDown += Time.deltaTime;
+        if (!sentDuckMessage && timeSinceMouseDown > timeBeforeDuck)
+        {
+            Avatar.gameObject.transform.parent.BroadcastMessage(duckMessage, SendMessageOptions.DontRequireReceiver);
+            sentDuckMessage = true;
+        }
     }
 }
