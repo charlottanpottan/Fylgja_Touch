@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 10
   m_LinearFogEnd: 100
-  m_AmbientSkyColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+  m_AmbientSkyColor: {r: 0.3724635, g: 0.37909573, b: 0.5849056, a: 1}
   m_AmbientEquatorColor: {r: 0.42352942, g: 0.42352942, b: 0.42352942, a: 1}
   m_AmbientGroundColor: {r: 0.42352942, g: 0.42352942, b: 0.42352942, a: 1}
   m_AmbientIntensity: 1
@@ -10372,7 +10372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2423 stripped
 Transform:
@@ -11185,9 +11185,9 @@ Transform:
   - {fileID: 2425}
   - {fileID: 2484}
   - {fileID: 2485}
+  - {fileID: 2422}
   - {fileID: 2486}
   - {fileID: 2487}
-  - {fileID: 2422}
   - {fileID: 2488}
   - {fileID: 2489}
   - {fileID: 2490}
@@ -30452,8 +30452,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.5632885, g: 0.49420807, b: 0.76119405, a: 1}
-  m_Intensity: 1.6
+  m_Color: {r: 0.514151, g: 0.64046264, b: 1, a: 1}
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -30461,7 +30461,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.8
+    m_Strength: 0.438
     m_Bias: 0.2
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -30475,7 +30475,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 0.6
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 1
@@ -35540,11 +35540,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3456}
     m_Modifications:
-    - target: {fileID: 6332495010277171848, guid: 86a22135857514368bea7297e723b49d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 86a22135857514368bea7297e723b49d, type: 3}
       propertyPath: m_Name
       value: FireMiniGame
@@ -35581,6 +35576,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6332495010277171848, guid: 86a22135857514368bea7297e723b49d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a22135857514368bea7297e723b49d, type: 3}
 --- !u!1001 &7452
@@ -35590,11 +35590,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3456}
     m_Modifications:
-    - target: {fileID: 6332495010277171848, guid: 86a22135857514368bea7297e723b49d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 86a22135857514368bea7297e723b49d, type: 3}
       propertyPath: m_Name
       value: FireMiniGame
@@ -35630,6 +35625,11 @@ PrefabInstance:
     - target: {fileID: 400004, guid: 86a22135857514368bea7297e723b49d, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332495010277171848, guid: 86a22135857514368bea7297e723b49d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a22135857514368bea7297e723b49d, type: 3}
@@ -62957,11 +62957,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3456}
     m_Modifications:
-    - target: {fileID: 6332495010277171848, guid: 86a22135857514368bea7297e723b49d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 86a22135857514368bea7297e723b49d, type: 3}
       propertyPath: m_Name
       value: FireMiniGame
@@ -63001,6 +62996,11 @@ PrefabInstance:
     - target: {fileID: 11400006, guid: 86a22135857514368bea7297e723b49d, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332495010277171848, guid: 86a22135857514368bea7297e723b49d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a22135857514368bea7297e723b49d, type: 3}
