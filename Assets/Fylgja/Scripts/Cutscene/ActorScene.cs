@@ -9,7 +9,6 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     public ActorSceneComponent[] lines;
     public ActorPosition[] actorsAfterScene;
     public bool keepAvatarLocked = false;
-    public bool useFader = true;
     public bool fadeAtStart = false;
     public bool fadeAtEnd = false;
     public bool skippable = true;
@@ -142,14 +141,14 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         Debug.Log("PlayScene!" + name + " resuming:" + isResuming);
         DebugUtilities.Assert(notifications != null, "Player notifications can not be null");
         playerNotifications = notifications;
-        if (useFader && fadeAtStart)
+        if (fadeAtStart)
         {
             fadeInOut.FadeOut(fadeOutTime);
             fadeOutDoneAt = Time.time + fadeOutTime;
         }
         else
         {
-            fadeOutDoneAt = Time.time + fadeOutTime;
+            fadeOutDoneAt = Time.time;
         }
     }
 
@@ -158,7 +157,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         PrepareScene();
         PlayNextLine();
 
-        if (useFader && fadeAtStart)
+        if (fadeAtStart)
         {
             fadeInOut.FadeIn(fadeInTime);
         }
@@ -191,7 +190,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         }
         else
         {
-            if (useFader && fadeAtEnd)
+            if (fadeAtEnd)
             {
                 fadeInOut.FadeIn(fadeInTime);
             }
@@ -267,7 +266,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     {
         Debug.Log("Completed Scene!" + name);
         fadeOutDoneAt = Time.time + fadeOutTime;
-        if (useFader && fadeAtEnd)
+        if (fadeAtEnd)
         {
             fadeInOut.FadeOut(fadeOutTime);
         }
