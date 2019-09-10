@@ -3,99 +3,125 @@ using System.Collections;
 
 public class FirePitEffects : MonoBehaviour
 {
-	public AnimationClip fire;
+    public AudioClip normalFlame;
+    public AudioClip fullFlame;
 
-	public AudioClip normalFlame;
-	public AudioClip fullFlame;
+    public ParticleSystem fire;
+    public GameObject bigFan;
+    public GameObject smallFan;
+    public GameObject fanFailed;
+    public GameObject fireDied;
+    public GameObject lostFullFlame;
+    public GameObject ignite;
 
-	public GameObject bigFan;
-	public GameObject smallFan;
-	public GameObject fanFailed;
-	public GameObject fireDied;
-	public GameObject lostFullFlame;
-	public GameObject ignite;
+    ParticleSystem bigFanParticleSystem;
+    ParticleSystem smallFanParticleSystem;
+    ParticleSystem fanFailedParticleSystem;
+    ParticleSystem fireDiedParticleSystem;
+    ParticleSystem lostFullFlameParticleSystem;
+    ParticleSystem igniteParticleSystem;
 
-	public Transform effectTransform;
 
-	private AnimationState fireState;
+    public Transform effectTransform;
 
-	void Start()
-	{
-		AnimationState state = GetComponent<Animation>()[fire.name];
+    private AnimationState fireState;
 
-		state.wrapMode = WrapMode.ClampForever;
-		state.weight = 1.0f;
-		state.enabled = true;
-		state.speed = 0;
-		GetComponent<AudioSource>().loop = true;
-	}
+    void Start()
+    {
+        bigFanParticleSystem = bigFan.transform.GetChild(0).GetComponent<ParticleSystem>();
+        smallFanParticleSystem = smallFan.transform.GetChild(0).GetComponent<ParticleSystem>();
+        fanFailedParticleSystem = fanFailed.transform.GetChild(0).GetComponent<ParticleSystem>();
+        fireDiedParticleSystem = fireDied.transform.GetChild(0).GetComponent<ParticleSystem>();
+        lostFullFlameParticleSystem = lostFullFlame.transform.GetChild(0).GetComponent<ParticleSystem>();
+        igniteParticleSystem = ignite.transform.GetChild(0).GetComponent<ParticleSystem>();
 
-	void Update()
-	{
-	}
+        GetComponent<AudioSource>().loop = true;
+    }
 
-	void OnFirePitStrength(float strength)
-	{
-		// Debug.Log("Animation Strength:" + strength);
-		AnimationState state = GetComponent<Animation>()[fire.name];
+    void Update()
+    {
+    }
 
-		state.normalizedTime = strength;
-	}
+    public void SetScale(ParticleSystem particleSystem, float scale)
+    {
+        ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
+        for (int i = 0; i < particleSystems.Length; i++)
+        {
+            ParticleSystem.MainModule mainModule = particleSystems[i].main;
+            mainModule.scalingMode = ParticleSystemScalingMode.Hierarchy;
+        }
+        particleSystem.transform.localScale = new Vector3(scale, scale, scale);
+    }
 
-	void TriggerEffect(GameObject o)
-	{
-		Debug.Log("Effect: " + o.name);
-		Instantiate(o, effectTransform.position, effectTransform.rotation);
-	}
+    void OnFirePitStrength(float strength)
+    {
+        SetScale(fire, strength);
+    }
 
-	void OnFirePitFanFailed()
-	{
-		TriggerEffect(fanFailed);
-	}
+    void TriggerEffect(ParticleSystem ps)
+    {
+        Debug.Log("Effect: " + ps.name);
+        ParticleSystem instantiatedParticleSystem = Instantiate(ps, effectTransform.position, effectTransform.rotation);
+        StartCoroutine(DestroyParticleSystemAfterBeingPlayed(instantiatedParticleSystem));
+    }
 
-	void OnFirePitBigFan()
-	{
-		TriggerEffect(bigFan);
-	}
+    IEnumerator DestroyParticleSystemAfterBeingPlayed(ParticleSystem ps)
+    {
+        ParticleSystem.MainModule mainModule = ps.main;
+        yield return new WaitForSeconds(mainModule.duration);
+        Destroy(ps.gameObject);
+    }
 
-	void OnFirePitSmallFan()
-	{
-		TriggerEffect(smallFan);
-	}
+    void OnFirePitFanFailed()
+    {
+        TriggerEffect(fanFailedParticleSystem);
+    }
 
-	void OnFirePitDied()
-	{
-		GetComponent<AudioSource>().Stop();
-		TriggerEffect(fireDied);
-	}
+    void OnFirePitBigFan()
+    {
+        TriggerEffect(bigFanParticleSystem);
+    }
 
-	void OnFirePitIgnited()
-	{
-		Debug.Log("Effect: ignite flame");
+    void OnFirePitSmallFan()
+    {
+        TriggerEffect(smallFanParticleSystem);
+    }
 
-		TriggerEffect(ignite);
+    void OnFirePitDied()
+    {
+        GetComponent<AudioSource>().Stop();
+        TriggerEffect(fireDiedParticleSystem);
+    }
 
-		GetComponent<AudioSource>().clip = normalFlame;
-		GetComponent<AudioSource>().Play();
-	}
+    void OnFirePitIgnited()
+    {
+        Debug.Log("Effect: ignite flame");
 
-	void OnFirePitFullFlame()
-	{
-		Debug.Log("Effect: full flame");
-		GetComponent<AudioSource>().clip = fullFlame;
-		GetComponent<AudioSource>().Play();
-	}
+        TriggerEffect(igniteParticleSystem);
 
-	void OnFirePitLostFullFlame()
-	{
-		Debug.Log("Effect: lost full flame");
-		TriggerEffect(lostFullFlame);
-	}
-	
-	void ResetEffects()
-	{
-		AnimationState state = GetComponent<Animation>()[fire.name];
-		state.normalizedTime = 0;
-		GetComponent<AudioSource>().Stop();
-	}
+        GetComponent<AudioSource>().clip = normalFlame;
+        GetComponent<AudioSource>().Play();
+    }
+
+    void OnFirePitFullFlame()
+    {
+        Debug.Log("Effect: full flame");
+        GetComponent<AudioSource>().clip = fullFlame;
+        GetComponent<AudioSource>().Play();
+    }
+
+    void OnFirePitLostFullFlame()
+    {
+        Debug.Log("Effect: lost full flame");
+        TriggerEffect(lostFullFlameParticleSystem);
+    }
+
+    void ResetEffects()
+    {
+        //AnimationState state = GetComponent<Animation>()[fire.name];
+        //state.normalizedTime = 0;
+        fire.transform.localScale = Vector3.zero;
+
+        GetComponent<AudioSource>().Stop();
+    }
 }
