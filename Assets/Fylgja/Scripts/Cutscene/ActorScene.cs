@@ -379,8 +379,10 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         }
 
         activeLine = lines[lineIndex];
-
-        Debug.Log("Actorscene " + name + " sets line: " + activeLine.name + " _________________________________________");
+        if (activeLine)
+            Debug.Log("Actorscene " + name + " sets line: " + activeLine.name + " _________________________________________");
+        else
+            Debug.Log("Actorscene " + name + " has a missing line with index: " + lineIndex + " _________________________________________!!");
 
 
 #if UNITY_EDITOR

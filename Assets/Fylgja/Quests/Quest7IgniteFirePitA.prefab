@@ -51,12 +51,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actors: []
   lines:
-  - {fileID: 0}
   - {fileID: 11400004}
   - {fileID: 11400000}
   actorsAfterScene: []
   keepAvatarLocked: 0
   useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
   questName: Quest7IgniteFirePitA
   priorQuest: {fileID: 11400004, guid: b83b593bdea5a48bcaba9292284f05d4, type: 3}
