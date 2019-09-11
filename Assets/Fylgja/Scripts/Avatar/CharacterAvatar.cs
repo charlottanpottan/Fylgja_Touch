@@ -238,13 +238,16 @@ public class CharacterAvatar : IAvatar
 		Vector3 avatarPosition = new Vector3(characterWalking.transform.position.x, 0, characterWalking.transform.position.z);
 		float distanceToInteractionPoint = (targetPosition - avatarPosition).magnitude;
 		
-		float deltaY = Mathf.Abs(Angle.AngleDiff(targetInteractRotation.eulerAngles.y, characterWalking.transform.eulerAngles.y));
+		//float deltaY = Mathf.Abs(Angle.AngleDiff(targetInteractRotation.eulerAngles.y, characterWalking.transform.eulerAngles.y));
 //		Debug.Log("RotationDiff:" + deltaY + " target:" + targetInteractRotation.eulerAngles.y + " source:" + characterWalking.transform.eulerAngles.y);
-		if (deltaY > 5)
-		{
-			return false;
-		}
-		return distanceToInteractionPoint < interactionDistanceThreshold;
+		//if (deltaY > 5)
+		//{
+        //    Debug.Log("DeltaY > 5");
+		//	return false;
+		//}
+        Debug.Log("distanceToInteractionPoint " + distanceToInteractionPoint + " interactionDistanceThreshold " + interactionDistanceThreshold);
+
+        return distanceToInteractionPoint < interactionDistanceThreshold;
 	}
 
 	public override void PerformAction(Action action)

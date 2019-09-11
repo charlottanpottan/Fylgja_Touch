@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -47,8 +47,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: ef2543e105316465e91a719bcd04ee33, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -236,7 +234,8 @@ MonoBehaviour:
   - {fileID: 11400000}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100006
 GameObject:
@@ -295,15 +294,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 400016}
-  - {fileID: 400028}
-  - {fileID: 400018}
-  - {fileID: 400020}
   - {fileID: 400024}
+  - {fileID: 400020}
+  - {fileID: 400016}
   - {fileID: 400022}
-  - {fileID: 400012}
-  - {fileID: 400000}
   - {fileID: 400026}
+  - {fileID: 400028}
+  - {fileID: 400012}
+  - {fileID: 400018}
+  - {fileID: 400000}
   - {fileID: 400014}
   m_Father: {fileID: 400002}
   m_RootOrder: 1
@@ -385,8 +384,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 2a3c923c3475b42808f9cd9bfb0f4c88, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -467,7 +464,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -486,6 +483,8 @@ MonoBehaviour:
   cameraCullingMask:
     serializedVersion: 2
     m_Bits: 4294966783
+  fadeOut: 0
+  fadeDuration: 0.3
 --- !u!1 &100018
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +514,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400010
 MonoBehaviour:
@@ -534,6 +533,8 @@ MonoBehaviour:
   cameraCullingMask:
     serializedVersion: 2
     m_Bits: 4294966783
+  fadeOut: 0
+  fadeDuration: 0.3
 --- !u!1 &100020
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +564,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400012
 MonoBehaviour:
@@ -609,7 +610,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400014
 MonoBehaviour:
@@ -627,8 +628,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 785bb08f543df478982d6c6a76edebf6, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -663,7 +662,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400016
 MonoBehaviour:
@@ -681,8 +680,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 61409b1394dad4651982fe9140a98ba6, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: d885a657790c24a4ebed0b5ea48a64f9, type: 2}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -717,7 +714,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400018
 MonoBehaviour:
@@ -763,7 +760,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400020
 MonoBehaviour:
@@ -782,3 +779,5 @@ MonoBehaviour:
   cameraCullingMask:
     serializedVersion: 2
     m_Bits: 4294966783
+  fadeOut: 0
+  fadeDuration: 0.3

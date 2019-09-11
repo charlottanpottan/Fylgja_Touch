@@ -74,15 +74,19 @@ public class CameraFader : MonoBehaviour
         if (fadingDone)
             return;
 
+        float t = 1;
+        if(!Mathf.Approximately(fadeDuration, 0))
+            t = elapsedFadeTime / fadeDuration;
+
+        t = Mathf.Clamp(t, 0, 1);
+        Color c = Color.Lerp(prevColor, targetColor, t);
+        image.color = c;
+
         if (elapsedFadeTime >= fadeDuration)
         {
             elapsedFadeTime = fadeDuration;
             fadingDone = true;
         }
-
-        float t = elapsedFadeTime / fadeDuration;
-        Color c = Color.Lerp(prevColor, targetColor, t);
-        image.color = c;
 
         if (fadingDone)
         {

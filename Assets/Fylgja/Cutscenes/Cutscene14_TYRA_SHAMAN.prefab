@@ -446,7 +446,8 @@ MonoBehaviour:
   - {fileID: 3716327139474188485}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 0
+  fadeAtStart: 1
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100014
 GameObject:

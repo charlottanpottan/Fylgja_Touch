@@ -48,6 +48,9 @@ MonoBehaviour:
   cameraCullingMask:
     serializedVersion: 2
     m_Bits: 4294966783
+  fadeIn: 0
+  fadeOut: 0
+  fadeDuration: 0.3
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,11 +102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actors: []
-  lines:
-  - {fileID: 11400012}
+  lines: []
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
 --- !u!82 &8200000
 AudioSource:
@@ -248,8 +251,6 @@ MonoBehaviour:
   actorClip: {fileID: 0}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: d8632a9b0a9994e999595412b439b424, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1

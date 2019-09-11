@@ -6,8 +6,11 @@ public class ActorCameraAnimation : ActorSceneComponent
 	public AnimationClip cameraAnimation;
 	public int cameraDepth = 40;
 	public LayerMask cameraCullingMask = -1153434113;
+    public bool fadeIn = false;
+    public bool fadeOut = false;
+    public float fadeDuration = 0.3f;
 
-	LogicCamera cameraToAnimate;
+    LogicCamera cameraToAnimate;
 	Animation animate;
 	GameObject instantiatedObject;
 
@@ -15,6 +18,9 @@ public class ActorCameraAnimation : ActorSceneComponent
 	PlayerInteraction.ListenerStackItem listenerHandle;
 
 	bool isActing;
+    bool skip = false;
+    FadeInFadeOut fadeInFadeOut;
+    bool isFading = false;
 
 	protected override void Act()
 	{
@@ -23,7 +29,7 @@ public class ActorCameraAnimation : ActorSceneComponent
 		instantiatedObject = Instantiate(new GameObject(), new Vector3(), new Quaternion()) as GameObject;
         instantiatedObject.name = "ActorCameraAnimation_" + name;
 
-		instantiatedObject.AddComponent<FadeInFadeOut>();
+        fadeInFadeOut = instantiatedObject.AddComponent<FadeInFadeOut>();
 		//cameraToAnimate.cullingMask = cameraCullingMask;
 		//cameraToAnimate.farClipPlane = 500;
 		//cameraToAnimate.depth = cameraDepth;
@@ -37,13 +43,17 @@ public class ActorCameraAnimation : ActorSceneComponent
 		ChildListenerToCameraAnimation();
 
 		isActing = true;
+        if (fadeIn)
+            fadeInFadeOut.FadeIn(fadeDuration);
 	}
 	
 
 	public override void Skip()
 	{
-		animate[cameraAnimation.name].normalizedTime = 1.0f;
-	}
+        skip = true;
+        animate[cameraAnimation.name].speed = 0;
+        //animate[cameraAnimation.name].normalizedTime = 1.0f;
+    }
 
 	public override bool CanBeInterrupted()
 	{
@@ -71,11 +81,18 @@ public class ActorCameraAnimation : ActorSceneComponent
 			return;
 		}
 
-		if (!animate.IsPlaying(cameraAnimation.name))
+        if (!isFading && animate[cameraAnimation.name].length - animate[cameraAnimation.name].time < fadeDuration)
+        {
+            isFading = true;
+            fadeInFadeOut.FadeOut(fadeDuration);
+        }
+
+        if (!animate.IsPlaying(cameraAnimation.name) || skip)
 		{
 			OnAnimationDone();
-		}
-	}
+            fadeInFadeOut.FadeIn(fadeDuration);
+        }
+    }
 
 	public override void Dispose()
 	{

@@ -9,10 +9,13 @@ public class CreditsLogic : MonoBehaviour {
 	private bool isInitiated;
 	public AnimationClip fadeAnimation;
 	public bool canSkip = true;
+    FadeInFadeOut fadeinOut;
 	
 	void Start()
 	{
-		ownAnimation = GetComponent<Animation>();
+        fadeinOut = gameObject.AddComponent<FadeInFadeOut>();
+        fadeinOut.FadeIn(0.5f);
+        ownAnimation = GetComponent<Animation>();
 		ownAnimation.Play();
 		if(GetComponent<AudioSource>() != null)
 		{

@@ -152,9 +152,9 @@ Animation:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e28c49c425ecc40ad95f8b8cc6740bd1, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: e28c49c425ecc40ad95f8b8cc6740bd1, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -217,13 +217,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalFlame: {fileID: 8300000, guid: cf8f2b0de71954f5b84e0a691dba0e16, type: 3}
   fullFlame: {fileID: 8300000, guid: 3d25ec6f9675b4cfc8d4b3a275161ebb, type: 3}
+  fire: {fileID: 6138390458396886704}
   bigFan: {fileID: 100000, guid: 65e71078b617b48049edabad254ed5a6, type: 3}
   smallFan: {fileID: 100000, guid: 4fac61d4b8b2e49fc8c1f15e3f0882a4, type: 3}
   fanFailed: {fileID: 100000, guid: e28430570ab2847059fe4b6e7a63248d, type: 3}
   fireDied: {fileID: 100000, guid: 003f7f2730f9a4c389a4e1caa7c64401, type: 3}
   lostFullFlame: {fileID: 100000, guid: 4974baf360d36444dacac9c6ec731d68, type: 3}
   ignite: {fileID: 100000, guid: 9b689abe23d094464be6bbe06d9806ee, type: 3}
-  fire: {fileID: 6138390458396886704}
   effectTransform: {fileID: 400002}
 --- !u!82 &8200000
 AudioSource:

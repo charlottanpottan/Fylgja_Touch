@@ -152,13 +152,11 @@ public class LogicCameraInfoApplicator : MonoBehaviour
 
     public void CameraSetPivot(Vector2 targetPivot)
     {
-        Debug.Log("CameraSetPivot " + targetPivot + " !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         logicCamera.SetCameraPivot(ref cameraInfo, targetPivot);
     }
 
     public void CameraSetPivotDistance(float distance, bool instant)
     {
-        Debug.Log("CameraSetPivotDistance " + distance + " !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         logicCamera.SetCameraPivotDistance(ref cameraInfo, distance, instant);
     }
 
