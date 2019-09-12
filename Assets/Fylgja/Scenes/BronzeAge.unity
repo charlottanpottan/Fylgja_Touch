@@ -10372,7 +10372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2423 stripped
 Transform:
@@ -11177,8 +11177,8 @@ Transform:
   - {fileID: 2411}
   - {fileID: 2412}
   - {fileID: 2413}
-  - {fileID: 2414}
   - {fileID: 2422}
+  - {fileID: 2414}
   - {fileID: 2415}
   - {fileID: 2416}
   - {fileID: 2423}

@@ -2,89 +2,97 @@ using UnityEngine;
 
 public class VehicleMoveToPoint : MonoBehaviour
 {
-	public Vehicle vehicle;
+    public Vehicle vehicle;
 
-	Vector3 targetPosition;
-	Quaternion targetRotation;
-	bool isMovingToTarget = false;
-	bool hasReachedPosition = false;
-	Quaternion desiredRotation;
+    Vector3 targetPosition;
+    Quaternion targetRotation;
+    bool isMovingToTarget = false;
+    bool hasReachedPosition = false;
+    Quaternion desiredRotation;
+    float minRotation = 4.9f;
 
-	public void Start()
-	{
-	}
+    public float MinRotation { get { return minRotation; } }
 
-	public float DistanceDisregardingHeight()
-	{
-		Vector3 currentPosition = new Vector3(vehicle.transform.position.x, 0, vehicle.transform.position.z);
-		Vector3 targetPositonWithoutY = new Vector3(targetPosition.x, 0, targetPosition.z);
+    public void Start()
+    {
+    }
 
-		return (targetPositonWithoutY - currentPosition).magnitude;
-	}
+    public float DistanceDisregardingHeight()
+    {
+        Vector3 currentPosition = new Vector3(vehicle.transform.position.x, 0, vehicle.transform.position.z);
+        Vector3 targetPositonWithoutY = new Vector3(targetPosition.x, 0, targetPosition.z);
 
-	public void Update()
-	{
-		if (!isMovingToTarget)
-		{
-			return;
-		}
-		if (!hasReachedPosition && HasReachedPosition())
-		{
-			hasReachedPosition = true;
-		}
-		float desiredSpeed;
+        return (targetPositonWithoutY - currentPosition).magnitude;
+    }
 
-		if (hasReachedPosition)
-		{
-			desiredSpeed = 0;
-			desiredRotation = targetRotation;
-		}
-		else
-		{
-			float distance = DistanceDisregardingHeight();
+    public void Update()
+    {
+        if (!isMovingToTarget)
+        {
+            return;
+        }
+        if (!hasReachedPosition && HasReachedPosition())
+        {
+            hasReachedPosition = true;
+        }
+        float desiredSpeed;
 
-			if (distance > 0.2f)
-			{
-				var delta = targetPosition - vehicle.transform.position;
-				desiredRotation = Quaternion.LookRotation(delta);
-			}
-			desiredSpeed = Mathf.Min(1.0f, distance * distance * 1.0f + 0.01f);
-		}
+        if (hasReachedPosition)
+        {
+            desiredSpeed = 0;
+            desiredRotation = targetRotation;
+        }
+        else
+        {
+            float distance = DistanceDisregardingHeight();
 
-		vehicle.Move(desiredRotation, desiredSpeed);
+            if (distance > 0.2f)
+            {
+                var delta = targetPosition - vehicle.transform.position;
+                desiredRotation = Quaternion.LookRotation(delta);
+            }
+            desiredSpeed = Mathf.Min(1.0f, distance * distance * 1.0f + 0.01f);
+        }
 
-		if (!IsRotatedToTarget(targetRotation))
-		{
-//			Debug.Log("Not rotated well enough :(");
-		}
+        vehicle.Move(desiredRotation, desiredSpeed);
 
-		if (!HasReachedPosition())
-		{
-//			Debug.Log("Not close enough");
-		}
+        if (!IsRotatedToTarget(targetRotation))
+        {
+            //			Debug.Log("Not rotated well enough :(");
+        }
 
-		if (isMovingToTarget && hasReachedPosition && IsRotatedToTarget(desiredRotation))
-		{
-			Debug.Log("We are there!");
-			isMovingToTarget = false;
-		}
-	}
+        if (!HasReachedPosition())
+        {
+            //			Debug.Log("Not close enough");
+        }
+
+        if (isMovingToTarget && hasReachedPosition && IsRotatedToTarget(desiredRotation))
+        {
+            Debug.Log("We are there!");
+            isMovingToTarget = false;
+        }
+    }
 
 
-	bool HasReachedPosition()
-	{
-		float distance = DistanceDisregardingHeight();
+    public bool HasReachedPosition()
+    {
+        float distance = DistanceDisregardingHeight();
 
-		return distance < 0.25f;
-	}
+        return distance < 0.25f;
+    }
 
-	bool IsRotatedToTarget(Quaternion desiredRotation)
-	{
-		var rotationDiff = Mathf.Abs(Angle.AngleDiff(desiredRotation.eulerAngles.y, vehicle.transform.rotation.eulerAngles.y));
-		return rotationDiff < 15f;
-	}
+    public bool IsRotatedHejhej()
+    {
+        return IsRotatedToTarget(desiredRotation);
+    }
 
-	/*
+    bool IsRotatedToTarget(Quaternion desiredRotation)
+    {
+        var rotationDiff = Mathf.Abs(Angle.AngleDiff(desiredRotation.eulerAngles.y, vehicle.transform.rotation.eulerAngles.y));
+        return rotationDiff < minRotation;
+    }
+
+    /*
 			Debug.Log("VehicleMoveToPoint: New Target position:" + target + " for vehicle:" + vehicle.name);
 		targetPosition = target;
 		var delta = targetPosition - vehicle.transform.position;
@@ -102,63 +110,63 @@ public class VehicleMoveToPoint : MonoBehaviour
 		isMovingToTarget = true;
 		hasReachedPosition = false;
 */
-	public void MoveToTarget(Vector3 targetFirstPosition, Quaternion targetFirstRotation)
-	{
-		SendMessage("OnVehicleWantsToMove", SendMessageOptions.DontRequireReceiver);
-		targetRotation = Quaternion.Euler(0, targetFirstRotation.eulerAngles.y, 0);
-		targetPosition = targetFirstPosition;
+    public void MoveToTarget(Vector3 targetFirstPosition, Quaternion targetFirstRotation)
+    {
+        SendMessage("OnVehicleWantsToMove", SendMessageOptions.DontRequireReceiver);
+        targetRotation = Quaternion.Euler(0, targetFirstRotation.eulerAngles.y, 0);
+        targetPosition = targetFirstPosition;
 
-		if (!IsRotatedToTarget(targetRotation))
-		{
-		}
-		if (!HasReachedPosition())
-		{
-		}
-		if (IsRotatedToTarget(targetRotation) && HasReachedPosition())
-		{
-			return;
-		}
-		isMovingToTarget = true;
-		hasReachedPosition = false;
-	}
+        if (!IsRotatedToTarget(targetRotation))
+        {
+        }
+        if (!HasReachedPosition())
+        {
+        }
+        if (IsRotatedToTarget(targetRotation) && HasReachedPosition())
+        {
+            return;
+        }
+        isMovingToTarget = true;
+        hasReachedPosition = false;
+    }
 
-	public Vector3 TargetPosition()
-	{
-		return targetPosition;
-	}
+    public Vector3 TargetPosition()
+    {
+        return targetPosition;
+    }
 
-	public Quaternion TargetRotation()
-	{
-		return targetRotation;
-	}
+    public Quaternion TargetRotation()
+    {
+        return targetRotation;
+    }
 
-	public void MoveToTransform(Transform transform)
-	{
-		Debug.Log("VehicleMoveToPoint: New Target transform:" + transform.position + " for vehicle:" + vehicle.name);
-		var targetPosition = transform.position;
+    public void MoveToTransform(Transform transform)
+    {
+        Debug.Log("VehicleMoveToPoint: New Target transform:" + transform.position + " for vehicle:" + vehicle.name);
+        var targetPosition = transform.position;
 
-		MoveToTarget(targetPosition, targetRotation);
-	}
+        MoveToTarget(targetPosition, targetRotation);
+    }
 
-/*
- *      public void OnControllerColliderHit(ControllerColliderHit hit)
- *      {
- *              if (hit.collider.gameObject.layer == Layers.Ground) {
- *                      return;
- *              }
- *              if (isMovingToTarget) {
- *                      Debug.Log("I stop walking because I hit something!");
- *                      ClearTarget();
- *              }
- *      }
- */
-	public void ClearTarget()
-	{
-		isMovingToTarget = false;
-	}
+    /*
+     *      public void OnControllerColliderHit(ControllerColliderHit hit)
+     *      {
+     *              if (hit.collider.gameObject.layer == Layers.Ground) {
+     *                      return;
+     *              }
+     *              if (isMovingToTarget) {
+     *                      Debug.Log("I stop walking because I hit something!");
+     *                      ClearTarget();
+     *              }
+     *      }
+     */
+    public void ClearTarget()
+    {
+        isMovingToTarget = false;
+    }
 
-	public bool IsWalkingToTarget()
-	{
-		return isMovingToTarget;
-	}
+    public bool IsWalkingToTarget()
+    {
+        return isMovingToTarget;
+    }
 }
