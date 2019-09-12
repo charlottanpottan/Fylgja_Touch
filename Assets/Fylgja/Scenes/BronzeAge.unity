@@ -16,8 +16,8 @@ RenderSettings:
   serializedVersion: 9
   m_Fog: 1
   m_FogColor: {r: 0.28627452, g: 0.24705882, b: 0.23529412, a: 1}
-  m_FogMode: 1
-  m_FogDensity: 0.01
+  m_FogMode: 3
+  m_FogDensity: 0.0065
   m_LinearFogStart: 10
   m_LinearFogEnd: 100
   m_AmbientSkyColor: {r: 0.3724635, g: 0.37909573, b: 0.5849056, a: 1}
@@ -10372,7 +10372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2530}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2423 stripped
 Transform:
@@ -11179,8 +11179,8 @@ Transform:
   - {fileID: 2413}
   - {fileID: 2414}
   - {fileID: 2415}
-  - {fileID: 2416}
   - {fileID: 2422}
+  - {fileID: 2416}
   - {fileID: 2423}
   - {fileID: 2424}
   - {fileID: 2425}

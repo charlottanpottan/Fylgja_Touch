@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.39362887, g: 0.40494373, b: 0.42537314, a: 1}
+  m_FogColor: {r: 0.33873263, g: 0.36736825, b: 0.41509432, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.018
+  m_FogDensity: 0.007
   m_LinearFogStart: 10
-  m_LinearFogEnd: 100
+  m_LinearFogEnd: 200
   m_AmbientSkyColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
   m_AmbientEquatorColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
   m_AmbientGroundColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
@@ -5146,7 +5146,7 @@ Transform:
   - {fileID: 2293}
   - {fileID: 2294}
   m_Father: {fileID: 3086}
-  m_RootOrder: 92
+  m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2274
 Transform:
@@ -7458,9 +7458,9 @@ Transform:
   - {fileID: 2332}
   - {fileID: 2333}
   - {fileID: 2334}
+  - {fileID: 2932}
   - {fileID: 2335}
   - {fileID: 2336}
-  - {fileID: 2932}
   - {fileID: 2337}
   - {fileID: 2338}
   - {fileID: 2339}
@@ -7484,8 +7484,8 @@ Transform:
   - {fileID: 2882}
   - {fileID: 2883}
   - {fileID: 2884}
-  - {fileID: 2905}
   - {fileID: 2933}
+  - {fileID: 2905}
   - {fileID: 2906}
   - {fileID: 2907}
   - {fileID: 2908}
@@ -7540,7 +7540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2933
 Transform:
@@ -7554,7 +7554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2929}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2934 stripped
 Transform:
@@ -8688,8 +8688,8 @@ Transform:
   - {fileID: 2966}
   - {fileID: 2967}
   - {fileID: 2968}
-  - {fileID: 2969}
   - {fileID: 2273}
+  - {fileID: 2969}
   - {fileID: 2970}
   - {fileID: 2971}
   - {fileID: 2972}

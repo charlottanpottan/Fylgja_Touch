@@ -96,7 +96,6 @@ MonoBehaviour:
   - {fileID: 11400000}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 1
   fadeAtStart: 0
   fadeAtEnd: 0
   skippable: 1
@@ -111,7 +110,7 @@ GameObject:
   - component: {fileID: 400006}
   - component: {fileID: 7983998273828647077}
   m_Layer: 0
-  m_Name: HorseStop
+  m_Name: ActorVehicleStop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

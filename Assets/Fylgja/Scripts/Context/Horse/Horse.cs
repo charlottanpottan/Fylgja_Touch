@@ -2,122 +2,123 @@ using UnityEngine;
 
 public class Horse : Vehicle
 {
-	public float maxWalkSpeed = 3.0f;
-	public float turnFactor = 10.0f;
-	public float acceleration = 1.0f;
-	public float backwardSpeed = 0.3f;
-	public CharacterController characterController;
-	
-	public AudioSource walkAudio;
-	public float walkMultiply = 1;
-	public float walkFadeSpeed = 1;
-	public AudioSource runAudio;
-	public float runMultiply = 1;
-	public float walkToRunThreshold = 0.1f;
+    public float maxWalkSpeed = 3.0f;
+    public float turnFactor = 10.0f;
+    public float backwardSpeed = 0.3f;
+    public CharacterController characterController;
 
-	private Quaternion requestedRotation = Quaternion.identity;
-	private float requestedSpeed = 0;
-	private float currentSpeed = 0;
-	private bool allowedToMove = true;
-	private string currentAnimationGroup = "normal";
+    public AudioSource walkAudio;
+    public float walkMultiply = 1;
+    public float walkFadeSpeed = 1;
+    public AudioSource runAudio;
+    public float runMultiply = 1;
+    public float walkToRunThreshold = 0.1f;
 
-	public void Start()
-	{
-		requestedRotation = transform.rotation;
-	}
+    float acceleration = 2.0f;
+    Quaternion requestedRotation = Quaternion.identity;
+    float requestedSpeed = 0;
+    float currentSpeed = 0;
+    bool allowedToMove = true;
+    string currentAnimationGroup = "normal";
 
-	public override bool IsAvatar
-	{
-		get
-		{
-			return false;
-		}
-	}
+    public void Start()
+    {
+        requestedRotation = transform.rotation;
+    }
 
+    public override bool IsAvatar
+    {
+        get
+        {
+            return false;
+        }
+    }
 
-	public void Update()
-	{
-		Vector3 moveDirection = new Vector3(0, 0, 1);
-		Vector3 velocityVector;
+    public void Update()
+    {
 
-		if (characterController.isGrounded)
-		{
-			if (allowedToMove)
-			{
-				moveDirection = transform.rotation * Vector3.forward;
-				float deltaSpeed = (requestedSpeed - currentSpeed) * Time.deltaTime * acceleration;
-				currentSpeed += deltaSpeed;
-				if (Mathf.Abs(currentSpeed) > 0.05f)
-				{
-					transform.rotation = Quaternion.Slerp(transform.rotation, requestedRotation, turnFactor * Time.deltaTime);
-				}
-			}
-			else
-			{
-				currentSpeed = 0;
-			}
-		}
-		else
-		{
-			currentSpeed = 0;
-		} velocityVector = moveDirection * (currentSpeed * maxWalkSpeed);
+        Vector3 moveDirection = new Vector3(0, 0, 1);
+        Vector3 velocityVector;
 
-		const float gravity = 8.92f;
-		velocityVector.y -= gravity;
+        if (characterController.isGrounded)
+        {
+            if (allowedToMove)
+            {
+                moveDirection = transform.rotation * Vector3.forward;
+                float deltaSpeed = (requestedSpeed - currentSpeed) * Time.deltaTime * acceleration;
+                currentSpeed += deltaSpeed;
+                if (Mathf.Abs(currentSpeed) > 0.05f)
+                {
+                    transform.rotation = Quaternion.Slerp(transform.rotation, requestedRotation, turnFactor * Time.deltaTime);
+                }
+            }
+            else
+            {
+                currentSpeed = 0;
+            }
+        }
+        else
+        {
+            currentSpeed = 0;
+        }
+        velocityVector = moveDirection * (currentSpeed * maxWalkSpeed);
 
-		characterController.Move(velocityVector * Time.deltaTime);
-		
-		float actualVelocity = new Vector3(characterController.velocity.x, 0, characterController.velocity.z).magnitude;
-		
-		actualVelocity = actualVelocity / maxWalkSpeed;
-		
-		walkAudio.volume = Mathf.Lerp(walkAudio.volume,actualVelocity * walkMultiply, walkFadeSpeed * Time.deltaTime);
-		if(actualVelocity >= walkToRunThreshold)
-		{
-			runAudio.volume = (actualVelocity - walkToRunThreshold) * runMultiply;
-		}
-		else
-		{
-			runAudio.volume = 0;
-		}
-	}
-	
-	public override void OnAvatarEnter(IAvatar avatar)
-	{
-		Debug.Log("Horse: Avatar Enter");
-		avatar.transform.root.BroadcastMessage("OnEnterHorse", this);
-	}
+        const float gravity = 8.92f;
+        velocityVector.y -= gravity;
 
-	public override void OnAvatarLeave(IAvatar avatar)
-	{
-		Debug.Log("Horse: Avatar Leave");
-		avatar.transform.root.BroadcastMessage("OnLeaveHorse", this);
-	}
+        characterController.Move(velocityVector * Time.deltaTime);
 
-	public override void SetAllowedToMove(bool allowed)
-	{
-	}
+        float actualVelocity = new Vector3(characterController.velocity.x, 0, characterController.velocity.z).magnitude;
 
-	public override void Move(Quaternion desiredRotation, float desiredSpeed)
-	{
-		float angleDifference = Quaternion.Angle(desiredRotation, transform.rotation);
+        actualVelocity = actualVelocity / maxWalkSpeed;
 
-		if (angleDifference > 115.0f)
-		{
-			desiredRotation = desiredRotation * Quaternion.AngleAxis(180, Vector3.up);
-			desiredSpeed = -backwardSpeed;
-		}
-		else
-		{
-		}
-		requestedRotation = desiredRotation;
-		requestedSpeed = desiredSpeed;
-	}
+        walkAudio.volume = Mathf.Lerp(walkAudio.volume, actualVelocity * walkMultiply, walkFadeSpeed * Time.deltaTime);
+        if (actualVelocity >= walkToRunThreshold)
+        {
+            runAudio.volume = (actualVelocity - walkToRunThreshold) * runMultiply;
+        }
+        else
+        {
+            runAudio.volume = 0;
+        }
+    }
 
-	public override void StopMoving()
-	{
-		requestedSpeed = 0;
-	}
+    public override void OnAvatarEnter(IAvatar avatar)
+    {
+        Debug.Log("Horse: Avatar Enter");
+        avatar.transform.root.BroadcastMessage("OnEnterHorse", this);
+    }
+
+    public override void OnAvatarLeave(IAvatar avatar)
+    {
+        Debug.Log("Horse: Avatar Leave");
+        avatar.transform.root.BroadcastMessage("OnLeaveHorse", this);
+    }
+
+    public override void SetAllowedToMove(bool allowed)
+    {
+    }
+
+    public override void Move(Quaternion desiredRotation, float desiredSpeed)
+    {
+        float angleDifference = Quaternion.Angle(desiredRotation, transform.rotation);
+
+        if (angleDifference > 115.0f)
+        {
+            desiredRotation = desiredRotation * Quaternion.AngleAxis(180, Vector3.up);
+            desiredSpeed = -backwardSpeed;
+        }
+        else
+        {
+        }
+        requestedRotation = desiredRotation;
+        requestedSpeed = desiredSpeed;
+    }
+
+    public override void StopMoving()
+    {
+        requestedSpeed = 0;
+    }
 
     public void StopMovingInstant()
     {
@@ -126,7 +127,9 @@ public class Horse : Vehicle
     }
 
     public void BlendToLocomotion()
-	{
-		GetComponent<Animation>().CrossFade(currentAnimationGroup);
-	}
+    {
+        GetComponent<Animation>().CrossFade(currentAnimationGroup);
+    }
+
+
 }
