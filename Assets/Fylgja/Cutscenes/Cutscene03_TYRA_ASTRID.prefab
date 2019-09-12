@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorName: CameraSetPivot
   message: SetPivot
-  value: {x: 26, y: 16}
+  value: {x: 20, y: 19}
 --- !u!1 &4887926693227556057
 GameObject:
   m_ObjectHideFlags: 0

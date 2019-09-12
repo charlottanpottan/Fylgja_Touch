@@ -47,8 +47,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 484644e7c6027ae4181d36cf25dcb647, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 64f5b057d17a047d4ab4efeb3120d8ab, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -101,8 +99,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: e1ada32c90228164f89a9088feca31e4, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 5a117d964a61f4c508519a5aac3bd6f1, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -156,8 +152,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 851c5be711c5240908a0d1e526d050aa, type: 3}
   actorMood: 0
   talkingToActorName: Astrid
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -509,7 +503,8 @@ MonoBehaviour:
   - {fileID: 11400024}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 1
+  fadeAtStart: 1
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100018
 GameObject:
@@ -592,8 +587,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 6b6c45cf734aee84f98e0bb6bf31bc23, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 2
   customAnimation: {fileID: 7400000, guid: 8928a8aea48764f578a7d36de6245d46, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -648,8 +641,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 5e3ecbaab2039ea439e0e34754d1f4bb, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 1
   customAnimation: {fileID: 7400000, guid: 399cc26c849b44d2280bdca92d20f98c, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -704,8 +695,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 695c06ae5fb6dd641af37f7c8346441f, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 5e2c1efd2b152408a93c50db7dbd2355, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -759,8 +748,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 2be9052fbb098474884a0b63122c0abc, type: 3}
   actorMood: 0
   talkingToActorName: Astrid
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -813,8 +800,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: bc865fabc75694381a52a188e6a0b7b0, type: 3}
   actorMood: 0
   talkingToActorName: Astrid
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -911,8 +896,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: c54121583ee184f469b8066d0fbae8d0, type: 3}
   actorMood: 0
   talkingToActorName: Astrid
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1

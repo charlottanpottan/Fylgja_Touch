@@ -29,7 +29,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 523732266584134416}
+  - {fileID: 2019767578651547369}
   - {fileID: 400016}
   - {fileID: 400012}
   - {fileID: 400006}
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorName: Tyra
   parchmentPrefab: {fileID: 100000, guid: b32d52d5a52364aaa9577cc10a2cce2c, type: 3}
---- !u!1 &3541527091829631381
+--- !u!1 &3696352967422182293
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -653,23 +653,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 523732266584134416}
-  - component: {fileID: 4237371978359131216}
-  - component: {fileID: 4427387437449763079}
+  - component: {fileID: 2019767578651547369}
+  - component: {fileID: 996473922838474820}
+  - component: {fileID: 8621012930980752022}
   m_Layer: 0
-  m_Name: CameraSetPivot
+  m_Name: CameraSetPivot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &523732266584134416
+--- !u!4 &2019767578651547369
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3541527091829631381}
+  m_GameObject: {fileID: 3696352967422182293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 113.46922, y: 113.63285, z: 114.75527}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -677,13 +677,13 @@ Transform:
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4237371978359131216
+--- !u!114 &996473922838474820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3541527091829631381}
+  m_GameObject: {fileID: 3696352967422182293}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3553e651fcfeb4f3ba3f20ee844ae2bd, type: 3}
@@ -696,13 +696,13 @@ MonoBehaviour:
   mouthMovement: {fileID: 0}
   randomGesture: {fileID: 0}
   idleAnimation: {fileID: 0}
---- !u!114 &4427387437449763079
+--- !u!114 &8621012930980752022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3541527091829631381}
+  m_GameObject: {fileID: 3696352967422182293}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6708af4fc18e4c818a38344ddfbdbf2, type: 3}

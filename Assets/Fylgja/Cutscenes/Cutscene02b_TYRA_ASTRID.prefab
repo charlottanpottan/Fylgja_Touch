@@ -91,6 +91,9 @@ MonoBehaviour:
   cameraCullingMask:
     serializedVersion: 2
     m_Bits: 4294966783
+  fadeIn: 0
+  fadeOut: 0
+  fadeDuration: 0.3
 --- !u!1 &100026
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +368,7 @@ MonoBehaviour:
   - {fileID: 1122424250973126688}
   - {fileID: 3361723164795703841}
   keepAvatarLocked: 0
-  fadeAtStart: 0
+  fadeAtStart: 1
   fadeAtEnd: 1
   skippable: 1
 --- !u!1 &100034

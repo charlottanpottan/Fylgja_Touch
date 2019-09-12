@@ -561,7 +561,7 @@ MonoBehaviour:
   - {fileID: 11400028}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  fadeAtStart: 0
+  fadeAtStart: 1
   fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100018
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorName: CameraSetPivot
+  actorName: CameraSetPivot2
   message: SetPivotDistance
   value: 3.5
 --- !u!1 &6269947334667514261
@@ -1094,6 +1094,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4f1cc8fe7db94148b4584a5a058094d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorName: CameraSetPivot
+  actorName: CameraSetPivot2
   message: SetPivot
-  value: {x: 0, y: 89}
+  value: {x: 17, y: 53}

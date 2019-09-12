@@ -291,6 +291,9 @@ MonoBehaviour:
   cameraCullingMask:
     serializedVersion: 2
     m_Bits: 4294966783
+  fadeIn: 0
+  fadeOut: 0
+  fadeDuration: 1
 --- !u!1 &5617608373970078839
 GameObject:
   m_ObjectHideFlags: 0

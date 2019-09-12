@@ -23,7 +23,6 @@ public class CharacterPetroglypher : MonoBehaviour
 		}
 
 		MovePetroglyph();
-		RotatePetroglyph();
 		CheckIfDropPetroglyph();
 	}
 
@@ -67,25 +66,6 @@ public class CharacterPetroglypher : MonoBehaviour
 		Debug.Log("Drop Petroglyph");
 		audioHandler.TriggerSound();
 		holdingPetroglyph = null;
-	}
-
-
-	void RotatePetroglyph()
-	{
-		if (holdingPetroglyph == null)
-		{
-			return;
-		}
-
-		if (Input.GetButton("mouse0"))
-		{
-			float vertical = -Input.GetAxis("mouse_vertical") * Time.deltaTime;
-			float horizontal = Input.GetAxis("mouse_horizontal") * Time.deltaTime;
-
-			Vector3 eulerRotation = holdingPetroglyph.transform.rotation.eulerAngles;
-			eulerRotation.y += ((vertical + horizontal) / 2.0f) * 0.5f;
-			holdingPetroglyph.transform.rotation = Quaternion.Euler(eulerRotation);
-		}
 	}
 
 	void MovePetroglyph()
