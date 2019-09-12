@@ -450,7 +450,7 @@ MonoBehaviour:
   actorsAfterScene: []
   keepAvatarLocked: 0
   fadeAtStart: 0
-  fadeAtEnd: 0
+  fadeAtEnd: 1
   skippable: 1
 --- !u!1 &100014
 GameObject:
@@ -839,7 +839,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294966783
   fadeIn: 1
-  fadeOut: 0
+  fadeOut: 1
   fadeDuration: 0.3
 --- !u!1 &7962704487439990952
 GameObject:

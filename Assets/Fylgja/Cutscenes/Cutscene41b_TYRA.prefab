@@ -221,13 +221,14 @@ MonoBehaviour:
   actors: []
   lines:
   - {fileID: 11400004}
+  - {fileID: 5665732020163754241}
   - {fileID: 11400008}
   - {fileID: 11400006}
   - {fileID: 11400000}
-  - {fileID: 11400010}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100006
 GameObject:
@@ -372,6 +373,9 @@ MonoBehaviour:
   cameraCullingMask:
     serializedVersion: 2
     m_Bits: 4294966783
+  fadeIn: 1
+  fadeOut: 1
+  fadeDuration: 0.3
 --- !u!1 &100014
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorName: CameraSetPivot
   message: SetPivot
-  vectorParameter: {x: 15, y: -78}
+  value: {x: 5, y: -74}
 --- !u!1 &100016
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,8 +469,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 420c61e11fd4247779120e0fd741ebf7, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 3
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: d885a657790c24a4ebed0b5ea48a64f9, type: 2}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -482,9 +484,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400018}
-  - component: {fileID: 11400010}
+  - component: {fileID: 5665732020163754241}
   m_Layer: 0
-  m_Name: FadeIn
+  m_Name: FadeIOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +506,7 @@ Transform:
   m_Father: {fileID: 400008}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11400010
+--- !u!114 &5665732020163754241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -513,10 +515,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d1281c9af26446992c014b35d99a9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 203aaa999094341d3a85d371c2c8e711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInTime: 1
+  fadeOutTime: 0.3
 --- !u!1 &100020
 GameObject:
   m_ObjectHideFlags: 0
