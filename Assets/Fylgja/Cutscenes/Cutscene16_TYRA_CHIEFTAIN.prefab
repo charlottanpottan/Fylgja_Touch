@@ -47,8 +47,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 94d5201d0523442a4a11e310f34dd60f, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 2
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -101,8 +99,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 197607a8c3c5041ff94763f068c45983, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 9ca9ae19fcd9444538a1047c393ef096, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -157,8 +153,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: dca1147f473ae439eba55fc56db3f1a3, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -211,8 +205,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 7eb7f2f7781304a98bf108438f6b4450, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 0e5d194116fd94247bc0b6cf39b2e8fb, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -269,8 +261,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: b85ebffcee7824592b5be47d8ffac15c, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -324,8 +314,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 00c88b5b065e84141872c45941d3c448, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 914a05ce9f54848b4a687e3ed8442990, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -380,8 +368,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: efb1ee440df7f4dca992bbd9ad4f2a40, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -435,8 +421,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 5ad679011ee99499c87a704cbe0108c7, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: a34a0ecf288374e9ea41d2d7241bfc43, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -496,8 +480,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: a6ef901ecddb54b40a983c44ef342443, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -550,8 +532,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 51c72b73b7bb84e25b7807f5be5a4e1f, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -605,8 +585,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: e70377802f67f482bb6e7aa5b13c3f2e, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -659,8 +637,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 324414bb22cb24cb3b176b20a6dda101, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: b1be4ebd71e384861bb074ab92039b36, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -713,8 +689,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: c0347f6b1ec4044f69e1b69bb2da88cc, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 1
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: ee9a673c8ab564f52948efc57e65f366, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -768,8 +742,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: e9c13cab84fb24119ad91fac2e1fc79a, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 2
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -868,8 +840,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 14d215f90ed674437895fd38414200b5, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -923,8 +893,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: a6ed93fdeb456447285940ad91561e98, type: 3}
   actorMood: 0
   talkingToActorName: Tyra
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 7400000, guid: 968418cf32d52457b8b84fc8c025f3ed, type: 3}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1
@@ -1131,7 +1099,8 @@ MonoBehaviour:
   - {fileID: 11400048}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 1
+  fadeAtStart: 1
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100038
 GameObject:
@@ -1380,8 +1349,6 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 897bc1f648c6046c386c4db4a2cf0e32, type: 3}
   actorMood: 0
   talkingToActorName: Chieftain
-  shotComposition: 0
-  shotMovement: 0
   customAnimation: {fileID: 0}
   blendCustomAnimation: 0
   customAnimationCrossfadeTime: 0.1

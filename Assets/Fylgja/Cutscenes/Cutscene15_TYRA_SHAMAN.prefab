@@ -424,49 +424,6 @@ MonoBehaviour:
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
   subtitle: "Men vad kan jag g\xF6ra? Jag vet inget \rom s\xE5nt h\xE4r!"
---- !u!1 &100016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 400016}
-  - component: {fileID: 11400016}
-  m_Layer: 0
-  m_Name: Tyra
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &400016
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100016}
-  m_LocalRotation: {x: 0, y: 0.043619394, z: 0, w: 0.99904823}
-  m_LocalPosition: {x: 266.29727, y: 57.538555, z: 312.83975}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400018}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11400016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62a1837d16c2d417fb5ff040c41e2851, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &100018
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,8 +450,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 400016}
+  m_Children: []
   m_Father: {fileID: 400028}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -766,10 +722,10 @@ MonoBehaviour:
   - {fileID: 11400004}
   - {fileID: 11400002}
   - {fileID: 11400000}
-  actorsAfterScene:
-  - {fileID: 11400016}
+  actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 1
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
 --- !u!1 &100028
 GameObject:
@@ -900,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45ec9f6cf3ff47e49564565b03b2d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorName: CameraSetPivot
+  actorName: CameraSetPivot2
   message: SetPivotDistance
   value: 2.45
 --- !u!1 &3998365900147524041
@@ -946,6 +902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4f1cc8fe7db94148b4584a5a058094d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorName: CameraSetPivot
+  actorName: CameraSetPivot2
   message: SetPivot
-  value: {x: 18, y: 26}
+  value: {x: 25, y: 39}
