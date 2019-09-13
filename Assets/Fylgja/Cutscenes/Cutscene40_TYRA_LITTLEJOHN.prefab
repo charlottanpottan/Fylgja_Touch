@@ -222,8 +222,6 @@ MonoBehaviour:
   - {fileID: 11400012}
   - {fileID: 11400000}
   lines:
-  - {fileID: 7138535611771261395}
-  - {fileID: 6941835751581229773}
   - {fileID: 9222097323821450707}
   - {fileID: 1160456867729697723}
   - {fileID: 11400004}
@@ -231,7 +229,7 @@ MonoBehaviour:
   - {fileID: 11400010}
   - {fileID: 11400008}
   actorsAfterScene: []
-  keepAvatarLocked: 0
+  keepAvatarLocked: 1
   fadeAtStart: 1
   fadeAtEnd: 0
   skippable: 1
@@ -382,8 +380,8 @@ MonoBehaviour:
   actorClip: {fileID: 8300000, guid: 042a348de8de64deeaecdd7c0a5392ed, type: 3}
   actorMood: 0
   talkingToActorName: LittleJohn
-  customAnimation: {fileID: 7400000, guid: d885a657790c24a4ebed0b5ea48a64f9, type: 2}
-  blendCustomAnimation: 0
+  customAnimation: {fileID: 0}
+  blendCustomAnimation: 1
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
   subtitle: "Hurra f\xF6r mig, jag vann, jag \xE4r b\xE4st!"
@@ -539,7 +537,7 @@ MonoBehaviour:
   actorMood: 0
   talkingToActorName: LittleJohn
   customAnimation: {fileID: 0}
-  blendCustomAnimation: 0
+  blendCustomAnimation: 1
   customAnimationCrossfadeTime: 0.1
   delayAfter: 0
   subtitle: "Det g\xF6r inget. G\xF6r inte om det bara."

@@ -138,7 +138,16 @@ public class CharacterStickFight : StickFighter
 	void OnStickFightMinigameClose()
 	{
 		Destroy(barAnim.gameObject);
-		barAnim = null;
+
+        GetComponent<Animation>().Stop(idle.name);
+        GetComponent<Animation>().Stop(duck.name);
+        GetComponent<Animation>().Stop(struckLeft.name);
+        GetComponent<Animation>().Stop(struckRight.name);
+        GetComponent<Animation>().Stop(hitLeft.name);
+        GetComponent<Animation>().Stop(hitRight.name);
+
+
+        barAnim = null;
         walking.StopMoving();
 		walking.BlendToLocomotion();
 		SetToolsEnabled(false);

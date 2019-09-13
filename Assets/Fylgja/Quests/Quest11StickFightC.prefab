@@ -184,8 +184,7 @@ MonoBehaviour:
   - {fileID: 11400004}
   - {fileID: 11400002}
   actorsAfterScene: []
-  keepAvatarLocked: 0
-  useFader: 0
+  keepAvatarLocked: 1
   fadeAtStart: 0
   fadeAtEnd: 0
   skippable: 1

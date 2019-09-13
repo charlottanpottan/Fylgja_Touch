@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actors: []
   lines:
-  - {fileID: 11400004}
+  - {fileID: 11400006}
   actorsAfterScene: []
   keepAvatarLocked: 0
   fadeAtStart: 0
