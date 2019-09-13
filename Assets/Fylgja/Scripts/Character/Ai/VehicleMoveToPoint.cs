@@ -81,9 +81,12 @@ public class VehicleMoveToPoint : MonoBehaviour
         return distance < 0.25f;
     }
 
-    public bool IsRotatedHejhej()
+    void OnDrawGizmos()
     {
-        return IsRotatedToTarget(desiredRotation);
+        Gizmos.DrawSphere(targetPosition, 0.2f);
+        Vector3 start = targetPosition;
+        start.y += 0.1f;
+        Gizmos.DrawLine(start, start + targetRotation * Vector3.forward * 2);
     }
 
     bool IsRotatedToTarget(Quaternion desiredRotation)

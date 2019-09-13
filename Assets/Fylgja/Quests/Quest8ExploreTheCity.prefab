@@ -1,80 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 400000}
-  - component: {fileID: 6500000}
-  - component: {fileID: 11400000}
-  - component: {fileID: 11400014}
-  m_Layer: 19
-  m_Name: FortTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &400000
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 619, y: 45.6, z: 557.28357}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400004}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6500000
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 3, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 608dc6e805c314445984c37374157c15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  areaName: FortTrigger
---- !u!114 &11400014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be03023fa91c44dbbb64034ed30e9d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rendererToHighlight: {fileID: 0}
-  materialIndex: 0
-  canInteractFromAnyDistance: 0
-  trigActionOnDown: 0
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +254,7 @@ Transform:
   m_Children:
   - {fileID: 400016}
   - {fileID: 400026}
-  - {fileID: 400000}
+  - {fileID: 5008747425396545762}
   - {fileID: 400014}
   - {fileID: 400028}
   - {fileID: 400024}
@@ -362,7 +287,8 @@ MonoBehaviour:
   - {fileID: 11400006}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
   questName: Quest8ExploreTheCity
   priorQuest: {fileID: 11400002, guid: 598e7b2d13e234a6082e320b789f9fac, type: 3}
@@ -1293,7 +1219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorName: CameraSetPivot
   message: SetPivot
-  vectorParameter: {x: 10, y: -5}
+  value: {x: 0, y: 0}
 --- !u!1 &100026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,6 +1326,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
   videoClip: {fileID: 32900000, guid: 1b52c46d146b24d24857653959c0f79f, type: 3}
   moviePlayerToSpawn: {fileID: 100000, guid: 86658dbd2e98b4ba7a4307c2877112d8, type: 3}
+--- !u!1 &3558051337968376438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5008747425396545762}
+  - component: {fileID: 4637375818878369835}
+  - component: {fileID: 1603464568985928293}
+  - component: {fileID: 3940665029171751186}
+  m_Layer: 19
+  m_Name: FortTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5008747425396545762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558051337968376438}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 635.3, y: 45.6, z: 556.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4637375818878369835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558051337968376438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608dc6e805c314445984c37374157c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areaName: FortTrigger
+--- !u!114 &1603464568985928293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558051337968376438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be03023fa91c44dbbb64034ed30e9d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendererToHighlight: {fileID: 0}
+  materialIndex: 0
+  canInteractFromAnyDistance: 0
+  trigActionOnDown: 0
+--- !u!135 &3940665029171751186
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558051337968376438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}

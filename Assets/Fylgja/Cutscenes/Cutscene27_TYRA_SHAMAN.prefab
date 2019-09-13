@@ -217,11 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c29cc8a73d84dd6b84fdd1fbc77f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actors:
-  - {fileID: 11400012}
-  - {fileID: 11400006}
+  actors: []
   lines:
-  - {fileID: 1419065455689943937}
   - {fileID: 4937974980558866761}
   - {fileID: 11400008}
   - {fileID: 11400016}
