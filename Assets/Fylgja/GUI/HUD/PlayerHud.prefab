@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 11400016}
   - component: {fileID: 11400014}
   - component: {fileID: 11400002}
+  - component: {fileID: 1064068701061840334}
   m_Layer: 10
   m_Name: MiniGameQuitButton
   m_TagString: Untagged
@@ -511,6 +512,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preCondition: {fileID: 0}
   arbitration: {fileID: 11400014}
+--- !u!114 &1064068701061840334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c90a5b44428f4e36aef588b93711607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 2000002}
+  borderMeshRenderer: {fileID: 2300008}
+  screenX: 0
+  screenY: 0.9
+  xOffset: 0.6
+  yOffset: 0
 --- !u!1 &100020
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +825,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 2000002}
   borderMeshRenderer: {fileID: 2300012}
+  screenX: 1
+  screenY: 1
+  xOffset: -0.6
+  yOffset: -0.6
 --- !u!1 &100030
 GameObject:
   m_ObjectHideFlags: 0
