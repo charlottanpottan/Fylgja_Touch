@@ -16,7 +16,9 @@ public class PivotCamera : LogicCamera
     float rotateY;
     float cameraDistance = 3.5f;
     float targetCameraDistance = 3.5f;
-    Vector3 prevMousePosition;
+    Vector3 inputDownPosition;
+
+    int currentFingerId = -1;
 
     public override void OnCameraSwitch(LogicCameraInfo cameraInfo)
     {
@@ -30,16 +32,45 @@ public class PivotCamera : LogicCamera
         cameraDistance = Mathf.Lerp(cameraDistance, targetCameraDistance, 0.2f);
         cameraInfo.pivotDistance += cameraDistance;
 
-        if (Input.GetButtonDown("mouse0"))
+        Vector3 deltaPositon = Vector3.zero;
+        bool inputDown = false;
+        if (SystemInfo.deviceType == DeviceType.Handheld)
         {
-            prevMousePosition = Input.mousePosition;
+            if (Input.touchCount <= 0)
+            {
+                currentFingerId = -1;
+            }
+            else
+            {
+                Touch touch = Input.touches[0];
+                if (currentFingerId != touch.fingerId || touch.phase == TouchPhase.Began)
+                {
+                    inputDownPosition = touch.position;
+                }
+
+                currentFingerId = touch.fingerId;
+
+                Vector3 currentPosition = touch.position;
+                deltaPositon = currentPosition - inputDownPosition;
+                inputDownPosition = currentPosition;
+                inputDown = true;
+            }
+        }
+        else
+        {
+            if (Input.GetButtonDown("mouse0"))
+            {
+                inputDownPosition = Input.mousePosition;
+            }
+
+            Vector3 currentPosition = Input.mousePosition;
+            deltaPositon = currentPosition - inputDownPosition;
+            inputDownPosition = currentPosition;
+
+            inputDown = Input.GetButton("mouse0");
         }
 
-        Vector3 currentPosition = Input.mousePosition;
-        Vector3 deltaPositon = currentPosition - prevMousePosition;
-        prevMousePosition = currentPosition;
-
-        if (Input.GetButton("mouse0"))
+        if (inputDown)
         {
             float vertical = -deltaPositon.y;
             float horizontal = deltaPositon.x;
@@ -67,8 +98,8 @@ public class PivotCamera : LogicCamera
     public override void SetCameraPivotDistance(ref LogicCameraInfo cameraInfo, float distance, bool instant)
     {
         cameraInfo.pivotDistance = distance;
-        if(instant)
-          cameraDistance = distance;
+        if (instant)
+            cameraDistance = distance;
         targetCameraDistance = distance;
     }
 
