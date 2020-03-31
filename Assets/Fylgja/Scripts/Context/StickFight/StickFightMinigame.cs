@@ -4,8 +4,9 @@ public class StickFightMinigame : Minigame
 {
     public Camera stickFightCamera;
     public CharacterOpponentStickFight opponentStickFighter;
-    public StickFightHitButton stickFightHitButtonRight;
-    public StickFightHitButton stickFightHitButtonLeft;
+    public AvatarMessageSender avatarHitRightMessageSender;
+    public AvatarMessageSender avatarHiLefttMessageSender;
+    public AvatarMessageSender avatarDuckMessageSender;
 
     public override bool AllowedToMove()
     {
@@ -18,16 +19,22 @@ public class StickFightMinigame : Minigame
         base.StartMinigame(a);
         opponentStickFighter.gameObject.BroadcastMessage("OnStickFightMinigameStart", this);
         avatar.transform.parent.BroadcastMessage("OnStickFightMinigameStart", this);
-        stickFightHitButtonRight.Avatar = avatar;
-        stickFightHitButtonLeft.Avatar = avatar;
-        stickFightHitButtonRight.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
-        stickFightHitButtonLeft.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
+
+        avatarHitRightMessageSender.Avatar = avatar;
+        avatarHiLefttMessageSender.Avatar = avatar;
+        avatarDuckMessageSender.Avatar = avatar;
+        avatarHitRightMessageSender.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
+        avatarHiLefttMessageSender.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
+        avatarDuckMessageSender.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
+
     }
 
     void CloseStickFightMinigame()
     {
-        stickFightHitButtonRight.gameObject.SetActive(false);
-        stickFightHitButtonLeft.gameObject.SetActive(false);
+        avatarHitRightMessageSender.gameObject.SetActive(false);
+        avatarHiLefttMessageSender.gameObject.SetActive(false);
+        avatarDuckMessageSender.gameObject.SetActive(false);
+
         opponentStickFighter.gameObject.BroadcastMessage("OnStickFightMinigameClose");
         avatar.transform.parent.BroadcastMessage("OnStickFightMinigameClose");
     }
