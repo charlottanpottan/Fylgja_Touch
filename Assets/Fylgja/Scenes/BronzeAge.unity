@@ -33512,6 +33512,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6138390458396886704, guid: 86a22135857514368bea7297e723b49d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147831102365212484, guid: 86a22135857514368bea7297e723b49d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a22135857514368bea7297e723b49d, type: 3}
 --- !u!1001 &7402
@@ -65095,6 +65105,81 @@ PrefabInstance:
     - target: {fileID: 400004, guid: e8a6a232bea954cc6b61c606dc62a846, type: 3}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startSize.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.7896656
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.032395888
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.a
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.a
+      value: 0.27450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753417609006566521, guid: e8a6a232bea954cc6b61c606dc62a846,
+        type: 3}
+      propertyPath: UVModule.timeMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8a6a232bea954cc6b61c606dc62a846, type: 3}
