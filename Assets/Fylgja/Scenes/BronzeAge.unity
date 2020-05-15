@@ -57193,6 +57193,10 @@ PrefabInstance:
       propertyPath: m_InvFadeFoam
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 8df4c3a2027284100831824f739dfce4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df4c3a2027284100831824f739dfce4, type: 3}
 --- !u!1001 &7890
