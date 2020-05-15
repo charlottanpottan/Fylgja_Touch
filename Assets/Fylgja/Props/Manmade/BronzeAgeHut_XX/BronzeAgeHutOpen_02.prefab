@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
-  m_Mesh: {fileID: 4300000, guid: dbaec5708a25340668a691b8673ce040, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 2ce158994d1444e23aead90bb9d7e27b, type: 3}
 --- !u!23 &2300000
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -227,10 +227,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 400000}
     m_Modifications:
-    - target: {fileID: 100000, guid: b698f23eb4a8d465bbd2445526449349, type: 3}
-      propertyPath: m_Name
-      value: BronzeAgeHut_02_remake_2
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b698f23eb4a8d465bbd2445526449349, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01
@@ -274,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: b698f23eb4a8d465bbd2445526449349, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b698f23eb4a8d465bbd2445526449349, type: 3}
+      propertyPath: m_Name
+      value: BronzeAgeHut_02_remake_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b698f23eb4a8d465bbd2445526449349, type: 3}
