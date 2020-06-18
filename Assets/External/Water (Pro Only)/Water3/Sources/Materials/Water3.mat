@@ -117,7 +117,7 @@ Material:
     - _ShoreTiling: {r: 3.6242788, g: 3, b: -2, a: -4}
     - _SpecularColor: {r: 0.35074627, g: 0.35074627, b: 0.35074627, a: 1}
     - _UnderwaterColor: {r: 0.21641791, g: 0.17706922, b: 0, a: 1}
-    - _WorldLightDir: {r: 0.2114447, g: -0.8959554, b: 0.39058307, a: 0}
+    - _WorldLightDir: {r: 0.29266936, g: -0.41547772, b: -0.8612335, a: 0}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
