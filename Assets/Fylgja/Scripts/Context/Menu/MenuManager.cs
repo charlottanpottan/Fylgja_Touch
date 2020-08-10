@@ -1,16 +1,19 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
 	public GameObject menuObject;
 	public bool entryMenu;
 	public Player player;
-	
+	[SerializeField] Button openMainMenuButton = null;
+
 	AllowedToInteractModifier allowedToInteract;
 	
 	void Awake()
 	{
+		openMainMenuButton.onClick.AddListener(ToggleMenu);
 		if (!entryMenu)
 		{
 			ContinueGame();
@@ -28,6 +31,10 @@ public class MenuManager : MonoBehaviour
 	void ShowMenu(bool on)
 	{
 		menuObject.SetActiveRecursively1(on);
+		if(on)
+			openMainMenuButton.gameObject.SetActive(false);
+		else
+			openMainMenuButton.gameObject.SetActive(SystemInfo.deviceType == DeviceType.Handheld);
 	}
 
 	public void ToggleMenu()
@@ -59,7 +66,7 @@ public class MenuManager : MonoBehaviour
 		allowedToInteract = null;
 		ContinueGame();
 	}
-	
+
 	void ContinueGame()
 	{
 		ShowMenu(false);
