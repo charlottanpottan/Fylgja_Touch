@@ -778,6 +778,16 @@ PrefabInstance:
       propertyPath: entryMenu
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3164208092333820574, guid: 8cf9536d0c13f4c8384860761c17d894,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164208092333820574, guid: 8cf9536d0c13f4c8384860761c17d894,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4540008522989822487, guid: 8cf9536d0c13f4c8384860761c17d894,
         type: 3}
       propertyPath: m_IsActive
