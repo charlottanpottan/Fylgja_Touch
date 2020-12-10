@@ -44,7 +44,6 @@ public class Subtitles : MonoBehaviour
 				OnSubtitleStart(nextTitleToShow);
 			}
 		}
-		text.fontSize = Screen.height / textSize;
 	}
 
 	public bool ShouldBeVisible
