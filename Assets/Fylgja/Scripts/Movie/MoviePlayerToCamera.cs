@@ -11,16 +11,14 @@ public class MoviePlayerToCamera : MonoBehaviour
     bool waitingForPlay;
     void Start()
     {
-        Debug.Log("Movie starts. Lets PlayerInteraction know that we are in a form of cutscene");
-        playerInteraction = GameObject.FindObjectOfType<PlayerInteraction>();
-        playerInteraction.OnCutsceneStart();
+        videoPlayer.targetCamera = Camera.main;
+        blackBorderCanvas.worldCamera = Camera.main;
     }
 
     void Update()
     {
         videoPlayer.targetCamera = Camera.main;
         blackBorderCanvas.worldCamera = Camera.main;
-        
         if (waitingForPlay && videoPlayer.isPlaying)
         {
             waitingForPlay = false;
