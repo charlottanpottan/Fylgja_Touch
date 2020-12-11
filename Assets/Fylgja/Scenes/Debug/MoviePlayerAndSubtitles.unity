@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.35872743, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -291,11 +291,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subtitles: {fileID: 1869098884}
-  textToTestWith: "%t0:15 Fylgja - Tyras fantastiska resa \n%t00:34 Tyra \xE4r tio
-    \xE5r och har ingen att leka med.\n%t00:38 Hon har precis flyttat till ett nytt
-    omr\xE5de med mamma och pappa.\n%t00:46 Alla barn h\xE4r g\xE5r antingen i bl\xF6ja.\n
-    Eller s\xE5 r\xF6ker dom och snusar.\n%t00:55 Sommaren har just b\xF6rjat. Det
-    blir varmare f\xF6r varje dag. "
+  textToTestWith: "%t00:15 Fylgja - Tyras fantastiska resa \r\n%t00:34 Tyra \xE4r
+    \ 10 \xE5r och har ingen att leka med.\r\n%t00:38 Hon har precis flyttat till
+    ett nytt omr\xE5de\r\n%t00:41 med mamma och pappa.\r\n%t00:45 Alla barn h\xE4r
+    g\xE5r antingen i bl\xF6ja\r\n%t00:49 eller s\xE5 r\xF6ker de och snusar.\r\n%t00:54
+    Sommaren har just b\xF6rjat\r\n%t00:55 det blir varmare f\xF6r varje dag.\r\n%t00:59
+    Mamma och pappa k\xF6per m\xF6bler p\xE5 Ikea\r\n%t01:01 och s\xE4tter upp tapeter.\r\n%t01:04
+    De verkar ha j\xE4tteroligt.\r\n%t01:08 Tyra undrar om man kan d\xF6 av\r\n%t01:10
+    att bara ha f\xF6r tr\xE5kigt.\r\n%t01:13 I s\xE5 fall ligger hon illa till nu.\r\n%t01:17
+    Deras nya hus ligger vid en sj\xF6.\r\n%t01:19 Tyra g\xE5r ofta dit och badar.\r\n%t01:23
+    Ibland f\xF6ljer mamma och pappa med.\r\n%t01:26 Men f\xF6r det mesta f\xE5r hon
+    bada ensam.\r\n%t01:29 \r\n%t01:38 Den d\xE4r korpen dyker upp allt oftare,\r\n%t01:41
+    men s\xE5 h\xE4r n\xE4r har den aldrig varit f\xF6rut.\r\n%t01:44 \u2013 Hej korpen.
+    Vad vill du?\r\n%t01:46 Vill du bada med mig kanske?\r\n%t01:54 \r\n%t01:58 P\xE5
+    n\xE4tterna dr\xF6mmer Tyra konstigt.\r\n%t02:03 Hon dr\xF6mmer om en gammal kvinna,\r\n%t02:06
+    om eldar som brinner natten.\r\n%t02:10 Hon dr\xF6mmer om onda m\xE4n \r\n%t02:11
+    som jagar henne genom skogen.\r\n%t02:16 \r\n%t02:26 Under sommarens varmaste
+    dag\r\n%t02:28 \xE4r Tyra ensam hemma.\r\n%t02:30 Mamma och pappa handlar en f\xE5t\xF6lj.\r\n%t02:35
+    \u2013 Herregud vad du skr\xE4ms!\r\n%t02:38 Men var kommer du ifr\xE5n?\r\n%t02:42
+    Vad vill du? Vill du mig n\xE5got?\r\n%t02:47\r \n%t03:12 Va svalt och sk\xF6nt
+    det var h\xE4r.\r\n%t03:15 Jag tror ska vila mig en stund.\r\n%t03:19 "
 --- !u!4 &1433494749
 Transform:
   m_ObjectHideFlags: 0
