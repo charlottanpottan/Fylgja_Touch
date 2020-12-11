@@ -102,6 +102,10 @@ public class LogicCameraInfoApplicator : MonoBehaviour
 
     void LateUpdate()
     {
+        if (logicCamera == null)
+        {
+            return;
+        }
         if (objectToFollow != null)
         {
             cameraInfo.targetVelocity = (objectToFollow.position - oldTargetPosition) / Time.deltaTime;

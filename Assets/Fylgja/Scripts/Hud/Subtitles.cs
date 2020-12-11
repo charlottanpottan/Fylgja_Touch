@@ -31,14 +31,15 @@ public class Subtitles : MonoBehaviour
 	void Start()
 	{
 		text.text = string.Empty;
-		text.transform.parent.gameObject.SetActive(false);
-		moviePlayerToCamera = FindObjectOfType<MoviePlayerToCamera>();
+		//text.transform.parent.gameObject.SetActive(false);
+		ShowBorder(false);
+
 	}
 
-	bool HasShownTitleForLongTime(float referenceTime)
+	bool HasShownTitleForLongTime()
 	{
 		const float maximumTimeToShowTitleWithoutNext = 7.0f;
-		return referenceTime >= showedTitleAtTime + maximumTimeToShowTitleWithoutNext;
+		return Time.time >= showedTitleAtTime + maximumTimeToShowTitleWithoutNext;
 	}
 	
 	bool IsLongTimeToNextLineOrAtEnd(float referenceTime)
@@ -65,11 +66,11 @@ public class Subtitles : MonoBehaviour
 
 	bool IsShowingBorderButNoLogicalText()
 	{
-		return text.text == string.Empty && titleEnabled;
+		return (text.text == string.Empty) && titleEnabled;
 	}
 	void CloseSubtitleIfLongGapToNextLine(float referenceTime)
 	{
-		if (IsLogicallyShowingText() && HasShownTitleForLongTime(referenceTime) && IsLongTimeToNextLineOrAtEnd(referenceTime) )
+		if (IsLogicallyShowingText() && HasShownTitleForLongTime() && IsLongTimeToNextLineOrAtEnd(referenceTime) )
 		{
 			Debug.Log("Subtitle has been shown too long. closing.");
 			CloseSubtitle();
@@ -103,9 +104,16 @@ public class Subtitles : MonoBehaviour
 		{
 			Debug.Log($"nextTitle moved on to next subtitle {nextTitle} because reference time {referenceTime} > title time: {nextTitleTime}");
 			var nextTitleToShow = nextTitle;
+		
 			nextTitle = string.Empty;
 			OnSubtitleStart(nextTitleToShow);
 		}
+	}
+
+	void ShowBorder(bool on)
+	{
+		titleEnabled = on;
+		text.transform.parent.gameObject.SetActive(on);
 	}
 	
 	void Update()
@@ -113,6 +121,11 @@ public class Subtitles : MonoBehaviour
 		var referenceTime = Time.time;
 		if (nextCommand == Command.VideoTime)
 		{
+			moviePlayerToCamera = FindObjectOfType<MoviePlayerToCamera>();
+			if (moviePlayerToCamera == null)
+			{
+				return;
+			}
 			var movieTimeInSeconds = moviePlayerToCamera.videoPlayer.time;
 			referenceTime = (float) movieTimeInSeconds;
 		}
@@ -120,8 +133,7 @@ public class Subtitles : MonoBehaviour
 		if (IsShowingBorderButNoLogicalText() && IsLongTimeSinceWeLogicallyClosedLine())
 		{
 			Debug.Log("Subtitle timed out subtitle");
-			titleEnabled = false;
-			text.transform.parent.gameObject.SetActive(false);
+			ShowBorder(false);
 		}
 
 		CloseSubtitleIfLongGapToNextLine(referenceTime);
@@ -219,19 +231,27 @@ public class Subtitles : MonoBehaviour
 		{
 			return;
 		}
-		text.text = ParseUpcomingCommandsAndReturnStringToDisplay(title);
+		var textToDisplay = ParseUpcomingCommandsAndReturnStringToDisplay(title);
+		if (textToDisplay.Trim() == "|")
+		{
+			Debug.Log("Intentionally empty line. Do not show anything.");
+			textToDisplay = string.Empty;
+			ShowBorder(false);
+		}
+
+		text.text = textToDisplay;
+		
 		if (text.text.Length == 0)
 		{
 			return;
 		}
+		
 		Debug.Log($"Subtitle start: (after) {{text.text}} next subtitle is at {nextTitleTime} with '{nextTitle}'");
 		if (shouldBeVisible)
 		{
-			titleEnabled = true;
-			text.transform.parent.gameObject.SetActive(true);
+			ShowBorder(true);
+			showedTitleAtTime = Time.time;
 		}
-
-		showedTitleAtTime = Time.time;
 	}
 
 	void CloseSubtitle()

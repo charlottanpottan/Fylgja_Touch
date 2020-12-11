@@ -138,7 +138,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 
     public void PlayScene(AvatarToPlayerNotifications notifications)
     {
-        Debug.Log("PlayScene!" + name + " resuming:" + isResuming);
+        Debug.Log($"PlayScene! {name} resuming: {isResuming} {Time.time}");
         DebugUtilities.Assert(notifications != null, "Player notifications can not be null");
         playerNotifications = notifications;
         if (fadeAtStart)
@@ -154,6 +154,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 
     void PreSceneFadeOutDone()
     {
+        Debug.Log("pre scene fade is done");
         PrepareScene();
         PlayNextLine();
 
@@ -214,9 +215,8 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 
     public IAvatar GetMainAvatar()
     {
-        SceneActor mainActor = GetSceneActor("Tyra");
-
-        if (!mainActor)
+        SceneActor mainActor = FindSceneActor("Tyra");
+        if (mainActor == null)
         {
             return null;
         }
@@ -227,6 +227,10 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     void SetInteractionForMainCharacter(bool enabled)
     {
         var avatar = GetMainAvatar();
+        if (avatar == null)
+        {
+            return;
+        }
 
         if (!enabled)
         {
@@ -246,7 +250,11 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     void SetMovementForMainCharacter(bool enabled)
     {
         var avatar = GetMainAvatar();
-
+        if (avatar == null)
+        {
+            return;
+        }
+        
         if (!enabled)
         {
             if (dontMoveModifier == null)
@@ -329,7 +337,8 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     {
         if (!isActingScene)
         {
-            if (fadeOutDoneAt > 0 && Time.time > fadeOutDoneAt)
+            Debug.Log($"is not acting {Time.time} > {fadeOutDoneAt}");
+            if (fadeOutDoneAt >= 0 && Time.time > fadeOutDoneAt)
             {
                 fadeOutDoneAt = -1.0f;
                 PreSceneFadeOutDone();
@@ -338,7 +347,8 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         }
         else if (isEndOfScene)
         {
-            if (fadeOutDoneAt > 0 && Time.time > fadeOutDoneAt)
+            Debug.Log("is isEndOfScene");
+            if (fadeOutDoneAt >= 0 && Time.time > fadeOutDoneAt)
             {
                 fadeOutDoneAt = -1.0f;
                 PostSceneFadeOutDone();
@@ -348,6 +358,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 
         if (gotoNextLine)
         {
+            Debug.Log("go to next line");
             PlayNextLine();
         }
         else if (activeLine.CanBeInterrupted() && skippable && Input.GetButtonDown("interact") && !GetMainAvatar().player.playerInteraction.AllowedToUseUI)
@@ -377,6 +388,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
             activeLine = null;
         }
 
+        Debug.Log($"play next line {lineIndex} ");
         activeLine = lines[lineIndex];
         if (activeLine)
             Debug.Log("Actorscene " + name + " sets line: " + activeLine.name + " _________________________________________");
@@ -458,6 +470,7 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 
     public GameObject GetActor(string name)
     {
+        Debug.Log($"fetching actor {name}");
         DebugUtilities.Assert(actorsInScene.ContainsKey(name), "We have no actor named '" + name + "'");
         return actorsInScene[name];
     }
@@ -470,6 +483,17 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
     public SceneActor GetSceneActor(string name)
     {
         return GetActor(name).GetComponentInChildren<SceneActor>();
+    }
+
+    public SceneActor FindSceneActor(string name)
+    {
+        var worked = actorsInScene.TryGetValue(name, out var gameObject);
+        if (!worked)
+        {
+            return null;
+        }
+        
+        return gameObject.GetComponentInChildren<SceneActor>();
     }
 
     void FindActorsInWorld()
@@ -492,8 +516,10 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
 
     void PlaceActorsBeforeScene()
     {
+        Debug.Log("place actors");
         foreach (var actor in actors)
         {
+            Debug.Log("place actor '{actor}'");
             var actorObject = GetActor(actor.name);
             var sceneActor = actor.GetComponentInChildren<SceneActor>();
             if (sceneActor)

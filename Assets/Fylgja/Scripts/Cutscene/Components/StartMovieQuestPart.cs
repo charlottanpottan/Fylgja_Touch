@@ -6,14 +6,14 @@ public class StartMovieQuestPart : ActorSceneComponent
     public VideoClip videoClip;
     public GameObject moviePlayerToSpawn;
 
-    MoviePlayer moviePlayer;
+    MoviePlayerToCamera moviePlayer;
 
     protected override void Act()
     {
         Debug.Log("StartMovieQuestPart found");
-        GameObject moviePrefab = Instantiate(moviePlayerToSpawn, transform.position, transform.rotation) as GameObject;
-        moviePlayer = moviePrefab.GetComponent<MoviePlayer>();
-        moviePlayer.PlayMovie(actingInScene.GetPlayerNotifications(), videoClip, OnCutscenePlayed);
+        var moviePrefab = Instantiate(moviePlayerToSpawn, transform.position, transform.rotation) as GameObject;
+        moviePlayer = moviePrefab.GetComponent<MoviePlayerToCamera>();
+        moviePlayer.PlayMovie(videoClip, OnCutscenePlayed);
     }
 
     public void OnCutscenePlayed()

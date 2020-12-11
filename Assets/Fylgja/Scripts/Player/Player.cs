@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
 		if (avatar == null)
 		{
 			var logic = GameObject.Find("LevelLogic");
+			if (logic == null)
+			{
+				return;
+			}
 			logic.SendMessage("OnPlayerEnter", this);
 		}
 	}

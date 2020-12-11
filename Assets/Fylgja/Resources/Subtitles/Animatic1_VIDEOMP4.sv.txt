@@ -1,0 +1,41 @@
+%t00:15 <color=red>Fylgja</color> - <b>Tyras</b> <i>fantastiska</i> resa
+%t00:20 |
+%t00:34 Tyra är 10 år och har ingen att leka med.
+%t00:38 Hon har precis flyttat till ett nytt område
+%t00:41 med mamma och pappa.
+%t00:45 Alla barn här går antingen i blöja
+%t00:49 eller så röker de och snusar.
+%t00:54 Sommaren har just börjat
+%t00:56 det blir varmare för varje dag.
+%t00:59 Mamma och pappa köper möbler på ikea
+%t01:02 och sätter upp tapeter.
+%t01:04 De verkar ha jätteroligt.
+%t01:08 Tyra undrar om man kan dö av
+%t01:10 att bara ha <i>för</i> tråkigt.
+%t01:13 I så fall ligger hon illa till nu.
+%t01:17 Deras nya hus ligger vid en sjö.
+%t01:19 Tyra går ofta dit och badar. 
+%t01:23 Ibland följer mamma och pappa med.
+%t01:26 Men för det mesta får hon bada ensam.
+%t01:29 |
+%t01:38 Den där korpen dyker upp allt oftare,  
+%t01:41 men så här nära har den aldrig varit förut.
+%t01:44 <color=teal>– Hej korpen. Vad vill du?</color>
+%t01:46 <color=teal>Vill du bada med mig kanske?</color>
+%t01:49 |
+%t01:58 På nätterna drömmer Tyra konstigt.
+%t02:03 Hon drömmer om en gammal kvinna,
+%t02:06 om eldar som brinner i natten.
+%t02:10 Hon drömmer om onda män
+%t02:11 som jagar henne genom skogen.
+%t02:16 |
+%t02:26 Under sommarens varmaste dag
+%t02:28 är Tyra ensam hemma.
+%t02:30 Mamma och pappa handlar en fåtölj.
+%t02:36 <color=teal>– Herregud vad du skräms!</color>
+%t02:38 <color=teal>Men var kommer du ifrån?</color>
+%t02:42 <color=teal>Vad vill du? Vill du mig något?</color>
+%t02:47 |
+%t03:12 <color=teal>Va svalt och skönt det var här.</color>
+%t03:15 <color=teal>Jag tror ska vila mig en stund.</color>
+%t03:19 |

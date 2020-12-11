@@ -4,7 +4,6 @@ using UnityEngine.Video;
 
 public class MoviePlayer : MonoBehaviour
 {
-    public bool fadeInAfter = false;
     public delegate void MovieEnd();
     public FadeInFadeOut fadeInFadeOut;
     public MovieEnd endFunction;
@@ -78,10 +77,6 @@ public class MoviePlayer : MonoBehaviour
         if (fadeListener == null)
         {
             fadeListener = GameObject.FindGameObjectWithTag("Listener").GetComponent<FadeListener>();
-        }
-        if (fadeInAfter)
-        {
-            fadeListener.SetTargetVolume(1);
         }
         fadeListener.OnFadeListener(0);
         Debug.Log("STOP MOVIE!!!!");
