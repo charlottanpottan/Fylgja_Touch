@@ -13,11 +13,15 @@ public class MoviePlayerToCamera : MonoBehaviour
     bool movieIsStarted;
     bool waitingForPlay;
     private FadeListener fadeListener;
+    private Subtitles subtitles;
     void Start()
     {
         var gameplayCamera = GameObject.FindGameObjectWithTag("GameplayCamera").GetComponent<Camera>();
         videoPlayer.targetCamera = gameplayCamera;
         blackBorderCanvas.worldCamera = gameplayCamera;
+        blackBorderCanvas.planeDistance = 1.0f;
+        
+        
     }
 
     public void PlayMovie(VideoClip videoClip, MovieEnd function)
@@ -39,8 +43,7 @@ public class MoviePlayerToCamera : MonoBehaviour
     
         var subtitlesObject = GameObject.Find("Subtitles");
         Debug.Log($"Found gameobject {subtitlesObject.name}");
-        var subtitles = subtitlesObject.GetComponent<Subtitles>();
-        subtitles.ShouldBeVisible = true;
+        subtitles = subtitlesObject.GetComponent<Subtitles>();
         subtitles.OnSubtitleStart(textAsset.text);
         fadeListener.SetTargetVolume(0);
         fadeListener.OnFadeListener(0);
@@ -63,17 +66,18 @@ public class MoviePlayerToCamera : MonoBehaviour
             fadeListener = GameObject.FindGameObjectWithTag("Listener").GetComponent<FadeListener>();
         }
 
-        fadeListener.OnFadeListener(0);
         Debug.Log("STOP MOVIE!!!!");
+        subtitles.OnSubtitleStop();
 
         videoPlayer.Stop();
 
-        GetComponent<AudioSource>().Stop();
         movieIsStarted = false;
         Time.timeScale = 1;
         endFunction();
 
         fadeInFadeOut.SetToBlack();
+        fadeListener.OnFadeListener(0);
+        fadeListener.SetTargetVolume(1.0f);
         Destroy(transform.root.gameObject);
     }
 
@@ -98,5 +102,6 @@ public class MoviePlayerToCamera : MonoBehaviour
     private void MoviePlayingDone()
     {
         Debug.Log("Movie play stopped");
+        subtitles.OnSubtitleStop();
     }
 }

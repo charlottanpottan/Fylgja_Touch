@@ -11,6 +11,11 @@ public class StartMovieQuestPart : ActorSceneComponent
     protected override void Act()
     {
         Debug.Log("StartMovieQuestPart found");
+        var avatar = actingInScene.GetMainAvatar();
+        if (avatar)
+        {
+            avatar.OnCutsceneStart();
+        }
         var moviePrefab = Instantiate(moviePlayerToSpawn, transform.position, transform.rotation) as GameObject;
         moviePlayer = moviePrefab.GetComponent<MoviePlayerToCamera>();
         moviePlayer.PlayMovie(videoClip, OnCutscenePlayed);
@@ -19,6 +24,11 @@ public class StartMovieQuestPart : ActorSceneComponent
     public void OnCutscenePlayed()
     {
         Debug.Log("MovieQuestPart says DONE!");
+        var avatar = actingInScene.GetMainAvatar();
+        if (avatar)
+        {
+            avatar.OnCutsceneEnd();
+        }
         ComponentDone();
     }
 

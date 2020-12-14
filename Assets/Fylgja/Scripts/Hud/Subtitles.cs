@@ -31,21 +31,7 @@ public class Subtitles : MonoBehaviour
 	void Start()
 	{
 		text.text = string.Empty;
-		//text.transform.parent.gameObject.SetActive(false);
 		ShowBorder(false);
-
-	}
-
-	bool HasShownTitleForLongTime()
-	{
-		const float maximumTimeToShowTitleWithoutNext = 7.0f;
-		return Time.time >= showedTitleAtTime + maximumTimeToShowTitleWithoutNext;
-	}
-	
-	bool IsLongTimeToNextLineOrAtEnd(float referenceTime)
-	{
-		const float longTimeUntilNextSubtitle = 10.0f;
-		return nextTitleTime - referenceTime > longTimeUntilNextSubtitle || nextTitle.Length == 0;
 	}
 
 	bool DoesLogicallyHaveText()
@@ -53,29 +39,18 @@ public class Subtitles : MonoBehaviour
 		return text.text.Length != 0;
 	}
 
-	bool IsLogicallyShowingText()
-	{
-		return titleEnabled && DoesLogicallyHaveText();
-	}
-
-
 	bool IsLongTimeSinceWeLogicallyClosedLine()
 	{
+		Debug.Log($"IsLongTimeSinceWeLogicallyClosedLine: {Time.time} > {closedTextAtTime}");
 		return Time.time > closedTextAtTime + delayAfterSubtitle;
 	}
 
 	bool IsShowingBorderButNoLogicalText()
 	{
+		Debug.Log($"IsShowingBorderButNoLogicalText: {(text.text == string.Empty)} && {titleEnabled}");
 		return (text.text == string.Empty) && titleEnabled;
 	}
-	void CloseSubtitleIfLongGapToNextLine(float referenceTime)
-	{
-		if (IsLogicallyShowingText() && HasShownTitleForLongTime() && IsLongTimeToNextLineOrAtEnd(referenceTime) )
-		{
-			Debug.Log("Subtitle has been shown too long. closing.");
-			CloseSubtitle();
-		}
-	}
+
 
 	bool IsThereUpcomingText()
 	{
@@ -112,6 +87,7 @@ public class Subtitles : MonoBehaviour
 
 	void ShowBorder(bool on)
 	{
+		Debug.Log($"Show border {on}");
 		titleEnabled = on;
 		text.transform.parent.gameObject.SetActive(on);
 	}
@@ -135,8 +111,6 @@ public class Subtitles : MonoBehaviour
 			Debug.Log("Subtitle timed out subtitle");
 			ShowBorder(false);
 		}
-
-		CloseSubtitleIfLongGapToNextLine(referenceTime);
 		
 		if (IsThereUpcomingText())
 		{
@@ -254,17 +228,25 @@ public class Subtitles : MonoBehaviour
 		}
 	}
 
+	/// <summary>
+	/// Clears the text and it will eventually time out and close the border around the subtitles.
+	/// </summary>
 	void CloseSubtitle()
 	{
-		Debug.Log("Subtitle stop:");
+		Debug.Log("Subtitle close");
 		text.text = string.Empty;
 		closedTextAtTime = Time.time;
 	}
 	
+	/// <summary>
+	/// Forces the subtitles to not show any text or border. Usually since a movie or cutscene has ended.
+	/// </summary>
 	public void OnSubtitleStop()
 	{
+		Debug.Log("Subtitle stop");
 		CloseSubtitle();
 		nextTitle = string.Empty;
 		nextTitleTime = 0;
+		ShowBorder(false);
 	}
 }
