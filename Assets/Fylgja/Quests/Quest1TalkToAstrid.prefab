@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoClip: {fileID: 32900000, guid: 0a3bed7f721db5471a2a85a68f357d06, type: 3}
+  videoClip: {fileID: 32900000, guid: e7f17111bbdb2982f8e8dc25bd2d96e5, type: 3}
   moviePlayerToSpawn: {fileID: 1415625371352294705, guid: e84c41cc1d96984a89089da2f47b6446,
     type: 3}
 --- !u!1 &100002

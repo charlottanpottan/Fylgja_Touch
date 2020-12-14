@@ -63,7 +63,8 @@ MonoBehaviour:
   - {fileID: 11400010}
   actorsAfterScene: []
   keepAvatarLocked: 0
-  useFader: 0
+  fadeAtStart: 0
+  fadeAtEnd: 0
   skippable: 1
   questName: Quest7IgniteFirePitB
   priorQuest: {fileID: 11400002, guid: 1cce8033a59344349aaa75d6ce7f42c4, type: 3}
@@ -246,9 +247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
-  videoClip: {fileID: 32900000, guid: 48391ecf018294d198bdc1274657a444, type: 3}
-  moviePlayerToSpawn: {fileID: 100000, guid: 1654480f2d5c14c89bc07236afce0fc1, type: 3}
+  videoClip: {fileID: 32900000, guid: b921d74f85abc558f8c86beaa74489af, type: 3}
+  moviePlayerToSpawn: {fileID: 1415625371352294705, guid: e84c41cc1d96984a89089da2f47b6446,
+    type: 3}
 --- !u!1 &100010
 GameObject:
   m_ObjectHideFlags: 0

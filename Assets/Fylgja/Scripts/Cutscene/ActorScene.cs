@@ -347,7 +347,6 @@ public class ActorScene : MonoBehaviour, ActorSceneComponentNotification
         }
         else if (isEndOfScene)
         {
-            Debug.Log("is isEndOfScene");
             if (fadeOutDoneAt >= 0 && Time.time > fadeOutDoneAt)
             {
                 fadeOutDoneAt = -1.0f;

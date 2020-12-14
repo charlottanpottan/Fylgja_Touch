@@ -1326,8 +1326,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cfeb29ede8425c9f1ec4681eb5c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoClip: {fileID: 32900000, guid: 1b52c46d146b24d24857653959c0f79f, type: 3}
-  moviePlayerToSpawn: {fileID: 100000, guid: 86658dbd2e98b4ba7a4307c2877112d8, type: 3}
+  videoClip: {fileID: 32900000, guid: 78adc27fcbedeea489e9f64740560846, type: 3}
+  moviePlayerToSpawn: {fileID: 1415625371352294705, guid: e84c41cc1d96984a89089da2f47b6446,
+    type: 3}
 --- !u!1 &3558051337968376438
 GameObject:
   m_ObjectHideFlags: 0

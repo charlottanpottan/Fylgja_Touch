@@ -41,13 +41,11 @@ public class Subtitles : MonoBehaviour
 
 	bool IsLongTimeSinceWeLogicallyClosedLine()
 	{
-		Debug.Log($"IsLongTimeSinceWeLogicallyClosedLine: {Time.time} > {closedTextAtTime}");
 		return Time.time > closedTextAtTime + delayAfterSubtitle;
 	}
 
 	bool IsShowingBorderButNoLogicalText()
 	{
-		Debug.Log($"IsShowingBorderButNoLogicalText: {(text.text == string.Empty)} && {titleEnabled}");
 		return (text.text == string.Empty) && titleEnabled;
 	}
 

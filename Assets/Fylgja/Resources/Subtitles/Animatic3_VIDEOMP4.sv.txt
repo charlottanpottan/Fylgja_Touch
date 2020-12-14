@@ -1,10 +1,10 @@
 %t00:06 Ta det här smycket Tyra,
-%t00:08gå till sjön där du vaknade sist
+%t00:08 gå till sjön där du vaknade sist
 %t00:10 och offra smycket till gudarna.
 %t00:12 Då kommer de att minnas dig för alltid
 %t00:14 och jag kommer vara med dig
 %t00:16 genom tiderna.
-%t00:18 (inget)
+%t00:18 |
 %t00:24 Kul att du kunde komma i alla fall.
 %t00:29 Va trött jag blev!
 %t00:36 När Tyra vaknar är allt som vanligt det känns som om hon bara varit
@@ -68,4 +68,4 @@
 %t02:51 bronsålder borta vid kokgroparna!
 %t02:54 Vad sjutton är kokgropar?
 %t02:56 undrade Erik.
-%t02:59 
+%t02:59 |

@@ -36,7 +36,7 @@ public class MoviePlayerToCamera : MonoBehaviour
         var textAsset = Resources.Load(subtitlesPath) as TextAsset;
         if (textAsset == null)
         {
-            Debug.LogError($"missing subtitles text");
+            Debug.LogError($"missing subtitles text, should have been here '{subtitlesPath}'");
         }
 
         Debug.Log($"found text:{textAsset.text}");
@@ -103,5 +103,6 @@ public class MoviePlayerToCamera : MonoBehaviour
     {
         Debug.Log("Movie play stopped");
         subtitles.OnSubtitleStop();
+        StopMovie();
     }
 }
