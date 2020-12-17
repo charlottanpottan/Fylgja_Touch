@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SplashScreenTextLogic : MonoBehaviour {
 	
 	private float screenWidth;
 	private Rect[] guiTextureSizes;
-	public GUITexture[] guiTextures;
+	public Image[] guiTextures;
 	
 	// Use this for initialization
 	void Start () 
@@ -13,7 +14,7 @@ public class SplashScreenTextLogic : MonoBehaviour {
 		guiTextureSizes = new Rect[guiTextures.Length];
 		for(int i = 0; i < guiTextures.Length; i++)
 		{
-			guiTextureSizes[i] = guiTextures[i].pixelInset;
+			//guiTextureSizes[i] = guiTextures[i].pixelInset;
 		}
 		FixResolution();
 	}
@@ -33,7 +34,7 @@ public class SplashScreenTextLogic : MonoBehaviour {
 
 		for(int i = 0; i < guiTextures.Length; i++)
 		{
-			guiTextures[i].pixelInset = new Rect(guiTextureSizes[i].x * screenWidth, guiTextureSizes[i].y * screenWidth, guiTextureSizes[i].width * screenWidth, guiTextureSizes[i].height * screenWidth);
+			//guiTextures[i].pixelInset = new Rect(guiTextureSizes[i].x * screenWidth, guiTextureSizes[i].y * screenWidth, guiTextureSizes[i].width * screenWidth, guiTextureSizes[i].height * screenWidth);
 		}
 
 	}

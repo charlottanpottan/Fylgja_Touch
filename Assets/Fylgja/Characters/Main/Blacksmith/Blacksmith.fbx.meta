@@ -1,181 +1,435 @@
-fileFormatVersion: 1
+fileFormatVersion: 2
 guid: 5a9b6b5aa1209471c937a7ec7c5a3a11
 ModelImporter:
-  importerVersion: 7
-  meshes:
-    scaleFactor: 0.01
-    useFileUnits: 1
-    meshCompression: 0
-    generateColliders: 0
-    swapUVs: 0
-  tangentSpace:
-    normalImportMode: 0
-    tangentImportMode: 1
-    smoothingAngle: 60
-    splitTangents: 1
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      43: 4300000
+    second: blacksmith
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      4: 400070
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      1: 100070
+    second: //RootNode
+  - first:
+      4: 400062
+    second: L_ankle_joint
+  - first:
+      1: 100062
+    second: L_ankle_joint
+  - first:
+      4: 400018
+    second: L_clavicle_joint
+  - first:
+      1: 100018
+    second: L_clavicle_joint
+  - first:
+      4: 400094
+    second: L_elbow_joint
+  - first:
+      1: 100094
+    second: L_elbow_joint
+  - first:
+      4: 400078
+    second: L_eye_lid_joint
+  - first:
+      1: 100078
+    second: L_eye_lid_joint
+  - first:
+      4: 400082
+    second: L_foot_joint
+  - first:
+      1: 100082
+    second: L_foot_joint
+  - first:
+      4: 400076
+    second: L_hand_joint
+  - first:
+      1: 100076
+    second: L_hand_joint
+  - first:
+      4: 400096
+    second: L_hip_joint
+  - first:
+      1: 100096
+    second: L_hip_joint
+  - first:
+      4: 400098
+    second: L_indexFinger_01_joint
+  - first:
+      1: 100098
+    second: L_indexFinger_01_joint
+  - first:
+      4: 400016
+    second: L_indexFinger_02_joint
+  - first:
+      1: 100016
+    second: L_indexFinger_02_joint
+  - first:
+      4: 400086
+    second: L_indexFinger_03_joint
+  - first:
+      1: 100086
+    second: L_indexFinger_03_joint
+  - first:
+      4: 400040
+    second: L_knee_joint
+  - first:
+      1: 100040
+    second: L_knee_joint
+  - first:
+      4: 400090
+    second: L_lip_joint
+  - first:
+      1: 100090
+    second: L_lip_joint
+  - first:
+      4: 400000
+    second: L_shoulder_joint
+  - first:
+      1: 100000
+    second: L_shoulder_joint
+  - first:
+      4: 400084
+    second: L_threeFinger_01_joint
+  - first:
+      1: 100084
+    second: L_threeFinger_01_joint
+  - first:
+      4: 400042
+    second: L_threeFinger_02_joint
+  - first:
+      1: 100042
+    second: L_threeFinger_02_joint
+  - first:
+      4: 400012
+    second: L_threeFinger_03_joint
+  - first:
+      1: 100012
+    second: L_threeFinger_03_joint
+  - first:
+      4: 400054
+    second: L_thumb_01_joint
+  - first:
+      1: 100054
+    second: L_thumb_01_joint
+  - first:
+      4: 400006
+    second: L_thumb_02_joint
+  - first:
+      1: 100006
+    second: L_thumb_02_joint
+  - first:
+      4: 400038
+    second: L_thumb_03_joint
+  - first:
+      1: 100038
+    second: L_thumb_03_joint
+  - first:
+      4: 400046
+    second: R_ankle_joint
+  - first:
+      1: 100046
+    second: R_ankle_joint
+  - first:
+      4: 400034
+    second: R_clavicle_joint
+  - first:
+      1: 100034
+    second: R_clavicle_joint
+  - first:
+      4: 400032
+    second: R_elbow_joint
+  - first:
+      1: 100032
+    second: R_elbow_joint
+  - first:
+      4: 400008
+    second: R_eye_lid_joint
+  - first:
+      1: 100008
+    second: R_eye_lid_joint
+  - first:
+      4: 400050
+    second: R_foot_joint
+  - first:
+      1: 100050
+    second: R_foot_joint
+  - first:
+      4: 400026
+    second: R_hand_joint
+  - first:
+      1: 100026
+    second: R_hand_joint
+  - first:
+      4: 400052
+    second: R_hip_joint
+  - first:
+      1: 100052
+    second: R_hip_joint
+  - first:
+      4: 400014
+    second: R_indexFinger_01_joint
+  - first:
+      1: 100014
+    second: R_indexFinger_01_joint
+  - first:
+      4: 400004
+    second: R_indexFinger_02_joint
+  - first:
+      1: 100004
+    second: R_indexFinger_02_joint
+  - first:
+      4: 400030
+    second: R_indexFinger_03_joint
+  - first:
+      1: 100030
+    second: R_indexFinger_03_joint
+  - first:
+      4: 400088
+    second: R_knee_joint
+  - first:
+      1: 100088
+    second: R_knee_joint
+  - first:
+      4: 400068
+    second: R_lip_joint
+  - first:
+      1: 100068
+    second: R_lip_joint
+  - first:
+      4: 400048
+    second: R_shoulder_joint
+  - first:
+      1: 100048
+    second: R_shoulder_joint
+  - first:
+      4: 400056
+    second: R_sword_joint
+  - first:
+      1: 100056
+    second: R_sword_joint
+  - first:
+      4: 400044
+    second: R_threeFinger_01_joint
+  - first:
+      1: 100044
+    second: R_threeFinger_01_joint
+  - first:
+      4: 400036
+    second: R_threeFinger_02_joint
+  - first:
+      1: 100036
+    second: R_threeFinger_02_joint
+  - first:
+      4: 400020
+    second: R_threeFinger_03_joint
+  - first:
+      1: 100020
+    second: R_threeFinger_03_joint
+  - first:
+      4: 400066
+    second: R_thumb_01_joint
+  - first:
+      1: 100066
+    second: R_thumb_01_joint
+  - first:
+      4: 400074
+    second: R_thumb_02_joint
+  - first:
+      1: 100074
+    second: R_thumb_02_joint
+  - first:
+      4: 400064
+    second: R_thumb_03_joint
+  - first:
+      1: 100064
+    second: R_thumb_03_joint
+  - first:
+      4: 400080
+    second: blacksmith
+  - first:
+      1: 100080
+    second: blacksmith
+  - first:
+      4: 400028
+    second: head_joint
+  - first:
+      1: 100028
+    second: head_joint
+  - first:
+      4: 400002
+    second: jaw_joint
+  - first:
+      1: 100002
+    second: jaw_joint
+  - first:
+      4: 400072
+    second: lip_top_joint
+  - first:
+      1: 100072
+    second: lip_top_joint
+  - first:
+      4: 400058
+    second: movement
+  - first:
+      1: 100058
+    second: movement
+  - first:
+      4: 400092
+    second: pelvis_joint
+  - first:
+      137: 13700000
+    second: pelvis_joint
+  - first:
+      1: 100092
+    second: pelvis_joint
+  - first:
+      4: 400060
+    second: spine_01
+  - first:
+      1: 100060
+    second: spine_01
+  - first:
+      4: 400010
+    second: spine_02
+  - first:
+      1: 100010
+    second: spine_02
+  - first:
+      4: 400024
+    second: spine_03
+  - first:
+      1: 100024
+    second: spine_03
+  - first:
+      4: 400022
+    second: spine_04
+  - first:
+      1: 100022
+    second: spine_04
+  externalObjects: {}
   materials:
-    generation: 0
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
   animations:
-    generation: 3
-    bakeAnimations: 0
+    legacyGenerateAnimations: 3
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
-    splitAnimations: 1
-  nodeInfo:
-    L_shoulder_joint:
-    - 100000
-    - 400000
-    jaw_joint:
-    - 100002
-    - 400002
-    R_indexFinger_02_joint:
-    - 100004
-    - 400004
-    L_thumb_02_joint:
-    - 100006
-    - 400006
-    R_eye_lid_joint:
-    - 100008
-    - 400008
-    spine_02:
-    - 100010
-    - 400010
-    L_threeFinger_03_joint:
-    - 100012
-    - 400012
-    R_indexFinger_01_joint:
-    - 100014
-    - 400014
-    L_indexFinger_02_joint:
-    - 100016
-    - 400016
-    L_clavicle_joint:
-    - 100018
-    - 400018
-    R_threeFinger_03_joint:
-    - 100020
-    - 400020
-    spine_04:
-    - 100022
-    - 400022
-    spine_03:
-    - 100024
-    - 400024
-    R_hand_joint:
-    - 100026
-    - 400026
-    head_joint:
-    - 100028
-    - 400028
-    R_indexFinger_03_joint:
-    - 100030
-    - 400030
-    R_elbow_joint:
-    - 100032
-    - 400032
-    R_clavicle_joint:
-    - 100034
-    - 400034
-    R_threeFinger_02_joint:
-    - 100036
-    - 400036
-    L_thumb_03_joint:
-    - 100038
-    - 400038
-    L_knee_joint:
-    - 100040
-    - 400040
-    L_threeFinger_02_joint:
-    - 100042
-    - 400042
-    R_threeFinger_01_joint:
-    - 100044
-    - 400044
-    R_ankle_joint:
-    - 100046
-    - 400046
-    R_shoulder_joint:
-    - 100048
-    - 400048
-    R_foot_joint:
-    - 100050
-    - 400050
-    R_hip_joint:
-    - 100052
-    - 400052
-    L_thumb_01_joint:
-    - 100054
-    - 400054
-    R_sword_joint:
-    - 100056
-    - 400056
-    movement:
-    - 100058
-    - 400058
-    spine_01:
-    - 100060
-    - 400060
-    L_ankle_joint:
-    - 100062
-    - 400062
-    R_thumb_03_joint:
-    - 100064
-    - 400064
-    R_thumb_01_joint:
-    - 100066
-    - 400066
-    R_lip_joint:
-    - 100068
-    - 400068
-    //RootNode:
-    - 100070
-    - 400070
-    - 11100000
-    lip_top_joint:
-    - 100072
-    - 400072
-    R_thumb_02_joint:
-    - 100074
-    - 400074
-    L_hand_joint:
-    - 100076
-    - 400076
-    L_eye_lid_joint:
-    - 100078
-    - 400078
-    blacksmith:
-    - 100080
-    - 400080
-    L_foot_joint:
-    - 100082
-    - 400082
-    L_threeFinger_01_joint:
-    - 100084
-    - 400084
-    L_indexFinger_03_joint:
-    - 100086
-    - 400086
-    R_knee_joint:
-    - 100088
-    - 400088
-    L_lip_joint:
-    - 100090
-    - 400090
-    pelvis_joint:
-    - 100092
-    - 400092
-    - 13700000
-    L_elbow_joint:
-    - 100094
-    - 400094
-    L_hip_joint:
-    - 100096
-    - 400096
-    L_indexFinger_01_joint:
-    - 100098
-    - 400098
-AssetImporter:
-  importerVersion: 1
-  fileIDToRecycleName:
-    4300000: blacksmith
-    7400000: Take 001 //// Blacksmith
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - d251000bd21012d499abf9a03530c6a6
+  - 4dee09f75a4d2104688c855fc29ae491
+  - 8248ba091a7904b4abb02ba20564ce5d
+  - 30ae4a43f8e632c478bb01c057178d59
+  - 309e426a8816dd84081127fa503b2459
+  - d6c08d39db0f8944d9f07044870b47e3
+  - 70e2bff65e9c737459bbd85cceb06f06
+  - 3dedea8afda50c14ea04555e5c182bfb
+  - 748071ff551779347bcd9cd92acd4b7b
+  - 00e95e7526bf56e4699b4ccf9e7531d3
+  - 4f349d417ad822f4590c4c3c488a0f27
+  - 261950ba084c9464a9f7cb745e6192fd
+  - 5b443ac08ea598e44b2f5971f8f509cf
+  - 99e0ad3a99f053d46ac98eed80bde97b
+  - 42f6c8acd0a3bed46a330093cc82ae49
+  - 0a972a2b83e54a34e9a6754e7442ea55
+  - 1f774afcae810f545b0703e38af67b88
+  - e17ede56fa628bb4f9ae29e9ba1f962b
+  - 8f2a98d7c93ea7d4498e26231b15b378
+  - 4236dfd8e35018b43ae5ca2051d6f8f1
+  - ee57449244c94ff4f97cffcab34d486d
+  - d2c406e6c2dfc83438ae492bbe614ed8
+  - 4c18fa1c928b34c4cbf73b5f7e85c27d
+  - 812a99bda7896490884466070502a59c
+  - ff5bfd1fce88f86478a7acae9310b12b
+  - 1f05a5ed16dfb5e47a767054eba5ddca
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
