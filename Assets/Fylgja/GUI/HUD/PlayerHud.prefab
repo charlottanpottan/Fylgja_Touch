@@ -527,7 +527,7 @@ MonoBehaviour:
   cam: {fileID: 2000002}
   borderMeshRenderer: {fileID: 2300008}
   screenX: 0
-  screenY: 0.9
+  screenY: 0.88
   xOffset: 0.6
   yOffset: 0
 --- !u!1 &100020
