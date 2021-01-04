@@ -1,4 +1,4 @@
-%t00:15 <color=red>Fylgja</color> - <b>Tyras</b> <i>fantastiska</i> resa
+%t00:15 Fylgja - Tyras fantastiska resa
 %t00:20 |
 %t00:34 Tyra är 10 år och har ingen att leka med.
 %t00:38 Hon har precis flyttat till ett nytt område
@@ -20,8 +20,8 @@
 %t01:29 |
 %t01:38 Den där korpen dyker upp allt oftare,  
 %t01:41 men så här nära har den aldrig varit förut.
-%t01:44 <color=teal>– Hej korpen. Vad vill du?</color>
-%t01:46 <color=teal>Vill du bada med mig kanske?</color>
+%t01:44 – Hej korpen. Vad vill du?
+%t01:46 Vill du bada med mig kanske?
 %t01:49 |
 %t01:58 På nätterna drömmer Tyra konstigt.
 %t02:03 Hon drömmer om en gammal kvinna,
@@ -32,10 +32,10 @@
 %t02:26 Under sommarens varmaste dag
 %t02:28 är Tyra ensam hemma.
 %t02:30 Mamma och pappa handlar en fåtölj.
-%t02:36 <color=teal>– Herregud vad du skräms!</color>
-%t02:38 <color=teal>Men var kommer du ifrån?</color>
-%t02:42 <color=teal>Vad vill du? Vill du mig något?</color>
+%t02:36 – Herregud vad du skräms!
+%t02:38 Men var kommer du ifrån?
+%t02:42 Vad vill du? Vill du mig något?
 %t02:47 |
-%t03:12 <color=teal>Va svalt och skönt det var här.</color>
-%t03:15 <color=teal>Jag tror ska vila mig en stund.</color>
+%t03:12 Va svalt och skönt det var här.
+%t03:15 Jag tror ska vila mig en stund.
 %t03:19 |
