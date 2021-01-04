@@ -512,14 +512,38 @@ public class PlayerInteraction : MonoBehaviour
 			foundGround = false;
 		}
 		
-		if (foundGround && avatarMoveEnabled)
+		if (foundGround)
 		{
-            float mousePositionDelta = (interactButtonDownMousePosition - Input.mousePosition).magnitude;
-
-            if (interactButtonUp && mousePositionDelta < 10)
-			{
-				InteractedWithGround(hit);
-			}
+			const bool avatarBreakAwayEnabled = true;
+            if (avatarMoveEnabled)
+            {
+	            if (interactButtonUp)
+	            {
+			            Debug.Log($"You interacted with ground");
+			            InteractedWithGround(hit);
+	            }
+            }
+            else if (avatarBreakAwayEnabled)
+            {
+	            var avatar = player.AssignedAvatar();
+	            if (!avatar)
+	            {
+		            return;
+	            }
+		
+	            var vehicle = avatar.ControlledVehicle();
+	            var distanceFromVehicle = (vehicle.transform.position - hit.point).magnitude;
+	            var breakAwayThreshold = 1.5f;
+	            if (distanceFromVehicle > breakAwayThreshold)
+	            {
+					Debug.Log($"You interacted with ground, and is not allowed to move, but it is far enough to break away  {distanceFromVehicle} {breakAwayThreshold} {hit.distance}");
+					InteractedWithGround(hit);
+	            }
+	            else
+	            {
+		            Debug.Log($"not enough to break away {distanceFromVehicle} {breakAwayThreshold} {hit.distance}");
+	            }
+            }
 		}
 		else if (mouseOverInteractable == null)
 		{
