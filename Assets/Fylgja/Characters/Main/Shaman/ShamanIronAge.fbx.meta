@@ -1,184 +1,465 @@
-fileFormatVersion: 1
+fileFormatVersion: 2
 guid: 6047175b93d524ccd957e3c6d0dfb352
 ModelImporter:
-  importerVersion: 7
-  meshes:
-    scaleFactor: 0.01
-    useFileUnits: 1
-    meshCompression: 0
-    generateColliders: 0
-    swapUVs: 0
-  tangentSpace:
-    normalImportMode: 0
-    tangentImportMode: 1
-    smoothingAngle: 60
-    splitTangents: 1
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      43: 4300000
+    second: shaman_jaern_mesh
+  - first:
+      43: 4300002
+    second: Agnes_IronAgeMesh
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      4: 400036
+    second: //RootNode
+  - first:
+      1: 100036
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Agnes_IronAgeMesh
+  - first:
+      1: 100004
+    second: Agnes_IronAgeMesh
+  - first:
+      4: 400028
+    second: L_ankle_joint
+  - first:
+      1: 100028
+    second: L_ankle_joint
+  - first:
+      4: 400006
+    second: L_clavicle_joint
+  - first:
+      1: 100006
+    second: L_clavicle_joint
+  - first:
+      4: 400042
+    second: L_elbow_joint
+  - first:
+      1: 100042
+    second: L_elbow_joint
+  - first:
+      4: 400076
+    second: L_eye_lid_joint
+  - first:
+      1: 100076
+    second: L_eye_lid_joint
+  - first:
+      4: 400032
+    second: L_foot_joint
+  - first:
+      1: 100032
+    second: L_foot_joint
+  - first:
+      4: 400016
+    second: L_hand_joint
+  - first:
+      1: 100016
+    second: L_hand_joint
+  - first:
+      4: 400020
+    second: L_hip_joint
+  - first:
+      1: 100020
+    second: L_hip_joint
+  - first:
+      4: 400010
+    second: L_indexFinger_01_joint
+  - first:
+      1: 100010
+    second: L_indexFinger_01_joint
+  - first:
+      4: 400090
+    second: L_indexFinger_02_joint
+  - first:
+      1: 100090
+    second: L_indexFinger_02_joint
+  - first:
+      4: 400084
+    second: L_indexFinger_03_joint
+  - first:
+      1: 100084
+    second: L_indexFinger_03_joint
+  - first:
+      4: 400064
+    second: L_knee_joint
+  - first:
+      1: 100064
+    second: L_knee_joint
+  - first:
+      4: 400096
+    second: L_lip_joint
+  - first:
+      1: 100096
+    second: L_lip_joint
+  - first:
+      4: 400030
+    second: L_pouch_joint
+  - first:
+      1: 100030
+    second: L_pouch_joint
+  - first:
+      4: 400024
+    second: L_shoulder_joint
+  - first:
+      1: 100024
+    second: L_shoulder_joint
+  - first:
+      4: 400040
+    second: L_threeFinger_01_joint
+  - first:
+      1: 100040
+    second: L_threeFinger_01_joint
+  - first:
+      4: 400082
+    second: L_threeFinger_02_joint
+  - first:
+      1: 100082
+    second: L_threeFinger_02_joint
+  - first:
+      4: 400060
+    second: L_threeFinger_03_joint
+  - first:
+      1: 100060
+    second: L_threeFinger_03_joint
+  - first:
+      4: 400052
+    second: L_thumb_01_joint
+  - first:
+      1: 100052
+    second: L_thumb_01_joint
+  - first:
+      4: 400026
+    second: L_thumb_02_joint
+  - first:
+      1: 100026
+    second: L_thumb_02_joint
+  - first:
+      4: 400022
+    second: L_thumb_03_joint
+  - first:
+      1: 100022
+    second: L_thumb_03_joint
+  - first:
+      4: 400088
+    second: R_ankle_joint
+  - first:
+      1: 100088
+    second: R_ankle_joint
+  - first:
+      4: 400056
+    second: R_clavicle_joint
+  - first:
+      1: 100056
+    second: R_clavicle_joint
+  - first:
+      4: 400048
+    second: R_elbow_joint
+  - first:
+      1: 100048
+    second: R_elbow_joint
+  - first:
+      4: 400038
+    second: R_eye_lid_joint
+  - first:
+      1: 100038
+    second: R_eye_lid_joint
+  - first:
+      4: 400062
+    second: R_foot_joint
+  - first:
+      1: 100062
+    second: R_foot_joint
+  - first:
+      4: 400098
+    second: R_hand_joint
+  - first:
+      1: 100098
+    second: R_hand_joint
+  - first:
+      4: 400100
+    second: R_hip_joint
+  - first:
+      1: 100100
+    second: R_hip_joint
+  - first:
+      4: 400008
+    second: R_indexFinger_01_joint
+  - first:
+      1: 100008
+    second: R_indexFinger_01_joint
+  - first:
+      4: 400092
+    second: R_indexFinger_02_joint
+  - first:
+      1: 100092
+    second: R_indexFinger_02_joint
+  - first:
+      4: 400078
+    second: R_indexFinger_03_joint
+  - first:
+      1: 100078
+    second: R_indexFinger_03_joint
+  - first:
+      4: 400066
+    second: R_knee_joint
+  - first:
+      1: 100066
+    second: R_knee_joint
+  - first:
+      4: 400094
+    second: R_lip_joint
+  - first:
+      1: 100094
+    second: R_lip_joint
+  - first:
+      4: 400086
+    second: R_pouch_joint
+  - first:
+      1: 100086
+    second: R_pouch_joint
+  - first:
+      4: 400012
+    second: R_shoulder_joint
+  - first:
+      1: 100012
+    second: R_shoulder_joint
+  - first:
+      4: 400058
+    second: R_threeFinger_01_joint
+  - first:
+      1: 100058
+    second: R_threeFinger_01_joint
+  - first:
+      4: 400014
+    second: R_threeFinger_02_joint
+  - first:
+      1: 100014
+    second: R_threeFinger_02_joint
+  - first:
+      4: 400018
+    second: R_threeFinger_03_joint
+  - first:
+      1: 100018
+    second: R_threeFinger_03_joint
+  - first:
+      4: 400046
+    second: R_thumb_01_joint
+  - first:
+      1: 100046
+    second: R_thumb_01_joint
+  - first:
+      4: 400072
+    second: R_thumb_02_joint
+  - first:
+      1: 100072
+    second: R_thumb_02_joint
+  - first:
+      4: 400000
+    second: R_thumb_03_joint
+  - first:
+      1: 100000
+    second: R_thumb_03_joint
+  - first:
+      4: 400054
+    second: head_joint
+  - first:
+      1: 100054
+    second: head_joint
+  - first:
+      4: 400034
+    second: jaw_joint
+  - first:
+      1: 100034
+    second: jaw_joint
+  - first:
+      4: 400074
+    second: lip_top_joint
+  - first:
+      1: 100074
+    second: lip_top_joint
+  - first:
+      137: 13700000
+    second: movement
+  - first:
+      4: 400068
+    second: movement
+  - first:
+      1: 100068
+    second: movement
+  - first:
+      4: 400070
+    second: pelvis_joint
+  - first:
+      1: 100070
+    second: pelvis_joint
+  - first:
+      4: 400080
+    second: spine_01
+  - first:
+      1: 100080
+    second: spine_01
+  - first:
+      4: 400044
+    second: spine_02
+  - first:
+      1: 100044
+    second: spine_02
+  - first:
+      4: 400002
+    second: spine_03
+  - first:
+      1: 100002
+    second: spine_03
+  - first:
+      4: 400050
+    second: spine_04
+  - first:
+      1: 100050
+    second: spine_04
+  externalObjects: {}
   materials:
-    generation: 0
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
   animations:
-    generation: 3
-    bakeAnimations: 0
+    legacyGenerateAnimations: 3
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
-    splitAnimations: 1
-  nodeInfo:
-    R_thumb_03_joint:
-    - 100000
-    - 400000
-    spine_03:
-    - 100002
-    - 400002
-    Agnes_IronAgeMesh:
-    - 100004
-    - 400004
-    L_clavicle_joint:
-    - 100006
-    - 400006
-    R_indexFinger_01_joint:
-    - 100008
-    - 400008
-    L_indexFinger_01_joint:
-    - 100010
-    - 400010
-    R_shoulder_joint:
-    - 100012
-    - 400012
-    R_threeFinger_02_joint:
-    - 100014
-    - 400014
-    L_hand_joint:
-    - 100016
-    - 400016
-    R_threeFinger_03_joint:
-    - 100018
-    - 400018
-    L_hip_joint:
-    - 100020
-    - 400020
-    L_thumb_03_joint:
-    - 100022
-    - 400022
-    L_shoulder_joint:
-    - 100024
-    - 400024
-    L_thumb_02_joint:
-    - 100026
-    - 400026
-    L_ankle_joint:
-    - 100028
-    - 400028
-    L_pouch_joint:
-    - 100030
-    - 400030
-    L_foot_joint:
-    - 100032
-    - 400032
-    jaw_joint:
-    - 100034
-    - 400034
-    //RootNode:
-    - 100036
-    - 400036
-    - 11100000
-    R_eye_lid_joint:
-    - 100038
-    - 400038
-    L_threeFinger_01_joint:
-    - 100040
-    - 400040
-    L_elbow_joint:
-    - 100042
-    - 400042
-    spine_02:
-    - 100044
-    - 400044
-    R_thumb_01_joint:
-    - 100046
-    - 400046
-    R_elbow_joint:
-    - 100048
-    - 400048
-    spine_04:
-    - 100050
-    - 400050
-    L_thumb_01_joint:
-    - 100052
-    - 400052
-    head_joint:
-    - 100054
-    - 400054
-    R_clavicle_joint:
-    - 100056
-    - 400056
-    R_threeFinger_01_joint:
-    - 100058
-    - 400058
-    L_threeFinger_03_joint:
-    - 100060
-    - 400060
-    R_foot_joint:
-    - 100062
-    - 400062
-    L_knee_joint:
-    - 100064
-    - 400064
-    R_knee_joint:
-    - 100066
-    - 400066
-    movement:
-    - 100068
-    - 400068
-    - 13700000
-    pelvis_joint:
-    - 100070
-    - 400070
-    R_thumb_02_joint:
-    - 100072
-    - 400072
-    lip_top_joint:
-    - 100074
-    - 400074
-    L_eye_lid_joint:
-    - 100076
-    - 400076
-    R_indexFinger_03_joint:
-    - 100078
-    - 400078
-    spine_01:
-    - 100080
-    - 400080
-    L_threeFinger_02_joint:
-    - 100082
-    - 400082
-    L_indexFinger_03_joint:
-    - 100084
-    - 400084
-    R_pouch_joint:
-    - 100086
-    - 400086
-    R_ankle_joint:
-    - 100088
-    - 400088
-    L_indexFinger_02_joint:
-    - 100090
-    - 400090
-    R_indexFinger_02_joint:
-    - 100092
-    - 400092
-    R_lip_joint:
-    - 100094
-    - 400094
-    L_lip_joint:
-    - 100096
-    - 400096
-    R_hand_joint:
-    - 100098
-    - 400098
-    R_hip_joint:
-    - 100100
-    - 400100
-AssetImporter:
-  importerVersion: 1
-  fileIDToRecycleName:
-    4300000: shaman_jaern_mesh
-    4300002: Agnes_IronAgeMesh
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - c2d9e694ecb9dfd48b66598d7211894a
+  - 12ca395bab4ec446383b3df4846c740a
+  - f0d8f18d0518c5e4fa6396346a982cd1
+  - 0b203c48983c6964ea68657497d7ff6d
+  - 223a3859e9424a944b73f5ebb20e390c
+  - baf0dcbf16aeb84489469f138524c6ce
+  - 86a601cb23d8a3c4dbbd7736de08f081
+  - 3610a194d96349344a8f88842d4541b7
+  - e91d81c025132cc42b1b4176b7ae572f
+  - a64ba0ece6cb6ac479cbe77de6e197ce
+  - cd1329f60c2ab984b9c915e8122d29ed
+  - 8da57bed4930c1047a81020863a8aed8
+  - 5dbb3fa420d361c44bca5536196cacd6
+  - 50794c6747bfbba4e9a7fbebc5d9151a
+  - 1eca8d5c1914ae048b79fb31c03966d1
+  - 2d38a28ec59b3a849a7a91452e2da4c6
+  - c716b2bee89c39a4dbb88f08e7782b21
+  - bca5f15e3fc6fdb49836edb122a52b94
+  - f78ec0bec5f1e09449a752f196c004cd
+  - 62797ee96e4d1ae46bce6200b3cd764b
+  - 114b399b2be1e824895c91e368e94edf
+  - 43227a12d063f48059509730824c1827
+  - dc16ae209dde6af469912ca53ca6b840
+  - 399ef8ac52f414cf9831daefd736bef9
+  - 08a8ce3199f6d4081845fdd761ae4afc
+  - 7c71648ce43b84e46bd30acb01599813
+  - 5095160e5cda8514ab7b70e6530469c0
+  - d4c90e418deab42ebae0d73c7db0cc47
+  - 82c45af0c99d54647a9b72096e5d2a8d
+  - 325ec306f6e86124e961d0a8d8de8099
+  - 52b3703ddc29ca74284ac51eb5391479
+  - 17dd1cecbccbe85489619b100a2c212f
+  - 17c1b63b51d9d184cb35d61437f4e223
+  - 38bffe8328c4d486dbd0689310cad0df
+  - a9041e49bb1554ca1b187742112afc27
+  - 02216eb4d6330487ebd519fc7ed675ad
+  - 74f5adcdeffee2b41a3bfc84a9b4f514
+  - 728e5ea6743cabb44960b1b363e10f5e
+  - 7294e2f311fb00b49b046fd28f479079
+  - 2cb1f25ed0d60a64784ed4a4aca72511
+  - e9acdda55f118a74eab546960cc7e235
+  - 0e86d48e0f2dcd249a8c8a602695c76b
+  - 215d3fdce68f80745a1f1e7be692996b
+  - d383860195fea99418f08dc7ebbb135c
+  - 41d9ad1b959bfa94f8e46068c5586ddd
+  - 698d8c39a62a257439bd956734b0364a
+  - 63f306498caac1341ac9fd2639878636
+  - 160a1cd95cfcbb04db11759e7c10b61e
+  - 437cc37db5cfd244fae3a190e61b51de
+  - 0771bf8f8bbaba84ab36db88d1ae163d
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

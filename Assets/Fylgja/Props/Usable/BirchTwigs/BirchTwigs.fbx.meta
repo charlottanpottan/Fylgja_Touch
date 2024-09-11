@@ -1,26 +1,56 @@
 fileFormatVersion: 2
 guid: 6cd10d9e32bc045ba81489a5db4f4d38
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: ris
-    100004: Ris_root_joint
-    100006: Ris_joint_1
-    100008: Ris_joint_2
-    400000: //RootNode
-    400002: ris
-    400004: Ris_root_joint
-    400006: Ris_joint_1
-    400008: Ris_joint_2
-    4300000: BirchTwigs
-    4300002: ris
-    11100000: //RootNode
-    13700000: Ris_root_joint
-    2186277476908879412: ImportLogs
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: ris
+  - first:
+      1: 100004
+    second: Ris_root_joint
+  - first:
+      1: 100006
+    second: Ris_joint_1
+  - first:
+      1: 100008
+    second: Ris_joint_2
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: ris
+  - first:
+      4: 400004
+    second: Ris_root_joint
+  - first:
+      4: 400006
+    second: Ris_joint_1
+  - first:
+      4: 400008
+    second: Ris_joint_2
+  - first:
+      43: 4300000
+    second: BirchTwigs
+  - first:
+      43: 4300002
+    second: ris
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Ris_root_joint
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -53,25 +83,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -80,10 +113,15 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips:
+  - 739473c69c4714ab6b4b98fe897b90a4
+  - 64ed8dc4da75b4a97a479fd123347bf9
+  - b56eb23a9003c45c68a769dfcf819954
+  - 1d00a26bf4d0b4d2aa920e11d34baf63
+  - ec9eade4757d04f9080eae21f6cca35e
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -93,13 +131,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 1
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

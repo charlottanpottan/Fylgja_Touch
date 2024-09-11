@@ -153,7 +153,7 @@ public class MultiPanel : EditorWindow
      * Functions
      */
 	void ChangeRenderQueue(){
-		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable);
+		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.Editable);
 		
 		foreach (Transform tr in transforms) {
 			if(tr.gameObject.GetComponent(typeof(SetRenderQueue)) == null){
@@ -171,7 +171,7 @@ public class MultiPanel : EditorWindow
 	void MoveToYPos ()
 	{
 		float yPos = float.Parse (theYPos);
-		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable);
+		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.Editable);
 		
 		foreach (Transform tr in transforms) {
 			tr.position = new Vector3 (tr.position.x, yPos, tr.position.z);
@@ -180,7 +180,7 @@ public class MultiPanel : EditorWindow
 
 	void ZeroOutTransform ()
 	{
-		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable);
+		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.Editable);
 		
 		foreach (Transform tr in transforms) {
 			tr.position = Vector3.zero;
@@ -191,7 +191,7 @@ public class MultiPanel : EditorWindow
 
 	void InheritParentTransform ()
 	{
-		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable);
+		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.Editable);
 		
 		foreach (Transform tr in transforms) {
 			tr.transform.position = tr.parent.transform.position;
@@ -202,7 +202,7 @@ public class MultiPanel : EditorWindow
 
 	void ToggleRenderers ()
 	{
-		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable);
+		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.Editable);
 		
 		foreach (Transform transform in transforms) {
 			if (transform.GetComponent<Renderer>())
@@ -277,7 +277,7 @@ public class MultiPanel : EditorWindow
 	
 	void Rename (bool numberedSuffix)
 	{
-		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable);
+		Transform[] transforms = Selection.GetTransforms (SelectionMode.TopLevel | SelectionMode.Editable);
 		
 		ArrayList transformArray = new ArrayList ();
 		
