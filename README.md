@@ -29,7 +29,8 @@ This repository is the touch-version that has code changes made for tablet and p
 <img src="docs/images/build_settings_android.png" alt="description" height="400px">
 
 * Make sure all Scenes are added and enabled.
-* Enable **Build App Bundle (Google Play)**. Make sure that Development Build and debugging options are disabled.
+* Enable **Build App Bundle (Google Play)**. (disable if you want an `APK` formatted build file).
+* Make sure that Development Build and debugging options are disabled.
 
 * Press **Player Settings...**, which opens up a dialog with a lot of properties.
 
