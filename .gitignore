@@ -52,3 +52,6 @@ Assets/Fylgja/Props/Vegetation/Ambient-Occlusion/Oaks.meta
 Assets/Fylgja/Props/Vegetation/Ambient-Occlusion/Oaks/Oak_Textures.meta
 Assets/Fylgja/Props/Vegetation/Ambient-Occlusion/Reed.meta
 Assets/Tree_Textures.meta
+
+# Platform-specific
+.DS_Store
