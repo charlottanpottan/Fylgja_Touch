@@ -16,7 +16,7 @@ public class CreditsLogic : MonoBehaviour {
         fadeinOut = gameObject.AddComponent<FadeInFadeOut>();
         fadeinOut.FadeIn(0.5f);
         ownAnimation = GetComponent<Animation>();
-		ownAnimation.Play();
+		// ownAnimation.Play(); // TODO: PBJ - this is removed since the intro sequence isn't working due to using deprecated Unity API. This will load the entry level faster, because the animation isn't playing
 		if(GetComponent<AudioSource>() != null)
 		{
 			GetComponent<AudioSource>().Play();
